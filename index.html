@@ -111,9 +111,6 @@ ul{list-style:none;margin:0;padding:0}
 .tl li:nth-child(6n+1) time{color:var(--t-rood)}.tl li:nth-child(6n+2) time{color:var(--t-blauw)}.tl li:nth-child(6n+3) time{color:var(--t-groen)}
 .tl li:nth-child(6n+4) time{color:var(--t-oranje)}.tl li:nth-child(6n+5) time{color:var(--t-turkoois)}.tl li:nth-child(6n+6) time{color:var(--t-magenta)}
 .tl a{font-size:14px;font-weight:800;white-space:nowrap;color:var(--muted)}
-.ad{display:none;background:var(--card);border:2px dashed var(--line);border-radius:20px;padding:12px 14px;text-align:center;min-width:0}
-.ad.on{display:block}
-.ad small{display:block;font-size:12px;font-weight:800;color:var(--muted);margin-bottom:6px}
 .foot{font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:6px;padding:0 4px}
 .foot p{margin:0;max-width:70ch}
 .foot button{font:inherit;color:inherit;background:none;border:0;padding:0;text-decoration:underline;cursor:pointer}
@@ -200,10 +197,6 @@ ul{list-style:none;margin:0;padding:0}
     <div class="next" id="next"></div>
   </section>
 
-  <aside class="ad" id="ad" aria-label="Advertentie">
-    <small>Advertentie. Om de domeinnaam te betalen: wij hebben tenminste wél een begroting.</small>
-  </aside>
-
   <section class="panel c-bordeaux">
     <h2>Deadlines die het niet gehaald hebben</h2>
     <ul class="dead" id="dead"></ul>
@@ -225,16 +218,14 @@ ul{list-style:none;margin:0;padding:0}
 </div>
 
 <div class="consent" id="consent" role="dialog" aria-labelledby="consent-t">
-  <p id="consent-t"><b>Mogen we je meetellen?</b> We gebruiken cookies van Google om bezoeken te tellen<span id="consent-ads"> en een advertentie te tonen</span>. Zonder jouw ja doen we dat niet. <a href="privacy.html">Meer uitleg</a></p>
+  <p id="consent-t"><b>Mogen we je meetellen?</b> We gebruiken cookies van Google om bezoeken te tellen. Zonder jouw ja doen we dat niet. <a href="privacy.html">Meer uitleg</a></p>
   <div class="row"><button type="button" class="yes" id="c-yes">Ja, tel me mee</button><button type="button" class="no" id="c-no">Nee, ik wacht anoniem</button></div>
 </div>
 
 <script>
-// ---- Settings: fill these in to switch tracking and ads on. Empty = off, no banner, no Google scripts. ----
+// ---- Settings: fill in to switch analytics on. Empty = off, no banner, no Google scripts. ----
 var CONFIG={
-  gaId:'',        // Google Analytics 4 measurement ID, e.g. 'G-ABC123XYZ9'
-  adsClient:'',   // AdSense publisher ID, e.g. 'ca-pub-1234567890123456'
-  adsSlot:''      // AdSense ad unit slot ID, e.g. '1234567890'
+  gaId:''         // Google Analytics 4 measurement ID, e.g. 'G-ABC123XYZ9'
 };
 
 (function(){
@@ -329,34 +320,22 @@ var CONFIG={
       .catch(function(){});
   }
 
-  // ---- Consent, analytics and ads. Nothing from Google loads until the visitor says yes. ----
-  var wantGA=/^G-[A-Z0-9]+$/.test(CONFIG.gaId), wantAds=/^ca-pub-\d+$/.test(CONFIG.adsClient)&&/^\d+$/.test(CONFIG.adsSlot);
-  if(!wantGA&&!wantAds)return;
+  // ---- Consent and analytics. Nothing from Google loads until the visitor says yes. ----
+  if(!/^G-[A-Z0-9]+$/.test(CONFIG.gaId))return;
   $('privacyline').hidden=false;
-  if(!wantAds)$('consent-ads').hidden=true;
   var KEY='begroting-consent';
   var get=function(){try{return localStorage.getItem(KEY)}catch(e){return null}};
   var set=function(v){try{localStorage.setItem(KEY,v)}catch(e){}};
   var loaded=false;
-  function addScript(src,attrs){var s=document.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);document.head.appendChild(s)}
+  function addScript(src){var s=document.createElement('script');s.async=true;s.src=src;document.head.appendChild(s)}
   function start(){
     if(loaded)return;loaded=true;
-    if(wantGA){
-      window.dataLayer=window.dataLayer||[];
-      window.gtag=function(){dataLayer.push(arguments)};
-      gtag('consent','default',{ad_storage:'granted',analytics_storage:'granted',ad_user_data:'granted',ad_personalization:'granted'});
-      gtag('js',new Date());gtag('config',CONFIG.gaId);
-      addScript('https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(CONFIG.gaId));
-    }
-    if(wantAds){
-      var ad=$('ad'),ins=document.createElement('ins');
-      ins.className='adsbygoogle';ins.style.display='block';
-      ins.setAttribute('data-ad-client',CONFIG.adsClient);ins.setAttribute('data-ad-slot',CONFIG.adsSlot);
-      ins.setAttribute('data-ad-format','auto');ins.setAttribute('data-full-width-responsive','true');
-      ad.appendChild(ins);ad.classList.add('on');
-      addScript('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client='+encodeURIComponent(CONFIG.adsClient),{crossorigin:'anonymous'});
-      (window.adsbygoogle=window.adsbygoogle||[]).push({});
-    }
+    window.dataLayer=window.dataLayer||[];
+    window.gtag=function(){dataLayer.push(arguments)};
+    gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});
+    gtag('set','allow_google_signals',false);
+    gtag('js',new Date());gtag('config',CONFIG.gaId);
+    addScript('https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(CONFIG.gaId));
   }
   function ask(){$('consent').classList.add('on')}
   $('c-yes').onclick=function(){set('yes');$('consent').classList.remove('on');start()};
