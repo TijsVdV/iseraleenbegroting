@@ -1,0 +1,90 @@
+{
+  "akkoord": false,
+  "bedrag": "10 miljard",
+  "bijgewerkt": "2026-11-09",
+  "eersteDeadline": "2026-07-21",
+  "gemisteDeadlines": [
+    {
+      "datum": "2026-07-21",
+      "label": "De eerste deadline. Kort daarna losgelaten."
+    },
+    {
+      "datum": "2026-10-13",
+      "label": "Beleidsverklaring in de Kamer. Geschrapt."
+    },
+    {
+      "datum": "2026-10-15",
+      "label": "Begroting indienen bij Europa. Niet ingediend."
+    },
+    {
+      "datum": "2026-11-03",
+      "label": "‘Uiterlijk dinsdag’ een akkoord. Het werd een ontslag."
+    }
+  ],
+  "lourdes": 80,
+  "lourdesReden": "Ontslag aangeboden en geweigerd, noodbegroting bevestigd. Lichtpuntje: er wordt weer gepraat.",
+  "noodbegroting": "Noodbegroting voor begin 2027: bevestigd, tweede jaar op rij",
+  "paleisbezoeken": 2,
+  "samenvatting": "De koning weigerde het ontslag van de regering en stuurde iedereen terug naar de onderhandelingstafel. Deze week wordt eerst apart gepraat; de grote vergadering is voor later.",
+  "tijdlijn": [
+    {
+      "bron": "VRT NWS",
+      "datum": "2026-11-09",
+      "tekst": "Het overleg zou vandaag herbeginnen, eerst in aparte gesprekken per partij.",
+      "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"
+    },
+    {
+      "bron": "VRT NWS",
+      "datum": "2026-11-06",
+      "tekst": "De koning weigert het ontslag en vraagt om meteen verder te onderhandelen.",
+      "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"
+    },
+    {
+      "bron": "VRT NWS",
+      "datum": "2026-11-05",
+      "tekst": "De premier bevestigt in de Kamer dat er een noodbegroting komt. Voor het tweede jaar op rij.",
+      "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"
+    },
+    {
+      "bron": "VRT NWS",
+      "datum": "2026-11-02",
+      "tekst": "De premier biedt het ontslag van de regering aan. De koning houdt het in beraad.",
+      "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"
+    },
+    {
+      "bron": "VRT NWS",
+      "datum": "2026-11-01",
+      "tekst": "Nachtelijk overleg tot 1 uur. Geen akkoord.",
+      "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"
+    },
+    {
+      "bron": "VRT NWS",
+      "datum": "2026-10-21",
+      "tekst": "Nog een vergadering. Nog geen akkoord.",
+      "url": "https://www.vrt.be/vrtnws/nl/2026/10/22/maanden-onderhandelen-zonder-resultaat-federaal-begrotingsoverl/"
+    },
+    {
+      "bron": "VRT NWS",
+      "datum": "2026-10-15",
+      "tekst": "De deadline om de begroting bij Europa in te dienen verstrijkt.",
+      "url": "https://www.vrt.be/vrtnws/nl/2026/10/22/maanden-onderhandelen-zonder-resultaat-federaal-begrotingsoverl/"
+    },
+    {
+      "bron": "VRT NWS",
+      "datum": "2026-10-13",
+      "tekst": "Geen beleidsverklaring in de Kamer: er valt nog niets voor te lezen.",
+      "url": "https://www.vrt.be/vrtnws/nl/2026/10/12/begroting-deja-vu-herhaling-vorig-jaar-analyse/"
+    },
+    {
+      "bron": "VRT NWS",
+      "datum": "2026-07-21",
+      "tekst": "De oorspronkelijke deadline. Ze werd kort daarna geschrapt.",
+      "url": "https://www.vrt.be/vrtnws/nl/2026/10/22/maanden-onderhandelen-zonder-resultaat-federaal-begrotingsoverl/"
+    }
+  ],
+  "volgende": {
+    "datum": "2026-11-16",
+    "label": "De premier brengt opnieuw verslag uit bij de koning."
+  },
+  "weerbericht": "Muurvast, met kans op bilaterale buien"
+}
