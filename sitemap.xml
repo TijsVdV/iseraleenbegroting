@@ -4,4 +4,12 @@
     <loc>https://iseraleenbegroting.be/</loc>
     <changefreq>daily</changefreq>
   </url>
+  <url>
+    <loc>https://iseraleenbegroting.be/uitleg.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://iseraleenbegroting.be/spel.html</loc>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>
