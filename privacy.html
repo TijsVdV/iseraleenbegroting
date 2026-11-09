@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy · Is er al een begroting?</title>
+<meta name="robots" content="noindex">
+<style>
+:root{color-scheme:light dark;--bg:#f6f3ec;--ink:#1b2230;--muted:#56606f;--card:#fff;--line:#e3ddd0;
+  --stripe:linear-gradient(90deg,#ffd400 0 11.11%,#e2001a 0 22.22%,#0057b8 0 33.33%,#ff7a00 0 44.44%,#3fae49 0 55.55%,#00b5a5 0 66.66%,#0b3a6e 0 77.77%,#a3001b 0 88.88%,#d4007a 0)}
+@media (prefers-color-scheme:dark){:root{--bg:#141821;--ink:#eef1f6;--muted:#a7b0bf;--card:#1f2533;--line:#323a4b}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+body::before{content:"";display:block;height:10px;background:var(--stripe)}
+main{max-width:680px;margin:0 auto;padding:20px 16px 56px}
+h1{font-size:28px;line-height:1.2;margin:8px 0 16px}h2{font-size:20px;margin:24px 0 6px}
+p,li{max-width:62ch}a{color:inherit}.muted{color:var(--muted);font-size:15px}
+button{font:inherit;font-weight:700;border:2px solid var(--ink);background:none;color:var(--ink);border-radius:999px;padding:8px 16px;cursor:pointer;min-height:44px}
+</style>
+</head>
+<body>
+<main>
+<p><a href="./">← Terug naar de wachtdienst</a></p>
+<h1>Privacy</h1>
+<p>Kort en zonder kleine lettertjes: deze site is een hobbyproject en wil zo weinig mogelijk over je weten.</p>
+
+<h2>Wat we bijhouden</h2>
+<p>Alleen als je in de cookiemelding <b>ja</b> zegt, laden we Google Analytics. Dat telt bezoeken en toont ons geanonimiseerde cijfers: hoeveel mensen langskwamen, uit welk land of welke regio ongeveer, met welk soort toestel, en via welke link. Google Analytics 4 bewaart geen volledige IP-adressen.</p>
+<p>Als er een advertentie op de site staat, laadt die ook alleen na je ja. Google kan daarbij cookies gebruiken om advertenties te tonen en te meten.</p>
+<p>Zeg je <b>nee</b>, dan laadt er niets van Google en wordt er niets geteld. De site werkt even goed (of even slecht, afhankelijk van de begroting).</p>
+
+<h2>Wie de gegevens krijgt</h2>
+<p>Google Ireland Ltd. verwerkt de gegevens voor Analytics en advertenties. Meer daarover in het <a href="https://policies.google.com/privacy?hl=nl" rel="noopener">privacybeleid van Google</a> en in <a href="https://policies.google.com/technologies/partner-sites?hl=nl" rel="noopener">hoe Google gegevens van partnersites gebruikt</a>. Analytics-gegevens worden na hoogstens 14 maanden automatisch gewist.</p>
+<p>De site zelf draait op GitHub Pages. GitHub kan voor beveiliging technische logs bijhouden, zoals IP-adressen.</p>
+
+<h2>Je keuze wijzigen</h2>
+<p>Je kan je keuze altijd aanpassen. Je keuze staat alleen in je eigen browser.</p>
+<p><button type="button" id="reset">Cookiekeuze opnieuw instellen</button> <span id="done" class="muted" hidden>Gedaan. Bij je volgende bezoek vragen we het opnieuw.</span></p>
+
+<h2>Vragen</h2>
+<p>Via <a href="https://github.com/TijsVdV/iseraleenbegroting/issues" rel="noopener">GitHub</a>. Je hebt ook het recht om klacht in te dienen bij de <a href="https://www.gegevensbeschermingsautoriteit.be" rel="noopener">Gegevensbeschermingsautoriteit</a>.</p>
+<p class="muted">Laatst bijgewerkt: 9 november 2026.</p>
+</main>
+<script>
+document.getElementById('reset').onclick=function(){
+  try{localStorage.removeItem('begroting-consent')}catch(e){}
+  document.cookie.split(';').forEach(function(c){var n=c.split('=')[0].trim();if(/^_ga/.test(n)){['','.'+location.hostname].forEach(function(d){document.cookie=n+'=; Max-Age=0; path=/'+(d?'; domain='+d:'')})}});
+  document.getElementById('done').hidden=false;
+};
+</script>
+</body>
+</html>
