@@ -15,7 +15,6 @@ PAGES=['index','uitleg','spel','privacy']
 def load(p): return json.load(open(os.path.join(SRC,p),encoding='utf-8'))
 def read(p): return open(os.path.join(SRC,p),encoding='utf-8').read()
 I18N={l:load('i18n/%s.json'%l) for l in LANGS}
-QUOTES=load('quotes.json')
 DATA=json.load(open(os.path.join(ROOT,'data.json'),encoding='utf-8'))
 QCOLORS=['var(--p-rood)','var(--p-blauw)','var(--p-groen)','var(--p-oranje)','var(--p-turkoois)','var(--p-magenta)','var(--p-geel)','var(--p-bordeaux)','var(--p-marine)','var(--p-groen)']
 MONTHS={'nl':['jan.','feb.','maart','apr.','mei','juni','juli','aug.','sep.','okt.','nov.','dec.'],
@@ -60,7 +59,6 @@ def render(tpl,l,page,extra=None):
         if kind=='SKINS': return skins()
         if kind=='JSONLD': return json.dumps(jsonld,ensure_ascii=False)
         if kind=='SNAP': return jsstr(DATA)
-        if kind=='QUOTE': return quote(int(key))
         if kind in fixed: return fixed[kind]
         if kind=='BODY': return extra['__body']
         if kind=='j':

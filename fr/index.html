@@ -292,38 +292,6 @@ ul{list-style:none;margin:0;padding:0}
 :root[data-skin="retro"] .langs a{color:#0000ee;text-decoration:underline;border-radius:0}
 :root[data-skin="retro"] .langs a[aria-current="true"]{color:#000;text-decoration:none;box-shadow:none;background:#c0c0c0;border:2px inset #c0c0c0}
 
-/* ---------- quotes: in the margins on wide screens, between the blocks on smaller ones ---------- */
-.cite-slot{min-width:0}
-.cite{margin:0 0 0 4px;padding:2px 0 2px 14px;border-left:4px solid var(--qc,var(--line));max-width:62ch}
-.cite blockquote{margin:0;font-family:var(--display);font-weight:500;font-style:italic;font-size:17px;line-height:1.35;color:var(--ink);opacity:.82}
-.cite blockquote p{margin:0}
-.cite blockquote p::before{content:"\201C"}
-.cite blockquote p::after{content:"\201D"}
-.cite figcaption{font-size:12.5px;line-height:1.4;color:var(--muted);margin-top:3px}
-.cite figcaption a{color:inherit}
-.cite .tr{font-style:italic}
-@media (min-width:1380px){
-  .wrap{position:relative}
-  .cite-slot{position:relative;height:0;margin-top:calc(-1 * var(--gap))}
-  .cite{position:absolute;top:0;width:200px;margin:0;padding:0;border:0}
-  .cite-l .cite{left:-232px;text-align:right}
-  .cite-r .cite{right:-232px}
-  .cite blockquote{font-size:19px;opacity:.55;transition:opacity .2s}
-  .cite:hover blockquote{opacity:1}
-  .cite blockquote p::before{content:"\201C";display:block;font-size:56px;line-height:.6;margin-bottom:4px;color:var(--qc);opacity:.9;font-style:normal}
-  .cite figcaption{opacity:.8}
-}
-:root[data-skin="retro"] .cite{background:#ffffcc;border:1px solid #000;padding:8px 10px;box-shadow:3px 3px 0 rgba(0,0,0,.35);transform:rotate(-1.5deg)}
-:root[data-skin="retro"] .cite-r .cite{transform:rotate(1.5deg)}
-:root[data-skin="retro"] .cite blockquote{font-family:"Comic Sans MS","Comic Sans","Chalkboard SE",cursive;font-style:normal;opacity:1;color:#000}
-:root[data-skin="retro"] .cite figcaption{color:#333;font-family:Arial,sans-serif}
-:root[data-skin="retro"] .cite figcaption a{color:#0000ee}
-@media (min-width:1380px){
-  :root[data-skin="retro"] .cite{padding:8px 10px;text-align:left}
-  :root[data-skin="retro"] .cite-l .cite{left:-236px}
-  :root[data-skin="retro"] .cite-r .cite{right:-236px}
-  :root[data-skin="retro"] .cite blockquote p::before{content:"\201C";display:inline;font-size:inherit;line-height:inherit;margin:0;color:inherit}
-}
 </style>
 </head>
 <body>
@@ -354,10 +322,7 @@ ul{list-style:none;margin:0;padding:0}
     </div>
   </section>
 
-  <div class="cite-slot cite-l"><figure class="cite" style="--qc:var(--p-rood)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/ratingbureau-sp-behoudt-kredietscore-van-belgie-maar-verwacht-~1790599460224/"><p>Dit kan pijn doen, maar het alternatief is amputatie.</p></blockquote><figcaption><b>Bart De Wever</b> (N-VA), Premier ministre · 22 oct. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/ratingbureau-sp-behoudt-kredietscore-van-belgie-maar-verwacht-~1790599460224/" rel="noopener">VRT NWS ↗</a></figcaption></figure></div>
-  <div class="cite-slot cite-r"><figure class="cite" style="--qc:var(--p-blauw)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/ratingbureau-sp-behoudt-kredietscore-van-belgie-maar-verwacht-~1790599460224/"><p>Ik vraag een beetje redelijkheid aan iedereen aan tafel.</p></blockquote><figcaption><b>Conner Rousseau</b> (Vooruit), président · 23 oct. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/ratingbureau-sp-behoudt-kredietscore-van-belgie-maar-verwacht-~1790599460224/" rel="noopener">VRT NWS ↗</a></figcaption></figure></div>
   <section class="stats" id="stats"></section>
-  <div class="cite-slot cite-l"><figure class="cite" style="--qc:var(--p-groen)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/ratingbureau-sp-behoudt-kredietscore-van-belgie-maar-verwacht-~1790599460224/"><p>De optimisten zullen het optimistisch zien, de pessimisten pessimistisch</p></blockquote><figcaption><b>David Clarinval</b> (MR), vice-Premier ministre · 21 oct. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/ratingbureau-sp-behoudt-kredietscore-van-belgie-maar-verwacht-~1790599460224/" rel="noopener">VRT NWS ↗</a> · <span class="tr">traduit en néerlandais par VRT NWS</span></figcaption></figure></div>
 
   <section class="panel c-oranje">
     <h2>Miracle-o-mètre de Lourdes</h2>
@@ -366,33 +331,27 @@ ul{list-style:none;margin:0;padding:0}
     <p class="reden" id="reden"></p>
   </section>
 
-  <div class="cite-slot cite-r"><figure class="cite" style="--qc:var(--p-oranje)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/"><p>Spreek aan tafel, in plaats van in de televisiestudio&#x27;s.</p></blockquote><figcaption><b>Sammy Mahdi</b> (CD&amp;V), président · 3 nov. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/" rel="noopener">VRT NWS ↗</a></figcaption></figure></div>
   <section class="panel c-turkoois">
     <h2>Prochain rendez-vous</h2>
     <div class="next" id="next"></div>
   </section>
 
-  <div class="cite-slot cite-l"><figure class="cite" style="--qc:var(--p-turkoois)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/"><p>Als ik alle knelpunten zou opsommen, zou het een eeuwigheid duren</p></blockquote><figcaption><b>Maxime Prévot</b> (Les Engagés), vice-Premier ministre · 2 nov. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/" rel="noopener">VRT NWS ↗</a> · <span class="tr">traduit en néerlandais par VRT NWS</span></figcaption></figure></div>
   <section class="panel c-groen more">
     <h2>Vous n'y comprenez plus rien ?</h2>
     <p>Pas de honte. Lisez <a href="uitleg.html">l'explication</a> : la taille du trou, pourquoi il faut agir maintenant et pourquoi cinq partis n'arrivent pas à s'entendre. Ou vous pensez faire mieux vous-même ?</p>
     <div class="more-cta"><a class="mbtn" href="/fr/spel.html">Jouer au jeu du budget 🎲</a><a class="mbtn ghost" href="/fr/uitleg.html">Lire l'explication</a></div>
   </section>
 
-  <div class="cite-slot cite-r"><figure class="cite" style="--qc:var(--p-magenta)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/"><p>Het is met z&#x27;n allen erdoor of met z&#x27;n allen onderuit.</p></blockquote><figcaption><b>Valerie Van Peel</b> (N-VA), présidente · 6 nov. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/" rel="noopener">VRT NWS ↗</a></figcaption></figure></div>
   <section class="panel c-bordeaux">
     <h2>Les échéances qui n'ont pas tenu</h2>
     <ul class="dead" id="dead"></ul>
   </section>
 
-  <div class="cite-slot cite-l"><figure class="cite" style="--qc:var(--p-geel)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/"><p>Het moet een verhaal worden van enkele dagen en niet van enkele maanden</p></blockquote><figcaption><b>Georges-Louis Bouchez</b> (MR), président · 6 nov. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/" rel="noopener">VRT NWS ↗</a> · <span class="tr">traduit en néerlandais par VRT NWS</span></figcaption></figure></div>
   <section class="panel c-magenta">
     <h2>Ce qui s'est passé</h2>
     <ul class="tl" id="tl"></ul>
   </section>
 
-  <div class="cite-slot cite-r"><figure class="cite" style="--qc:var(--p-bordeaux)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/"><p>Het is nu onze verdomde plicht dat dit lukt.</p></blockquote><figcaption><b>Vincent Van Peteghem</b> (CD&amp;V), ministre du Budget · 2 nov. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/" rel="noopener">VRT NWS ↗</a></figcaption></figure></div>
-  <div class="cite-slot cite-l"><figure class="cite" style="--qc:var(--p-marine)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/"><p>Wij willen heel graag een akkoord, maar onze enige rode lijn is rechtvaardigheid.</p></blockquote><figcaption><b>Oskar Seuntjens</b> (Vooruit), chef de groupe · 6 nov. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/" rel="noopener">VRT NWS ↗</a></figcaption></figure></div>
   <section class="panel c-marine about">
     <h2>C'est quoi, au juste ?</h2>
     <p>Cette page suit les négociations sur le <b>budget fédéral belge</b> : le plan dans lequel le gouvernement fédéral fixe ce qu'il dépense et d'où vient l'argent. Tant qu'il n'y a pas d'accord budgétaire, il est écrit NON ci-dessus, et nous tenons le compte des échéances tombées.</p>
@@ -402,7 +361,6 @@ ul{list-style:none;margin:0;padding:0}
     <p>Trois fois par jour, nous cherchons les dernières nouvelles budgétaires dans les médias belges et mettons cette page à jour. Chaque événement de la chronologie renvoie à l'article dont il provient.</p>
   </section>
 
-  <div class="cite-slot cite-r"><figure class="cite" style="--qc:var(--p-groen)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/"><p>We moeten kalm blijven en samen een oplossing vinden. De match is nog niet gespeeld.</p></blockquote><figcaption><b>Yvan Verougstraete</b> (Les Engagés), président · 3 nov. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/" rel="noopener">VRT NWS ↗</a> · <span class="tr">traduit en néerlandais par VRT NWS</span></figcaption></figure></div>
   <footer class="foot">
     <div class="band" aria-hidden="true"></div>
     <p><b>Ceci est de la satire.</b> Les faits et les dates viennent des articles cités ; les blagues sont de nous. Nous rions du processus, pas d'un parti.</p>
@@ -413,7 +371,6 @@ ul{list-style:none;margin:0;padding:0}
       <div class="retro-badges"><span class="uc"><b>UNDER CONSTRUCTION</b></span><span>Meilleur affichage en 800x600</span><span>Fait avec le Bloc-notes</span><span>Netscape Now!</span></div>
     </div>
     <p>Un assistant IA lit l'actualité trois fois par jour et met cette page à jour. Il peut donc y avoir du retard, et en cas de doute, la source a raison.</p>
-    <p>Les citations dans la marge sont reprises mot pour mot des liveblogs de VRT NWS, en néerlandais, avec un lien vers la source. Les propos des responsables francophones y ont été traduits par la rédaction. Deux citations par parti de la majorité, pour que personne ne soit privilégié.</p>
     <p>Fait avec amour et un léger désespoir par un millennial qui économise toujours pour une maison.</p>
     <p><a href="/fr/uitleg.html">Explication</a> · <a href="/fr/spel.html">Jeu du budget</a></p>
     <p id="privacyline" hidden><a href="/fr/privacy.html">Vie privée</a> · <button type="button" id="cookiebtn">Paramètres des cookies</button></p>

@@ -289,38 +289,6 @@ ul{list-style:none;margin:0;padding:0}
 :root[data-skin="retro"] .langs a{color:#0000ee;text-decoration:underline;border-radius:0}
 :root[data-skin="retro"] .langs a[aria-current="true"]{color:#000;text-decoration:none;box-shadow:none;background:#c0c0c0;border:2px inset #c0c0c0}
 
-/* ---------- quotes: in the margins on wide screens, between the blocks on smaller ones ---------- */
-.cite-slot{min-width:0}
-.cite{margin:0 0 0 4px;padding:2px 0 2px 14px;border-left:4px solid var(--qc,var(--line));max-width:62ch}
-.cite blockquote{margin:0;font-family:var(--display);font-weight:500;font-style:italic;font-size:17px;line-height:1.35;color:var(--ink);opacity:.82}
-.cite blockquote p{margin:0}
-.cite blockquote p::before{content:"\201C"}
-.cite blockquote p::after{content:"\201D"}
-.cite figcaption{font-size:12.5px;line-height:1.4;color:var(--muted);margin-top:3px}
-.cite figcaption a{color:inherit}
-.cite .tr{font-style:italic}
-@media (min-width:1380px){
-  .wrap{position:relative}
-  .cite-slot{position:relative;height:0;margin-top:calc(-1 * var(--gap))}
-  .cite{position:absolute;top:0;width:200px;margin:0;padding:0;border:0}
-  .cite-l .cite{left:-232px;text-align:right}
-  .cite-r .cite{right:-232px}
-  .cite blockquote{font-size:19px;opacity:.55;transition:opacity .2s}
-  .cite:hover blockquote{opacity:1}
-  .cite blockquote p::before{content:"\201C";display:block;font-size:56px;line-height:.6;margin-bottom:4px;color:var(--qc);opacity:.9;font-style:normal}
-  .cite figcaption{opacity:.8}
-}
-:root[data-skin="retro"] .cite{background:#ffffcc;border:1px solid #000;padding:8px 10px;box-shadow:3px 3px 0 rgba(0,0,0,.35);transform:rotate(-1.5deg)}
-:root[data-skin="retro"] .cite-r .cite{transform:rotate(1.5deg)}
-:root[data-skin="retro"] .cite blockquote{font-family:"Comic Sans MS","Comic Sans","Chalkboard SE",cursive;font-style:normal;opacity:1;color:#000}
-:root[data-skin="retro"] .cite figcaption{color:#333;font-family:Arial,sans-serif}
-:root[data-skin="retro"] .cite figcaption a{color:#0000ee}
-@media (min-width:1380px){
-  :root[data-skin="retro"] .cite{padding:8px 10px;text-align:left}
-  :root[data-skin="retro"] .cite-l .cite{left:-236px}
-  :root[data-skin="retro"] .cite-r .cite{right:-236px}
-  :root[data-skin="retro"] .cite blockquote p::before{content:"\201C";display:inline;font-size:inherit;line-height:inherit;margin:0;color:inherit}
-}
 </style>
 </head>
 <body>
@@ -351,10 +319,7 @@ ul{list-style:none;margin:0;padding:0}
     </div>
   </section>
 
-{{QUOTE:0}}
-{{QUOTE:1}}
   <section class="stats" id="stats"></section>
-{{QUOTE:2}}
 
   <section class="panel c-oranje">
     <h2>{{t.lourdes_title}}</h2>
@@ -363,33 +328,27 @@ ul{list-style:none;margin:0;padding:0}
     <p class="reden" id="reden"></p>
   </section>
 
-{{QUOTE:3}}
   <section class="panel c-turkoois">
     <h2>{{t.next_title}}</h2>
     <div class="next" id="next"></div>
   </section>
 
-{{QUOTE:4}}
   <section class="panel c-groen more">
     <h2>{{t.more_title}}</h2>
     <p>{{t.more_text}}</p>
     <div class="more-cta"><a class="mbtn" href="{{BASE}}spel.html">{{t.more_play}}</a><a class="mbtn ghost" href="{{BASE}}uitleg.html">{{t.more_read}}</a></div>
   </section>
 
-{{QUOTE:5}}
   <section class="panel c-bordeaux">
     <h2>{{t.dead_title}}</h2>
     <ul class="dead" id="dead"></ul>
   </section>
 
-{{QUOTE:6}}
   <section class="panel c-magenta">
     <h2>{{t.tl_title}}</h2>
     <ul class="tl" id="tl"></ul>
   </section>
 
-{{QUOTE:7}}
-{{QUOTE:8}}
   <section class="panel c-marine about">
     <h2>{{t.about_title}}</h2>
     <p>{{t.about_p1}}</p>
@@ -399,7 +358,6 @@ ul{list-style:none;margin:0;padding:0}
     <p>{{t.about_p3}}</p>
   </section>
 
-{{QUOTE:9}}
   <footer class="foot">
     <div class="band" aria-hidden="true"></div>
     <p>{{t.foot1}}</p>
@@ -410,7 +368,6 @@ ul{list-style:none;margin:0;padding:0}
       <div class="retro-badges"><span class="uc"><b>UNDER CONSTRUCTION</b></span><span>{{t.retro_b2}}</span><span>{{t.retro_b3}}</span><span>Netscape Now!</span></div>
     </div>
     <p>{{t.foot_ai}}</p>
-    <p>{{t.quotes_note}}</p>
     <p>{{t.foot_made}}</p>
     <p><a href="{{BASE}}uitleg.html">{{t.nav_uitleg}}</a> · <a href="{{BASE}}spel.html">{{t.nav_spel}}</a></p>
     <p id="privacyline" hidden><a href="{{BASE}}privacy.html">{{t.privacy}}</a> · <button type="button" id="cookiebtn">{{t.cookie_settings}}</button></p>
