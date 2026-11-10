@@ -73,11 +73,6 @@
   "tile_found": "gefunden (angeblich)",
   "tile_missing": "immer noch verschwunden",
   "of100": " von 100",
-  "flag_top_yes": "Flagge ganz oben!",
-  "flag_low": "Flagge fast eingeholt",
-  "flag_half": "Flagge auf halbmast",
-  "flag_34": "Flagge auf drei Viertel",
-  "flag_top": "Flagge ganz oben",
   "days_left": "Noch {n} Tage.",
   "tomorrow": "Schon morgen.",
   "today": "Heute.",
@@ -85,7 +80,9 @@
   "no_date": "Kein Datum bekannt. Das sagt vielleicht schon genug.",
   "src_word": "Quelle",
   "updated": "Aktualisiert am ",
-  "snapshot": "Momentaufnahme vom "
+  "snapshot": "Momentaufnahme vom ",
+  "smoke_black": "Schwarzer Rauch: noch kein Haushalt",
+  "smoke_white": "Weißer Rauch: Habemus Haushalt!"
  },
  "spel": {
   "meta_title": "Das Haushaltsspiel: Finden Sie die 10 Milliarden? · Gibt es schon einen Haushalt?",

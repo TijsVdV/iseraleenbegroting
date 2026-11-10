@@ -34,10 +34,9 @@
 <style>
 :root{
   /* layout: the Wetstraat in party colours. A striped party band on top, verdict in multicoloured letters,
-     a flagpole on a hill, then cards that each carry a different party colour. No colour gets more room than another. */
+     the Sistine Chapel chimney (black smoke: no budget; white smoke: habemus begroting), then cards that each carry a different party colour. No colour gets more room than another. */
   color-scheme:light;
   --bg:#f6f3ec; --bg2:#fffdf8; --ink:#1b2230; --muted:#56606f; --card:#ffffff; --line:#e3ddd0;
-  --hill:#9fd3a8; --hill2:#7cbf8b; --pole:#8a8f99;
   /* party palette: decorative fills only, never small text */
   --p-geel:#ffd400; --p-rood:#e2001a; --p-blauw:#0057b8; --p-oranje:#ff7a00;
   --p-groen:#3fae49; --p-turkoois:#00b5a5; --p-marine:#0b3a6e; --p-bordeaux:#a3001b; --p-magenta:#d4007a;
@@ -51,7 +50,6 @@
   :root{
     color-scheme:dark;
     --bg:#141821; --bg2:#1a1f2b; --ink:#eef1f6; --muted:#a7b0bf; --card:#1f2533; --line:#323a4b;
-    --hill:#2f6b45; --hill2:#255838; --pole:#a9b0bc; --flagedge:rgba(255,255,255,.55);
     --p-marine:#3d7bd1; --p-bordeaux:#d6334c;
     --t-rood:#ff5a6a; --t-blauw:#6aa8ff; --t-groen:#6fd47a; --t-oranje:#ffa04d; --t-turkoois:#3fd6c6; --t-magenta:#ff5cb4; --t-marine:#8fb6ff; --t-bordeaux:#ff7a8c;
   }
@@ -83,23 +81,36 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--t-blauw);outline-of
 .c1::before{width:36px;height:36px;left:14px;top:-18px}.c1::after{width:28px;height:28px;left:44px;top:-12px}
 .c2{width:64px;height:20px;top:92px;right:6px}
 .c2::before{width:26px;height:26px;left:10px;top:-13px}.c2::after{width:20px;height:20px;left:32px;top:-8px}
-.hillb{position:absolute;left:0;right:0;bottom:0;height:70px;background:var(--hill2);border-radius:50% 50% 0 0/100% 100% 0 0}
-.hillf{position:absolute;left:30px;right:0;bottom:0;height:48px;background:var(--hill);border-radius:50% 50% 0 0/100% 100% 0 0}
-.pole{position:absolute;left:78px;bottom:40px;width:7px;height:236px;background:var(--pole);border-radius:4px}
-.pole::before{content:"";position:absolute;left:-4px;top:-12px;width:15px;height:15px;border-radius:50%;background:var(--pole)}
-.flag{position:absolute;left:7px;top:8px;display:flex;width:96px;height:60px;transition:top 1.2s ease;filter:drop-shadow(0 0 1px var(--flagedge,transparent))}
-.flag i{flex:1;height:100%;display:block}
-.flag i:nth-child(-n+4){background:#1b1b1b}
-.flag i:nth-child(n+5):nth-child(-n+8){background:#fdda24}
-.flag i:nth-child(n+9){background:#ef3340}
-.flag i:first-child{border-radius:2px 0 0 2px}.flag i:last-child{border-radius:0 3px 3px 0}
-@keyframes wave{0%,100%{transform:translateY(calc(var(--a)*-1))}50%{transform:translateY(var(--a))}}
+/* Sistine Chapel roof with the conclave chimney. Black smoke = no budget yet, white smoke = habemus begroting. */
+.stage{position:absolute;left:0;bottom:0;width:250px;height:300px;transform-origin:0 100%;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 70px);mask-image:linear-gradient(to bottom,transparent 0,#000 70px)}
+.roof{position:absolute;left:-10px;right:-10px;bottom:0;height:92px;z-index:2;
+  background:repeating-linear-gradient(90deg,rgba(0,0,0,.09) 0 2px,transparent 2px 13px),linear-gradient(#b8693f,#93512f);
+  clip-path:polygon(0 100%,0 62%,58% 6%,100% 52%,100% 100%)}
+.roof::after{content:"";position:absolute;left:0;right:0;bottom:0;height:26px;background:#e9dcc6;opacity:.95}
+.chimney{position:absolute;left:112px;bottom:56px;width:14px;height:100px;z-index:1;border-radius:2px;
+  background:linear-gradient(90deg,#5b626b,#b3bbc4 45%,#6a717a)}
+.chimney::before{content:"";position:absolute;left:-7px;top:-9px;width:28px;height:11px;border-radius:4px 4px 1px 1px;background:linear-gradient(90deg,#5b626b,#c1c8d0 45%,#6a717a)}
+.chimney::after{content:"";position:absolute;left:-2px;top:34px;width:18px;height:5px;border-radius:2px;background:#59606a}
+.smoke{position:absolute;left:119px;bottom:158px;width:0;height:0;z-index:3;--smoke:#262626}
+.smoke i{position:absolute;left:-14px;bottom:0;width:28px;height:28px;border-radius:50%;background:var(--smoke);opacity:.85;filter:blur(1.5px);
+  transform:translate(var(--sx),var(--sy)) scale(var(--ss))}
+.smoke i:nth-child(1){--dx:-8px;--sx:-2px;--sy:-6px;--ss:.7}
+.smoke i:nth-child(2){--dx:22px;--sx:4px;--sy:-24px;--ss:1}
+.smoke i:nth-child(3){--dx:8px;--sx:-6px;--sy:-44px;--ss:1.25}
+.smoke i:nth-child(4){--dx:30px;--sx:8px;--sy:-64px;--ss:1.5}
+.smoke i:nth-child(5){--dx:14px;--sx:18px;--sy:-84px;--ss:1.75}
+.smoke i:nth-child(6){--dx:36px;--sx:28px;--sy:-104px;--ss:2}
+.scene.wit .smoke{--smoke:#ffffff;filter:drop-shadow(0 0 2px rgba(0,0,0,.45)) drop-shadow(0 0 6px rgba(0,0,0,.18))}
+@media (prefers-color-scheme: dark){ .smoke{filter:drop-shadow(0 0 2px rgba(255,255,255,.45))} .scene.wit .smoke{filter:drop-shadow(0 0 3px rgba(0,0,0,.6))} }
+@keyframes puff{0%{transform:translate(0,0) scale(.35);opacity:0}12%{opacity:.92}70%{opacity:.55}100%{transform:translate(var(--dx),-104px) scale(2.1);opacity:0}}
+@keyframes drift{from{transform:translateX(-6px)}to{transform:translateX(14px)}}
 @media (prefers-reduced-motion:no-preference){
-  .flag i{animation:wave 1.5s ease-in-out infinite;animation-delay:calc(var(--n)*-.13s);--a:calc(var(--n)*.55px + 1px)}
+  .smoke i{animation:puff 6s linear infinite}
+  .smoke i:nth-child(2){animation-delay:-1s}.smoke i:nth-child(3){animation-delay:-2s}.smoke i:nth-child(4){animation-delay:-3s}
+  .smoke i:nth-child(5){animation-delay:-4s}.smoke i:nth-child(6){animation-delay:-5s}
   .c1{animation:drift 26s linear infinite alternate}.c2{animation:drift 34s linear infinite alternate-reverse}
 }
-@keyframes drift{from{transform:translateX(-6px)}to{transform:translateX(14px)}}
-.flagcap{position:absolute;left:0;right:0;bottom:6px;text-align:center;font-weight:800;font-size:13px;color:#14324a}
+.flagcap{position:absolute;left:0;right:0;bottom:4px;z-index:4;text-align:center;font-weight:800;font-size:12.5px;line-height:1.25;color:#4a2a17;padding:0 6px}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
 .stat{background:var(--card);border:2px solid var(--line);border-top:10px solid var(--c,var(--p-blauw));border-radius:18px;padding:14px 18px;display:flex;flex-direction:column;gap:2px;min-width:0}
 .stat:nth-child(4n+1){--c:var(--p-rood)}.stat:nth-child(4n+2){--c:var(--p-geel)}.stat:nth-child(4n+3){--c:var(--p-groen)}.stat:nth-child(4n+4){--c:var(--p-blauw)}
@@ -160,10 +171,7 @@ ul{list-style:none;margin:0;padding:0}
   .weer,.sam{grid-column:1/-1}
   .weer{margin-top:4px}.sam{margin-top:2px}
   .c1,.c2{display:none}
-  .hillb{height:36px}.hillf{left:14px;height:24px}
-  .pole{left:24px;bottom:20px;width:5px;height:122px}
-  .pole::before{left:-3px;top:-9px;width:11px;height:11px}
-  .flag{left:5px;top:6px;width:64px;height:40px}
+  .stage{transform:scale(.5);left:-44px}
   .flagcap{display:none}
   .stats{grid-template-columns:1fr 1fr;gap:10px}
   .stat{padding:10px 12px;border-top-width:8px;border-radius:16px}
@@ -177,8 +185,7 @@ ul{list-style:none;margin:0;padding:0}
   .hero{grid-template-columns:minmax(0,1fr) 90px}
   .verdict{font-size:clamp(52px,calc((100vw - 130px)/2.75),110px)}
   .scene{width:90px;height:130px}
-  .pole{height:104px}
-  .flag{width:52px;height:33px}
+  .stage{transform:scale(.433);left:-38px}
   .tl li{grid-template-columns:minmax(0,1fr)}
   .scale{font-size:12px}
 }
@@ -336,11 +343,13 @@ ul{list-style:none;margin:0;padding:0}
       <p class="weer"><small>Météo de la rue de la Loi</small><span id="weer"></span></p>
       <p class="sam" id="sam"></p>
     </div>
-    <div class="scene" aria-hidden="true">
+    <div class="scene" id="scene" aria-hidden="true">
       <div class="cloud c1"></div><div class="cloud c2"></div>
-      <div class="hillb"></div>
-      <div class="pole"><div class="flag" id="flag"><i style="--n:0"></i><i style="--n:1"></i><i style="--n:2"></i><i style="--n:3"></i><i style="--n:4"></i><i style="--n:5"></i><i style="--n:6"></i><i style="--n:7"></i><i style="--n:8"></i><i style="--n:9"></i><i style="--n:10"></i><i style="--n:11"></i></div></div>
-      <div class="hillf"></div>
+      <div class="stage">
+        <div class="smoke"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="chimney"></div>
+        <div class="roof"></div>
+      </div>
       <div class="flagcap" id="flagcap"></div>
     </div>
   </section>
@@ -467,10 +476,8 @@ var CONFIG={
     $('fill').style.setProperty('--full',(p?100/p*100:100)+'%');
     $('meter').setAttribute('aria-label',"Miracle-o-mètre de Lourdes"+': '+p+" sur 100");
     $('reden').innerHTML='<b>'+p+" sur 100"+'.</b> '+esc(d.lourdesReden||'');
-    var fp=ja?0:p;
-    var small=window.matchMedia&&window.matchMedia('(max-width:640px)').matches;
-    $('flag').style.top=Math.round(small?(6+fp*.6):(8+fp*1.25))+'px';
-    $('flagcap').textContent=ja?"Drapeau au sommet !":fp>=85?"Drapeau presque descendu":fp>=55?"Drapeau en berne":fp>=25?"Drapeau aux trois quarts":"Drapeau au sommet";
+    $('scene').className='scene'+(ja?' wit':'');
+    $('flagcap').textContent=ja?"Fumée blanche : Habemus budget !":"Fumée noire : toujours pas de budget";
     var v=d.volgende&&typeof d.volgende==='object'?d.volgende:null,nx='';
     if(v&&parse(v.datum)!=null){
       var left=days(today(),parse(v.datum));

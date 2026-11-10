@@ -73,11 +73,6 @@
   "tile_found": "trouvés (paraît-il)",
   "tile_missing": "toujours introuvables",
   "of100": " sur 100",
-  "flag_top_yes": "Drapeau au sommet !",
-  "flag_low": "Drapeau presque descendu",
-  "flag_half": "Drapeau en berne",
-  "flag_34": "Drapeau aux trois quarts",
-  "flag_top": "Drapeau au sommet",
   "days_left": "Encore {n} jours.",
   "tomorrow": "C'est déjà demain.",
   "today": "C'est aujourd'hui.",
@@ -85,7 +80,9 @@
   "no_date": "Pas de date connue. Ça en dit peut-être assez.",
   "src_word": "source",
   "updated": "Mis à jour le ",
-  "snapshot": "Instantané du "
+  "snapshot": "Instantané du ",
+  "smoke_black": "Fumée noire : toujours pas de budget",
+  "smoke_white": "Fumée blanche : Habemus budget !"
  },
  "spel": {
   "meta_title": "Le Jeu du budget : trouverez-vous les 10 milliards ? · Y a-t-il déjà un budget ?",

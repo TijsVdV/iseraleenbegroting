@@ -72,11 +72,6 @@
   "tile_found": "gevonden (naar verluidt)",
   "tile_missing": "nog altijd zoek",
   "of100": " op 100",
-  "flag_top_yes": "Vlag in top!",
-  "flag_low": "Vlag bijna gestreken",
-  "flag_half": "Vlag halfstok",
-  "flag_34": "Vlag op driekwart",
-  "flag_top": "Vlag in top",
   "days_left": "Nog {n} dagen.",
   "tomorrow": "Morgen al.",
   "today": "Vandaag.",
@@ -85,7 +80,9 @@
   "src_word": "bron",
   "updated": "Bijgewerkt ",
   "snapshot": "Momentopname van ",
-  "quotes_note": "De citaten in de marge zijn letterlijk overgenomen uit de liveblogs van VRT NWS, met een link naar de bron. Uitspraken van Franstalige politici zijn daar door de redactie vertaald. Twee citaten per regeringspartij, zodat niemand voorrang krijgt."
+  "quotes_note": "De citaten in de marge zijn letterlijk overgenomen uit de liveblogs van VRT NWS, met een link naar de bron. Uitspraken van Franstalige politici zijn daar door de redactie vertaald. Twee citaten per regeringspartij, zodat niemand voorrang krijgt.",
+  "smoke_black": "Zwarte rook: nog geen begroting",
+  "smoke_white": "Witte rook: Habemus begroting!"
  },
  "spel": {
   "meta_title": "Het Begrotingsspel: vind jij de 10 miljard? · Is er al een begroting?",
