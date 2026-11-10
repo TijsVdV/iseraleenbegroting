@@ -28,6 +28,12 @@
   "samenvatting": "De premier praat deze week apart met elke vicepremier; wanneer het voltallige kernkabinet weer samenzit, is nog niet bekend. Op 16 november brengt hij opnieuw verslag uit bij de koning.",
   "tijdlijn": [
     {
+      "datum": "2026-11-10",
+      "tekst": "Vandaag mag Les Engagés op gesprek, woensdag normaal CD&V. Eén voor één, zoals in een wachtzaal.",
+      "bron": "Business AM",
+      "url": "https://businessam.be/de-wever-zet-begrotingsgesprekken-voort-na-bouchez-en-vandenbroucke-is-vandaag-les-engages-aan-de-beurt"
+    },
+    {
       "datum": "2026-11-09",
       "tekst": "De premier zegt de Europese top in Dublin af. De begroting gaat voor, ook al gaat ze traag.",
       "bron": "VRT NWS",
@@ -123,6 +129,9 @@
     ],
     "tijdlijn": [
       {
+        "tekst": "Aujourd'hui, c'est au tour des Engagés, mercredi normalement au CD&V. Un par un, comme dans une salle d'attente."
+      },
+      {
         "tekst": "Le Premier ministre renonce au sommet européen de Dublin. Le budget passe d'abord, même s'il avance lentement."
       },
       {
@@ -180,6 +189,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Heute ist Les Engagés an der Reihe, am Mittwoch voraussichtlich CD&V. Einer nach dem anderen, wie im Wartezimmer."
+      },
       {
         "tekst": "Der Premier sagt den EU-Gipfel in Dublin ab. Der Haushalt geht vor, auch wenn er nur langsam vorankommt."
       },
