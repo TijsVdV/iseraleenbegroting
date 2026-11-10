@@ -1,7 +1,7 @@
 {
   "akkoord": false,
   "bedrag": "10 miljard",
-  "bijgewerkt": "2026-11-09",
+  "bijgewerkt": "2026-11-10",
   "eersteDeadline": "2026-07-21",
   "gemisteDeadlines": [
     {
@@ -25,8 +25,20 @@
   "lourdesReden": "Ontslag aangeboden en geweigerd, noodbegroting bevestigd. Lichtpuntje: er wordt weer gepraat.",
   "noodbegroting": "Noodbegroting voor begin 2027: bevestigd, tweede jaar op rij",
   "paleisbezoeken": 2,
-  "samenvatting": "De koning weigerde het ontslag van de regering en stuurde iedereen terug naar de onderhandelingstafel. Deze week wordt eerst apart gepraat; de grote vergadering is voor later.",
+  "samenvatting": "De premier praat deze week apart met elke vicepremier; wanneer het voltallige kernkabinet weer samenzit, is nog niet bekend. Op 16 november brengt hij opnieuw verslag uit bij de koning.",
   "tijdlijn": [
+    {
+      "datum": "2026-11-09",
+      "tekst": "De premier zegt de Europese top in Dublin af. De begroting gaat voor, ook al gaat ze traag.",
+      "bron": "VRT NWS",
+      "url": "https://vrt.be/vrtnws/nl/liveblog/de-wever-trekt-begrotingsonderhandelingen-straks-opnieuw-op-gang~1793247532380"
+    },
+    {
+      "datum": "2026-11-09",
+      "tekst": "Eerste aparte gesprekken in de Wetstraat 16. Elke vicepremier mag één iemand meebrengen; dinsdag volgen er meer.",
+      "bron": "VRT NWS",
+      "url": "https://vrt.be/vrtnws/nl/liveblog/de-wever-trekt-begrotingsonderhandelingen-straks-opnieuw-op-gang~1793247532380"
+    },
     {
       "bron": "VRT NWS",
       "datum": "2026-11-09",
@@ -89,7 +101,7 @@
   "weerbericht": "Muurvast, met kans op bilaterale buien",
   "fr": {
     "weerbericht": "Bloqué, avec risque d'averses bilatérales",
-    "samenvatting": "Le Roi a refusé la démission du gouvernement et renvoyé tout le monde à la table des négociations. Cette semaine, on se parle d'abord séparément ; la grande réunion, ce sera pour plus tard.",
+    "samenvatting": "Cette semaine, le Premier ministre voit chaque vice-Premier séparément ; on ne sait pas encore quand le kern au complet se réunira. Le 16 novembre, il fait à nouveau rapport au Roi.",
     "lourdesReden": "Démission présentée et refusée, budget d'urgence confirmé. Lueur d'espoir : on se reparle.",
     "noodbegroting": "Budget d'urgence pour début 2027 : confirmé, deuxième année de suite",
     "volgende": {
@@ -110,6 +122,12 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Le Premier ministre renonce au sommet européen de Dublin. Le budget passe d'abord, même s'il avance lentement."
+      },
+      {
+        "tekst": "Premiers entretiens séparés au 16 rue de la Loi. Chaque vice-Premier peut venir accompagné ; d'autres suivent mardi."
+      },
       {
         "tekst": "La concertation devait reprendre aujourd'hui, d'abord par des entretiens séparés avec chaque parti."
       },
@@ -141,7 +159,7 @@
   },
   "de": {
     "weerbericht": "Festgefahren, mit Aussicht auf bilaterale Schauer",
-    "samenvatting": "Der König lehnte den Rücktritt der Regierung ab und schickte alle zurück an den Verhandlungstisch. Diese Woche wird zuerst einzeln geredet; die große Sitzung kommt später.",
+    "samenvatting": "Der Premier spricht diese Woche einzeln mit jedem Vizepremier; wann das Kernkabinett wieder vollzählig tagt, ist noch offen. Am 16. November erstattet er dem König erneut Bericht.",
     "lourdesReden": "Rücktritt angeboten und abgelehnt, Nothaushalt bestätigt. Lichtblick: Es wird wieder geredet.",
     "noodbegroting": "Nothaushalt für Anfang 2027: bestätigt, zum zweiten Mal in Folge",
     "volgende": {
@@ -162,6 +180,12 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Der Premier sagt den EU-Gipfel in Dublin ab. Der Haushalt geht vor, auch wenn er nur langsam vorankommt."
+      },
+      {
+        "tekst": "Erste Einzelgespräche in der Rue de la Loi 16. Jeder Vizepremier darf eine Person mitbringen; dienstags geht es weiter."
+      },
       {
         "tekst": "Die Gespräche sollten heute wieder beginnen, zunächst einzeln mit jeder Partei."
       },
