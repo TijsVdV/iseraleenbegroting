@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="de-BE">
+<head>
+<meta charset="utf-8">
+<script>try{var t=localStorage.getItem("begroting-skin");if(t==="belgie"||t==="retro")document.documentElement.setAttribute("data-skin",t)}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Warum gibt es keinen föderalen Haushalt? Die belgische Haushaltskrise erklärt</title>
+<meta name="description" content="Was ist los mit dem belgischen Föderalhaushalt? Wie groß ist das Loch, warum muss es jetzt sein, warum werden sich fünf Parteien nicht einig, und was passiert ohne Einigung? Klar erklärt, mit Quellen.">
+<link rel="canonical" href="https://iseraleenbegroting.be/de/uitleg.html">
+<link rel="alternate" hreflang="nl" href="https://iseraleenbegroting.be/uitleg.html">
+<link rel="alternate" hreflang="fr" href="https://iseraleenbegroting.be/fr/uitleg.html">
+<link rel="alternate" hreflang="de" href="https://iseraleenbegroting.be/de/uitleg.html">
+<link rel="alternate" hreflang="x-default" href="https://iseraleenbegroting.be/uitleg.html">
+<meta property="og:site_name" content="Gibt es schon einen Haushalt?">
+<meta property="og:locale" content="de_BE">
+<meta property="og:title" content="Die belgische Haushaltskrise, klar erklärt">
+<meta property="og:description" content="Wie groß ist das Loch, warum jetzt, und warum werden sich fünf Parteien nicht einig? Mit Zahlen und Quellen.">
+<meta property="og:url" content="https://iseraleenbegroting.be/de/uitleg.html">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://iseraleenbegroting.be/og-de.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='1' height='2' fill='%231b1b1b'/%3E%3Crect x='1' width='1' height='2' fill='%23fdda24'/%3E%3Crect x='2' width='1' height='2' fill='%23ef3340'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css">
+<style>
+.tldr{font-size:clamp(17px,2.2vw,19px)}
+.tldr ul{margin:0;padding-left:1.2em}
+.tldr li{margin:4px 0}
+.toc ol{margin:0;padding-left:1.3em;columns:2;column-gap:28px}
+.toc li{break-inside:avoid;margin:3px 0}
+@media (max-width:560px){.toc ol{columns:1}}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:12px 0}
+.fig{background:var(--bg2);border:2px solid var(--line);border-top:8px solid var(--c);border-radius:calc(var(--radius) - 4px);padding:12px 14px;min-width:0}
+.fig b{display:block;font-family:var(--display);font-weight:700;font-size:clamp(26px,5vw,34px);line-height:1.1;white-space:nowrap}
+.fig span{display:block;font-size:14px;font-weight:700;color:var(--muted);line-height:1.35;margin-top:4px}
+.analogy{background:var(--bg2);border:2px dashed var(--line);border-radius:calc(var(--radius) - 6px);padding:12px 14px;margin:12px 0}
+.tbl{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:10px 0}
+table{border-collapse:collapse;width:100%;min-width:540px;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:2px solid var(--line)}
+th{font-family:var(--display);font-weight:600;font-size:15px}
+td:first-child{font-weight:800;white-space:nowrap}
+.tl{list-style:none;margin:0;padding:0}
+.tl li{display:grid;grid-template-columns:8.5em minmax(0,1fr);gap:2px 14px;padding:9px 0;border-bottom:2px dashed var(--line)}
+.tl li:last-child{border-bottom:0}
+.tl time{font-family:var(--display);font-weight:600;color:var(--t-rood)}
+@media (max-width:480px){.tl li{grid-template-columns:minmax(0,1fr)}}
+dl{margin:0}
+dt{font-weight:800;margin-top:10px}
+dd{margin:2px 0 0}
+.src{font-size:15px;padding-left:1.2em;margin:0}
+.src li{margin:4px 0;overflow-wrap:anywhere}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.note{font-size:14px;color:var(--muted)}
+:root[data-skin="retro"] .fig,:root[data-skin="retro"] .analogy{border-radius:0;background:#fff;border:2px inset #c0c0c0}
+:root[data-skin="retro"] .panel>p,:root[data-skin="retro"] .panel>ul,:root[data-skin="retro"] .panel>ol,:root[data-skin="retro"] .panel>dl,:root[data-skin="retro"] .panel>.tbl,:root[data-skin="retro"] .panel>.tl{background:#fff;border:2px inset #c0c0c0;padding:8px 10px}
+:root[data-skin="retro"] .panel>ul,:root[data-skin="retro"] .panel>ol{padding-left:2em}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <nav aria-label="Website"><a href="/de/">← Gibt es schon einen Haushalt?</a><a href="/de/uitleg.html" aria-current="page">Erklärung</a><a href="/de/spel.html">Selbst spielen</a></nav>
+    <span class="skins" role="group" aria-label="Design"><span>Design:</span><button type="button" data-skin="partijen">Parteien</button><button type="button" data-skin="belgie">Belgien</button><button type="button" data-skin="retro">2000</button></span>
+    <nav class="langs" aria-label="Sprache"><a href="/uitleg.html" hreflang="nl" lang="nl" title="Nederlands">NL</a><a href="/fr/uitleg.html" hreflang="fr" lang="fr" title="Français">FR</a><a href="/de/uitleg.html" hreflang="de" lang="de" title="Deutsch" aria-current="true">DE</a></nav>
+  </header>
+
+  <div>
+    <h1>Warum gibt es immer noch keinen föderalen Haushalt?</h1>
+    <p class="lead">Die belgische Haushaltskrise von Anfang an. Ohne Fachchinesisch, mit Zahlen und Quellen. Stand: 10. November 2026.</p>
+  </div>
+
+  <section class="panel c1 tldr" aria-labelledby="kort">
+    <h2 id="kort">In 30 Sekunden</h2>
+    <ul>
+      <li>Belgien gibt seit Jahren deutlich mehr aus, als es einnimmt. 2025 betrug das Defizit aller öffentlichen Haushalte zusammen rund <b>33 Milliarden Euro</b>.</li>
+      <li>Europa will, dass das Defizit bis 2029 unter <b>3 Prozent</b> der Wirtschaftsleistung sinkt. Belgien liegt weit darüber und steht unter verschärfter europäischer Aufsicht.</li>
+      <li>Die Föderalregierung (fünf Parteien) hat im Juli 2026 vereinbart, bis 2029 weitere <b>10 Milliarden Euro</b> zu finden. Über das <i>Wie</i> wird sie sich nicht einig.</li>
+      <li>Nach einer Reihe verpasster Fristen bot Premierminister De Wever am 2. November seinen Rücktritt an. Der König lehnte ab und schickte alle zurück an den Tisch. Am <b>16. November</b> muss der Premier erneut Bericht erstatten.</li>
+      <li>Inzwischen ist bestätigt, dass 2027 mit einem <b>Nothaushalt</b> (vorläufige Zwölftel) beginnt, zum zweiten Mal in Folge.</li>
+    </ul>
+  </section>
+
+  <nav class="panel c2 toc" aria-labelledby="inhoud">
+    <h2 id="inhoud">Inhalt</h2>
+    <ol>
+      <li><a href="#wat">Was ist eigentlich ein Haushalt?</a></li>
+      <li><a href="#gat">Wie groß ist das Loch?</a></li>
+      <li><a href="#waarom-nu">Warum muss es jetzt sein?</a></li>
+      <li><a href="#moeilijk">Warum ist es so schwierig?</a></li>
+      <li><a href="#knelpunten">Die Knackpunkte im Einzelnen</a></li>
+      <li><a href="#tijdlijn">Wie es so weit kam</a></li>
+      <li><a href="#zonder">Was, wenn es keine Einigung gibt?</a></li>
+      <li><a href="#jij">Was bedeutet das für Sie?</a></li>
+      <li><a href="#woorden">Glossar</a></li>
+      <li><a href="#bronnen">Quellen</a></li>
+    </ol>
+  </nav>
+
+  <section class="panel c3" id="wat" aria-labelledby="h-wat">
+    <h2 id="h-wat">1. Was ist eigentlich ein Haushalt?</h2>
+    <p>Ein Haushalt ist der Plan, in dem der Staat festlegt, wie viel Geld er im nächsten Jahr ausgibt und woher dieses Geld kommt. Auf der einen Seite stehen die <b>Ausgaben</b>: Renten, Gesundheitsversorgung, Arbeitslosengeld, Polizei, Justiz, Verteidigung, die Bahn und die Zinsen auf die Staatsschuld. Auf der anderen Seite die <b>Einnahmen</b>: vor allem Steuern (auf Löhne, auf Gewinne, die Mehrwertsteuer, Verbrauchsteuern) und Sozialbeiträge.</p>
+    <p>Gibt der Staat mehr aus, als er einnimmt, entsteht ein <b>Defizit</b>. Dieses Defizit wird geliehen, und all das geliehene Geld zusammen ist die <b>Staatsschuld</b>. Auf diese Schuld zahlt man jedes Jahr Zinsen, und die Zinsen sind selbst wieder eine Ausgabe.</p>
+    <p>In Belgien gibt es mehrere Haushalte: Der Föderalstaat, die Regionen (Flandern, Wallonien, Brüssel) und die Gemeinschaften, darunter die Deutschsprachige Gemeinschaft, haben jeweils ihren eigenen. Diese Seite behandelt den <b>föderalen</b> Haushalt. Er ist der größte, denn er umfasst auch die soziale Sicherheit und die Renten.</p>
+    <p>Die Regierung stellt den Haushalt auf, aber die <b>Kammer</b> (das föderale Parlament) muss ihn genehmigen. Erst dann darf die Regierung das Geld wirklich wie geplant ausgeben. Normalerweise geschieht das vor dem 1. Januar.</p>
+    <div class="analogy"><b>Vergleichen Sie es mit einem Privathaushalt.</b> Sie verdienen 2.000 Euro im Monat, geben aber 2.200 aus. Die Differenz landet jeden Monat auf Ihrer Kreditkarte. Nach ein paar Jahren geht ein guter Teil Ihres Lohns für die Zinsen drauf, und diese Zinsen machen das Loch jedes Jahr größer. Entweder Sie verdienen mehr, oder Sie geben weniger aus, oder beides. In der Rue de la Loi wird darüber gestritten, welche der drei Varianten es sein soll, und für wen.</div>
+  </section>
+
+  <section class="panel c4" id="gat" aria-labelledby="h-gat">
+    <h2 id="h-gat">2. Wie groß ist das Loch?</h2>
+    <p>Kurz gesagt: groß, und es wächst, wenn sich nichts ändert.</p>
+    <div class="figs">
+      <div class="fig" style="--c:var(--p-rood)"><b>33,2 Mrd. €</b><span>Defizit aller belgischen öffentlichen Haushalte 2025 (5,2 % des BIP)</span></div>
+      <div class="fig" style="--c:var(--p-blauw)"><b>±108 %</b><span>Staatsschuld, ausgedrückt als Anteil an der gesamten Wirtschaft</span></div>
+      <div class="fig" style="--c:var(--p-groen)"><b>14,3 Mrd. €</b><span>Zinsen auf die Schuld 2025, auf dem Weg zu rund 20 Mrd. € im Jahr 2029</span></div>
+      <div class="fig" style="--c:var(--p-oranje)"><b>3 %</b><span>das höchste Defizit, das die europäischen Regeln erlauben</span></div>
+    </div>
+    <p>Diese Zahlen stammen von der Nationalbank und dem Monitoringkomitee, einer Gruppe hoher Beamter, die den Haushalt ständig verfolgt. Laut Monitoringkomitee und Planbüro steigt das Defizit bei unveränderter Politik auf rund 5,7 Prozent im Jahr 2029 und auf über 6 Prozent im Jahr 2031. Die Schuld würde dann 2029 auf etwa 117 Prozent des BIP steigen.</p>
+    <p>Für den Föderalstaat allein schätzte das Monitoringkomitee im März 2026 das Defizit für dieses Jahr auf 25,1 Milliarden Euro, also 3,8 Prozent des BIP. Ohne neue Maßnahmen würde es bis 2029 auf etwa 4,9 Prozent steigen.</p>
+    <p>Die Europäische Kommission hatte bereits vorhergesagt, dass Belgien bei unveränderter Politik das größte Haushaltsdefizit der gesamten Eurozone haben würde.</p>
+    <h3>Warum wächst das Defizit von selbst?</h3>
+    <p>Drei große Ursachen tauchen in fast jeder Analyse auf:</p>
+    <ul>
+      <li><b>Alterung.</b> Mehr Menschen gehen in Rente, und die Menschen leben länger. Renten und Pflege kosten jedes Jahr mehr.</li>
+      <li><b>Zinsen.</b> Die Zinsen auf Staatsanleihen sind gestiegen. Alte, günstige Kredite werden durch teurere ersetzt. Die Ratingagentur Moody's hat die Kreditwürdigkeit Belgiens im April 2026 herabgestuft, was das Leihen weiter verteuern kann.</li>
+      <li><b>Neue Ausgaben.</b> Wie andere NATO-Länder muss Belgien mehr für Verteidigung ausgeben.</li>
+    </ul>
+    <p class="note">BIP = Bruttoinlandsprodukt, der Gesamtwert von allem, was die belgische Wirtschaft in einem Jahr produziert. Rund 650 Milliarden Euro. Defizite und Schulden werden als Prozentsatz davon angegeben, damit man Länder vergleichen kann.</p>
+  </section>
+
+  <section class="panel c5" id="waarom-nu" aria-labelledby="h-nu">
+    <h2 id="h-nu">3. Warum muss es jetzt sein?</h2>
+    <p><b>Europa.</b> Die EU-Länder haben vereinbart, dass ihr Defizit nicht über 3 Prozent des BIP liegen darf und ihre Schuld idealerweise nicht über 60 Prozent. Belgien überschreitet beides. Deshalb eröffnete die EU im Juli 2024 ein <b>Defizitverfahren</b> gegen Belgien, unter anderem zusammen mit Frankreich und Italien. Das bedeutet verschärfte Aufsicht: Belgien muss einen Plan vorlegen und jedes Jahr zeigen, dass es vorankommt.</p>
+    <p>2025 durfte Belgien die Sanierung auf <b>sieben Jahre</b> statt auf vier verteilen, unter der Bedingung, dass es Reformen umsetzt. Das Defizit muss bis 2029 unter 3 Prozent liegen. Jedes Jahr muss Belgien bis zum <b>15. Oktober</b> seinen Haushaltsentwurf für das Folgejahr bei der Europäischen Kommission einreichen. Diese Frist wurde in diesem Jahr verpasst.</p>
+    <p><b>Der Zinsschneeball.</b> Je höher Schuld und Zinsen, desto mehr Geld fließt in Zinsen, desto größer das Defizit, desto höher die Schuld. Die Regierung will diese Spirale durchbrechen, bevor sie um 2030 richtig in Fahrt kommt.</p>
+    <p><b>Die Finanzmärkte.</b> Belgien leiht sich jedes Jahr Dutzende Milliarden. Verlieren Anleger und Ratingagenturen das Vertrauen, verlangen sie höhere Zinsen. Die Ratingagentur S&amp;P warnte im Oktober, dass die politische Blockade die Verabschiedung des Haushalts 2027 verzögern könnte.</p>
+  </section>
+
+  <section class="panel c6" id="moeilijk" aria-labelledby="h-moeilijk">
+    <h2 id="h-moeilijk">4. Warum ist es so schwierig?</h2>
+    <p>Die Föderalregierung besteht aus fünf Parteien, zusammen die <b>Arizona-Koalition</b> (nach den Farben auf der Flagge dieses US-Bundesstaats): <b>N-VA</b>, <b>MR</b>, <b>Les Engagés</b>, <b>Vooruit</b> und <b>CD&amp;V</b>. Drei niederländischsprachige und zwei französischsprachige Parteien, von liberal bis sozialdemokratisch, angeführt von Premierminister Bart De Wever (N-VA).</p>
+    <p>10 Milliarden Euro findet man nicht mit kleinen Eingriffen. Man landet immer bei den großen Posten: <b>Steuern</b> (wer zahlt mehr?), die <b>soziale Sicherheit</b> (Renten, Leistungen, Pflege) oder das Zurücknehmen <b>früher versprochener Entlastungen</b>. Und jede Partei hat ihren Wählern Versprechen gemacht, die sie nicht einfach brechen will.</p>
+    <p>Daraus entsteht ein klassisches Problem: Jede Maßnahme, die genug einbringt, berührt die rote Linie von mindestens einem Partner. Die eine Partei will keine höheren Steuern, die andere will nicht, dass Löhne, Leistungen oder die Pflege die Zeche zahlen, wieder eine andere will eine bereits vereinbarte Entlastung bei der Arbeit nicht aufgeben. Politikjournalisten beschrieben grob zwei Blöcke: CD&amp;V, Les Engagés und Vooruit auf der einen Seite, MR und N-VA auf der anderen, auch wenn es nicht ganz so schwarz-weiß ist.</p>
+    <p>Hinzu kommt, dass eine Einigung in Belgien innerhalb der Regierung einstimmig sein muss. Eine Partei, die „nein“ sagt, reicht, um alles zu blockieren. Und jede Partei weiß, dass die anderen vier das auch wissen.</p>
+  </section>
+
+  <section class="panel c7" id="knelpunten" aria-labelledby="h-knel">
+    <h2 id="h-knel">5. Die Knackpunkte im Einzelnen</h2>
+    <p>Es folgt eine Zusammenfassung dessen, was die Medien in den vergangenen Monaten über die Standpunkte berichtet haben. Standpunkte verschieben sich während Verhandlungen ständig; sehen Sie dies als Momentaufnahme.</p>
+    <div class="tbl">
+    <table>
+      <thead><tr><th scope="col">Thema</th><th scope="col">Was auf dem Tisch liegt</th><th scope="col">Wo es hakt</th></tr></thead>
+      <tbody>
+        <tr><td>Mehrwertsteuer</td><td>Den normalen MwSt-Satz von 21 auf 22 Prozent anheben und eventuell die Sätze von 6 und 12 Prozent zu einem Satz von 9 Prozent zusammenlegen.</td><td>Die N-VA hat das vorgeschlagen und es eine faire Steuer genannt, die alle zahlen. Die MR wehrt sich entschieden gegen eine höhere Mehrwertsteuer, unter anderem weil viele Belgier nahe einer Grenze wohnen und dann im Ausland einkaufen würden. Vooruit lehnt einen höheren 6-Prozent-Satz ab. Mitte Oktober verschwand die allgemeine MwSt-Reform aus dem Vorschlag des Premiers.</td></tr>
+        <tr><td>Gesundheitswesen</td><td>Rund 2 Milliarden Euro in der Gesundheitsversorgung sparen.</td><td>Les Engagés und Vooruit sind gegen diese Einsparungen.</td></tr>
+        <tr><td>Entlastung der Arbeit</td><td>Eine bereits vereinbarte Senkung der Steuern auf Arbeit kostet netto rund 2 Milliarden. Sie zurückzunehmen, würde Geld bringen.</td><td>N-VA und CD&amp;V lehnen das ab. Vooruit und in geringerem Maß die MR schlugen vor, sie (teilweise) zu streichen.</td></tr>
+        <tr><td>Asyl und Migration</td><td>Einsparungen bei Asyl und Migration, vorgeschlagen von der N-VA.</td><td>Les Engagés und Vooruit lehnen die vorgeschlagenen Maßnahmen ab.</td></tr>
+        <tr><td>Wer trägt die Last?</td><td>Mehr Beiträge von Menschen mit großem Vermögen, oder vor allem Einsparungen bei den Ausgaben.</td><td>Die CD&amp;V betonte, dass die arbeitende Mittelschicht nicht als einzige zahlen darf. Die MR will Reformen statt Steuererhöhungen.</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Mitte Oktober schlug Premierminister De Wever ein kleineres Paket nur für 2027 vor, von rund 3 bis 4 Milliarden Euro, ohne die umstrittene MwSt-Reform. Auch das führte vor der Frist Anfang November nicht zu einer Einigung.</p>
+    <p class="note">Die Standpunkte oben sind aus der Berichterstattung unter anderem von VRT NWS, The Brussels Times und Brussels Signal zusammengefasst (siehe <a href="#bronnen">Quellen</a>). Jede Partei erklärt selbst, warum sie ihren Standpunkt einnimmt; diese Seite bezieht dazu keine Position.</p>
+  </section>
+
+  <section class="panel c8" id="tijdlijn" aria-labelledby="h-tl">
+    <h2 id="h-tl">6. Wie es so weit kam</h2>
+    <ul class="tl">
+      <li><time>Juli 2024</time><span>Die EU eröffnet ein Defizitverfahren gegen Belgien.</span></li>
+      <li><time>Anfang 2025</time><span>Nach den Wahlen vom Juni 2024 dauert die Regierungsbildung lange. 2025 beginnt mit vorläufigen Zwölfteln. Anfang Februar tritt die Regierung De Wever ihr Amt an.</span></li>
+      <li><time>2025</time><span>Europa genehmigt den belgischen Plan: sieben Jahre, um das Defizit unter 3 Prozent zu bringen.</span></li>
+      <li><time>Nov. 2025</time><span>Nach wochenlangen Verhandlungen und einem Besuch des Premiers beim König, bei dem er um 50 zusätzliche Tage bat, gibt es eine Mehrjahreseinigung über rund 9,2 Milliarden Euro, ohne allgemeine MwSt-Erhöhung. Der Haushalt 2026 wird erst im März 2026 von der Kammer verabschiedet, also beginnt auch 2026 mit vorläufigen Zwölfteln.</span></li>
+      <li><time>März 2026</time><span>Das Monitoringkomitee warnt, dass das Defizit bei unveränderter Politik wieder steigt.</span></li>
+      <li><time>Juli 2026</time><span>Die Regierung vereinbart, bis 2029 weitere 10 Milliarden Euro zu finden. Eine erste Frist am 21. Juli wird kurz darauf aufgegeben.</span></li>
+      <li><time>Ende Sept. 2026</time><span>Die Verhandlungen im Kernkabinett beginnen.</span></li>
+      <li><time>13. Okt. 2026</time><span>Die Regierungserklärung des Premiers in der Kammer wird abgesagt: Es gibt noch keine Einigung, die man vorlesen könnte.</span></li>
+      <li><time>15. Okt. 2026</time><span>Die Frist zur Einreichung des Haushaltsentwurfs in Europa verstreicht. Der Premier schlägt ein kleineres Paket für 2027 vor.</span></li>
+      <li><time>1. Nov. 2026</time><span>Nächtliche Beratungen bis 1 Uhr. Keine Einigung.</span></li>
+      <li><time>2. Nov. 2026</time><span>Premierminister De Wever bietet dem König den Rücktritt seiner Regierung an. Der König hält die Entscheidung in der Schwebe und spricht mit den Parteivorsitzenden.</span></li>
+      <li><time>5. Nov. 2026</time><span>Der Premier bestätigt in der Kammer, dass 2027 mit einem Nothaushalt beginnt.</span></li>
+      <li><time>6. Nov. 2026</time><span>Der König lehnt den Rücktritt ab und bittet darum, die Verhandlungen sofort wieder aufzunehmen. Alle Parteivorsitzenden bestätigen, dass sie eine Einigung wollen.</span></li>
+      <li><time>9. Nov. 2026</time><span>Die Gespräche beginnen wieder, zunächst getrennt mit jeder Partei. Vizepremiers dürfen eine zusätzliche Person mitbringen.</span></li>
+      <li><time>16. Nov. 2026</time><span>Der Premier erstattet dem König erneut Bericht.</span></li>
+    </ul>
+    <p class="note" style="margin-top:10px">Den aktuellen Stand finden Sie immer auf der <a href="./">Startseite</a>, die dreimal täglich aktualisiert wird.</p>
+  </section>
+
+  <section class="panel c9" id="zonder" aria-labelledby="h-zonder">
+    <h2 id="h-zonder">7. Was, wenn es keine Einigung gibt?</h2>
+    <h3>Vorläufige Zwölftel (der „Nothaushalt“)</h3>
+    <p>Gibt es am 1. Januar keinen genehmigten Haushalt, steht das Land nicht still. Die Kammer beschließt dann <b>vorläufige Zwölftel</b>: Die Regierung darf pro Monat ungefähr ein Zwölftel dessen ausgeben, was im Vorjahr vorgesehen war. Beamtengehälter, Renten und Leistungen werden normal ausgezahlt.</p>
+    <p>Der Nachteil: <b>Neue Politik kann nicht starten</b>, und die Einsparungen, die nötig sind, um das Defizit zu verringern, auch nicht. Es ist eine Art Autopilot. Für die Finanzmärkte und für Europa ist es außerdem ein Signal, dass die Politik den Haushalt nicht im Griff hat.</p>
+    <h3>Andere Szenarien</h3>
+    <ul>
+      <li><b>Doch noch eine Einigung</b>, später als geplant. Das ist, was alle Parteien beim König angegeben haben zu wollen. Das Parlament muss sie dann noch verabschieden, was Wochen dauert.</li>
+      <li><b>Eine kleine Einigung</b>: zuerst ein Teil des Betrags für 2027, der Rest später. Das lag schon Mitte Oktober auf dem Tisch.</li>
+      <li><b>Eine Schuldenbremse</b>: ein vorgeschlagener Mechanismus, um die Ausgaben einzufrieren, falls es bis Ende Dezember keine Einigung über die Jahre bis 2029 gibt. Er müsste über das Parlament aktiviert werden.</li>
+      <li><b>Die Regierung fällt.</b> Der König kann einen Rücktritt auch annehmen. Dann folgt eine Phase der laufenden Geschäfte und möglicherweise vorgezogene Neuwahlen. Niemand sagt, dass er das will, aber das Damoklesschwert bleibt.</li>
+    </ul>
+  </section>
+
+  <section class="panel c1" id="jij" aria-labelledby="h-jij">
+    <h2 id="h-jij">8. Was bedeutet das für Sie?</h2>
+    <p><b>Kurzfristig merken Sie wenig.</b> Ihr Lohn, Ihre Rente oder Ihre Leistung kommen weiterhin normal, auch mit vorläufigen Zwölfteln. Es schließt kein Schalter.</p>
+    <p><b>Langfristig schon.</b> Eine Einigung über 10 Milliarden bedeutet in jedem Fall, dass jemand mehr zahlt oder weniger bekommt. Über Steuern, über die soziale Sicherheit, über weniger öffentliche Dienste oder eine Mischung. Welche Mischung es wird, genau darum geht es in den Verhandlungen.</p>
+    <p><b>Und wenn nichts passiert?</b> Dann steigt die Schuld weiter, ein immer größerer Teil des Steuergelds fließt in Zinsen statt in Pflege, Bildung oder Straßen, und Europa macht weiter Druck. Aufschieben macht die Rechnung meist größer, nicht kleiner.</p>
+  </section>
+
+  <section class="panel c2" id="woorden" aria-labelledby="h-w">
+    <h2 id="h-w">9. Glossar</h2>
+    <dl>
+      <dt>BIP</dt><dd>Bruttoinlandsprodukt: der Wert von allem, was die Wirtschaft in einem Jahr produziert. Defizit und Schuld werden als Prozentsatz des BIP angegeben.</dd>
+      <dt>Haushaltsdefizit</dt><dd>Was der Staat in einem Jahr mehr ausgibt, als er einnimmt.</dd>
+      <dt>Staatsschuld</dt><dd>Alle früheren Defizite zusammen: das Geld, das der Staat insgesamt geliehen hat.</dd>
+      <dt>Kernkabinett (der „Kern“)</dt><dd>Der Premierminister und die Vizepremiers, einer pro Regierungspartei. Dort werden die großen Entscheidungen getroffen.</dd>
+      <dt>Regierungserklärung</dt><dd>Die jährliche Rede des Premiers in der Kammer, in der er die Pläne und den Haushalt für das nächste Jahr vorstellt. Üblicherweise am zweiten Dienstag im Oktober.</dd>
+      <dt>Vorläufige Zwölftel</dt><dd>Notregelung ohne genehmigten Haushalt: Pro Monat darf ungefähr ein Zwölftel des vorherigen Budgets ausgegeben werden.</dd>
+      <dt>Monitoringkomitee</dt><dd>Eine Gruppe hoher Beamter, die den föderalen Haushalt durchrechnet und verfolgt.</dd>
+      <dt>Planbüro</dt><dd>Eine unabhängige öffentliche Einrichtung, die nach vorne schaut: Wie entwickeln sich Wirtschaft und Haushalt, wenn sich die Politik nicht ändert?</dd>
+      <dt>Defizitverfahren</dt><dd>Verschärfte europäische Aufsicht über Länder mit zu hohem Defizit.</dd>
+      <dt>Indexierung</dt><dd>In Belgien steigen Löhne und Leistungen automatisch mit den Preisen. Ein „Indexsprung“ lässt eine solche Erhöhung einmal ausfallen.</dd>
+      <dt>Entlastung der Arbeit</dt><dd>Eine Senkung der Steuern oder Beiträge auf Arbeit, damit sich Arbeit mehr lohnt oder für Arbeitgeber günstiger wird.</dd>
+      <dt>Arizona</dt><dd>Spitzname der aktuellen Föderalkoalition, nach der Flagge des US-Bundesstaats, deren Farben denen der fünf Parteien ähneln.</dd>
+    </dl>
+  </section>
+
+  <section class="panel c5" aria-labelledby="h-zelf">
+    <h2 id="h-zelf">Sie glauben, es geht einfacher?</h2>
+    <p>Probieren Sie es selbst. Im Haushaltsspiel suchen Sie die 10 Milliarden, mit fünf Verhandlern, die jeweils ihre eigene rote Linie haben. Spoiler: Es ist weniger einfach, als es aussieht.</p>
+    <div class="cta"><a class="btn" href="spel.html">Das Haushaltsspiel spielen</a><a class="btn ghost" href="./">Zurück zum aktuellen Stand</a></div>
+  </section>
+
+  <section class="panel c3" id="bronnen" aria-labelledby="h-bron">
+    <h2 id="h-bron">10. Quellen</h2>
+    <p class="note">Die meisten Quellen sind auf Niederländisch oder Englisch.</p>
+    <ol class="src">
+      <li><a href="https://brusselssignal.eu/2026/10/belgium-settles-for-a-one-year-budget-as-full-agreement-stays-out-of-reach/" rel="noopener">Brussels Signal, 15. Oktober 2026: Belgium settles for a one-year budget as full agreement stays out of reach</a> (Zahlen von Nationalbank, Monitoringkomitee, Planbüro, Zinsen, Rating, kleineres Paket, Schuldenbremse)</li>
+      <li><a href="https://brusselstimes.com/belgium/2346711/belgiums-e10-billion-budget-talk-what-happened-in-the-weekend/" rel="noopener">The Brussels Times, 6. Oktober 2026: Belgium's €10 billion budget talk, what happened in the weekend?</a> (Maßnahmen und Standpunkte)</li>
+      <li><a href="https://www.vrt.be/vrtnws/nl/2026/03/23/monitoringcomite-begroting-vincent-van-peteghem/" rel="noopener">VRT NWS, 23. März 2026: Bericht des Monitoringkomitees</a></li>
+      <li><a href="https://www.vrt.be/vrtnws/nl/2026/02/25/btw-hervorming-voorstel-van-peel-mr-vooruit/" rel="noopener">VRT NWS, 25. Februar 2026: die Diskussion über die MwSt-Reform</a></li>
+      <li><a href="https://www.vrt.be/vrtnws/nl/2026/09/14/begrotingsvoorstellen-wit-kaftje-de-wever/" rel="noopener">VRT NWS, 14. September 2026: die Haushaltsvorschläge</a></li>
+      <li><a href="https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-premier-de-wever-om-begrotingsgesprekken-te-hervat~1793247532380/" rel="noopener">VRT-NWS-Liveblog, November 2026: König lehnt Rücktritt ab, Bericht am 16. November</a></li>
+      <li><a href="https://www.vrt.be/vrtnws/nl/liveblog/ratingbureau-sp-behoudt-kredietscore-van-belgie-maar-verwacht-~1790599460224/" rel="noopener">VRT-NWS-Liveblog, Oktober 2026: S&amp;P, Haushalt 2026 erst im März verabschiedet</a></li>
+      <li><a href="https://www.vrt.be/vrtnws/nl/2025/11/17/europa-economische-prognoses-begroting-regering/" rel="noopener">VRT NWS, 17. November 2025: Europäische Kommission sagt größtes Defizit der Eurozone voraus</a></li>
+      <li><a href="https://www.vrt.be/vrtnws/nl/2025/05/21/europese-commissie-geeft-belgische-begroting-groen-licht-hervor/" rel="noopener">VRT NWS, 21. Mai 2025: Belgien darf die Sanierung über 7 Jahre verteilen</a></li>
+      <li><a href="https://www.vrt.be/vrtnws/nl/2025/11/24/vragen-en-antwoorden-over-begroting-loon-uitkeringen-pensioenen/" rel="noopener">VRT NWS, 24. November 2025: die Mehrjahreseinigung über 9,2 Milliarden</a></li>
+      <li><a href="https://blog.forumforthefuture.be/nl/article/buitensporigtekortprocedures-tegen-7-lidstaten-inbegrepen-belgie-in-concreto-/24109" rel="noopener">Forum for the Future: Defizitverfahren gegen sieben Mitgliedstaaten, darunter Belgien</a></li>
+    </ol>
+    <p class="note" style="margin-top:12px">Sehen Sie einen Fehler oder ist etwas veraltet? Melden Sie es über <a href="https://github.com/TijsVdV/iseraleenbegroting/issues" rel="noopener">GitHub</a>. Im Zweifel hat die Quelle recht.</p>
+  </section>
+
+  <footer class="foot">
+    <div class="band" aria-hidden="true"></div>
+    <p>Diese Erklärung soll helfen, den Prozess zu verstehen, nicht Partei zu ergreifen. Der Rest der Website ist Satire; diese Seite versucht, so sachlich wie möglich zu sein.</p>
+    <p><a href="/de/">Startseite</a> · <a href="/de/spel.html">Haushaltsspiel</a> · <a href="/de/privacy.html">Datenschutz</a></p>
+  </footer>
+</div>
+<script src="/site.js"></script>
+</body>
+</html>

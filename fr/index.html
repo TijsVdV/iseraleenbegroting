@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+<meta charset="utf-8">
+<script>try{var t=localStorage.getItem("begroting-skin");if(t==="belgie"||t==="retro")document.documentElement.setAttribute("data-skin",t)}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Y a-t-il déjà un budget ? Le budget fédéral belge, suivi en direct</title>
+<meta name="description" content="Y a-t-il déjà un budget fédéral en Belgique ? La réponse en un coup d&#x27;œil : l&#x27;état des négociations budgétaires, les échéances manquées, le budget d&#x27;urgence et les dernières nouvelles. Satire, mise à jour trois fois par jour.">
+<link rel="canonical" href="https://iseraleenbegroting.be/fr/">
+<link rel="alternate" hreflang="nl" href="https://iseraleenbegroting.be/">
+<link rel="alternate" hreflang="fr" href="https://iseraleenbegroting.be/fr/">
+<link rel="alternate" hreflang="de" href="https://iseraleenbegroting.be/de/">
+<link rel="alternate" hreflang="x-default" href="https://iseraleenbegroting.be/">
+<meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141821" media="(prefers-color-scheme: dark)">
+<meta property="og:site_name" content="Y a-t-il déjà un budget ?">
+<meta property="og:locale" content="fr_BE">
+<meta property="og:title" content="Y a-t-il déjà un budget ? Toujours NON.">
+<meta property="og:description" content="Le service de veille officieux du budget fédéral belge. Satire basée sur l&#x27;actualité réelle, mise à jour trois fois par jour.">
+<meta property="og:url" content="https://iseraleenbegroting.be/fr/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://iseraleenbegroting.be/og-fr.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Y a-t-il déjà un budget ? NON.">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebSite", "name": "Y a-t-il déjà un budget ?", "alternateName": "Veille budgétaire", "url": "https://iseraleenbegroting.be/fr/", "inLanguage": "fr-BE", "description": "Suivi satirique des négociations sur le budget fédéral belge, basé sur l'actualité réelle."}
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='1' height='2' fill='%231b1b1b'/%3E%3Crect x='1' width='1' height='2' fill='%23fdda24'/%3E%3Crect x='2' width='1' height='2' fill='%23ef3340'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* layout: the Wetstraat in party colours. A striped party band on top, verdict in multicoloured letters,
+     a flagpole on a hill, then cards that each carry a different party colour. No colour gets more room than another. */
+  color-scheme:light;
+  --bg:#f6f3ec; --bg2:#fffdf8; --ink:#1b2230; --muted:#56606f; --card:#ffffff; --line:#e3ddd0;
+  --hill:#9fd3a8; --hill2:#7cbf8b; --pole:#8a8f99;
+  /* party palette: decorative fills only, never small text */
+  --p-geel:#ffd400; --p-rood:#e2001a; --p-blauw:#0057b8; --p-oranje:#ff7a00;
+  --p-groen:#3fae49; --p-turkoois:#00b5a5; --p-marine:#0b3a6e; --p-bordeaux:#a3001b; --p-magenta:#d4007a;
+  /* darker twins, safe for large text on light backgrounds */
+  --t-rood:#c40017; --t-blauw:#0050a8; --t-groen:#23802d; --t-oranje:#c25700; --t-turkoois:#007f74; --t-magenta:#b0006a; --t-marine:#0b3a6e; --t-bordeaux:#a3001b;
+  --stripe:linear-gradient(90deg,var(--p-geel) 0 11.11%,var(--p-rood) 0 22.22%,var(--p-blauw) 0 33.33%,var(--p-oranje) 0 44.44%,var(--p-groen) 0 55.55%,var(--p-turkoois) 0 66.66%,var(--p-marine) 0 77.77%,var(--p-bordeaux) 0 88.88%,var(--p-magenta) 0);
+  --display:"Fredoka","Trebuchet MS",system-ui,sans-serif;
+  --body:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    color-scheme:dark;
+    --bg:#141821; --bg2:#1a1f2b; --ink:#eef1f6; --muted:#a7b0bf; --card:#1f2533; --line:#323a4b;
+    --hill:#2f6b45; --hill2:#255838; --pole:#a9b0bc; --flagedge:rgba(255,255,255,.55);
+    --p-marine:#3d7bd1; --p-bordeaux:#d6334c;
+    --t-rood:#ff5a6a; --t-blauw:#6aa8ff; --t-groen:#6fd47a; --t-oranje:#ffa04d; --t-turkoois:#3fd6c6; --t-magenta:#ff5cb4; --t-marine:#8fb6ff; --t-bordeaux:#ff7a8c;
+  }
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{background:linear-gradient(var(--bg),var(--bg2) 520px) var(--bg2);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;overflow-x:hidden}
+body::before{content:"";display:block;height:10px;background:var(--stripe)}
+.wrap{--gap:24px;max-width:900px;margin:0 auto;padding:16px max(16px,env(safe-area-inset-right)) 56px max(16px,env(safe-area-inset-left));display:flex;flex-direction:column;gap:var(--gap)}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--t-blauw);outline-offset:2px;border-radius:4px}
+.top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;font-size:14px;font-weight:800;color:var(--muted)}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:10px 24px;align-items:end}
+.q{font-family:var(--display);font-weight:600;font-size:clamp(24px,4.6vw,36px);line-height:1.15;margin:0;text-wrap:balance}
+.verdict{font-family:var(--display);font-weight:700;font-size:clamp(88px,24vw,210px);line-height:.95;margin:0;letter-spacing:-.01em;white-space:nowrap}
+.verdict span:nth-child(1){color:var(--t-rood)}
+.verdict span:nth-child(2){color:var(--t-blauw)}
+.verdict span:nth-child(3){color:var(--t-groen)}
+.verdict span:nth-child(4){color:var(--t-oranje)}
+.verdict span:nth-child(5){color:var(--p-geel);-webkit-text-stroke:3px var(--ink);paint-order:stroke fill}
+.weer{display:inline-flex;flex-direction:column;gap:2px;background:var(--card);border:2px solid var(--line);border-left:8px solid var(--p-turkoois);border-radius:16px;padding:10px 16px;margin:12px 0 0;font-family:var(--display);font-weight:600;font-size:clamp(18px,2.8vw,22px);line-height:1.25;max-width:100%}
+.weer small{font-family:var(--body);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.sam{margin:12px 0 0;max-width:56ch}
+.scene{position:relative;height:300px;justify-self:center;width:250px;overflow:hidden}
+.cloud{position:absolute;background:var(--card);border-radius:999px;opacity:.95}
+.cloud::before,.cloud::after{content:"";position:absolute;background:inherit;border-radius:50%}
+.c1{width:86px;height:26px;top:26px;left:6px}
+.c1::before{width:36px;height:36px;left:14px;top:-18px}.c1::after{width:28px;height:28px;left:44px;top:-12px}
+.c2{width:64px;height:20px;top:92px;right:6px}
+.c2::before{width:26px;height:26px;left:10px;top:-13px}.c2::after{width:20px;height:20px;left:32px;top:-8px}
+.hillb{position:absolute;left:0;right:0;bottom:0;height:70px;background:var(--hill2);border-radius:50% 50% 0 0/100% 100% 0 0}
+.hillf{position:absolute;left:30px;right:0;bottom:0;height:48px;background:var(--hill);border-radius:50% 50% 0 0/100% 100% 0 0}
+.pole{position:absolute;left:78px;bottom:40px;width:7px;height:236px;background:var(--pole);border-radius:4px}
+.pole::before{content:"";position:absolute;left:-4px;top:-12px;width:15px;height:15px;border-radius:50%;background:var(--pole)}
+.flag{position:absolute;left:7px;top:8px;display:flex;width:96px;height:60px;transition:top 1.2s ease;filter:drop-shadow(0 0 1px var(--flagedge,transparent))}
+.flag i{flex:1;height:100%;display:block}
+.flag i:nth-child(-n+4){background:#1b1b1b}
+.flag i:nth-child(n+5):nth-child(-n+8){background:#fdda24}
+.flag i:nth-child(n+9){background:#ef3340}
+.flag i:first-child{border-radius:2px 0 0 2px}.flag i:last-child{border-radius:0 3px 3px 0}
+@keyframes wave{0%,100%{transform:translateY(calc(var(--a)*-1))}50%{transform:translateY(var(--a))}}
+@media (prefers-reduced-motion:no-preference){
+  .flag i{animation:wave 1.5s ease-in-out infinite;animation-delay:calc(var(--n)*-.13s);--a:calc(var(--n)*.55px + 1px)}
+  .c1{animation:drift 26s linear infinite alternate}.c2{animation:drift 34s linear infinite alternate-reverse}
+}
+@keyframes drift{from{transform:translateX(-6px)}to{transform:translateX(14px)}}
+.flagcap{position:absolute;left:0;right:0;bottom:6px;text-align:center;font-weight:800;font-size:13px;color:#14324a}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.stat{background:var(--card);border:2px solid var(--line);border-top:10px solid var(--c,var(--p-blauw));border-radius:18px;padding:14px 18px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.stat:nth-child(4n+1){--c:var(--p-rood)}.stat:nth-child(4n+2){--c:var(--p-geel)}.stat:nth-child(4n+3){--c:var(--p-groen)}.stat:nth-child(4n+4){--c:var(--p-blauw)}
+.stat b{font-family:var(--display);font-weight:700;font-size:clamp(36px,8vw,56px);line-height:1.05;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.stat b.sm{font-size:clamp(24px,4vw,42px);line-height:1.25}
+.stat span{font-size:14px;font-weight:800;color:var(--muted)}
+.panel{background:var(--card);border:2px solid var(--line);border-left:10px solid var(--c);border-radius:20px;padding:20px;min-width:0}
+.panel.c-groen{--c:var(--p-groen)}.panel.c-oranje{--c:var(--p-oranje)}.panel.c-turkoois{--c:var(--p-turkoois)}.panel.c-bordeaux{--c:var(--p-bordeaux)}.panel.c-magenta{--c:var(--p-magenta)}.panel.c-marine{--c:var(--p-marine)}
+h2{font-family:var(--display);font-weight:600;font-size:23px;line-height:1.2;margin:0 0 12px}
+.meter{height:26px;border-radius:999px;background:var(--line);overflow:hidden}
+.meter i{display:block;height:100%;background:var(--stripe);background-size:var(--full,100%) 100%;border-radius:999px;transition:width 1s ease}
+.scale{display:flex;justify-content:space-between;gap:8px;font-size:13px;font-weight:800;margin-top:8px;color:var(--muted)}
+.scale span:nth-child(2){text-align:center}.scale span:last-child{text-align:right}
+.reden{margin:10px 0 0;max-width:60ch}
+.next{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:baseline}
+.next b{font-family:var(--display);font-weight:700;font-size:30px;line-height:1.1;color:var(--t-oranje)}
+.next span{flex:1 1 240px;min-width:0}
+.next .badge{flex:0 1 auto;display:inline-block;background:color-mix(in srgb,var(--p-oranje) 18%,var(--card));color:var(--ink);font-size:14px;font-weight:800;padding:6px 12px;border-radius:14px;max-width:100%}
+ul{list-style:none;margin:0;padding:0}
+.dead li{display:flex;flex-wrap:wrap;gap:2px 14px;padding:10px 0;border-bottom:2px dashed var(--line)}
+.dead li:last-child,.tl li:last-child{border-bottom:0}
+.dead time{font-weight:800;text-decoration:line-through;text-decoration-color:var(--p-bordeaux);text-decoration-thickness:3px;min-width:10em}
+.tl li{display:grid;grid-template-columns:5.2em minmax(0,1fr);gap:2px 14px;padding:11px 0;border-bottom:2px dashed var(--line)}
+.tl time{font-family:var(--display);font-weight:600}
+.tl li:nth-child(6n+1) time{color:var(--t-rood)}.tl li:nth-child(6n+2) time{color:var(--t-blauw)}.tl li:nth-child(6n+3) time{color:var(--t-groen)}
+.tl li:nth-child(6n+4) time{color:var(--t-oranje)}.tl li:nth-child(6n+5) time{color:var(--t-turkoois)}.tl li:nth-child(6n+6) time{color:var(--t-magenta)}
+.tl a{font-size:14px;font-weight:800;white-space:nowrap;color:var(--muted)}
+.more p{margin:0 0 12px;max-width:64ch}
+.more-cta{display:flex;flex-wrap:wrap;gap:10px}
+.mbtn{display:inline-flex;align-items:center;justify-content:center;font:800 16px var(--body);text-decoration:none;color:var(--card);background:var(--ink);border:2px solid var(--ink);border-radius:999px;padding:10px 18px;min-height:44px}
+.mbtn.ghost{background:transparent;color:var(--ink)}
+:root[data-skin="retro"] .mbtn{border-radius:0;border:2px outset #fff;background:#c0c0c0;color:#000;font-family:Tahoma,Arial,sans-serif}
+:root[data-skin="retro"] .more p{background:#fff;border:2px inset #c0c0c0;padding:8px 10px}
+.about p{margin:0 0 10px;max-width:64ch}.about p:last-child{margin-bottom:0}
+.about h3{font-family:var(--display);font-weight:600;font-size:18px;margin:14px 0 4px}
+.foot{font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:6px;padding:0 4px}
+.foot p{margin:0;max-width:70ch}
+.foot button{font:inherit;color:inherit;background:none;border:0;padding:0;text-decoration:underline;cursor:pointer}
+.foot .band{height:6px;border-radius:3px;background:var(--stripe);margin-bottom:6px}
+.consent{position:fixed;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));z-index:10;max-width:560px;margin:0 auto;background:var(--card);color:var(--ink);border:2px solid var(--line);border-radius:18px;padding:14px 16px;box-shadow:0 10px 30px rgba(0,0,0,.18);display:none}
+.consent.on{display:block}
+.consent::before{content:"";display:block;height:6px;border-radius:3px;background:var(--stripe);margin:-2px 0 10px}
+.consent p{margin:0 0 10px;font-size:15px}
+.consent .row{display:flex;flex-wrap:wrap;gap:8px}
+.consent button{font:800 15px var(--body);border-radius:999px;padding:10px 16px;cursor:pointer;border:2px solid var(--ink);flex:1 1 auto;min-height:44px}
+.consent .yes{background:var(--ink);color:var(--card)}
+.consent .no{background:transparent;color:var(--ink)}
+
+/* tablet and phone */
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{--gap:18px;padding-top:12px}
+  .hero{grid-template-columns:minmax(0,1fr) 112px;gap:8px 10px;align-items:start}
+  .hero>div:first-child{display:contents}
+  .q{grid-column:1/-1}
+  .verdict{grid-column:1;align-self:center;font-size:clamp(56px,calc((100vw - 152px)/2.75),110px)}
+  .scene{grid-column:2;grid-row:2;width:112px;height:150px;justify-self:end}
+  .weer,.sam{grid-column:1/-1}
+  .weer{margin-top:4px}.sam{margin-top:2px}
+  .c1,.c2{display:none}
+  .hillb{height:36px}.hillf{left:14px;height:24px}
+  .pole{left:24px;bottom:20px;width:5px;height:122px}
+  .pole::before{left:-3px;top:-9px;width:11px;height:11px}
+  .flag{left:5px;top:6px;width:64px;height:40px}
+  .flagcap{display:none}
+  .stats{grid-template-columns:1fr 1fr;gap:10px}
+  .stat{padding:10px 12px;border-top-width:8px;border-radius:16px}
+  .stat span{font-size:13px;line-height:1.3}
+  .panel{padding:16px;border-left-width:8px;border-radius:18px}
+  h2{font-size:21px}
+  .next b{font-size:26px}
+  .dead time{min-width:0;width:100%}
+}
+@media (max-width:380px){
+  .hero{grid-template-columns:minmax(0,1fr) 90px}
+  .verdict{font-size:clamp(52px,calc((100vw - 130px)/2.75),110px)}
+  .scene{width:90px;height:130px}
+  .pole{height:104px}
+  .flag{width:52px;height:33px}
+  .tl li{grid-template-columns:minmax(0,1fr)}
+  .scale{font-size:12px}
+}
+
+/* ---------- theme switcher ---------- */
+.skins{display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap}
+.skins>span{font-size:13px}
+.skins button{font:800 13px var(--body);color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:999px;padding:4px 10px;cursor:pointer;min-height:32px}
+.skins button[aria-pressed="true"]{background:var(--ink);color:var(--card);border-color:var(--ink)}
+.only-belgie,.only-retro{display:none}
+.only-partijen{display:block}
+:root[data-skin="belgie"] .only-partijen,:root[data-skin="retro"] .only-partijen{display:none}
+:root[data-skin="belgie"] .only-belgie{display:block}
+:root[data-skin="retro"] .only-retro{display:block}
+
+/* ---------- theme: België (zwart, geel, rood) ---------- */
+:root[data-skin="belgie"]{
+  --bg:#fffaf0; --bg2:#fffdf7;
+  --p-geel:#fdda24; --p-rood:#ef3340; --p-blauw:#1b1b1b; --p-oranje:#fdda24; --p-groen:#ef3340;
+  --p-turkoois:#1b1b1b; --p-marine:#fdda24; --p-bordeaux:#ef3340; --p-magenta:#1b1b1b;
+  --t-rood:#c8102e; --t-blauw:#1b1b1b; --t-groen:#1b1b1b; --t-oranje:#c8102e; --t-turkoois:#1b1b1b; --t-magenta:#c8102e; --t-marine:#1b1b1b; --t-bordeaux:#c8102e;
+  --stripe:linear-gradient(90deg,#1b1b1b 0 33.33%,#fdda24 0 66.66%,#ef3340 0);
+}
+@media (prefers-color-scheme: dark){
+  :root[data-skin="belgie"]{
+    --bg:#16130d; --bg2:#1c1810; --card:#241f15; --line:#3d3524;
+    --p-blauw:#5a5a5a; --p-turkoois:#5a5a5a; --p-magenta:#5a5a5a;
+    --t-rood:#ff6b78; --t-blauw:#eef1f6; --t-groen:#eef1f6; --t-oranje:#ff6b78; --t-turkoois:#eef1f6; --t-magenta:#ff6b78; --t-marine:#eef1f6; --t-bordeaux:#ff6b78;
+    --stripe:linear-gradient(90deg,#5a5a5a 0 33.33%,#fdda24 0 66.66%,#ef3340 0);
+  }
+  :root[data-skin="belgie"] .stat,:root[data-skin="belgie"] .panel{box-shadow:inset 0 0 0 1px rgba(255,255,255,.04)}
+}
+:root[data-skin="belgie"] .verdict span:nth-child(1){color:var(--ink)}
+:root[data-skin="belgie"] .verdict span:nth-child(2){color:#fdda24;-webkit-text-stroke:3px var(--ink);paint-order:stroke fill}
+:root[data-skin="belgie"] .verdict span:nth-child(3){color:#ef3340}
+:root[data-skin="belgie"] .verdict span:nth-child(4){color:var(--ink)}
+:root[data-skin="belgie"] .stat:nth-child(3n+1){--c:var(--p-blauw)}
+:root[data-skin="belgie"] .stat:nth-child(3n+2){--c:#fdda24}
+:root[data-skin="belgie"] .stat:nth-child(3n+3){--c:#ef3340}
+:root[data-skin="belgie"] .stat:nth-child(4){--c:var(--p-blauw)}
+
+/* ---------- theme: 2000 (persoonlijke homepage, 800x600) ---------- */
+:root[data-skin="retro"]{
+  color-scheme:light;
+  --bg:#008080; --bg2:#008080; --ink:#000; --muted:#333; --card:#fff; --line:#808080;
+  --t-rood:#c00; --t-blauw:#0000cc; --t-groen:#008000; --t-oranje:#c60; --t-turkoois:#008080; --t-magenta:#909; --t-marine:#000080; --t-bordeaux:#800000;
+  --display:"Comic Sans MS","Comic Sans","Chalkboard SE","Comic Neue",cursive;
+  --body:"Times New Roman",Times,serif;
+}
+:root[data-skin="retro"] body{background:#008080 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ctext x='4' y='26' font-size='18' opacity='.18'%3E%E2%82%AC%3C/text%3E%3C/svg%3E");font-size:17px}
+:root[data-skin="retro"] body::before{height:0}
+:root[data-skin="retro"] .wrap{background:#fff;border:3px outset #c0c0c0;margin-top:14px;margin-bottom:14px;padding-bottom:24px;max-width:800px}
+:root[data-skin="retro"] .top{color:#000;font-family:Arial,Helvetica,sans-serif}
+:root[data-skin="retro"] .q{font-family:var(--display);color:#000080;text-align:center}
+:root[data-skin="retro"] .verdict{font-family:Impact,"Arial Black",sans-serif;font-weight:400;letter-spacing:2px;text-shadow:4px 4px 0 #000;font-size:clamp(60px,16vw,150px)}
+:root[data-skin="retro"] .stat b.sm{font-size:clamp(20px,3.2vw,32px)}
+:root[data-skin="retro"] .verdict span{color:#ff0000 !important;-webkit-text-stroke:0 !important}
+:root[data-skin="retro"] .verdict span:nth-child(2n){color:#ffff00 !important;-webkit-text-stroke:2px #000 !important;paint-order:stroke fill}
+:root[data-skin="retro"] .weer{background:#ffffcc;border:2px dashed #000;border-radius:0;font-family:var(--display)}
+:root[data-skin="retro"] .stat,:root[data-skin="retro"] .panel{border:3px outset #c0c0c0;border-radius:0;background:#c0c0c0}
+:root[data-skin="retro"] .stat b{color:#000080;font-family:"Courier New",Courier,monospace;font-weight:700}
+:root[data-skin="retro"] .stat span{color:#000}
+:root[data-skin="retro"] .panel{padding:0 14px 14px}
+:root[data-skin="retro"] .panel h2{margin:0 -14px 12px;padding:4px 8px;background:linear-gradient(90deg,#000080,#1084d0);color:#fff;font:700 15px Tahoma,"MS Sans Serif",Arial,sans-serif}
+:root[data-skin="retro"] .panel h2::after{content:"_ \2610  \2715";float:right;letter-spacing:4px;font-weight:400}
+:root[data-skin="retro"] .panel ul,:root[data-skin="retro"] .panel>p,:root[data-skin="retro"] .panel .next{background:#fff;border:2px inset #c0c0c0;padding:8px 10px}
+:root[data-skin="retro"] .about h3{font-family:var(--display);color:#000080}
+:root[data-skin="retro"] .meter{border-radius:0;border:2px inset #c0c0c0;background:#fff;height:24px}
+:root[data-skin="retro"] .meter i{border-radius:0;background:repeating-linear-gradient(90deg,#000080 0 12px,transparent 12px 15px) !important;background-size:auto !important}
+:root[data-skin="retro"] .scale{color:#000}
+:root[data-skin="retro"] .next b{color:#c00;font-family:var(--display)}
+:root[data-skin="retro"] .next .badge{background:#ffff00;border-radius:0;border:1px solid #000}
+:root[data-skin="retro"] .tl a,:root[data-skin="retro"] .foot a{color:#0000ee;text-decoration:underline}
+:root[data-skin="retro"] .tl a:visited{color:#551a8b}
+:root[data-skin="retro"] .tl time{font-family:"Courier New",monospace;font-weight:700}
+:root[data-skin="retro"] .dead li,:root[data-skin="retro"] .tl li{border-bottom:1px dotted #808080}
+:root[data-skin="retro"] .foot{color:#000;font-family:Arial,Helvetica,sans-serif;text-align:center;align-items:center}
+:root[data-skin="retro"] .foot .band{height:4px;width:100%;background:linear-gradient(90deg,red,orange,yellow,lime,cyan,blue,magenta);border-radius:0}
+:root[data-skin="retro"] .skins button{border-radius:0;border:2px outset #c0c0c0;background:#c0c0c0;color:#000;font-family:Tahoma,Arial,sans-serif;font-weight:700}
+:root[data-skin="retro"] .skins button[aria-pressed="true"]{border-style:inset;background:#a0a0a0}
+:root[data-skin="retro"] .consent{border-radius:0;border:3px outset #c0c0c0;background:#c0c0c0;box-shadow:4px 4px 0 #000}
+:root[data-skin="retro"] .consent::before{content:"Microsoft Begroting Explorer";display:block;height:auto;margin:-12px -14px 10px;padding:4px 8px;background:linear-gradient(90deg,#000080,#1084d0);color:#fff;font:700 14px Tahoma,Arial,sans-serif;border-radius:0}
+:root[data-skin="retro"] .consent button{border-radius:0;border:2px outset #fff;font-family:Tahoma,Arial,sans-serif}
+:root[data-skin="retro"] .consent .yes{background:#c0c0c0;color:#000}
+.marquee{overflow:hidden;white-space:nowrap;background:#000;color:#0f0;font:700 16px "Courier New",monospace;padding:4px 0;border:2px inset #c0c0c0}
+.marquee span{display:inline-block;padding-left:100%}
+@media (prefers-reduced-motion:no-preference){.marquee span{animation:marquee 22s linear infinite}}
+@media (prefers-reduced-motion:reduce){.marquee span{padding-left:8px;white-space:normal}}
+@keyframes marquee{to{transform:translateX(-100%)}}
+.retro-badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:4px 0}
+.retro-badges span{display:inline-block;border:1px solid #000;background:#fff;font:700 11px Verdana,Arial,sans-serif;padding:3px 6px}
+.retro-badges .uc{background:repeating-linear-gradient(45deg,#ffd400 0 10px,#000 10px 20px);color:#000;padding:3px 6px}
+.retro-badges .uc b{background:#ffd400;padding:0 4px}
+.counter{font:700 18px "Courier New",monospace;background:#000;color:#f00;padding:2px 8px;letter-spacing:3px;border:2px inset #c0c0c0}
+@media (max-width:640px){
+  :root[data-skin="retro"] .wrap{margin:8px;border-width:2px}
+  :root[data-skin="retro"] .verdict{font-size:clamp(48px,calc((100vw - 170px)/2.9),100px);text-shadow:3px 3px 0 #000}
+}
+
+/* ---------- language switch ---------- */
+.langs{display:inline-flex;gap:2px;align-items:center;font-size:13px}
+.langs a{text-decoration:none;padding:4px 7px;border-radius:999px;color:var(--muted)}
+.langs a[aria-current="true"]{color:var(--ink);background:var(--card);box-shadow:inset 0 0 0 2px var(--line)}
+:root[data-skin="retro"] .langs a{color:#0000ee;text-decoration:underline;border-radius:0}
+:root[data-skin="retro"] .langs a[aria-current="true"]{color:#000;text-decoration:none;box-shadow:none;background:#c0c0c0;border:2px inset #c0c0c0}
+
+/* ---------- quotes: in the margins on wide screens, between the blocks on smaller ones ---------- */
+.cite-slot{min-width:0}
+.cite{margin:0 0 0 4px;padding:2px 0 2px 14px;border-left:4px solid var(--qc,var(--line));max-width:62ch}
+.cite blockquote{margin:0;font-family:var(--display);font-weight:500;font-style:italic;font-size:17px;line-height:1.35;color:var(--ink);opacity:.82}
+.cite blockquote p{margin:0}
+.cite blockquote p::before{content:"\201C"}
+.cite blockquote p::after{content:"\201D"}
+.cite figcaption{font-size:12.5px;line-height:1.4;color:var(--muted);margin-top:3px}
+.cite figcaption a{color:inherit}
+.cite .tr{font-style:italic}
+@media (min-width:1380px){
+  .wrap{position:relative}
+  .cite-slot{position:relative;height:0;margin-top:calc(-1 * var(--gap))}
+  .cite{position:absolute;top:0;width:200px;margin:0;padding:0;border:0}
+  .cite-l .cite{left:-232px;text-align:right}
+  .cite-r .cite{right:-232px}
+  .cite blockquote{font-size:19px;opacity:.55;transition:opacity .2s}
+  .cite:hover blockquote{opacity:1}
+  .cite blockquote p::before{content:"\201C";display:block;font-size:56px;line-height:.6;margin-bottom:4px;color:var(--qc);opacity:.9;font-style:normal}
+  .cite figcaption{opacity:.8}
+}
+:root[data-skin="retro"] .cite{background:#ffffcc;border:1px solid #000;padding:8px 10px;box-shadow:3px 3px 0 rgba(0,0,0,.35);transform:rotate(-1.5deg)}
+:root[data-skin="retro"] .cite-r .cite{transform:rotate(1.5deg)}
+:root[data-skin="retro"] .cite blockquote{font-family:"Comic Sans MS","Comic Sans","Chalkboard SE",cursive;font-style:normal;opacity:1;color:#000}
+:root[data-skin="retro"] .cite figcaption{color:#333;font-family:Arial,sans-serif}
+:root[data-skin="retro"] .cite figcaption a{color:#0000ee}
+@media (min-width:1380px){
+  :root[data-skin="retro"] .cite{padding:8px 10px;text-align:left}
+  :root[data-skin="retro"] .cite-l .cite{left:-236px}
+  :root[data-skin="retro"] .cite-r .cite{right:-236px}
+  :root[data-skin="retro"] .cite blockquote p::before{content:"\201C";display:inline;font-size:inherit;line-height:inherit;margin:0;color:inherit}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <span>Service officieux de veille budgétaire</span>
+    <span id="stamp"></span>
+    <span class="skins" role="group" aria-label="Thème"><span>Thème :</span><button type="button" data-skin="partijen">Partis</button><button type="button" data-skin="belgie">Belgique</button><button type="button" data-skin="retro">2000</button></span>
+    <nav class="langs" aria-label="Langue"><a href="/" hreflang="nl" lang="nl" title="Nederlands">NL</a><a href="/fr/" hreflang="fr" lang="fr" title="Français" aria-current="true">FR</a><a href="/de/" hreflang="de" lang="de" title="Deutsch">DE</a></nav>
+  </header>
+  <div class="marquee only-retro" aria-hidden="true"><span>*** BIENVENUE SUR MA PAGE PERSO !!! *** Y A-T-IL DÉJÀ UN BUDGET ??? *** NON !!! *** AJOUTEZ CETTE PAGE À VOS FAVORIS *** SIGNEZ MON LIVRE D'OR (BIENTÔT, PROMIS) ***</span></div>
+
+  <section class="hero">
+    <div>
+      <h1 class="q" id="q">Y a-t-il déjà un budget fédéral ?</h1>
+      <p class="verdict" id="verdict"></p>
+      <p class="weer"><small>Météo de la rue de la Loi</small><span id="weer"></span></p>
+      <p class="sam" id="sam"></p>
+    </div>
+    <div class="scene" aria-hidden="true">
+      <div class="cloud c1"></div><div class="cloud c2"></div>
+      <div class="hillb"></div>
+      <div class="pole"><div class="flag" id="flag"><i style="--n:0"></i><i style="--n:1"></i><i style="--n:2"></i><i style="--n:3"></i><i style="--n:4"></i><i style="--n:5"></i><i style="--n:6"></i><i style="--n:7"></i><i style="--n:8"></i><i style="--n:9"></i><i style="--n:10"></i><i style="--n:11"></i></div></div>
+      <div class="hillf"></div>
+      <div class="flagcap" id="flagcap"></div>
+    </div>
+  </section>
+
+  <div class="cite-slot cite-l"><figure class="cite" style="--qc:var(--p-rood)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/ratingbureau-sp-behoudt-kredietscore-van-belgie-maar-verwacht-~1790599460224/"><p>Dit kan pijn doen, maar het alternatief is amputatie.</p></blockquote><figcaption><b>Bart De Wever</b> (N-VA), Premier ministre · 22 oct. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/ratingbureau-sp-behoudt-kredietscore-van-belgie-maar-verwacht-~1790599460224/" rel="noopener">VRT NWS ↗</a></figcaption></figure></div>
+  <div class="cite-slot cite-r"><figure class="cite" style="--qc:var(--p-blauw)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/ratingbureau-sp-behoudt-kredietscore-van-belgie-maar-verwacht-~1790599460224/"><p>Ik vraag een beetje redelijkheid aan iedereen aan tafel.</p></blockquote><figcaption><b>Conner Rousseau</b> (Vooruit), président · 23 oct. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/ratingbureau-sp-behoudt-kredietscore-van-belgie-maar-verwacht-~1790599460224/" rel="noopener">VRT NWS ↗</a></figcaption></figure></div>
+  <section class="stats" id="stats"></section>
+  <div class="cite-slot cite-l"><figure class="cite" style="--qc:var(--p-groen)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/ratingbureau-sp-behoudt-kredietscore-van-belgie-maar-verwacht-~1790599460224/"><p>De optimisten zullen het optimistisch zien, de pessimisten pessimistisch</p></blockquote><figcaption><b>David Clarinval</b> (MR), vice-Premier ministre · 21 oct. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/ratingbureau-sp-behoudt-kredietscore-van-belgie-maar-verwacht-~1790599460224/" rel="noopener">VRT NWS ↗</a> · <span class="tr">traduit en néerlandais par VRT NWS</span></figcaption></figure></div>
+
+  <section class="panel c-oranje">
+    <h2>Miracle-o-mètre de Lourdes</h2>
+    <div class="meter" role="img" id="meter"><i id="fill"></i></div>
+    <div class="scale"><span>Ça va aller</span><span>Allumer un cierge</span><span>Réserver le pèlerinage</span></div>
+    <p class="reden" id="reden"></p>
+  </section>
+
+  <div class="cite-slot cite-r"><figure class="cite" style="--qc:var(--p-oranje)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/"><p>Spreek aan tafel, in plaats van in de televisiestudio&#x27;s.</p></blockquote><figcaption><b>Sammy Mahdi</b> (CD&amp;V), président · 3 nov. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/" rel="noopener">VRT NWS ↗</a></figcaption></figure></div>
+  <section class="panel c-turkoois">
+    <h2>Prochain rendez-vous</h2>
+    <div class="next" id="next"></div>
+  </section>
+
+  <div class="cite-slot cite-l"><figure class="cite" style="--qc:var(--p-turkoois)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/"><p>Als ik alle knelpunten zou opsommen, zou het een eeuwigheid duren</p></blockquote><figcaption><b>Maxime Prévot</b> (Les Engagés), vice-Premier ministre · 2 nov. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/" rel="noopener">VRT NWS ↗</a> · <span class="tr">traduit en néerlandais par VRT NWS</span></figcaption></figure></div>
+  <section class="panel c-groen more">
+    <h2>Vous n'y comprenez plus rien ?</h2>
+    <p>Pas de honte. Lisez <a href="uitleg.html">l'explication</a> : la taille du trou, pourquoi il faut agir maintenant et pourquoi cinq partis n'arrivent pas à s'entendre. Ou vous pensez faire mieux vous-même ?</p>
+    <div class="more-cta"><a class="mbtn" href="/fr/spel.html">Jouer au jeu du budget 🎲</a><a class="mbtn ghost" href="/fr/uitleg.html">Lire l'explication</a></div>
+  </section>
+
+  <div class="cite-slot cite-r"><figure class="cite" style="--qc:var(--p-magenta)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/"><p>Het is met z&#x27;n allen erdoor of met z&#x27;n allen onderuit.</p></blockquote><figcaption><b>Valerie Van Peel</b> (N-VA), présidente · 6 nov. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/" rel="noopener">VRT NWS ↗</a></figcaption></figure></div>
+  <section class="panel c-bordeaux">
+    <h2>Les échéances qui n'ont pas tenu</h2>
+    <ul class="dead" id="dead"></ul>
+  </section>
+
+  <div class="cite-slot cite-l"><figure class="cite" style="--qc:var(--p-geel)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/"><p>Het moet een verhaal worden van enkele dagen en niet van enkele maanden</p></blockquote><figcaption><b>Georges-Louis Bouchez</b> (MR), président · 6 nov. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/" rel="noopener">VRT NWS ↗</a> · <span class="tr">traduit en néerlandais par VRT NWS</span></figcaption></figure></div>
+  <section class="panel c-magenta">
+    <h2>Ce qui s'est passé</h2>
+    <ul class="tl" id="tl"></ul>
+  </section>
+
+  <div class="cite-slot cite-r"><figure class="cite" style="--qc:var(--p-bordeaux)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/"><p>Het is nu onze verdomde plicht dat dit lukt.</p></blockquote><figcaption><b>Vincent Van Peteghem</b> (CD&amp;V), ministre du Budget · 2 nov. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/" rel="noopener">VRT NWS ↗</a></figcaption></figure></div>
+  <div class="cite-slot cite-l"><figure class="cite" style="--qc:var(--p-marine)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/"><p>Wij willen heel graag een akkoord, maar onze enige rode lijn is rechtvaardigheid.</p></blockquote><figcaption><b>Oskar Seuntjens</b> (Vooruit), chef de groupe · 6 nov. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/" rel="noopener">VRT NWS ↗</a></figcaption></figure></div>
+  <section class="panel c-marine about">
+    <h2>C'est quoi, au juste ?</h2>
+    <p>Cette page suit les négociations sur le <b>budget fédéral belge</b> : le plan dans lequel le gouvernement fédéral fixe ce qu'il dépense et d'où vient l'argent. Tant qu'il n'y a pas d'accord budgétaire, il est écrit NON ci-dessus, et nous tenons le compte des échéances tombées.</p>
+    <h3>Et sans budget ?</h3>
+    <p>L'État fédéral fonctionne alors avec des <b>douzièmes provisoires</b>, ce qu'on appelle un budget d'urgence. La Chambre autorise le gouvernement à dépenser chaque mois environ un douzième du budget précédent. Les lumières restent allumées, mais les nouvelles politiques doivent attendre.</p>
+    <h3>D'où viennent les infos ?</h3>
+    <p>Trois fois par jour, nous cherchons les dernières nouvelles budgétaires dans les médias belges et mettons cette page à jour. Chaque événement de la chronologie renvoie à l'article dont il provient.</p>
+  </section>
+
+  <div class="cite-slot cite-r"><figure class="cite" style="--qc:var(--p-groen)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/"><p>We moeten kalm blijven en samen een oplossing vinden. De match is nog niet gespeeld.</p></blockquote><figcaption><b>Yvan Verougstraete</b> (Les Engagés), président · 3 nov. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/" rel="noopener">VRT NWS ↗</a> · <span class="tr">traduit en néerlandais par VRT NWS</span></figcaption></figure></div>
+  <footer class="foot">
+    <div class="band" aria-hidden="true"></div>
+    <p><b>Ceci est de la satire.</b> Les faits et les dates viennent des articles cités ; les blagues sont de nous. Nous rions du processus, pas d'un parti.</p>
+    <p class="only-partijen">Les couleurs ? Celles de tous les partis à la fois, sans priorité pour personne. Une coalition arc-en-ciel qui fonctionne, elle.</p>
+    <p class="only-belgie">Noir, jaune et rouge : les trois seules couleurs sur lesquelles tout le monde est d'accord.</p>
+    <div class="only-retro">
+      <p>Jours sans budget : <span class="counter" id="counter">000000</span></p>
+      <div class="retro-badges"><span class="uc"><b>UNDER CONSTRUCTION</b></span><span>Meilleur affichage en 800x600</span><span>Fait avec le Bloc-notes</span><span>Netscape Now!</span></div>
+    </div>
+    <p>Un assistant IA lit l'actualité trois fois par jour et met cette page à jour. Il peut donc y avoir du retard, et en cas de doute, la source a raison.</p>
+    <p>Les citations dans la marge sont reprises mot pour mot des liveblogs de VRT NWS, en néerlandais, avec un lien vers la source. Les propos des responsables francophones y ont été traduits par la rédaction. Deux citations par parti de la majorité, pour que personne ne soit privilégié.</p>
+    <p>Fait avec amour et un léger désespoir par un millennial qui économise toujours pour une maison.</p>
+    <p><a href="/fr/uitleg.html">Explication</a> · <a href="/fr/spel.html">Jeu du budget</a></p>
+    <p id="privacyline" hidden><a href="/fr/privacy.html">Vie privée</a> · <button type="button" id="cookiebtn">Paramètres des cookies</button></p>
+  </footer>
+</div>
+
+<div class="consent" id="consent" role="dialog" aria-labelledby="consent-t">
+  <p id="consent-t"><b>On peut vous compter ?</b> Nous utilisons des cookies de Google pour compter les visites. Sans votre accord, nous ne le faisons pas. <a href="privacy.html">En savoir plus</a></p>
+  <div class="row"><button type="button" class="yes" id="c-yes">Oui, comptez-moi</button><button type="button" class="no" id="c-no">Non, j'attends anonymement</button></div>
+</div>
+
+<script>
+// ---- Settings: fill in to switch analytics on. Empty = off, no banner, no Google scripts. ----
+var CONFIG={
+  gaId:'G-Q7V0Q88KNQ' // Google Analytics 4 measurement ID, e.g. 'G-ABC123XYZ9'
+};
+
+(function(){
+  // Last-known snapshot, shown until (or instead of) data.json answers.
+  var SNAP={"akkoord": false, "bedrag": "10 miljard", "bijgewerkt": "2026-11-09", "eersteDeadline": "2026-07-21", "gemisteDeadlines": [{"datum": "2026-07-21", "label": "De eerste deadline. Kort daarna losgelaten."}, {"datum": "2026-10-13", "label": "Beleidsverklaring in de Kamer. Geschrapt."}, {"datum": "2026-10-15", "label": "Begroting indienen bij Europa. Niet ingediend."}, {"datum": "2026-11-03", "label": "‘Uiterlijk dinsdag’ een akkoord. Het werd een ontslag."}], "lourdes": 80, "lourdesReden": "Ontslag aangeboden en geweigerd, noodbegroting bevestigd. Lichtpuntje: er wordt weer gepraat.", "noodbegroting": "Noodbegroting voor begin 2027: bevestigd, tweede jaar op rij", "paleisbezoeken": 2, "samenvatting": "De koning weigerde het ontslag van de regering en stuurde iedereen terug naar de onderhandelingstafel. Deze week wordt eerst apart gepraat; de grote vergadering is voor later.", "tijdlijn": [{"bron": "VRT NWS", "datum": "2026-11-09", "tekst": "Het overleg zou vandaag herbeginnen, eerst in aparte gesprekken per partij.", "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"}, {"bron": "VRT NWS", "datum": "2026-11-06", "tekst": "De koning weigert het ontslag en vraagt om meteen verder te onderhandelen.", "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"}, {"bron": "VRT NWS", "datum": "2026-11-05", "tekst": "De premier bevestigt in de Kamer dat er een noodbegroting komt. Voor het tweede jaar op rij.", "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"}, {"bron": "VRT NWS", "datum": "2026-11-02", "tekst": "De premier biedt het ontslag van de regering aan. De koning houdt het in beraad.", "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"}, {"bron": "VRT NWS", "datum": "2026-11-01", "tekst": "Nachtelijk overleg tot 1 uur. Geen akkoord.", "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"}, {"bron": "VRT NWS", "datum": "2026-10-21", "tekst": "Nog een vergadering. Nog geen akkoord.", "url": "https://www.vrt.be/vrtnws/nl/2026/10/22/maanden-onderhandelen-zonder-resultaat-federaal-begrotingsoverl/"}, {"bron": "VRT NWS", "datum": "2026-10-15", "tekst": "De deadline om de begroting bij Europa in te dienen verstrijkt.", "url": "https://www.vrt.be/vrtnws/nl/2026/10/22/maanden-onderhandelen-zonder-resultaat-federaal-begrotingsoverl/"}, {"bron": "VRT NWS", "datum": "2026-10-13", "tekst": "Geen beleidsverklaring in de Kamer: er valt nog niets voor te lezen.", "url": "https://www.vrt.be/vrtnws/nl/2026/10/12/begroting-deja-vu-herhaling-vorig-jaar-analyse/"}, {"bron": "VRT NWS", "datum": "2026-07-21", "tekst": "De oorspronkelijke deadline. Ze werd kort daarna geschrapt.", "url": "https://www.vrt.be/vrtnws/nl/2026/10/22/maanden-onderhandelen-zonder-resultaat-federaal-begrotingsoverl/"}], "volgende": {"datum": "2026-11-16", "label": "De premier brengt opnieuw verslag uit bij de koning."}, "weerbericht": "Muurvast, met kans op bilaterale buien", "fr": {"weerbericht": "Bloqué, avec risque d'averses bilatérales", "samenvatting": "Le Roi a refusé la démission du gouvernement et renvoyé tout le monde à la table des négociations. Cette semaine, on se parle d'abord séparément ; la grande réunion, ce sera pour plus tard.", "lourdesReden": "Démission présentée et refusée, budget d'urgence confirmé. Lueur d'espoir : on se reparle.", "noodbegroting": "Budget d'urgence pour début 2027 : confirmé, deuxième année de suite", "volgende": {"label": "Le Premier ministre fait à nouveau rapport au Roi."}, "gemisteDeadlines": [{"label": "La première échéance. Abandonnée peu après."}, {"label": "Déclaration de politique à la Chambre. Annulée."}, {"label": "Remettre le budget à l'Europe. Pas remis."}, {"label": "Un accord « au plus tard mardi ». Ce fut une démission."}], "tijdlijn": [{"tekst": "La concertation devait reprendre aujourd'hui, d'abord par des entretiens séparés avec chaque parti."}, {"tekst": "Le Roi refuse la démission et demande de reprendre les négociations sans attendre."}, {"tekst": "Le Premier ministre confirme à la Chambre qu'il y aura un budget d'urgence. Pour la deuxième année de suite."}, {"tekst": "Le Premier ministre présente la démission du gouvernement. Le Roi la tient en suspens."}, {"tekst": "Concertation nocturne jusqu'à 1 heure. Pas d'accord."}, {"tekst": "Encore une réunion. Toujours pas d'accord."}, {"tekst": "L'échéance pour remettre le budget à l'Europe expire."}, {"tekst": "Pas de déclaration de politique à la Chambre : il n'y a encore rien à lire."}, {"tekst": "L'échéance initiale. Elle a été abandonnée peu après."}]}, "de": {"weerbericht": "Festgefahren, mit Aussicht auf bilaterale Schauer", "samenvatting": "Der König lehnte den Rücktritt der Regierung ab und schickte alle zurück an den Verhandlungstisch. Diese Woche wird zuerst einzeln geredet; die große Sitzung kommt später.", "lourdesReden": "Rücktritt angeboten und abgelehnt, Nothaushalt bestätigt. Lichtblick: Es wird wieder geredet.", "noodbegroting": "Nothaushalt für Anfang 2027: bestätigt, zum zweiten Mal in Folge", "volgende": {"label": "Der Premierminister erstattet dem König erneut Bericht."}, "gemisteDeadlines": [{"label": "Die erste Frist. Kurz darauf aufgegeben."}, {"label": "Regierungserklärung in der Kammer. Abgesagt."}, {"label": "Haushalt bei Europa einreichen. Nicht eingereicht."}, {"label": "Eine Einigung „spätestens Dienstag“. Es wurde ein Rücktritt."}], "tijdlijn": [{"tekst": "Die Gespräche sollten heute wieder beginnen, zunächst einzeln mit jeder Partei."}, {"tekst": "Der König lehnt den Rücktritt ab und bittet, sofort weiterzuverhandeln."}, {"tekst": "Der Premier bestätigt in der Kammer, dass ein Nothaushalt kommt. Zum zweiten Mal in Folge."}, {"tekst": "Der Premier bietet den Rücktritt der Regierung an. Der König hält die Entscheidung in der Schwebe."}, {"tekst": "Nächtliche Beratungen bis 1 Uhr. Keine Einigung."}, {"tekst": "Noch eine Sitzung. Noch keine Einigung."}, {"tekst": "Die Frist zur Einreichung des Haushalts in Europa verstreicht."}, {"tekst": "Keine Regierungserklärung in der Kammer: Es gibt noch nichts vorzulesen."}, {"tekst": "Die ursprüngliche Frist. Sie wurde kurz darauf aufgegeben."}]}};
+  var L="fr", LOC="fr-BE";
+  var $=function(id){return document.getElementById(id)};
+  var esc=function(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})};
+  var parse=function(s){var m=/^(\d{4})-(\d{2})-(\d{2})/.exec(String(s||''));return m?Date.UTC(+m[1],+m[2]-1,+m[3]):null};
+  var today=function(){var d=new Date();return Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())};
+  var days=function(a,b){return Math.round((b-a)/864e5)};
+  var fmt=function(s,long){var t=parse(s);if(t==null)return esc(s);return new Date(t).toLocaleDateString(LOC,{day:'numeric',month:long?'long':'short',year:long?'numeric':undefined,timeZone:'UTC'})};
+  var arr=function(x){return Array.isArray(x)?x:[]};
+  var live=false;
+  // Use the French/German texts from data.json when present; fall back to Dutch per field.
+  function loc(d){
+    var t=d&&d[L];if(L==='nl'||!t||typeof t!=='object')return d;
+    var o={},k;for(k in d)o[k]=d[k];
+    ['weerbericht','samenvatting','lourdesReden','noodbegroting'].forEach(function(f){if(typeof t[f]==='string'&&t[f])o[f]=t[f]});
+    if(o.volgende&&t.volgende&&t.volgende.label){o.volgende={datum:o.volgende.datum,label:t.volgende.label}}
+    function merge(a,b,f){if(!Array.isArray(a)||!Array.isArray(b)||a.length!==b.length)return a;
+      return a.map(function(x,i){var y={},k;for(k in x)y[k]=x[k];if(b[i]&&typeof b[i][f]==='string'&&b[i][f])y[f]=b[i][f];return y})}
+    o.gemisteDeadlines=merge(d.gemisteDeadlines,t.gemisteDeadlines,'label');
+    o.tijdlijn=merge(d.tijdlijn,t.tijdlijn,'tekst');
+    return o;
+  }
+
+  function render(d){
+    d=loc(d&&typeof d==='object'?d:SNAP);
+    var ja=d.akkoord===true, word=ja?"OUI!":"NON.";
+    $('verdict').innerHTML=word.split('').map(function(c){return '<span>'+esc(c)+'</span>'}).join('');
+    $('verdict').setAttribute('aria-label',word);
+    $('weer').textContent=d.weerbericht||'';
+    $('sam').textContent=d.samenvatting||'';
+    var first=parse(d.eersteDeadline),n=first==null?null:Math.max(0,days(first,today()));
+    var tiles=[];
+    if(n!=null)tiles.push([n,"jours depuis la première échéance"]);
+    if($('counter'))$('counter').textContent=n==null?'??????':('000000'+n).slice(-6);
+    tiles.push([arr(d.gemisteDeadlines).length,"échéances manquées"]);
+    if(typeof d.paleisbezoeken==='number')tiles.push([d.paleisbezoeken,"visites au Palais"]);
+    if(d.bedrag)tiles.push([""+String(d.bedrag).replace(/\s*miljard/i," Md€"),ja?"trouvés (paraît-il)":"toujours introuvables"]);
+    $('stats').innerHTML=tiles.map(function(t){return '<div class="stat"><b'+(String(t[0]).length>4?' class="sm"':'')+'>'+esc(t[0])+'</b><span>'+esc(t[1])+'</span></div>'}).join('');
+    var p=Math.max(0,Math.min(100,Number(d.lourdes)||0));
+    $('fill').style.width=p+'%';
+    $('fill').style.setProperty('--full',(p?100/p*100:100)+'%');
+    $('meter').setAttribute('aria-label',"Miracle-o-mètre de Lourdes"+': '+p+" sur 100");
+    $('reden').innerHTML='<b>'+p+" sur 100"+'.</b> '+esc(d.lourdesReden||'');
+    var fp=ja?0:p;
+    var small=window.matchMedia&&window.matchMedia('(max-width:640px)').matches;
+    $('flag').style.top=Math.round(small?(6+fp*.6):(8+fp*1.25))+'px';
+    $('flagcap').textContent=ja?"Drapeau au sommet !":fp>=85?"Drapeau presque descendu":fp>=55?"Drapeau en berne":fp>=25?"Drapeau aux trois quarts":"Drapeau au sommet";
+    var v=d.volgende&&typeof d.volgende==='object'?d.volgende:null,nx='';
+    if(v&&parse(v.datum)!=null){
+      var left=days(today(),parse(v.datum));
+      nx='<b>'+esc(fmt(v.datum,true))+'</b><span>'+esc(v.label||'')+' '+(left>1?"Encore {n} jours.".replace('{n}',left):left===1?"C'est déjà demain.":left===0?"C'est aujourd'hui.":"Cette date est passée ; on attend la suivante.")+'</span>';
+    }else nx='<span>'+"Pas de date connue. Ça en dit peut-être assez."+'</span>';
+    if(d.noodbegroting)nx+='<span class="badge">'+esc(d.noodbegroting)+'</span>';
+    $('next').innerHTML=nx;
+    $('dead').innerHTML=arr(d.gemisteDeadlines).map(function(x){return '<li><time>'+esc(fmt(x&&x.datum,true))+'</time><span>'+esc(x&&x.label)+'</span></li>'}).join('');
+    $('tl').innerHTML=arr(d.tijdlijn).slice(0,14).map(function(x){
+      x=x||{};var ok=/^https:\/\//.test(String(x.url||''));
+      return '<li><time>'+esc(fmt(x.datum))+'</time><span>'+esc(x.tekst)+' '+(ok?'<a href="'+esc(x.url)+'" rel="noopener">'+esc(x.bron||"source")+' ↗</a>':esc(x.bron||''))+'</span></li>';
+    }).join('');
+    $('stamp').textContent=(live?"Mis à jour le ":"Instantané du ")+fmt(d.bijgewerkt,true);
+    window.__last=d;
+  }
+
+  render(SNAP);
+
+  // Theme switcher: Partijen (default), België, 2000. Remembered per browser.
+  var SKIN_KEY='begroting-skin';
+  function applySkin(k,user){
+    if(k!=='belgie'&&k!=='retro')k='partijen';
+    if(k==='partijen')document.documentElement.removeAttribute('data-skin');else document.documentElement.setAttribute('data-skin',k);
+    var bs=document.querySelectorAll('.skins button');
+    for(var i=0;i<bs.length;i++)bs[i].setAttribute('aria-pressed',bs[i].getAttribute('data-skin')===k?'true':'false');
+    if(user){try{localStorage.setItem(SKIN_KEY,k)}catch(e){}
+      if(typeof window.gtag==='function')window.gtag('event','theme_select',{theme:k});}
+  }
+  applySkin(document.documentElement.getAttribute('data-skin')||'partijen',false);
+  var sb=document.querySelectorAll('.skins button');
+  for(var j=0;j<sb.length;j++)sb[j].addEventListener('click',function(){applySkin(this.getAttribute('data-skin'),true)});
+  var mq=window.matchMedia&&window.matchMedia('(max-width:640px)');
+  if(mq&&mq.addEventListener)mq.addEventListener('change',function(){render(window.__last)});
+  // Fresh data lives in data.json next to this page; the cache-buster beats GitHub Pages' 10-minute cache.
+  if(window.fetch){
+    fetch('/data.json?t='+Date.now(),{cache:'no-store'})
+      .then(function(r){if(!r.ok)throw new Error(r.status);return r.json()})
+      .then(function(d){if(d&&typeof d==='object'&&!Array.isArray(d)){live=true;render(d)}})
+      .catch(function(){});
+  }
+
+  // ---- Consent and analytics. Nothing from Google loads until the visitor says yes. ----
+  if(!/^G-[A-Z0-9]+$/.test(CONFIG.gaId))return;
+  $('privacyline').hidden=false;
+  var KEY='begroting-consent';
+  var get=function(){try{return localStorage.getItem(KEY)}catch(e){return null}};
+  var set=function(v){try{localStorage.setItem(KEY,v)}catch(e){}};
+  var loaded=false;
+  function addScript(src){var s=document.createElement('script');s.async=true;s.src=src;document.head.appendChild(s)}
+  function start(){
+    if(loaded)return;loaded=true;
+    window.dataLayer=window.dataLayer||[];
+    window.gtag=function(){dataLayer.push(arguments)};
+    gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});
+    gtag('set','allow_google_signals',false);
+    gtag('js',new Date());gtag('config',CONFIG.gaId);
+    addScript('https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(CONFIG.gaId));
+  }
+  function ask(){$('consent').classList.add('on')}
+  $('c-yes').onclick=function(){set('yes');$('consent').classList.remove('on');start()};
+  $('c-no').onclick=function(){var was=get();set('no');$('consent').classList.remove('on');if(loaded&&was==='yes')location.reload()};
+  $('cookiebtn').onclick=ask;
+  var c=get();
+  if(c==='yes')start();else if(c!=='no')ask();
+})();
+</script>
+</body>
+</html>

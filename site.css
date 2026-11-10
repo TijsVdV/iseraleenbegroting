@@ -102,3 +102,10 @@ p{margin:0 0 12px}
   :root[data-skin="retro"] .panel>h2:first-child{margin:0 -10px 10px}
   :root[data-skin="retro"] .wrap{margin:8px;border-width:2px}
 }
+
+/* language switch (same look as the home page) */
+.langs{display:inline-flex;gap:2px;align-items:center;font-size:13px}
+.langs a{text-decoration:none;padding:4px 7px;border-radius:999px;color:var(--muted)}
+.langs a[aria-current="true"]{color:var(--ink);background:var(--card);box-shadow:inset 0 0 0 2px var(--line)}
+:root[data-skin="retro"] .langs a{color:#0000ee;text-decoration:underline;border-radius:0}
+:root[data-skin="retro"] .langs a[aria-current="true"]{color:#000;text-decoration:none;box-shadow:none;background:#c0c0c0;border:2px inset #c0c0c0}

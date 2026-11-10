@@ -1,0 +1,292 @@
+{
+ "common": {
+  "lang_label": "Langue",
+  "theme_aria": "Thème",
+  "theme_label": "Thème :",
+  "skin_partijen": "Partis",
+  "skin_belgie": "Belgique",
+  "skin_retro": "2000",
+  "quote_translated": "traduit en néerlandais par VRT NWS",
+  "nav_home": "← Y a-t-il déjà un budget ?",
+  "nav_uitleg": "Explication",
+  "nav_spel": "Jouer",
+  "nav_aria": "Site",
+  "foot_home": "Accueil",
+  "foot_uitleg": "Explication",
+  "foot_spel": "Jeu du budget",
+  "privacy": "Vie privée",
+  "site_name": "Y a-t-il déjà un budget ?"
+ },
+ "index": {
+  "meta_title": "Y a-t-il déjà un budget ? Le budget fédéral belge, suivi en direct",
+  "meta_desc": "Y a-t-il déjà un budget fédéral en Belgique ? La réponse en un coup d'œil : l'état des négociations budgétaires, les échéances manquées, le budget d'urgence et les dernières nouvelles. Satire, mise à jour trois fois par jour.",
+  "site_name": "Y a-t-il déjà un budget ?",
+  "og_title": "Y a-t-il déjà un budget ? Toujours NON.",
+  "og_desc": "Le service de veille officieux du budget fédéral belge. Satire basée sur l'actualité réelle, mise à jour trois fois par jour.",
+  "og_alt": "Y a-t-il déjà un budget ? NON.",
+  "ld_alt": "Veille budgétaire",
+  "ld_desc": "Suivi satirique des négociations sur le budget fédéral belge, basé sur l'actualité réelle.",
+  "top_label": "Service officieux de veille budgétaire",
+  "marquee": "*** BIENVENUE SUR MA PAGE PERSO !!! *** Y A-T-IL DÉJÀ UN BUDGET ??? *** NON !!! *** AJOUTEZ CETTE PAGE À VOS FAVORIS *** SIGNEZ MON LIVRE D'OR (BIENTÔT, PROMIS) ***",
+  "h1": "Y a-t-il déjà un budget fédéral ?",
+  "weer_label": "Météo de la rue de la Loi",
+  "lourdes_title": "Miracle-o-mètre de Lourdes",
+  "scale1": "Ça va aller",
+  "scale2": "Allumer un cierge",
+  "scale3": "Réserver le pèlerinage",
+  "next_title": "Prochain rendez-vous",
+  "more_title": "Vous n'y comprenez plus rien ?",
+  "more_text": "Pas de honte. Lisez <a href=\"uitleg.html\">l'explication</a> : la taille du trou, pourquoi il faut agir maintenant et pourquoi cinq partis n'arrivent pas à s'entendre. Ou vous pensez faire mieux vous-même ?",
+  "more_play": "Jouer au jeu du budget 🎲",
+  "more_read": "Lire l'explication",
+  "dead_title": "Les échéances qui n'ont pas tenu",
+  "tl_title": "Ce qui s'est passé",
+  "about_title": "C'est quoi, au juste ?",
+  "about_p1": "Cette page suit les négociations sur le <b>budget fédéral belge</b> : le plan dans lequel le gouvernement fédéral fixe ce qu'il dépense et d'où vient l'argent. Tant qu'il n'y a pas d'accord budgétaire, il est écrit NON ci-dessus, et nous tenons le compte des échéances tombées.",
+  "about_h2": "Et sans budget ?",
+  "about_p2": "L'État fédéral fonctionne alors avec des <b>douzièmes provisoires</b>, ce qu'on appelle un budget d'urgence. La Chambre autorise le gouvernement à dépenser chaque mois environ un douzième du budget précédent. Les lumières restent allumées, mais les nouvelles politiques doivent attendre.",
+  "about_h3": "D'où viennent les infos ?",
+  "about_p3": "Trois fois par jour, nous cherchons les dernières nouvelles budgétaires dans les médias belges et mettons cette page à jour. Chaque événement de la chronologie renvoie à l'article dont il provient.",
+  "foot1": "<b>Ceci est de la satire.</b> Les faits et les dates viennent des articles cités ; les blagues sont de nous. Nous rions du processus, pas d'un parti.",
+  "foot_colors_p": "Les couleurs ? Celles de tous les partis à la fois, sans priorité pour personne. Une coalition arc-en-ciel qui fonctionne, elle.",
+  "foot_colors_b": "Noir, jaune et rouge : les trois seules couleurs sur lesquelles tout le monde est d'accord.",
+  "retro_days": "Jours sans budget :",
+  "retro_b2": "Meilleur affichage en 800x600",
+  "retro_b3": "Fait avec le Bloc-notes",
+  "foot_ai": "Un assistant IA lit l'actualité trois fois par jour et met cette page à jour. Il peut donc y avoir du retard, et en cas de doute, la source a raison.",
+  "quotes_note": "Les citations dans la marge sont reprises mot pour mot des liveblogs de VRT NWS, en néerlandais, avec un lien vers la source. Les propos des responsables francophones y ont été traduits par la rédaction. Deux citations par parti de la majorité, pour que personne ne soit privilégié.",
+  "foot_made": "Fait avec amour et un léger désespoir par un millennial qui économise toujours pour une maison.",
+  "nav_uitleg": "Explication",
+  "nav_spel": "Jeu du budget",
+  "privacy": "Vie privée",
+  "cookie_settings": "Paramètres des cookies",
+  "consent_text": "<b>On peut vous compter ?</b> Nous utilisons des cookies de Google pour compter les visites. Sans votre accord, nous ne le faisons pas. <a href=\"privacy.html\">En savoir plus</a>",
+  "consent_yes": "Oui, comptez-moi",
+  "consent_no": "Non, j'attends anonymement",
+  "yes": "OUI!",
+  "no": "NON.",
+  "tile_days": "jours depuis la première échéance",
+  "tile_missed": "échéances manquées",
+  "tile_palace": "visites au Palais",
+  "eur_prefix": "",
+  "bn_short": " Md€",
+  "tile_found": "trouvés (paraît-il)",
+  "tile_missing": "toujours introuvables",
+  "of100": " sur 100",
+  "flag_top_yes": "Drapeau au sommet !",
+  "flag_low": "Drapeau presque descendu",
+  "flag_half": "Drapeau en berne",
+  "flag_34": "Drapeau aux trois quarts",
+  "flag_top": "Drapeau au sommet",
+  "days_left": "Encore {n} jours.",
+  "tomorrow": "C'est déjà demain.",
+  "today": "C'est aujourd'hui.",
+  "past": "Cette date est passée ; on attend la suivante.",
+  "no_date": "Pas de date connue. Ça en dit peut-être assez.",
+  "src_word": "source",
+  "updated": "Mis à jour le ",
+  "snapshot": "Instantané du "
+ },
+ "spel": {
+  "meta_title": "Le Jeu du budget : trouverez-vous les 10 milliards ? · Y a-t-il déjà un budget ?",
+  "meta_desc": "Vous pensez faire mieux que la rue de la Loi ? Trouvez 10 milliards d'euros et gardez cinq négociateurs à table. Un jeu satirique sur le budget fédéral.",
+  "og_title": "Le Jeu du budget : trouverez-vous les 10 milliards ?",
+  "og_desc": "Cinq négociateurs, cinq lignes rouges, dix jours. Et vous, vous y arrivez ?",
+  "h1": "Le Jeu du budget",
+  "lead": "Trouvez <b>10 milliards d'euros</b> avant l'échéance. Gardez les cinq négociateurs à table. Ça ne peut pas être si difficile, si ?",
+  "of_the": "sur",
+  "day_word": "Jour",
+  "progress": "Progression",
+  "how_title": "Comment jouer",
+  "how1": "Chaque jour, choisissez <b>deux mesures maximum</b> et soumettez-les au kern. Chaque jour compte, et chaque réunion rend tout le monde un peu plus grincheux.",
+  "how2": "Chaque mesure rapporte de l'argent, mais réjouit certains négociateurs et en exaspère d'autres. Sur chaque mesure, vous voyez qui est 👍 et qui est 👎.",
+  "how3": "Si quelqu'un descend sous 15, il pose un <b>veto</b> sur la mesure qu'il déteste le plus. S'il tombe à 0, il quitte la table et vous devez aller chez le Roi.",
+  "how4": "Les compensations aident : une concession fait plaisir à un négociateur, mais coûte de l'argent.",
+  "how5": "Vous ratez l'échéance ? Vous pouvez la reporter. Comme dans la vraie vie. Mais pas indéfiniment.",
+  "disclaimer": "Tous les montants et réactions de ce jeu sont inventés ou fortement simplifiés. Les cinq négociateurs sont fictifs. Vous y reconnaissez quelqu'un ? C'est la faute du processus, pas la nôtre. Pour la vraie explication : <a href=\"uitleg.html\">c'est ici</a>.",
+  "team_title": "Autour de la table",
+  "measures_title": "Mesures",
+  "sweets_title": "Monnaie d'échange",
+  "sweets_sub": "(fait plaisir à un négociateur, coûte de l'argent)",
+  "fries_btn": "Pause frites 🍟",
+  "again": "Rejouer",
+  "share": "Partager mon résultat",
+  "to_real": "Voir la vraie situation",
+  "copied": "Copié ! Collez-le où vous voulez.",
+  "log_title": "Ce qui s'est passé",
+  "foot": "<b>Ceci est de la satire.</b> Le jeu se moque du processus, pas d'un parti ou d'une personne. Les négociateurs sont des archétypes inventés et les montants de la monnaie de singe.",
+  "T": {
+   "money": "{n} Md€",
+   "decimal_comma": true,
+   "day_n": "Jour {n}.",
+   "mood_aria": "Humeur {v} sur 100",
+   "who_aria": "Qui est pour et contre",
+   "go": "Soumettre au kern",
+   "go_one": "Soumettre {n} mesure au kern",
+   "go_many": "Soumettre {n} mesures au kern",
+   "hint_max": "Deux par jour maximum. Le kern est humain, lui aussi.",
+   "hint_one_more": "Encore une possible aujourd'hui.",
+   "hint_pick": "Choisissez une ou deux mesures.",
+   "shifted_one": "{n} échéance reportée",
+   "shifted_many": "{n} échéances reportées",
+   "bar_aria": "Trouvé : {found} sur {target}",
+   "big_yes": "OUI!",
+   "big_no": "NON.",
+   "real_deal": "Dans la réalité aussi, il y a désormais un accord. Ça a juste pris un peu plus de temps que chez vous.",
+   "real_win": "Pour comparer : le vrai gouvernement en est à {n} jours depuis la première échéance. Et toujours pas d'accord.",
+   "real_lose": "Consolez-vous : le vrai gouvernement en est à {n} jours depuis la première échéance. Vous êtes en bonne compagnie.",
+   "and": " et ",
+   "walkout1": "{names} quitte la réunion et donne aussitôt une interview. Vous présentez votre démission au Roi.",
+   "king_refuses": "Le Roi refuse votre démission et renvoie tout le monde à table. « Réessayez. » Chacun se rassied en boudant.",
+   "walkout2": "{names} claque la porte. Deuxième visite au Palais.",
+   "end_resign_title": "Le Roi accepte votre démission",
+   "end_resign_text": "Deux fois au Palais, c'est une fois de trop. Il y aura des élections. Chacun dit que c'est la faute des autres. Vous avez trouvé {found} sur {target}.",
+   "about_who": "Il s'agit de {who}.",
+   "eu_caught": "La Commission européenne a remarqué la comptabilité créative. Elle ne l'a pas trouvée créative. Les 3,0 Md€ ont disparu, et tout le monde vous regarde.",
+   "deadline_shift": "Échéance ratée ! Vous la reportez de quatre jours. « La seule vraie échéance, c'est celle d'un bon accord », dites-vous en conférence de presse. Personne n'y croit, mais ça sonne bien.",
+   "end_nood_title": "Budget d'urgence",
+   "end_nood_text": "Trois échéances ratées. Le pays commence l'année en douzièmes provisoires. Vous avez trouvé {found} sur {target}. Exactement comme dans la réalité, donc plutôt réaliste.",
+   "veto": "VETO ! {who} bloque « {what} ». « Pour nous, c'est une ligne rouge. » Vous pourrez réessayer plus tard.",
+   "yield": "{what} (+{n}).",
+   "yield_fuzzy": "{what} rapporte {n}. Environ.",
+   "eu_reading": "Vous pensez y être. Mais la Commission européenne relit encore un peu…",
+   "end_win_title": "Il y a un accord !",
+   "win_text_one": "Vous avez trouvé {found} en {n} jour,",
+   "win_text_many": "Vous avez trouvé {found} en {n} jours,",
+   "win_shift_one": "après {n} échéance reportée.",
+   "win_shift_many": "après {n} échéances reportées.",
+   "win_clean": "sans rater une seule échéance.",
+   "win_tail": "Les cinq négociateurs sont toujours à table et affirment chacun à la télé que c'est lui qui a gagné.",
+   "win_pm": "Quelqu'un propose de vous nommer Premier ministre. Vous déclinez poliment.",
+   "sweet_log": "Monnaie d'échange : {what}. {who} sourit. Mais ça coûte {n}.",
+   "fries": "Pause frites. Sauce carbonnade. L'ambiance s'améliore à vue d'œil, mais la journée est finie.",
+   "fries_again": "Encore des frites. Ça marche moins bien. Quelqu'un demande une salade.",
+   "log_start": "Les cinq négociateurs prennent place. Quelqu'un a apporté des croissants. Pour l'instant.",
+   "log_restart": "Nouveau tour, nouvelles chances. Les croissants sont frais.",
+   "share_win": "J'ai trouvé {found} pour le budget fédéral en {n} jours.",
+   "share_win_real": "Le vrai gouvernement : toujours en cours.",
+   "share_lose": "J'ai essayé de boucler le budget fédéral et la réponse est : NON. Comme dans la réalité.",
+   "share_cta": "Et vous ?",
+   "copy_prompt": "Copiez votre résultat :"
+  },
+  "TX": {
+   "NEG": {
+    "bel": {
+     "nm": "Madame Jamais-d'Impôts",
+     "rl": "Augmenter les impôts ? Plutôt mourir."
+    },
+    "idx": {
+     "nm": "Monsieur Touche-Pas-à-l'Index",
+     "rl": "Salaires et allocations ? On n'y touche pas."
+    },
+    "zrg": {
+     "nm": "Docteur Soins-d'Abord",
+     "rl": "Couper dans les soins, c'est couper dans les gens."
+    },
+    "btw": {
+     "nm": "Monsieur La-TVA-C'est-Juste",
+     "rl": "Tout le monde paie la TVA. Et la baisse des charges reste."
+    },
+    "mid": {
+     "nm": "Madame Classe-Moyenne",
+     "rl": "Pensez donc aux familles ordinaires !"
+    }
+   },
+   "M": {
+    "btw22": {
+     "t": "TVA de 21 % à 22 %",
+     "say": "Madame Jamais-d'Impôts part déjà faire le plein à Maastricht."
+    },
+    "frit": {
+     "t": "TVA sur les frites à 21 %",
+     "say": "Une grève nationale des friteries est annoncée. Avec mayonnaise."
+    },
+    "meer": {
+     "t": "Taxe sur les plus-values renforcée",
+     "say": "Un riche entrepreneur menace de déménager. À Knokke."
+    },
+    "zorg": {
+     "t": "Économiser 2 Md€ dans les soins",
+     "say": "Docteur Soins-d'Abord se prescrit un calmant."
+    },
+    "sprong": {
+     "t": "Saut d'index",
+     "say": "Monsieur Touche-Pas-à-l'Index appelle le syndicat. Le syndicat rappelle. Avec une date de grève."
+    },
+    "lasten": {
+     "t": "Annuler la baisse des charges",
+     "say": "Monsieur La-TVA-C'est-Juste demande si c'est vraiment nécessaire. Trois fois."
+    },
+    "subs": {
+     "t": "Tailler dans les subsides",
+     "say": "Tout le monde est pour. Jusqu'à ce qu'on parle de SON subside."
+    },
+    "fraude": {
+     "t": "Lutte contre la fraude",
+     "say": "Figure dans chaque accord depuis 1830. Rendement : allez savoir."
+    },
+    "eff": {
+     "t": "Rendre l'État plus efficace",
+     "say": "Un groupe de travail est créé pour réduire le nombre de groupes de travail."
+    },
+    "acc": {
+     "t": "Accises sur le tabac et l'alcool",
+     "say": "Le café du coin met un ruban noir à la porte."
+    },
+    "pens": {
+     "t": "Accélérer la réforme des pensions",
+     "say": "Quelqu'un calcule quand il pourra partir à la retraite. Il recalcule. Et encore."
+    },
+    "auto": {
+     "t": "Voitures de société moins avantageuses",
+     "say": "Le ring de Bruxelles s'arrête net de stupeur. Personne ne voit la différence."
+    },
+    "bank": {
+     "t": "Taxe bancaire",
+     "say": "Les banques réagissent par un communiqué. Et de nouveaux frais sur votre carte."
+    },
+    "migr": {
+     "t": "Économies sur l'asile et la migration",
+     "say": "S'ensuit un débat de neuf heures. Ça rapporte moins qu'espéré."
+    },
+    "def": {
+     "t": "Reporter les dépenses de défense",
+     "say": "L'OTAN envoie un mail fâché. En anglais. Avec copie."
+    },
+    "creatief": {
+     "t": "Comptabilité créative",
+     "say": "Personne ne demande comment. Tout le monde est soulagé. Pour l'instant."
+    }
+   },
+   "SWEET": {
+    "s_bel": "Promesse solennelle : plus aucun nouvel impôt (sauf celui-ci)",
+    "s_idx": "Un groupe de travail sur une taxe millionnaires",
+    "s_zrg": "Plus d'argent pour les infirmiers",
+    "s_btw": "Une étude sur une réforme de la TVA. Pour plus tard.",
+    "s_mid": "Séance photo avec une famille de Namur"
+   },
+   "EVENTS": [
+    "Une note confidentielle fuite dans la presse. L'ambiance est glaciale.",
+    "Une agence de notation menace de dégrader la note. Soudain, tout le monde est raisonnable.",
+    "Nouveaux chiffres du Comité de monitoring : le trou est plus grand d'un demi-milliard.",
+    "Un président de parti tweete à 2 heures du matin.",
+    "Le Roi invite tout le monde à prendre un café. Avec des spéculoos.",
+    "Grève à Bruxelles.",
+    "Quelqu'un oublie les croissants. Personne ne l'avait vu venir.",
+    "Bonne nouvelle : l'économie croît un peu plus vite que prévu.",
+    "Une interview dans le journal du dimanche. Sur les « lignes rouges ». Au pluriel.",
+    "Les Diables Rouges gagnent. Pendant un instant, tout le monde est belge."
+   ]
+  }
+ },
+ "uitleg": {
+  "meta_title": "Pourquoi n'y a-t-il pas de budget fédéral ? La crise budgétaire belge expliquée",
+  "meta_desc": "Que se passe-t-il avec le budget fédéral belge ? Quelle est la taille du trou, pourquoi faut-il agir maintenant, pourquoi cinq partis ne s'entendent-ils pas, et que se passe-t-il sans accord ? Expliqué clairement, avec des sources.",
+  "og_title": "La crise budgétaire belge, expliquée clairement",
+  "og_desc": "Quelle est la taille du trou, pourquoi maintenant, et pourquoi cinq partis ne s'entendent-ils pas ? Avec chiffres et sources.",
+  "foot1": "Cette explication vise à comprendre le processus, pas à prendre parti. Le reste du site est satirique ; cette page se veut aussi factuelle que possible."
+ },
+ "privacy": {
+  "meta_title": "Vie privée · Y a-t-il déjà un budget ?"
+ }
+}

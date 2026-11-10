@@ -1,15 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://iseraleenbegroting.be/</loc>
     <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://iseraleenbegroting.be/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iseraleenbegroting.be/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iseraleenbegroting.be/de/"/>
+  </url>
+  <url>
+    <loc>https://iseraleenbegroting.be/fr/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://iseraleenbegroting.be/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iseraleenbegroting.be/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iseraleenbegroting.be/de/"/>
+  </url>
+  <url>
+    <loc>https://iseraleenbegroting.be/de/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://iseraleenbegroting.be/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iseraleenbegroting.be/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iseraleenbegroting.be/de/"/>
   </url>
   <url>
     <loc>https://iseraleenbegroting.be/uitleg.html</loc>
     <changefreq>weekly</changefreq>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://iseraleenbegroting.be/uitleg.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iseraleenbegroting.be/fr/uitleg.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iseraleenbegroting.be/de/uitleg.html"/>
+  </url>
+  <url>
+    <loc>https://iseraleenbegroting.be/fr/uitleg.html</loc>
+    <changefreq>weekly</changefreq>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://iseraleenbegroting.be/uitleg.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iseraleenbegroting.be/fr/uitleg.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iseraleenbegroting.be/de/uitleg.html"/>
+  </url>
+  <url>
+    <loc>https://iseraleenbegroting.be/de/uitleg.html</loc>
+    <changefreq>weekly</changefreq>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://iseraleenbegroting.be/uitleg.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iseraleenbegroting.be/fr/uitleg.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iseraleenbegroting.be/de/uitleg.html"/>
   </url>
   <url>
     <loc>https://iseraleenbegroting.be/spel.html</loc>
     <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://iseraleenbegroting.be/spel.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iseraleenbegroting.be/fr/spel.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iseraleenbegroting.be/de/spel.html"/>
+  </url>
+  <url>
+    <loc>https://iseraleenbegroting.be/fr/spel.html</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://iseraleenbegroting.be/spel.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iseraleenbegroting.be/fr/spel.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iseraleenbegroting.be/de/spel.html"/>
+  </url>
+  <url>
+    <loc>https://iseraleenbegroting.be/de/spel.html</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://iseraleenbegroting.be/spel.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iseraleenbegroting.be/fr/spel.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iseraleenbegroting.be/de/spel.html"/>
   </url>
 </urlset>

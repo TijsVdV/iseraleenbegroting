@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="{{LANGTAG}}">
+<head>
+<meta charset="utf-8">
+<script>try{var t=localStorage.getItem("begroting-skin");if(t==="belgie"||t==="retro")document.documentElement.setAttribute("data-skin",t)}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{t.meta_title}}</title>
+<meta name="description" content="{{a.meta_desc}}">
+<link rel="canonical" href="{{CANON}}">
+{{HREFLANG}}
+<meta property="og:site_name" content="{{a.site_name}}">
+<meta property="og:locale" content="{{OGLOCALE}}">
+<meta property="og:title" content="{{a.og_title}}">
+<meta property="og:description" content="{{a.og_desc}}">
+<meta property="og:url" content="{{CANON}}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://iseraleenbegroting.be/{{OGIMAGE}}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='1' height='2' fill='%231b1b1b'/%3E%3Crect x='1' width='1' height='2' fill='%23fdda24'/%3E%3Crect x='2' width='1' height='2' fill='%23ef3340'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css">
+<style>
+.status{position:sticky;top:0;z-index:5;background:var(--card);border:2px solid var(--line);border-radius:var(--radius);padding:12px 16px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 16px;align-items:center;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+.status .money{font-family:var(--display);font-weight:700;font-size:clamp(22px,4vw,30px);line-height:1.1}
+.status .money small{font-family:var(--body);font-size:14px;font-weight:800;color:var(--muted)}
+.status .day{text-align:right;font-weight:800;font-size:14px;color:var(--muted);line-height:1.35}
+.status .day b{display:block;font-family:var(--display);font-size:clamp(20px,3.6vw,26px);color:var(--ink)}
+.bar{grid-column:1/-1;height:16px;border-radius:999px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--stripe);background-size:var(--full,100%) 100%;border-radius:999px;transition:width .6s ease}
+.team{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.neg{background:var(--card);border:2px solid var(--line);border-top:8px solid var(--c);border-radius:calc(var(--radius) - 4px);padding:10px;text-align:center;min-width:0;transition:transform .2s}
+.neg .face{font-size:34px;line-height:1.1}
+.neg .nm{font-weight:800;font-size:13px;line-height:1.25;margin-top:4px;min-height:2.5em}
+.neg .rl{font-size:12px;color:var(--muted);line-height:1.3;margin-top:4px}
+.mood{height:10px;border-radius:999px;background:var(--line);overflow:hidden;margin-top:8px}
+.mood i{display:block;height:100%;background:var(--c);border-radius:999px;transition:width .5s ease}
+.neg .val{font-size:12px;font-weight:800;color:var(--muted);margin-top:3px}
+.neg.danger{animation:shake .5s}
+.neg.out{opacity:.45}
+@keyframes shake{20%,60%{transform:translateX(-4px)}40%,80%{transform:translateX(4px)}}
+@media (prefers-reduced-motion:reduce){.neg.danger{animation:none}}
+@media (max-width:720px){.team{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:420px){.team{grid-template-columns:repeat(2,minmax(0,1fr))}.neg .rl{display:none}}
+.how{margin:0;padding-left:1.2em}
+.how li{margin:3px 0}
+.measures{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.m{position:relative;text-align:left;font:inherit;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:calc(var(--radius) - 6px);padding:10px 12px;cursor:pointer;display:flex;flex-direction:column;gap:4px;min-height:44px}
+.m:hover{border-color:var(--muted)}
+.m[aria-pressed="true"]{border-color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink);background:color-mix(in srgb,var(--p-geel) 14%,var(--card))}
+.m:disabled{cursor:not-allowed;opacity:.5}
+.m.done{opacity:.55;background:var(--bg2)}
+.m.done::after{content:"✓ beslist";font-size:12px;font-weight:800;color:var(--t-groen)}
+.m .row{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+.m .t{font-weight:800;line-height:1.25;min-width:0;flex:1 1 auto;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+.m .e{flex:0 0 auto;white-space:nowrap;font-family:var(--display);font-weight:700;color:var(--t-groen)}
+.m.done .e{display:none}
+.m .who{font-size:15px;letter-spacing:1px}
+.m .sweet{font-size:12px;color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.actions .hint{font-size:14px;color:var(--muted)}
+.extra{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.log{list-style:none;margin:0;padding:0;max-height:340px;overflow:auto}
+.log li{padding:8px 0;border-bottom:2px dashed var(--line);font-size:15px}
+.log li:last-child{border-bottom:0}
+.log li b{font-family:var(--display);font-weight:600;color:var(--t-rood);margin-right:6px}
+.log li.good b{color:var(--t-groen)}
+.end{text-align:center}
+.end .big{font-family:var(--display);font-weight:700;font-size:clamp(72px,18vw,150px);line-height:1;margin:6px 0 10px}
+.end .big.ja{color:var(--t-groen)}
+.end .big.nee{color:var(--t-rood)}
+.end p{max-width:56ch;margin-left:auto;margin-right:auto}
+.end .actions{justify-content:center;margin-top:12px}
+.disclaimer{font-size:14px;color:var(--muted)}
+[hidden]{display:none !important}
+:root[data-skin="retro"] .status,:root[data-skin="retro"] .neg,:root[data-skin="retro"] .m{border-radius:0;border:3px outset #c0c0c0;background:#c0c0c0;color:#000}
+:root[data-skin="retro"] .m[aria-pressed="true"]{border-style:inset;background:#ffff99;box-shadow:none}
+:root[data-skin="retro"] .bar,:root[data-skin="retro"] .mood{border-radius:0;border:2px inset #c0c0c0;background:#fff}
+:root[data-skin="retro"] .bar i,:root[data-skin="retro"] .mood i{border-radius:0;background:repeating-linear-gradient(90deg,#000080 0 10px,transparent 10px 13px) !important;background-size:auto !important}
+:root[data-skin="retro"] .log,:root[data-skin="retro"] .how{background:#fff;border:2px inset #c0c0c0;padding:6px 10px}
+:root[data-skin="retro"] .how{padding-left:2em}
+@media (max-width:640px){
+  .status{padding:10px 12px;top:0;border-radius:0 0 14px 14px;margin:-12px -16px 0}
+  :root[data-skin="retro"] .status{margin:0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <nav aria-label="{{a.nav_aria}}"><a href="{{BASE}}">{{t.nav_home}}</a><a href="{{BASE}}uitleg.html">{{t.nav_uitleg}}</a><a href="{{BASE}}spel.html" aria-current="page">{{t.nav_spel}}</a></nav>
+    {{SKINS}}
+    {{LANGSWITCH}}
+  </header>
+
+  <div>
+    <h1>{{t.h1}}</h1>
+    <p class="lead">{{t.lead}}</p>
+  </div>
+
+  <div class="status" id="status" aria-live="polite">
+    <div class="money"><span id="found"></span> <small>{{t.of_the}} <span id="target"></span></small></div>
+    <div class="day">{{t.day_word}} <b id="day">1 / 10</b><span id="missed"></span></div>
+    <div class="bar" role="img" id="bar" aria-label="{{a.progress}}"><i id="fill"></i></div>
+  </div>
+
+  <section class="panel c6" id="intro" aria-labelledby="h-intro">
+    <h2 id="h-intro">{{t.how_title}}</h2>
+    <ol class="how">
+      <li>{{t.how1}}</li>
+      <li>{{t.how2}}</li>
+      <li>{{t.how3}}</li>
+      <li>{{t.how4}}</li>
+      <li>{{t.how5}}</li>
+    </ol>
+    <p class="disclaimer" style="margin-top:10px">{{t.disclaimer}}</p>
+  </section>
+
+  <section aria-labelledby="h-team">
+    <h2 id="h-team" style="margin-bottom:10px">{{t.team_title}}</h2>
+    <div class="team" id="team"></div>
+  </section>
+
+  <section class="panel c2" id="board" aria-labelledby="h-maat">
+    <h2 id="h-maat">{{t.measures_title}}</h2>
+    <div class="measures" id="measures"></div>
+    <h3>{{t.sweets_title}} <span class="muted small">{{t.sweets_sub}}</span></h3>
+    <div class="extra" id="sweets"></div>
+    <div class="actions" style="margin-top:16px">
+      <button type="button" class="btn" id="go"></button>
+      <button type="button" class="btn ghost" id="fries">{{t.fries_btn}}</button>
+      <span class="hint" id="hint"></span>
+    </div>
+  </section>
+
+  <section class="panel c9 end" id="end" hidden aria-live="assertive">
+    <h2 id="end-title"></h2>
+    <div class="big" id="end-big"></div>
+    <p id="end-text"></p>
+    <p id="end-real" class="muted"></p>
+    <div class="actions">
+      <button type="button" class="btn" id="again">{{t.again}}</button>
+      <button type="button" class="btn ghost" id="share">{{t.share}}</button>
+      <a class="btn ghost" href="{{BASE}}">{{t.to_real}}</a>
+    </div>
+    <p class="muted small" id="shared" hidden>{{t.copied}}</p>
+  </section>
+
+  <section class="panel c3" aria-labelledby="h-log">
+    <h2 id="h-log">{{t.log_title}}</h2>
+    <ul class="log" id="log"></ul>
+  </section>
+
+  <footer class="foot">
+    <div class="band" aria-hidden="true"></div>
+    <p>{{t.foot}}</p>
+    <p><a href="{{BASE}}">{{t.foot_home}}</a> · <a href="{{BASE}}uitleg.html">{{t.foot_uitleg}}</a> · <a href="{{BASE}}privacy.html">{{t.privacy}}</a></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var T={{J.T}}, TX={{J.TX}}, LANG={{j.LANG}};
+  var f=function(s,o){return String(s).replace(/\{(\w+)\}/g,function(_,k){return o&&o[k]!=null?o[k]:''})};
+  var NEG=[
+    {id:'bel',em:'🧾',c:'var(--p-groen)'},{id:'idx',em:'🛡️',c:'var(--p-blauw)'},{id:'zrg',em:'🩺',c:'var(--p-magenta)'},
+    {id:'btw',em:'🧮',c:'var(--p-rood)'},{id:'mid',em:'👨‍👩‍👧',c:'var(--p-turkoois)'}
+  ];
+  var M=[
+    {id:'btw22',v:1.3,fx:{btw:20,bel:-35,mid:-10,idx:-5}},
+    {id:'frit',v:0.2,fx:{btw:5,bel:-10,mid:-15,idx:-10,zrg:5}},
+    {id:'meer',v:0.9,fx:{idx:20,bel:-30,mid:5}},
+    {id:'zorg',v:1.6,fx:{zrg:-45,idx:-10,bel:10,btw:5}},
+    {id:'sprong',v:2.0,fx:{idx:-55,mid:-15,bel:15,btw:5}},
+    {id:'lasten',v:1.6,fx:{btw:-40,mid:-10,idx:15}},
+    {id:'subs',v:1.1,fx:{bel:10,idx:-5,zrg:-5,mid:-10}},
+    {id:'fraude',v:0.6,fuzzy:true,fx:{bel:4,idx:4,zrg:4,btw:4,mid:4}},
+    {id:'eff',v:0.8,fx:{bel:10,idx:-10,btw:5}},
+    {id:'acc',v:0.5,fx:{zrg:10,mid:-5,bel:-5}},
+    {id:'pens',v:1.5,fx:{idx:-35,mid:-10,bel:15,btw:5}},
+    {id:'auto',v:0.8,fx:{bel:-20,mid:-10,zrg:5,idx:5}},
+    {id:'bank',v:0.4,fx:{idx:10,bel:-10}},
+    {id:'migr',v:0.6,fx:{btw:10,zrg:-20,idx:-15}},
+    {id:'def',v:1.0,fx:{btw:-10,bel:-10,mid:-5,idx:5}},
+    {id:'creatief',v:3.0,fx:{bel:5,idx:5,zrg:5,btw:5,mid:5}}
+  ];
+  var SWEET=[
+    {id:'s_bel',who:'bel',cost:0.4,gain:20},{id:'s_idx',who:'idx',cost:0.4,gain:20},{id:'s_zrg',who:'zrg',cost:0.5,gain:20},
+    {id:'s_btw',who:'btw',cost:0.3,gain:20},{id:'s_mid',who:'mid',cost:0.4,gain:20}
+  ];
+  var EVENTS=[
+    {fx:{all:-6}},{fx:{all:6},good:true},{target:0.5},{fx:{rand:-12}},{fx:{all:5},good:true},
+    {fx:{idx:10,bel:-6}},{fx:{all:-3}},{target:-0.3,good:true},{fx:{rand:-10}},{fx:{all:4},good:true}
+  ];
+  NEG.forEach(function(n){n.nm=TX.NEG[n.id].nm;n.rl=TX.NEG[n.id].rl});
+  M.forEach(function(m){m.t=TX.M[m.id].t;m.say=TX.M[m.id].say});
+  SWEET.forEach(function(s){s.t=TX.SWEET[s.id]});
+  EVENTS.forEach(function(e,i){e.t=TX.EVENTS[i]});
+  var START_DEADLINE=10, MAX_SHIFTS=2, REAL_FIRST='2026-07-21', PER_DAY=2, START_MOOD=55, FATIGUE=2, VETO_AT=15;
+  var S, REAL_DEAL=false;
+  if(window.fetch)fetch('/data.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){REAL_DEAL=!!(d&&d.akkoord===true)}).catch(function(){});
+  var $=function(id){return document.getElementById(id)};
+  var esc=function(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})};
+  var eur=function(x){var n=(Math.round(x*10)/10).toFixed(1);if(T.decimal_comma)n=n.replace('.',',');return f(T.money,{n:n})};
+  var negBy=function(id){for(var i=0;i<NEG.length;i++)if(NEG[i].id===id)return NEG[i]};
+  var plural=function(n,one,many){return n===1?one:many};
+  function fresh(){S={day:1,deadline:START_DEADLINE,found:0,target:10,mood:{},done:{},sel:[],shifts:0,crisis:0,creative:false,fries:0,over:false,won:false};
+    NEG.forEach(function(n){S.mood[n.id]=START_MOOD});}
+  function face(v){return v>=75?'😄':v>=50?'🙂':v>=30?'😐':v>=12?'😠':'🤬'}
+  function log(txt,good){var li=document.createElement('li');if(good)li.className='good';li.innerHTML='<b>'+esc(f(T.day_n,{n:S.day}))+'</b>'+esc(txt);$('log').insertBefore(li,$('log').firstChild)}
+  function applyFx(fx,mult){mult=mult||1;var hit=[];
+    Object.keys(fx).forEach(function(k){
+      if(k==='all'){NEG.forEach(function(n){S.mood[n.id]+=fx.all*mult})}
+      else if(k==='rand'){var n=NEG[Math.floor(Math.random()*NEG.length)];S.mood[n.id]+=fx.rand*mult;hit.push(n.nm)}
+      else S.mood[k]+=fx[k]*mult;
+    });
+    NEG.forEach(function(n){S.mood[n.id]=Math.max(0,Math.min(100,Math.round(S.mood[n.id])))});
+    return hit;
+  }
+  function renderTeam(shake){
+    $('team').innerHTML=NEG.map(function(n){var v=S.mood[n.id];
+      return '<div class="neg'+(shake&&shake.indexOf(n.id)>=0?' danger':'')+(v<=0?' out':'')+'" style="--c:'+n.c+'"><div class="face" aria-hidden="true">'+(v<=0?'🚪':face(v))+'</div><div class="nm">'+esc(n.nm)+'</div><div class="mood" role="img" aria-label="'+esc(f(T.mood_aria,{v:v}))+'"><i style="width:'+v+'%"></i></div><div class="val">'+v+'/100</div><div class="rl">'+esc(n.rl)+'</div></div>'}).join('');
+  }
+  function whoLine(fx){var up=[],down=[];
+    NEG.forEach(function(n){var d=(fx[n.id]||0)+(fx.all||0);if(d>0)up.push(n.em);else if(d<0)down.push(n.em)});
+    return (up.length?'👍 '+up.join(''):'')+(up.length&&down.length?'  ':'')+(down.length?'👎 '+down.join(''):'');
+  }
+  function renderBoard(){
+    $('measures').innerHTML=M.map(function(m){var done=!!S.done[m.id],sel=S.sel.indexOf(m.id)>=0;
+      return '<button type="button" class="m'+(done?' done':'')+'" data-id="'+m.id+'" aria-pressed="'+(sel?'true':'false')+'"'+(done||S.over?' disabled':'')+'><span class="row"><span class="t">'+esc(m.t)+'</span><span class="e">'+(m.fuzzy?'± ':'+')+eur(m.v)+'</span></span><span class="who" aria-label="'+esc(T.who_aria)+'">'+whoLine(m.fx)+'</span></button>'}).join('');
+    $('sweets').innerHTML=SWEET.map(function(s){var n=negBy(s.who),done=!!S.done[s.id];
+      return '<button type="button" class="m sw'+(done?' done':'')+'" data-sweet="'+s.id+'"'+(done||S.over?' disabled':'')+'><span class="row"><span class="t">'+esc(s.t)+'</span><span class="e" style="color:var(--t-rood)">−'+eur(s.cost)+'</span></span><span class="sweet">'+n.em+' '+esc(n.nm)+' +'+s.gain+'</span></button>'}).join('');
+    var n=S.sel.length;
+    $('go').disabled=S.over||n===0;
+    $('go').textContent=n?f(plural(n,T.go_one,T.go_many),{n:n}):T.go;
+    $('fries').disabled=S.over;
+    $('hint').textContent=n>=PER_DAY?T.hint_max:(n?T.hint_one_more:T.hint_pick);
+  }
+  function renderStatus(){
+    $('found').textContent=eur(S.found);$('target').textContent=eur(S.target);
+    $('day').textContent=Math.min(S.day,S.deadline)+' / '+S.deadline;
+    $('missed').textContent=S.shifts?(' · '+f(plural(S.shifts,T.shifted_one,T.shifted_many),{n:S.shifts})):'';
+    var p=Math.max(0,Math.min(100,S.found/S.target*100));
+    $('fill').style.width=p+'%';$('fill').style.setProperty('--full',(p?100/p*100:100)+'%');
+    $('bar').setAttribute('aria-label',f(T.bar_aria,{found:eur(S.found),target:eur(S.target)}));
+  }
+  function render(shake){renderTeam(shake);renderBoard();renderStatus()}
+  function realDays(){var m=/^(\d+)-(\d+)-(\d+)$/.exec(REAL_FIRST),a=Date.UTC(+m[1],+m[2]-1,+m[3]),d=new Date(),b=Date.UTC(d.getFullYear(),d.getMonth(),d.getDate());return Math.max(0,Math.round((b-a)/864e5))}
+  function end(won,title,text){S.over=true;S.won=won;
+    $('end').hidden=false;$('end-title').textContent=title;
+    $('end-big').textContent=won?T.big_yes:T.big_no;$('end-big').className='big '+(won?'ja':'nee');
+    $('end-text').textContent=text;
+    $('end-real').textContent=REAL_DEAL?T.real_deal:f(won?T.real_win:T.real_lose,{n:realDays()});
+    render();$('end').scrollIntoView({behavior:'smooth',block:'center'});
+    if(typeof window.gtag==='function')window.gtag('event','game_end',{result:won?'win':'lose',days:S.day,shifts:S.shifts,lang:LANG});
+  }
+  function checkWalkout(){
+    var out=NEG.filter(function(n){return S.mood[n.id]<=0});
+    if(!out.length)return false;
+    var names=out.map(function(n){return n.nm}).join(T.and);
+    if(S.crisis===0){
+      S.crisis=1;
+      log(f(T.walkout1,{names:names}));
+      log(T.king_refuses,true);
+      NEG.forEach(function(n){S.mood[n.id]=Math.max(S.mood[n.id],30)});
+      render(out.map(function(n){return n.id}));
+      return false;
+    }
+    log(f(T.walkout2,{names:names}));
+    end(false,T.end_resign_title,f(T.end_resign_text,{found:eur(S.found),target:eur(S.target)}));
+    return true;
+  }
+  function randomEvent(){
+    if(Math.random()>0.45)return;
+    var ev=EVENTS[Math.floor(Math.random()*EVENTS.length)],extra='';
+    if(ev.fx){var hit=applyFx(ev.fx);if(hit.length)extra=' '+f(T.about_who,{who:hit[0]})}
+    if(ev.target){S.target=Math.max(8,Math.round((S.target+ev.target)*10)/10)}
+    log(ev.t+extra,!!ev.good);
+  }
+  function nextDay(){
+    S.day++;
+    if(S.creative){S.creative=false;S.found-=3.0;applyFx({all:-15});log(T.eu_caught);}
+    randomEvent();
+    if(checkWalkout())return;
+    if(S.day>S.deadline){
+      if(S.shifts<MAX_SHIFTS){S.shifts++;S.deadline+=4;applyFx({all:-5});log(T.deadline_shift);}
+      else{end(false,T.end_nood_title,f(T.end_nood_text,{found:eur(S.found),target:eur(S.target)}));return}
+    }
+    render();
+  }
+  function propose(){
+    if(S.over||!S.sel.length)return;
+    var acc=[],shake=[];
+    S.sel.forEach(function(id){var m=M.filter(function(x){return x.id===id})[0];
+      var val=m.v;if(m.fuzzy){val=Math.round((0.1+Math.random()*0.9)*10)/10}
+      acc.push({m:m,val:val});applyFx(m.fx);});
+    NEG.forEach(function(n){
+      if(S.mood[n.id]>=VETO_AT||!acc.length)return;
+      var worst=null;acc.forEach(function(a){var d=(a.m.fx[n.id]||0)+(a.m.fx.all||0);if(d<0&&(!worst||d<((worst.m.fx[n.id]||0)+(worst.m.fx.all||0))))worst=a});
+      if(!worst)return;
+      acc.splice(acc.indexOf(worst),1);applyFx(worst.m.fx,-1);
+      var fans={};NEG.forEach(function(o){if((worst.m.fx[o.id]||0)>0)fans[o.id]=-3});applyFx(fans);
+      shake.push(n.id);
+      log(f(T.veto,{who:n.nm,what:worst.m.t}));
+    });
+    var got=0;
+    acc.forEach(function(a){var m=a.m;
+      if(m.id==='creatief')S.creative=true;
+      S.done[m.id]=true;got+=a.val;
+      log((m.fuzzy?f(T.yield_fuzzy,{what:m.t,n:eur(a.val)}):f(T.yield,{what:m.t,n:eur(a.val)}))+' '+m.say,true);
+    });
+    applyFx({all:-FATIGUE});
+    NEG.forEach(function(n){if(S.mood[n.id]<25&&shake.indexOf(n.id)<0)shake.push(n.id)});
+    S.found=Math.round((S.found+got)*10)/10;
+    S.sel=[];
+    render(shake);
+    if(checkWalkout())return;
+    if(S.found>=S.target){
+      if(S.creative){log(T.eu_reading);nextDay();if(S.over)return;if(S.found<S.target)return}
+      var txt=f(plural(S.day,T.win_text_one,T.win_text_many),{found:eur(S.found),n:S.day})+' '+(S.shifts?f(plural(S.shifts,T.win_shift_one,T.win_shift_many),{n:S.shifts}):T.win_clean)+' '+T.win_tail+(S.shifts?'':' '+T.win_pm);
+      end(true,T.end_win_title,txt);
+      return;
+    }
+    nextDay();
+  }
+  document.addEventListener('click',function(e){
+    var b=e.target.closest&&e.target.closest('button.m');if(!b||S.over)return;
+    var sid=b.getAttribute('data-sweet');
+    if(sid){var s=SWEET.filter(function(x){return x.id===sid})[0];if(S.done[sid])return;
+      S.done[sid]=true;S.found=Math.round((S.found-s.cost)*10)/10;var fx={};fx[s.who]=s.gain;applyFx(fx);
+      log(f(T.sweet_log,{what:s.t,who:negBy(s.who).nm,n:eur(s.cost)}),true);render();return}
+    var id=b.getAttribute('data-id'),i=S.sel.indexOf(id);
+    if(i>=0)S.sel.splice(i,1);else if(S.sel.length<PER_DAY)S.sel.push(id);
+    renderBoard();
+  });
+  $('go').addEventListener('click',propose);
+  $('fries').addEventListener('click',function(){if(S.over)return;S.fries++;
+    applyFx({all:S.fries>2?2:6});
+    log(S.fries>2?T.fries_again:T.fries,true);
+    nextDay();});
+  function resetLog(first){$('log').innerHTML='<li>'+esc(f(T.day_n,{n:1}))+' '+esc(first?T.log_start:T.log_restart)+'</li>'}
+  $('again').addEventListener('click',function(){fresh();$('end').hidden=true;$('shared').hidden=true;resetLog(false);render();window.scrollTo({top:0,behavior:'smooth'})});
+  $('share').addEventListener('click',function(){
+    var txt=S.won?f(T.share_win,{found:eur(S.found),n:S.day})+(REAL_DEAL?'':' '+T.share_win_real)+' '+T.share_cta:T.share_lose+' '+T.share_cta;
+    txt+=' https://iseraleenbegroting.be'+{{j.BASE}}+'spel.html';
+    function done(){$('shared').hidden=false}
+    if(navigator.share){navigator.share({text:txt}).catch(function(){})}
+    else if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done,function(){prompt(T.copy_prompt,txt)})}
+    else prompt(T.copy_prompt,txt);
+  });
+  fresh();resetLog(true);render();
+})();
+</script>
+<script src="/site.js"></script>
+</body>
+</html>

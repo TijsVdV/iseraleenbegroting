@@ -86,5 +86,109 @@
     "datum": "2026-11-16",
     "label": "De premier brengt opnieuw verslag uit bij de koning."
   },
-  "weerbericht": "Muurvast, met kans op bilaterale buien"
+  "weerbericht": "Muurvast, met kans op bilaterale buien",
+  "fr": {
+    "weerbericht": "Bloqué, avec risque d'averses bilatérales",
+    "samenvatting": "Le Roi a refusé la démission du gouvernement et renvoyé tout le monde à la table des négociations. Cette semaine, on se parle d'abord séparément ; la grande réunion, ce sera pour plus tard.",
+    "lourdesReden": "Démission présentée et refusée, budget d'urgence confirmé. Lueur d'espoir : on se reparle.",
+    "noodbegroting": "Budget d'urgence pour début 2027 : confirmé, deuxième année de suite",
+    "volgende": {
+      "label": "Le Premier ministre fait à nouveau rapport au Roi."
+    },
+    "gemisteDeadlines": [
+      {
+        "label": "La première échéance. Abandonnée peu après."
+      },
+      {
+        "label": "Déclaration de politique à la Chambre. Annulée."
+      },
+      {
+        "label": "Remettre le budget à l'Europe. Pas remis."
+      },
+      {
+        "label": "Un accord « au plus tard mardi ». Ce fut une démission."
+      }
+    ],
+    "tijdlijn": [
+      {
+        "tekst": "La concertation devait reprendre aujourd'hui, d'abord par des entretiens séparés avec chaque parti."
+      },
+      {
+        "tekst": "Le Roi refuse la démission et demande de reprendre les négociations sans attendre."
+      },
+      {
+        "tekst": "Le Premier ministre confirme à la Chambre qu'il y aura un budget d'urgence. Pour la deuxième année de suite."
+      },
+      {
+        "tekst": "Le Premier ministre présente la démission du gouvernement. Le Roi la tient en suspens."
+      },
+      {
+        "tekst": "Concertation nocturne jusqu'à 1 heure. Pas d'accord."
+      },
+      {
+        "tekst": "Encore une réunion. Toujours pas d'accord."
+      },
+      {
+        "tekst": "L'échéance pour remettre le budget à l'Europe expire."
+      },
+      {
+        "tekst": "Pas de déclaration de politique à la Chambre : il n'y a encore rien à lire."
+      },
+      {
+        "tekst": "L'échéance initiale. Elle a été abandonnée peu après."
+      }
+    ]
+  },
+  "de": {
+    "weerbericht": "Festgefahren, mit Aussicht auf bilaterale Schauer",
+    "samenvatting": "Der König lehnte den Rücktritt der Regierung ab und schickte alle zurück an den Verhandlungstisch. Diese Woche wird zuerst einzeln geredet; die große Sitzung kommt später.",
+    "lourdesReden": "Rücktritt angeboten und abgelehnt, Nothaushalt bestätigt. Lichtblick: Es wird wieder geredet.",
+    "noodbegroting": "Nothaushalt für Anfang 2027: bestätigt, zum zweiten Mal in Folge",
+    "volgende": {
+      "label": "Der Premierminister erstattet dem König erneut Bericht."
+    },
+    "gemisteDeadlines": [
+      {
+        "label": "Die erste Frist. Kurz darauf aufgegeben."
+      },
+      {
+        "label": "Regierungserklärung in der Kammer. Abgesagt."
+      },
+      {
+        "label": "Haushalt bei Europa einreichen. Nicht eingereicht."
+      },
+      {
+        "label": "Eine Einigung „spätestens Dienstag“. Es wurde ein Rücktritt."
+      }
+    ],
+    "tijdlijn": [
+      {
+        "tekst": "Die Gespräche sollten heute wieder beginnen, zunächst einzeln mit jeder Partei."
+      },
+      {
+        "tekst": "Der König lehnt den Rücktritt ab und bittet, sofort weiterzuverhandeln."
+      },
+      {
+        "tekst": "Der Premier bestätigt in der Kammer, dass ein Nothaushalt kommt. Zum zweiten Mal in Folge."
+      },
+      {
+        "tekst": "Der Premier bietet den Rücktritt der Regierung an. Der König hält die Entscheidung in der Schwebe."
+      },
+      {
+        "tekst": "Nächtliche Beratungen bis 1 Uhr. Keine Einigung."
+      },
+      {
+        "tekst": "Noch eine Sitzung. Noch keine Einigung."
+      },
+      {
+        "tekst": "Die Frist zur Einreichung des Haushalts in Europa verstreicht."
+      },
+      {
+        "tekst": "Keine Regierungserklärung in der Kammer: Es gibt noch nichts vorzulesen."
+      },
+      {
+        "tekst": "Die ursprüngliche Frist. Sie wurde kurz darauf aufgegeben."
+      }
+    ]
+  }
 }

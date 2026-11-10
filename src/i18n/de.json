@@ -1,0 +1,292 @@
+{
+ "common": {
+  "lang_label": "Sprache",
+  "theme_aria": "Design",
+  "theme_label": "Design:",
+  "skin_partijen": "Parteien",
+  "skin_belgie": "Belgien",
+  "skin_retro": "2000",
+  "quote_translated": "von VRT NWS ins Niederländische übersetzt",
+  "nav_home": "← Gibt es schon einen Haushalt?",
+  "nav_uitleg": "Erklärung",
+  "nav_spel": "Selbst spielen",
+  "nav_aria": "Website",
+  "foot_home": "Startseite",
+  "foot_uitleg": "Erklärung",
+  "foot_spel": "Haushaltsspiel",
+  "privacy": "Datenschutz",
+  "site_name": "Gibt es schon einen Haushalt?"
+ },
+ "index": {
+  "meta_title": "Gibt es schon einen Haushalt? Der belgische Föderalhaushalt, live verfolgt",
+  "meta_desc": "Gibt es schon einen föderalen Haushalt in Belgien? Hier sehen Sie es sofort: den Stand der Haushaltsverhandlungen, verpasste Fristen, den Nothaushalt und die neuesten Nachrichten. Satire, dreimal täglich aktualisiert.",
+  "site_name": "Gibt es schon einen Haushalt?",
+  "og_title": "Gibt es schon einen Haushalt? Immer noch NEIN.",
+  "og_desc": "Der inoffizielle Wartedienst für den belgischen Föderalhaushalt. Satire auf Grundlage echter Berichterstattung, dreimal täglich aktualisiert.",
+  "og_alt": "Gibt es schon einen Haushalt? NEIN.",
+  "ld_alt": "Haushalts-Wartedienst",
+  "ld_desc": "Satirische Begleitung der Verhandlungen über den belgischen Föderalhaushalt, auf Grundlage echter Berichterstattung.",
+  "top_label": "Inoffizieller Haushalts-Wartedienst",
+  "marquee": "*** WILLKOMMEN AUF MEINER HOMEPAGE!!! *** GIBT ES SCHON EINEN HAUSHALT??? *** NEIN!!! *** SETZ DIESE SEITE AUF DEINE FAVORITEN *** TRAG DICH IN MEIN GÄSTEBUCH EIN (KOMMT NOCH) ***",
+  "h1": "Gibt es schon einen föderalen Haushalt?",
+  "weer_label": "Wetterbericht aus der Rue de la Loi",
+  "lourdes_title": "Wunder-von-Lourdes-Meter",
+  "scale1": "Wird schon",
+  "scale2": "Kerze anzünden",
+  "scale3": "Pilgerreise buchen",
+  "next_title": "Nächster Termin",
+  "more_title": "Verstehen Sie nur noch Bahnhof?",
+  "more_text": "Keine Schande. Lesen Sie <a href=\"uitleg.html\">die Erklärung</a>: wie groß das Loch ist, warum es jetzt sein muss und warum sich fünf Parteien nicht einig werden. Oder glauben Sie, Sie können es besser?",
+  "more_play": "Das Haushaltsspiel spielen 🎲",
+  "more_read": "Zur Erklärung",
+  "dead_title": "Fristen, die es nicht geschafft haben",
+  "tl_title": "Was bisher geschah",
+  "about_title": "Was ist das eigentlich?",
+  "about_p1": "Diese Seite verfolgt die Verhandlungen über den <b>Föderalhaushalt Belgiens</b>: den Plan, in dem die Föderalregierung festlegt, wie viel sie ausgibt und woher das Geld kommt. Solange es keine Haushaltseinigung gibt, steht oben NEIN, und wir zählen mit, welche Fristen gefallen sind.",
+  "about_h2": "Und ohne Haushalt?",
+  "about_p2": "Dann arbeitet der Föderalstaat mit <b>vorläufigen Zwölfteln</b>, im Volksmund Nothaushalt. Die Kammer erlaubt der Regierung, pro Monat ungefähr ein Zwölftel des vorherigen Haushalts auszugeben. Die Lichter bleiben an, aber neue Politik muss warten.",
+  "about_h3": "Woher kommen die Infos?",
+  "about_p3": "Dreimal täglich suchen wir die neuesten Haushaltsnachrichten in belgischen Medien und aktualisieren diese Seite. Jedes Ereignis in der Zeitleiste verlinkt auf den Artikel, aus dem es stammt.",
+  "foot1": "<b>Das ist Satire.</b> Fakten und Daten stammen aus den verlinkten Nachrichten; die Witze sind von uns. Wir lachen über den Prozess, nicht über eine Partei.",
+  "foot_colors_p": "Die Farben? Die aller Parteien zugleich, ohne Vorrang für irgendwen. Eine Regenbogenkoalition, die tatsächlich funktioniert.",
+  "foot_colors_b": "Schwarz, Gelb und Rot: die einzigen drei Farben, bei denen sich alle einig sind.",
+  "retro_days": "Tage ohne Haushalt:",
+  "retro_b2": "Optimiert für 800x600",
+  "retro_b3": "Erstellt mit Notepad",
+  "foot_ai": "Ein KI-Assistent liest dreimal täglich die Nachrichten und aktualisiert diese Seite. Es kann also Verzögerungen geben, und im Zweifel hat die Quelle recht.",
+  "quotes_note": "Die Zitate am Rand stammen wörtlich aus den Liveblogs von VRT NWS, auf Niederländisch, mit Link zur Quelle. Aussagen französischsprachiger Politiker wurden dort von der Redaktion übersetzt. Zwei Zitate pro Regierungspartei, damit niemand bevorzugt wird.",
+  "foot_made": "Mit Liebe und leichter Verzweiflung gemacht von einem Millennial, der immer noch auf ein Haus spart.",
+  "nav_uitleg": "Erklärung",
+  "nav_spel": "Haushaltsspiel",
+  "privacy": "Datenschutz",
+  "cookie_settings": "Cookie-Einstellungen",
+  "consent_text": "<b>Dürfen wir Sie mitzählen?</b> Wir verwenden Cookies von Google, um Besuche zu zählen. Ohne Ihr Ja tun wir das nicht. <a href=\"privacy.html\">Mehr erfahren</a>",
+  "consent_yes": "Ja, zählt mich mit",
+  "consent_no": "Nein, ich warte anonym",
+  "yes": "JA!",
+  "no": "NEIN.",
+  "tile_days": "Tage seit der ersten Frist",
+  "tile_missed": "verpasste Fristen",
+  "tile_palace": "Fahrten zum Palast",
+  "eur_prefix": "",
+  "bn_short": " Mrd. €",
+  "tile_found": "gefunden (angeblich)",
+  "tile_missing": "immer noch verschwunden",
+  "of100": " von 100",
+  "flag_top_yes": "Flagge ganz oben!",
+  "flag_low": "Flagge fast eingeholt",
+  "flag_half": "Flagge auf halbmast",
+  "flag_34": "Flagge auf drei Viertel",
+  "flag_top": "Flagge ganz oben",
+  "days_left": "Noch {n} Tage.",
+  "tomorrow": "Schon morgen.",
+  "today": "Heute.",
+  "past": "Dieser Tag ist vorbei; wir warten auf ein neues Datum.",
+  "no_date": "Kein Datum bekannt. Das sagt vielleicht schon genug.",
+  "src_word": "Quelle",
+  "updated": "Aktualisiert am ",
+  "snapshot": "Momentaufnahme vom "
+ },
+ "spel": {
+  "meta_title": "Das Haushaltsspiel: Finden Sie die 10 Milliarden? · Gibt es schon einen Haushalt?",
+  "meta_desc": "Sie glauben, Sie können es besser als die Rue de la Loi? Finden Sie 10 Milliarden Euro und halten Sie fünf Verhandler bei Laune. Ein satirisches Spiel über den Föderalhaushalt.",
+  "og_title": "Das Haushaltsspiel: Finden Sie die 10 Milliarden?",
+  "og_desc": "Fünf Verhandler, fünf rote Linien, zehn Tage. Schaffen Sie es?",
+  "h1": "Das Haushaltsspiel",
+  "lead": "Finden Sie <b>10 Milliarden Euro</b> vor der Frist. Halten Sie alle fünf Verhandler am Tisch. Wie schwer kann das sein?",
+  "of_the": "von",
+  "day_word": "Tag",
+  "progress": "Fortschritt",
+  "how_title": "So wird gespielt",
+  "how1": "Wählen Sie jeden Tag <b>höchstens zwei Maßnahmen</b> und legen Sie sie dem Kernkabinett vor. Jeder Tag zählt, und jede Sitzung macht alle etwas mürrischer.",
+  "how2": "Jede Maßnahme bringt Geld, macht aber manche Verhandler froh und andere wütend. Bei jeder Maßnahme sehen Sie, wer 👍 und wer 👎 ist.",
+  "how3": "Fällt jemand unter 15, legt er ein <b>Veto</b> gegen die Maßnahme ein, die er am schlimmsten findet. Fällt jemand auf 0, verlässt er den Tisch und Sie müssen zum König.",
+  "how4": "Zugeständnisse helfen: Sie machen einen Verhandler froh, kosten aber Geld.",
+  "how5": "Frist verpasst? Sie dürfen sie verschieben. Wie im echten Leben. Aber nicht endlos.",
+  "disclaimer": "Alle Beträge und Reaktionen in diesem Spiel sind erfunden oder stark vereinfacht. Die fünf Verhandler sind fiktiv. Sie erkennen trotzdem jemanden wieder? Dann liegt das am Prozess, nicht an uns. Zur echten Erklärung: <a href=\"uitleg.html\">hier entlang</a>.",
+  "team_title": "Am Tisch",
+  "measures_title": "Maßnahmen",
+  "sweets_title": "Zugeständnisse",
+  "sweets_sub": "(macht einen Verhandler froh, kostet Geld)",
+  "fries_btn": "Pommespause 🍟",
+  "again": "Nochmal spielen",
+  "share": "Ergebnis teilen",
+  "to_real": "Zum echten Stand",
+  "copied": "Kopiert! Fügen Sie es ein, wo Sie wollen.",
+  "log_title": "Was passiert ist",
+  "foot": "<b>Das ist Satire.</b> Das Spiel lacht über den Prozess, nicht über eine Partei oder Person. Die Verhandler sind erfundene Archetypen und die Beträge Spielgeld.",
+  "T": {
+   "money": "{n} Mrd. €",
+   "decimal_comma": true,
+   "day_n": "Tag {n}.",
+   "mood_aria": "Laune {v} von 100",
+   "who_aria": "Wer ist dafür und dagegen",
+   "go": "Dem Kernkabinett vorlegen",
+   "go_one": "{n} Maßnahme vorlegen",
+   "go_many": "{n} Maßnahmen vorlegen",
+   "hint_max": "Höchstens zwei pro Tag. Auch das Kernkabinett ist nur ein Mensch.",
+   "hint_one_more": "Heute ist noch eine möglich.",
+   "hint_pick": "Wählen Sie eine oder zwei Maßnahmen.",
+   "shifted_one": "{n} Frist verschoben",
+   "shifted_many": "{n} Fristen verschoben",
+   "bar_aria": "Gefunden: {found} von {target}",
+   "big_yes": "JA!",
+   "big_no": "NEIN.",
+   "real_deal": "Auch in Wirklichkeit gibt es inzwischen eine Einigung. Es hat nur etwas länger gedauert als bei Ihnen.",
+   "real_win": "Zum Vergleich: Die echte Regierung ist bei {n} Tagen seit der ersten Frist. Und noch keine Einigung.",
+   "real_lose": "Trösten Sie sich: Die echte Regierung ist bei {n} Tagen seit der ersten Frist. Sie sind in guter Gesellschaft.",
+   "and": " und ",
+   "walkout1": "{names} verlässt die Sitzung und gibt sofort ein Interview. Sie bieten dem König Ihren Rücktritt an.",
+   "king_refuses": "Der König lehnt Ihren Rücktritt ab und schickt alle zurück an den Tisch. „Versuchen Sie es nochmal.“ Alle setzen sich murrend wieder hin.",
+   "walkout2": "{names} geht. Zum zweiten Mal zum König.",
+   "end_resign_title": "Der König nimmt Ihren Rücktritt an",
+   "end_resign_text": "Zweimal zum Palast ist einmal zu viel. Es gibt Neuwahlen. Alle sagen, die anderen sind schuld. Sie haben {found} von {target} gefunden.",
+   "about_who": "Es geht um {who}.",
+   "eu_caught": "Die Europäische Kommission hat die kreative Buchführung bemerkt. Sie fand sie nicht kreativ. Die 3,0 Mrd. € sind weg, und alle schauen Sie an.",
+   "deadline_shift": "Frist verpasst! Sie verschieben sie um vier Tage. „Die einzige echte Frist ist die einer guten Einigung“, sagen Sie auf der Pressekonferenz. Niemand glaubt es, aber es klingt gut.",
+   "end_nood_title": "Nothaushalt",
+   "end_nood_text": "Drei Fristen verpasst. Das Land beginnt das Jahr mit vorläufigen Zwölfteln. Sie haben {found} von {target} gefunden. Genau wie in Wirklichkeit, also eigentlich ziemlich realistisch.",
+   "veto": "VETO! {who} blockiert „{what}“. „Das ist für uns eine rote Linie.“ Sie können es später nochmal versuchen.",
+   "yield": "{what} (+{n}).",
+   "yield_fuzzy": "{what} bringt {n}. Ungefähr.",
+   "eu_reading": "Sie glauben, Sie haben es geschafft. Aber die Europäische Kommission liest noch kurz mit…",
+   "end_win_title": "Es gibt eine Einigung!",
+   "win_text_one": "Sie haben {found} in {n} Tag gefunden,",
+   "win_text_many": "Sie haben {found} in {n} Tagen gefunden,",
+   "win_shift_one": "nach {n} verschobenen Frist.",
+   "win_shift_many": "nach {n} verschobenen Fristen.",
+   "win_clean": "ohne eine einzige Frist zu verpassen.",
+   "win_tail": "Alle fünf Verhandler sitzen noch am Tisch und erklären jeder im Fernsehen, dass sie gewonnen haben.",
+   "win_pm": "Jemand schlägt vor, Sie zum Premierminister zu machen. Sie lehnen höflich ab.",
+   "sweet_log": "Zugeständnis: {what}. {who} lächelt. Kostet aber {n}.",
+   "fries": "Pommespause. Mit Gulaschsoße. Die Stimmung bessert sich sichtlich, aber der Tag ist um.",
+   "fries_again": "Schon wieder Pommes. Es wirkt weniger. Jemand fragt nach einem Salat.",
+   "log_start": "Die fünf Verhandler nehmen Platz. Jemand hat Croissants mitgebracht. Noch.",
+   "log_restart": "Neue Runde, neue Chancen. Die Croissants sind frisch.",
+   "share_win": "Ich habe {found} für den Föderalhaushalt in {n} Tagen gefunden.",
+   "share_win_real": "Die echte Regierung: noch dabei.",
+   "share_lose": "Ich wollte den Föderalhaushalt abschließen, und die Antwort lautet: NEIN. Wie in Wirklichkeit.",
+   "share_cta": "Schaffen Sie es?",
+   "copy_prompt": "Ergebnis kopieren:"
+  },
+  "TX": {
+   "NEG": {
+    "bel": {
+     "nm": "Frau Nie-Steuern",
+     "rl": "Steuern rauf? Nur über meine Leiche."
+    },
+    "idx": {
+     "nm": "Herr Finger-Weg-vom-Index",
+     "rl": "Löhne und Leistungen? Nicht anfassen."
+    },
+    "zrg": {
+     "nm": "Doktor Pflege-Zuerst",
+     "rl": "Wer bei der Pflege kürzt, kürzt bei Menschen."
+    },
+    "btw": {
+     "nm": "Herr MwSt-Ist-Fair",
+     "rl": "Alle zahlen Mehrwertsteuer. Und die Entlastung bleibt."
+    },
+    "mid": {
+     "nm": "Frau Mittelschicht",
+     "rl": "Denken Sie doch an die normalen Familien!"
+    }
+   },
+   "M": {
+    "btw22": {
+     "t": "MwSt. von 21 % auf 22 %",
+     "say": "Frau Nie-Steuern fährt schon mal nach Maastricht zum Tanken."
+    },
+    "frit": {
+     "t": "MwSt. auf Pommes auf 21 %",
+     "say": "Ein landesweiter Frittenbuden-Streik wird angekündigt. Mit Mayo."
+    },
+    "meer": {
+     "t": "Höhere Kapitalertragsteuer",
+     "say": "Ein reicher Unternehmer droht mit Umzug. Nach Knokke."
+    },
+    "zorg": {
+     "t": "2 Mrd. € in der Pflege sparen",
+     "say": "Doktor Pflege-Zuerst verschreibt sich etwas Beruhigendes."
+    },
+    "sprong": {
+     "t": "Indexsprung",
+     "say": "Herr Finger-Weg-vom-Index ruft die Gewerkschaft an. Die Gewerkschaft ruft zurück. Mit einem Streikdatum."
+    },
+    "lasten": {
+     "t": "Entlastung rückgängig machen",
+     "say": "Herr MwSt-Ist-Fair fragt, ob das wirklich nötig ist. Dreimal."
+    },
+    "subs": {
+     "t": "Subventionen kürzen",
+     "say": "Alle sind dafür. Bis es um IHRE Subvention geht."
+    },
+    "fraude": {
+     "t": "Betrugsbekämpfung",
+     "say": "Steht seit 1830 in jedem Koalitionsvertrag. Ertrag: wer weiß."
+    },
+    "eff": {
+     "t": "Den Staat effizienter machen",
+     "say": "Es wird eine Arbeitsgruppe gegründet, um die Zahl der Arbeitsgruppen zu senken."
+    },
+    "acc": {
+     "t": "Verbrauchsteuern auf Tabak und Alkohol",
+     "say": "Die Kneipe an der Ecke hängt Trauerflor auf."
+    },
+    "pens": {
+     "t": "Rentenreform beschleunigen",
+     "say": "Jemand rechnet aus, wann er in Rente darf. Er rechnet nochmal. Und nochmal."
+    },
+    "auto": {
+     "t": "Dienstwagen weniger begünstigen",
+     "say": "Der Brüsseler Ring steht vor Schreck still. Niemand merkt den Unterschied."
+    },
+    "bank": {
+     "t": "Bankenabgabe",
+     "say": "Die Banken reagieren mit einer Pressemitteilung. Und einer neuen Gebühr für Ihre Bankkarte."
+    },
+    "migr": {
+     "t": "Bei Asyl und Migration sparen",
+     "say": "Es folgt eine neunstündige Debatte. Es bringt weniger als erhofft."
+    },
+    "def": {
+     "t": "Verteidigungsausgaben verschieben",
+     "say": "Die NATO schickt eine böse Mail. Auf Englisch. Mit cc."
+    },
+    "creatief": {
+     "t": "Kreative Buchführung",
+     "say": "Niemand fragt, wie. Alle sind erleichtert. Vorerst."
+    }
+   },
+   "SWEET": {
+    "s_bel": "Feierliches Versprechen: keine neuen Steuern mehr (außer dieser)",
+    "s_idx": "Eine Arbeitsgruppe zu einer Millionärssteuer",
+    "s_zrg": "Mehr Geld für Pflegekräfte",
+    "s_btw": "Eine Studie zu einer MwSt-Reform. Für später.",
+    "s_mid": "Fototermin mit einer Familie aus Eupen"
+   },
+   "EVENTS": [
+    "Ein vertrauliches Papier landet in der Zeitung. Die Stimmung ist eisig.",
+    "Eine Ratingagentur droht mit einer Herabstufung. Plötzlich sind alle vernünftig.",
+    "Neue Zahlen des Monitoringkomitees: Das Loch ist eine halbe Milliarde größer.",
+    "Ein Parteivorsitzender twittert um 2 Uhr nachts.",
+    "Der König lädt alle zum Kaffee ein. Mit Spekulatius.",
+    "In Brüssel wird gestreikt.",
+    "Jemand vergisst die Croissants. Das hat niemand kommen sehen.",
+    "Gute Nachricht: Die Wirtschaft wächst etwas schneller als erwartet.",
+    "Ein Interview in der Sonntagszeitung. Über „rote Linien“. Plural.",
+    "Die Roten Teufel gewinnen. Für einen Moment sind alle Belgier."
+   ]
+  }
+ },
+ "uitleg": {
+  "meta_title": "Warum gibt es keinen föderalen Haushalt? Die belgische Haushaltskrise erklärt",
+  "meta_desc": "Was ist los mit dem belgischen Föderalhaushalt? Wie groß ist das Loch, warum muss es jetzt sein, warum werden sich fünf Parteien nicht einig, und was passiert ohne Einigung? Klar erklärt, mit Quellen.",
+  "og_title": "Die belgische Haushaltskrise, klar erklärt",
+  "og_desc": "Wie groß ist das Loch, warum jetzt, und warum werden sich fünf Parteien nicht einig? Mit Zahlen und Quellen.",
+  "foot1": "Diese Erklärung soll helfen, den Prozess zu verstehen, nicht Partei zu ergreifen. Der Rest der Website ist Satire; diese Seite versucht, so sachlich wie möglich zu sein."
+ },
+ "privacy": {
+  "meta_title": "Datenschutz · Gibt es schon einen Haushalt?"
+ }
+}

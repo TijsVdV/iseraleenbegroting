@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="{{LANGTAG}}">
+<head>
+<meta charset="utf-8">
+<script>try{var t=localStorage.getItem("begroting-skin");if(t==="belgie"||t==="retro")document.documentElement.setAttribute("data-skin",t)}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{t.meta_title}}</title>
+<meta name="description" content="{{a.meta_desc}}">
+<link rel="canonical" href="{{CANON}}">
+{{HREFLANG}}
+<meta property="og:site_name" content="{{a.site_name}}">
+<meta property="og:locale" content="{{OGLOCALE}}">
+<meta property="og:title" content="{{a.og_title}}">
+<meta property="og:description" content="{{a.og_desc}}">
+<meta property="og:url" content="{{CANON}}">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://iseraleenbegroting.be/{{OGIMAGE}}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='1' height='2' fill='%231b1b1b'/%3E%3Crect x='1' width='1' height='2' fill='%23fdda24'/%3E%3Crect x='2' width='1' height='2' fill='%23ef3340'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css">
+<style>
+.tldr{font-size:clamp(17px,2.2vw,19px)}
+.tldr ul{margin:0;padding-left:1.2em}
+.tldr li{margin:4px 0}
+.toc ol{margin:0;padding-left:1.3em;columns:2;column-gap:28px}
+.toc li{break-inside:avoid;margin:3px 0}
+@media (max-width:560px){.toc ol{columns:1}}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:12px 0}
+.fig{background:var(--bg2);border:2px solid var(--line);border-top:8px solid var(--c);border-radius:calc(var(--radius) - 4px);padding:12px 14px;min-width:0}
+.fig b{display:block;font-family:var(--display);font-weight:700;font-size:clamp(26px,5vw,34px);line-height:1.1;white-space:nowrap}
+.fig span{display:block;font-size:14px;font-weight:700;color:var(--muted);line-height:1.35;margin-top:4px}
+.analogy{background:var(--bg2);border:2px dashed var(--line);border-radius:calc(var(--radius) - 6px);padding:12px 14px;margin:12px 0}
+.tbl{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:10px 0}
+table{border-collapse:collapse;width:100%;min-width:540px;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:2px solid var(--line)}
+th{font-family:var(--display);font-weight:600;font-size:15px}
+td:first-child{font-weight:800;white-space:nowrap}
+.tl{list-style:none;margin:0;padding:0}
+.tl li{display:grid;grid-template-columns:8.5em minmax(0,1fr);gap:2px 14px;padding:9px 0;border-bottom:2px dashed var(--line)}
+.tl li:last-child{border-bottom:0}
+.tl time{font-family:var(--display);font-weight:600;color:var(--t-rood)}
+@media (max-width:480px){.tl li{grid-template-columns:minmax(0,1fr)}}
+dl{margin:0}
+dt{font-weight:800;margin-top:10px}
+dd{margin:2px 0 0}
+.src{font-size:15px;padding-left:1.2em;margin:0}
+.src li{margin:4px 0;overflow-wrap:anywhere}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.note{font-size:14px;color:var(--muted)}
+:root[data-skin="retro"] .fig,:root[data-skin="retro"] .analogy{border-radius:0;background:#fff;border:2px inset #c0c0c0}
+:root[data-skin="retro"] .panel>p,:root[data-skin="retro"] .panel>ul,:root[data-skin="retro"] .panel>ol,:root[data-skin="retro"] .panel>dl,:root[data-skin="retro"] .panel>.tbl,:root[data-skin="retro"] .panel>.tl{background:#fff;border:2px inset #c0c0c0;padding:8px 10px}
+:root[data-skin="retro"] .panel>ul,:root[data-skin="retro"] .panel>ol{padding-left:2em}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <nav aria-label="{{a.nav_aria}}"><a href="{{BASE}}">{{t.nav_home}}</a><a href="{{BASE}}uitleg.html" aria-current="page">{{t.nav_uitleg}}</a><a href="{{BASE}}spel.html">{{t.nav_spel}}</a></nav>
+    {{SKINS}}
+    {{LANGSWITCH}}
+  </header>
+
+{{BODY}}
+  <footer class="foot">
+    <div class="band" aria-hidden="true"></div>
+    <p>{{t.foot1}}</p>
+    <p><a href="{{BASE}}">{{t.foot_home}}</a> · <a href="{{BASE}}spel.html">{{t.foot_spel}}</a> · <a href="{{BASE}}privacy.html">{{t.privacy}}</a></p>
+  </footer>
+</div>
+<script src="/site.js"></script>
+</body>
+</html>

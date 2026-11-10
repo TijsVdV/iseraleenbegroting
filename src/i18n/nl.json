@@ -1,0 +1,292 @@
+{
+ "common": {
+  "lang_label": "Taal",
+  "theme_aria": "Thema",
+  "theme_label": "Thema:",
+  "skin_partijen": "Partijen",
+  "skin_belgie": "België",
+  "skin_retro": "2000",
+  "quote_translated": "vertaald door VRT NWS",
+  "nav_home": "← Is er al een begroting?",
+  "nav_uitleg": "Uitleg",
+  "nav_spel": "Speel zelf",
+  "nav_aria": "Site",
+  "foot_home": "Startpagina",
+  "foot_uitleg": "Uitleg",
+  "foot_spel": "Begrotingsspel",
+  "privacy": "Privacy",
+  "site_name": "Is er al een begroting?"
+ },
+ "index": {
+  "meta_title": "Is er al een begroting? De federale begroting van België, live opgevolgd",
+  "meta_desc": "Is er al een federale begroting in België? Hier zie je het meteen: de stand van de begrotingsonderhandelingen, gemiste deadlines, de noodbegroting en het laatste nieuws. Satire, drie keer per dag bijgewerkt.",
+  "site_name": "Is er al een begroting?",
+  "og_title": "Is er al een begroting? Nog altijd NEEN.",
+  "og_desc": "De onofficiële wachtdienst voor de federale begroting van België. Satire op basis van echte berichtgeving, drie keer per dag bijgewerkt.",
+  "og_alt": "Is er al een begroting? NEEN.",
+  "ld_alt": "Begrotingswachtdienst",
+  "ld_desc": "Satirische opvolging van de onderhandelingen over de federale begroting van België, gebaseerd op echte berichtgeving.",
+  "top_label": "Onofficiële begrotingswachtdienst",
+  "marquee": "*** WELKOM OP MIJN HOMEPAGE!!! *** IS ER AL EEN BEGROTING??? *** NEEN!!! *** VOEG DEZE PAGINA TOE AAN JE FAVORIETEN *** TEKEN MIJN GASTENBOEK (KOMT NOOIT) ***",
+  "h1": "Is er al een federale begroting?",
+  "weer_label": "Wetstraat-weerbericht",
+  "lourdes_title": "Mirakel-uit-Lourdes-meter",
+  "scale1": "Komt goed",
+  "scale2": "Kaarsje branden",
+  "scale3": "Bedevaart boeken",
+  "next_title": "Volgende afspraak",
+  "more_title": "Snap je er niks meer van?",
+  "more_text": "Geen schande. Lees <a href=\"uitleg.html\">de uitleg</a>: hoe groot het gat is, waarom het nu moet en waarom vijf partijen het niet eens raken. Of denk je dat je het zelf beter kan?",
+  "more_play": "Speel het begrotingsspel 🎲",
+  "more_read": "Lees de uitleg",
+  "dead_title": "Deadlines die het niet gehaald hebben",
+  "tl_title": "Wat voorafging",
+  "about_title": "Wat is dit eigenlijk?",
+  "about_p1": "Deze pagina volgt de onderhandelingen over de <b>federale begroting van België</b>: het plan waarin de federale regering vastlegt hoeveel ze uitgeeft en waar het geld vandaan komt. Zolang er geen begrotingsakkoord is, staat hierboven NEEN, en houden we bij welke deadlines er sneuvelden.",
+  "about_h2": "En zonder begroting?",
+  "about_p2": "Dan werkt de federale overheid met <b>voorlopige twaalfden</b>, in de volksmond een noodbegroting. De Kamer geeft de regering toestemming om per maand ongeveer een twaalfde van de vorige begroting uit te geven. De lichten blijven aan, maar nieuw beleid moet wachten.",
+  "about_h3": "Waar komt de info vandaan?",
+  "about_p3": "Drie keer per dag zoeken we het laatste begrotingsnieuws op bij Belgische nieuwsmedia en werken we deze pagina bij. Elke gebeurtenis in de tijdlijn linkt naar het artikel waar ze vandaan komt.",
+  "foot1": "<b>Dit is satire.</b> De feiten en data komen uit de gelinkte nieuwsberichten; de grapjes zijn van ons. We lachen met het proces, niet met een partij.",
+  "foot_colors_p": "De kleuren? Die van alle partijen tegelijk, zonder voorrang voor wie dan ook. Een regenboogcoalitie die wél werkt.",
+  "foot_colors_b": "Zwart, geel en rood: de enige drie kleuren waar iedereen het over eens is.",
+  "retro_days": "Dagen zonder begroting:",
+  "retro_b2": "Best bekeken in 800x600",
+  "retro_b3": "Gemaakt met Kladblok",
+  "foot_ai": "Een AI-assistent leest drie keer per dag het nieuws en werkt deze pagina bij. Er kan dus vertraging op zitten, en bij twijfel heeft de bron gelijk.",
+  "foot_made": "Met liefde en lichte wanhoop gemaakt door een millennial, die intussen nog altijd spaart voor een huis.",
+  "nav_uitleg": "Uitleg",
+  "nav_spel": "Begrotingsspel",
+  "privacy": "Privacy",
+  "cookie_settings": "Cookie-instellingen",
+  "consent_text": "<b>Mogen we je meetellen?</b> We gebruiken cookies van Google om bezoeken te tellen. Zonder jouw ja doen we dat niet. <a href=\"privacy.html\">Meer uitleg</a>",
+  "consent_yes": "Ja, tel me mee",
+  "consent_no": "Nee, ik wacht anoniem",
+  "yes": "JA!",
+  "no": "NEEN.",
+  "tile_days": "dagen sinds de eerste deadline",
+  "tile_missed": "gemiste deadlines",
+  "tile_palace": "ritjes naar het Paleis",
+  "eur_prefix": "€",
+  "bn_short": " mld",
+  "tile_found": "gevonden (naar verluidt)",
+  "tile_missing": "nog altijd zoek",
+  "of100": " op 100",
+  "flag_top_yes": "Vlag in top!",
+  "flag_low": "Vlag bijna gestreken",
+  "flag_half": "Vlag halfstok",
+  "flag_34": "Vlag op driekwart",
+  "flag_top": "Vlag in top",
+  "days_left": "Nog {n} dagen.",
+  "tomorrow": "Morgen al.",
+  "today": "Vandaag.",
+  "past": "Die dag is intussen voorbij; we wachten op een nieuwe datum.",
+  "no_date": "Geen datum bekend. Dat zegt misschien al genoeg.",
+  "src_word": "bron",
+  "updated": "Bijgewerkt ",
+  "snapshot": "Momentopname van ",
+  "quotes_note": "De citaten in de marge zijn letterlijk overgenomen uit de liveblogs van VRT NWS, met een link naar de bron. Uitspraken van Franstalige politici zijn daar door de redactie vertaald. Twee citaten per regeringspartij, zodat niemand voorrang krijgt."
+ },
+ "spel": {
+  "meta_title": "Het Begrotingsspel: vind jij de 10 miljard? · Is er al een begroting?",
+  "meta_desc": "Denk je dat je het beter kan dan de Wetstraat? Vind 10 miljard euro en hou vijf onderhandelaars tevreden. Een satirisch spel over de federale begroting.",
+  "og_title": "Het Begrotingsspel: vind jij de 10 miljard?",
+  "og_desc": "Vijf onderhandelaars, vijf rode lijnen, tien dagen. Lukt het jou wel?",
+  "h1": "Het Begrotingsspel",
+  "lead": "Vind <b>10 miljard euro</b> voor de deadline. Hou alle vijf de onderhandelaars aan tafel. Hoe moeilijk kan het zijn?",
+  "of_the": "van de",
+  "day_word": "Dag",
+  "progress": "Voortgang",
+  "how_title": "Zo speel je",
+  "how1": "Kies elke dag <b>maximaal twee maatregelen</b> en leg ze voor aan de kern. Elke dag telt, en elke vergadering maakt iedereen een beetje humeuriger.",
+  "how2": "Elke maatregel brengt geld op, maar maakt sommige onderhandelaars blij en andere woedend. Bij elke maatregel zie je wie 👍 en wie 👎 is.",
+  "how3": "Zakt iemand onder 15, dan zegt die <b>veto</b> op de maatregel die hij of zij het ergst vindt. Zakt iemand naar 0, dan stapt die op en moet je naar de koning.",
+  "how4": "Wisselgeld helpt: een toegeving maakt één onderhandelaar blij, maar kost geld.",
+  "how5": "Haal je de deadline niet? Je mag hem verschuiven. Net als in het echt. Maar niet eindeloos.",
+  "disclaimer": "Alle bedragen en reacties in dit spel zijn verzonnen of sterk vereenvoudigd. De vijf onderhandelaars zijn fictief. Herken je er toch iemand in? Dan ligt dat aan het proces, niet aan ons. Voor de echte uitleg: <a href=\"uitleg.html\">lees hier</a>.",
+  "team_title": "Aan tafel",
+  "measures_title": "Maatregelen",
+  "sweets_title": "Wisselgeld",
+  "sweets_sub": "(maakt één onderhandelaar blij, kost geld)",
+  "fries_btn": "Frietjespauze 🍟",
+  "again": "Opnieuw spelen",
+  "share": "Deel je resultaat",
+  "to_real": "Naar de echte stand",
+  "copied": "Gekopieerd! Plak het waar je wil.",
+  "log_title": "Wat er gebeurde",
+  "foot": "<b>Dit is satire.</b> Het spel lacht met het proces, niet met een partij of persoon. De onderhandelaars zijn verzonnen archetypes en de bedragen zijn speelgeld.",
+  "T": {
+   "money": "€{n} mld",
+   "decimal_comma": true,
+   "day_n": "Dag {n}.",
+   "mood_aria": "Humeur {v} op 100",
+   "who_aria": "Wie is voor en tegen",
+   "go": "Leg voor aan de kern",
+   "go_one": "Leg {n} maatregel voor aan de kern",
+   "go_many": "Leg {n} maatregelen voor aan de kern",
+   "hint_max": "Maximum twee per dag. De kern is ook maar een mens.",
+   "hint_one_more": "Nog één extra mogelijk vandaag.",
+   "hint_pick": "Kies één of twee maatregelen.",
+   "shifted_one": "{n} deadline verschoven",
+   "shifted_many": "{n} deadlines verschoven",
+   "bar_aria": "Gevonden: {found} van {target}",
+   "big_yes": "JA!",
+   "big_no": "NEEN.",
+   "real_deal": "In het echt is er intussen ook een akkoord. Het duurde alleen iets langer dan bij jou.",
+   "real_win": "Ter vergelijking: de echte regering zit intussen op {n} dagen sinds de eerste deadline. En nog geen akkoord.",
+   "real_lose": "Troost je: de echte regering zit op {n} dagen sinds de eerste deadline. Je bent in goed gezelschap.",
+   "and": " en ",
+   "walkout1": "{names} verlaat de vergadering en geeft meteen een interview. Je biedt je ontslag aan bij de koning.",
+   "king_refuses": "De koning weigert je ontslag en stuurt iedereen terug aan tafel. \"Probeer het nog eens.\" Iedereen schuift mokkend weer aan.",
+   "walkout2": "{names} stapt op. Voor de tweede keer naar de koning.",
+   "end_resign_title": "De koning aanvaardt je ontslag",
+   "end_resign_text": "Twee keer naar het Paleis is één keer te veel. Er komen verkiezingen. Iedereen zegt dat het de schuld is van de anderen. Je vond {found} van de {target}.",
+   "about_who": "Het gaat over {who}.",
+   "eu_caught": "De Europese Commissie heeft de creatieve boekhouding gezien. Ze vond het niet creatief. Die €3,0 mld is weg, en iedereen kijkt naar jou.",
+   "deadline_shift": "Deadline gemist! Je verschuift hem met vier dagen. \"De enige echte deadline is die van een goed akkoord,\" zeg je op de persconferentie. Niemand gelooft het, maar het klinkt goed.",
+   "end_nood_title": "Noodbegroting",
+   "end_nood_text": "Drie deadlines gemist. Het land start het jaar met voorlopige twaalfden. Je vond {found} van de {target}. Precies zoals in het echt, dus eigenlijk best realistisch.",
+   "veto": "VETO! {who} blokkeert “{what}”. \"Dit is voor ons een rode lijn.\" Je mag het later opnieuw proberen.",
+   "yield": "{what} (+{n}).",
+   "yield_fuzzy": "{what} brengt {n} op. Ongeveer.",
+   "eu_reading": "Je denkt dat je er bent. Maar de Europese Commissie leest nog even mee…",
+   "end_win_title": "Er is een akkoord!",
+   "win_text_one": "Je vond {found} in {n} dag,",
+   "win_text_many": "Je vond {found} in {n} dagen,",
+   "win_shift_one": "na {n} verschoven deadline.",
+   "win_shift_many": "na {n} verschoven deadlines.",
+   "win_clean": "zonder één deadline te missen.",
+   "win_tail": "Alle vijf de onderhandelaars zitten nog aan tafel en zeggen elk op tv dat zij gewonnen hebben.",
+   "win_pm": "Iemand stelt voor om je premier te maken. Je weigert beleefd.",
+   "sweet_log": "Wisselgeld: {what}. {who} glimlacht. Het kost wel {n}.",
+   "fries": "Frietjespauze. Met stoofvleessaus. De sfeer verbetert zienderogen, maar de dag is wel om.",
+   "fries_again": "Alweer frietjes. Het werkt minder goed. Iemand vraagt om een salade.",
+   "log_start": "De vijf onderhandelaars nemen plaats. Iemand heeft croissants meegebracht. Nog.",
+   "log_restart": "Nieuwe ronde, nieuwe kansen. De croissants zijn vers.",
+   "share_win": "Ik vond {found} voor de federale begroting in {n} dagen.",
+   "share_win_real": "De echte regering: nog bezig.",
+   "share_lose": "Ik probeerde de federale begroting rond te krijgen en het werd: NEEN. Net als in het echt.",
+   "share_cta": "Lukt het jou?",
+   "copy_prompt": "Kopieer je resultaat:"
+  },
+  "TX": {
+   "NEG": {
+    "bel": {
+     "nm": "Mevrouw Nooit-Belasting",
+     "rl": "Belastingen omhoog? Over mijn lijk."
+    },
+    "idx": {
+     "nm": "Meneer Blijf-Van-Mijn-Index",
+     "rl": "Lonen en uitkeringen? Niet aankomen."
+    },
+    "zrg": {
+     "nm": "Dokter Zorg-Eerst",
+     "rl": "Wie in de zorg snoeit, snoeit in mensen."
+    },
+    "btw": {
+     "nm": "Meneer Btw-Is-Eerlijk",
+     "rl": "Iedereen betaalt btw. En de lastenverlaging blijft."
+    },
+    "mid": {
+     "nm": "Mevrouw Middenklasse",
+     "rl": "Denk toch aan de gewone gezinnen!"
+    }
+   },
+   "M": {
+    "btw22": {
+     "t": "Btw van 21% naar 22%",
+     "say": "Mevrouw Nooit-Belasting rijdt alvast naar Maastricht om te tanken."
+    },
+    "frit": {
+     "t": "Btw op frietjes naar 21%",
+     "say": "Er wordt een nationale frituurstaking aangekondigd. Met mayonaise."
+    },
+    "meer": {
+     "t": "Hogere meerwaardebelasting",
+     "say": "Een rijke ondernemer dreigt te verhuizen. Naar Knokke."
+    },
+    "zorg": {
+     "t": "€2 mld besparen in de zorg",
+     "say": "Dokter Zorg-Eerst schrijft zichzelf iets kalmerends voor."
+    },
+    "sprong": {
+     "t": "Indexsprong",
+     "say": "Meneer Blijf-Van-Mijn-Index belt de vakbond. De vakbond belt terug. Met een stakingsdatum."
+    },
+    "lasten": {
+     "t": "Lastenverlaging terugdraaien",
+     "say": "Meneer Btw-Is-Eerlijk vraagt of dat écht nodig is. Drie keer."
+    },
+    "subs": {
+     "t": "Subsidies snoeien",
+     "say": "Iedereen is voor. Tot het over zíjn subsidie gaat."
+    },
+    "fraude": {
+     "t": "Fraudebestrijding",
+     "say": "Staat in elk akkoord sinds 1830. Opbrengst: wie zal het zeggen."
+    },
+    "eff": {
+     "t": "De overheid efficiënter maken",
+     "say": "Er komt een werkgroep om het aantal werkgroepen te verminderen."
+    },
+    "acc": {
+     "t": "Accijnzen op tabak en alcohol",
+     "say": "Het café om de hoek hangt een rouwlint op."
+    },
+    "pens": {
+     "t": "Pensioenhervorming versnellen",
+     "say": "Iemand rekent uit wanneer hij nu met pensioen mag. Hij rekent opnieuw. En nog eens."
+    },
+    "auto": {
+     "t": "Bedrijfswagens minder gunstig",
+     "say": "De Brusselse ring staat even stil van schrik. Niemand merkt het verschil."
+    },
+    "bank": {
+     "t": "Bankentaks",
+     "say": "De banken reageren met een persbericht. En een nieuwe kost voor je bankkaart."
+    },
+    "migr": {
+     "t": "Besparen op asiel en migratie",
+     "say": "Er volgt een debat van negen uur. Het levert minder op dan gehoopt."
+    },
+    "def": {
+     "t": "Defensie-uitgaven uitstellen",
+     "say": "De NAVO stuurt een boze mail. In het Engels. Met een cc."
+    },
+    "creatief": {
+     "t": "Creatieve boekhouding",
+     "say": "Niemand vraagt hoe. Iedereen is opgelucht. Voorlopig."
+    }
+   },
+   "SWEET": {
+    "s_bel": "Plechtige belofte: geen nieuwe belastingen meer (behalve deze)",
+    "s_idx": "Een werkgroep over een miljonairstaks",
+    "s_zrg": "Extra geld voor verpleegkundigen",
+    "s_btw": "Een studie over een btw-hervorming. Voor later.",
+    "s_mid": "Fotomoment met een gezin uit Lokeren"
+   },
+   "EVENTS": [
+    "Een vertrouwelijke nota lekt uit in de krant. De sfeer is om te snijden.",
+    "Een ratingbureau dreigt met een lagere score. Plots is iedereen redelijk.",
+    "Nieuwe cijfers van het Monitoringcomité: het gat is een half miljard groter.",
+    "Een partijvoorzitter tweet om 2 uur ’s nachts.",
+    "De koning nodigt iedereen uit voor koffie. Met speculoos.",
+    "Er wordt gestaakt in Brussel.",
+    "Iemand vergeet de croissants. Dit had niemand zien aankomen.",
+    "Goed nieuws: de economie groeit iets sneller dan verwacht.",
+    "Een interview in de zondagskrant. Over “rode lijnen”. Meervoud.",
+    "De Rode Duivels winnen. Even is iedereen Belg."
+   ]
+  }
+ },
+ "uitleg": {
+  "meta_title": "Waarom is er geen federale begroting? De begrotingscrisis in België uitgelegd",
+  "meta_desc": "Wat is er aan de hand met de federale begroting van België? Hoe groot is het gat, waarom moet het nu, waarom raken vijf partijen het niet eens, en wat gebeurt er zonder akkoord? Helder uitgelegd, met bronnen.",
+  "og_title": "De begrotingscrisis in België, helder uitgelegd",
+  "og_desc": "Hoe groot is het gat, waarom moet het nu, en waarom raken vijf partijen het niet eens? Met cijfers en bronnen.",
+  "foot1": "Deze uitleg is bedoeld om het proces te begrijpen, niet om partij te kiezen. De rest van de site is satire; deze pagina probeert zo feitelijk mogelijk te zijn."
+ },
+ "privacy": {
+  "meta_title": "Privacy · Is er al een begroting?"
+ }
+}

@@ -7,6 +7,10 @@
 <title>Is er al een begroting? De federale begroting van België, live opgevolgd</title>
 <meta name="description" content="Is er al een federale begroting in België? Hier zie je het meteen: de stand van de begrotingsonderhandelingen, gemiste deadlines, de noodbegroting en het laatste nieuws. Satire, drie keer per dag bijgewerkt.">
 <link rel="canonical" href="https://iseraleenbegroting.be/">
+<link rel="alternate" hreflang="nl" href="https://iseraleenbegroting.be/">
+<link rel="alternate" hreflang="fr" href="https://iseraleenbegroting.be/fr/">
+<link rel="alternate" hreflang="de" href="https://iseraleenbegroting.be/de/">
+<link rel="alternate" hreflang="x-default" href="https://iseraleenbegroting.be/">
 <meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#141821" media="(prefers-color-scheme: dark)">
 <meta property="og:site_name" content="Is er al een begroting?">
@@ -21,7 +25,7 @@
 <meta property="og:image:alt" content="Is er al een begroting? NEEN.">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"Is er al een begroting?","alternateName":"Begrotingswachtdienst","url":"https://iseraleenbegroting.be/","inLanguage":"nl-BE","description":"Satirische opvolging van de onderhandelingen over de federale begroting van België, gebaseerd op echte berichtgeving."}
+{"@context": "https://schema.org", "@type": "WebSite", "name": "Is er al een begroting?", "alternateName": "Begrotingswachtdienst", "url": "https://iseraleenbegroting.be/", "inLanguage": "nl-BE", "description": "Satirische opvolging van de onderhandelingen over de federale begroting van België, gebaseerd op echte berichtgeving."}
 </script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='1' height='2' fill='%231b1b1b'/%3E%3Crect x='1' width='1' height='2' fill='%23fdda24'/%3E%3Crect x='2' width='1' height='2' fill='%23ef3340'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,7 +61,7 @@ html,body{margin:0}
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{background:linear-gradient(var(--bg),var(--bg2) 520px) var(--bg2);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;overflow-x:hidden}
 body::before{content:"";display:block;height:10px;background:var(--stripe)}
-.wrap{max-width:900px;margin:0 auto;padding:16px max(16px,env(safe-area-inset-right)) 56px max(16px,env(safe-area-inset-left));display:flex;flex-direction:column;gap:24px}
+.wrap{--gap:24px;max-width:900px;margin:0 auto;padding:16px max(16px,env(safe-area-inset-right)) 56px max(16px,env(safe-area-inset-left));display:flex;flex-direction:column;gap:var(--gap)}
 a{color:inherit}
 a:focus-visible,button:focus-visible{outline:3px solid var(--t-blauw);outline-offset:2px;border-radius:4px}
 .top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;font-size:14px;font-weight:800;color:var(--muted)}
@@ -147,7 +151,7 @@ ul{list-style:none;margin:0;padding:0}
 /* tablet and phone */
 @media (max-width:640px){
   body{font-size:16px}
-  .wrap{gap:18px;padding-top:12px}
+  .wrap{--gap:18px;padding-top:12px}
   .hero{grid-template-columns:minmax(0,1fr) 112px;gap:8px 10px;align-items:start}
   .hero>div:first-child{display:contents}
   .q{grid-column:1/-1}
@@ -273,6 +277,46 @@ ul{list-style:none;margin:0;padding:0}
   :root[data-skin="retro"] .wrap{margin:8px;border-width:2px}
   :root[data-skin="retro"] .verdict{font-size:clamp(48px,calc((100vw - 170px)/2.9),100px);text-shadow:3px 3px 0 #000}
 }
+
+/* ---------- language switch ---------- */
+.langs{display:inline-flex;gap:2px;align-items:center;font-size:13px}
+.langs a{text-decoration:none;padding:4px 7px;border-radius:999px;color:var(--muted)}
+.langs a[aria-current="true"]{color:var(--ink);background:var(--card);box-shadow:inset 0 0 0 2px var(--line)}
+:root[data-skin="retro"] .langs a{color:#0000ee;text-decoration:underline;border-radius:0}
+:root[data-skin="retro"] .langs a[aria-current="true"]{color:#000;text-decoration:none;box-shadow:none;background:#c0c0c0;border:2px inset #c0c0c0}
+
+/* ---------- quotes: in the margins on wide screens, between the blocks on smaller ones ---------- */
+.cite-slot{min-width:0}
+.cite{margin:0 0 0 4px;padding:2px 0 2px 14px;border-left:4px solid var(--qc,var(--line));max-width:62ch}
+.cite blockquote{margin:0;font-family:var(--display);font-weight:500;font-style:italic;font-size:17px;line-height:1.35;color:var(--ink);opacity:.82}
+.cite blockquote p{margin:0}
+.cite blockquote p::before{content:"\201C"}
+.cite blockquote p::after{content:"\201D"}
+.cite figcaption{font-size:12.5px;line-height:1.4;color:var(--muted);margin-top:3px}
+.cite figcaption a{color:inherit}
+.cite .tr{font-style:italic}
+@media (min-width:1380px){
+  .wrap{position:relative}
+  .cite-slot{position:relative;height:0;margin-top:calc(-1 * var(--gap))}
+  .cite{position:absolute;top:0;width:200px;margin:0;padding:0;border:0}
+  .cite-l .cite{left:-232px;text-align:right}
+  .cite-r .cite{right:-232px}
+  .cite blockquote{font-size:19px;opacity:.55;transition:opacity .2s}
+  .cite:hover blockquote{opacity:1}
+  .cite blockquote p::before{content:"\201C";display:block;font-size:56px;line-height:.6;margin-bottom:4px;color:var(--qc);opacity:.9;font-style:normal}
+  .cite figcaption{opacity:.8}
+}
+:root[data-skin="retro"] .cite{background:#ffffcc;border:1px solid #000;padding:8px 10px;box-shadow:3px 3px 0 rgba(0,0,0,.35);transform:rotate(-1.5deg)}
+:root[data-skin="retro"] .cite-r .cite{transform:rotate(1.5deg)}
+:root[data-skin="retro"] .cite blockquote{font-family:"Comic Sans MS","Comic Sans","Chalkboard SE",cursive;font-style:normal;opacity:1;color:#000}
+:root[data-skin="retro"] .cite figcaption{color:#333;font-family:Arial,sans-serif}
+:root[data-skin="retro"] .cite figcaption a{color:#0000ee}
+@media (min-width:1380px){
+  :root[data-skin="retro"] .cite{padding:8px 10px;text-align:left}
+  :root[data-skin="retro"] .cite-l .cite{left:-236px}
+  :root[data-skin="retro"] .cite-r .cite{right:-236px}
+  :root[data-skin="retro"] .cite blockquote p::before{content:"\201C";display:inline;font-size:inherit;line-height:inherit;margin:0;color:inherit}
+}
 </style>
 </head>
 <body>
@@ -281,6 +325,7 @@ ul{list-style:none;margin:0;padding:0}
     <span>Onofficiële begrotingswachtdienst</span>
     <span id="stamp"></span>
     <span class="skins" role="group" aria-label="Thema"><span>Thema:</span><button type="button" data-skin="partijen">Partijen</button><button type="button" data-skin="belgie">België</button><button type="button" data-skin="retro">2000</button></span>
+    <nav class="langs" aria-label="Taal"><a href="/" hreflang="nl" lang="nl" title="Nederlands" aria-current="true">NL</a><a href="/fr/" hreflang="fr" lang="fr" title="Français">FR</a><a href="/de/" hreflang="de" lang="de" title="Deutsch">DE</a></nav>
   </header>
   <div class="marquee only-retro" aria-hidden="true"><span>*** WELKOM OP MIJN HOMEPAGE!!! *** IS ER AL EEN BEGROTING??? *** NEEN!!! *** VOEG DEZE PAGINA TOE AAN JE FAVORIETEN *** TEKEN MIJN GASTENBOEK (KOMT NOOIT) ***</span></div>
 
@@ -300,7 +345,10 @@ ul{list-style:none;margin:0;padding:0}
     </div>
   </section>
 
+  <div class="cite-slot cite-l"><figure class="cite" style="--qc:var(--p-rood)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/ratingbureau-sp-behoudt-kredietscore-van-belgie-maar-verwacht-~1790599460224/"><p>Dit kan pijn doen, maar het alternatief is amputatie.</p></blockquote><figcaption><b>Bart De Wever</b> (N-VA), premier · 22 okt. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/ratingbureau-sp-behoudt-kredietscore-van-belgie-maar-verwacht-~1790599460224/" rel="noopener">VRT NWS ↗</a></figcaption></figure></div>
+  <div class="cite-slot cite-r"><figure class="cite" style="--qc:var(--p-blauw)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/ratingbureau-sp-behoudt-kredietscore-van-belgie-maar-verwacht-~1790599460224/"><p>Ik vraag een beetje redelijkheid aan iedereen aan tafel.</p></blockquote><figcaption><b>Conner Rousseau</b> (Vooruit), voorzitter · 23 okt. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/ratingbureau-sp-behoudt-kredietscore-van-belgie-maar-verwacht-~1790599460224/" rel="noopener">VRT NWS ↗</a></figcaption></figure></div>
   <section class="stats" id="stats"></section>
+  <div class="cite-slot cite-l"><figure class="cite" style="--qc:var(--p-groen)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/ratingbureau-sp-behoudt-kredietscore-van-belgie-maar-verwacht-~1790599460224/"><p>De optimisten zullen het optimistisch zien, de pessimisten pessimistisch</p></blockquote><figcaption><b>David Clarinval</b> (MR), vicepremier · 21 okt. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/ratingbureau-sp-behoudt-kredietscore-van-belgie-maar-verwacht-~1790599460224/" rel="noopener">VRT NWS ↗</a> · <span class="tr">vertaald door VRT NWS</span></figcaption></figure></div>
 
   <section class="panel c-oranje">
     <h2>Mirakel-uit-Lourdes-meter</h2>
@@ -309,27 +357,33 @@ ul{list-style:none;margin:0;padding:0}
     <p class="reden" id="reden"></p>
   </section>
 
+  <div class="cite-slot cite-r"><figure class="cite" style="--qc:var(--p-oranje)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/"><p>Spreek aan tafel, in plaats van in de televisiestudio&#x27;s.</p></blockquote><figcaption><b>Sammy Mahdi</b> (CD&amp;V), voorzitter · 3 nov. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/" rel="noopener">VRT NWS ↗</a></figcaption></figure></div>
   <section class="panel c-turkoois">
     <h2>Volgende afspraak</h2>
     <div class="next" id="next"></div>
   </section>
 
+  <div class="cite-slot cite-l"><figure class="cite" style="--qc:var(--p-turkoois)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/"><p>Als ik alle knelpunten zou opsommen, zou het een eeuwigheid duren</p></blockquote><figcaption><b>Maxime Prévot</b> (Les Engagés), vicepremier · 2 nov. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/" rel="noopener">VRT NWS ↗</a> · <span class="tr">vertaald door VRT NWS</span></figcaption></figure></div>
   <section class="panel c-groen more">
     <h2>Snap je er niks meer van?</h2>
     <p>Geen schande. Lees <a href="uitleg.html">de uitleg</a>: hoe groot het gat is, waarom het nu moet en waarom vijf partijen het niet eens raken. Of denk je dat je het zelf beter kan?</p>
-    <div class="more-cta"><a class="mbtn" href="spel.html">Speel het begrotingsspel 🎲</a><a class="mbtn ghost" href="uitleg.html">Lees de uitleg</a></div>
+    <div class="more-cta"><a class="mbtn" href="/spel.html">Speel het begrotingsspel 🎲</a><a class="mbtn ghost" href="/uitleg.html">Lees de uitleg</a></div>
   </section>
 
+  <div class="cite-slot cite-r"><figure class="cite" style="--qc:var(--p-magenta)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/"><p>Het is met z&#x27;n allen erdoor of met z&#x27;n allen onderuit.</p></blockquote><figcaption><b>Valerie Van Peel</b> (N-VA), voorzitter · 6 nov. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/" rel="noopener">VRT NWS ↗</a></figcaption></figure></div>
   <section class="panel c-bordeaux">
     <h2>Deadlines die het niet gehaald hebben</h2>
     <ul class="dead" id="dead"></ul>
   </section>
 
+  <div class="cite-slot cite-l"><figure class="cite" style="--qc:var(--p-geel)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/"><p>Het moet een verhaal worden van enkele dagen en niet van enkele maanden</p></blockquote><figcaption><b>Georges-Louis Bouchez</b> (MR), voorzitter · 6 nov. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/" rel="noopener">VRT NWS ↗</a> · <span class="tr">vertaald door VRT NWS</span></figcaption></figure></div>
   <section class="panel c-magenta">
     <h2>Wat voorafging</h2>
     <ul class="tl" id="tl"></ul>
   </section>
 
+  <div class="cite-slot cite-r"><figure class="cite" style="--qc:var(--p-bordeaux)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/"><p>Het is nu onze verdomde plicht dat dit lukt.</p></blockquote><figcaption><b>Vincent Van Peteghem</b> (CD&amp;V), minister van Begroting · 2 nov. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/" rel="noopener">VRT NWS ↗</a></figcaption></figure></div>
+  <div class="cite-slot cite-l"><figure class="cite" style="--qc:var(--p-marine)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/"><p>Wij willen heel graag een akkoord, maar onze enige rode lijn is rechtvaardigheid.</p></blockquote><figcaption><b>Oskar Seuntjens</b> (Vooruit), fractieleider · 6 nov. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/" rel="noopener">VRT NWS ↗</a></figcaption></figure></div>
   <section class="panel c-marine about">
     <h2>Wat is dit eigenlijk?</h2>
     <p>Deze pagina volgt de onderhandelingen over de <b>federale begroting van België</b>: het plan waarin de federale regering vastlegt hoeveel ze uitgeeft en waar het geld vandaan komt. Zolang er geen begrotingsakkoord is, staat hierboven NEEN, en houden we bij welke deadlines er sneuvelden.</p>
@@ -339,6 +393,7 @@ ul{list-style:none;margin:0;padding:0}
     <p>Drie keer per dag zoeken we het laatste begrotingsnieuws op bij Belgische nieuwsmedia en werken we deze pagina bij. Elke gebeurtenis in de tijdlijn linkt naar het artikel waar ze vandaan komt.</p>
   </section>
 
+  <div class="cite-slot cite-r"><figure class="cite" style="--qc:var(--p-groen)"><blockquote lang="nl" cite="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/"><p>We moeten kalm blijven en samen een oplossing vinden. De match is nog niet gespeeld.</p></blockquote><figcaption><b>Yvan Verougstraete</b> (Les Engagés), voorzitter · 3 nov. 2026 · <a href="https://www.vrt.be/vrtnws/nl/liveblog/valerie-van-peel-nva-zwijgzaam-na-gesprek-op-paleis-over-begr~1793247532380/" rel="noopener">VRT NWS ↗</a> · <span class="tr">vertaald door VRT NWS</span></figcaption></figure></div>
   <footer class="foot">
     <div class="band" aria-hidden="true"></div>
     <p><b>Dit is satire.</b> De feiten en data komen uit de gelinkte nieuwsberichten; de grapjes zijn van ons. We lachen met het proces, niet met een partij.</p>
@@ -349,9 +404,10 @@ ul{list-style:none;margin:0;padding:0}
       <div class="retro-badges"><span class="uc"><b>UNDER CONSTRUCTION</b></span><span>Best bekeken in 800x600</span><span>Gemaakt met Kladblok</span><span>Netscape Now!</span></div>
     </div>
     <p>Een AI-assistent leest drie keer per dag het nieuws en werkt deze pagina bij. Er kan dus vertraging op zitten, en bij twijfel heeft de bron gelijk.</p>
+    <p>De citaten in de marge zijn letterlijk overgenomen uit de liveblogs van VRT NWS, met een link naar de bron. Uitspraken van Franstalige politici zijn daar door de redactie vertaald. Twee citaten per regeringspartij, zodat niemand voorrang krijgt.</p>
     <p>Met liefde en lichte wanhoop gemaakt door een millennial, die intussen nog altijd spaart voor een huis.</p>
-    <p><a href="uitleg.html">Uitleg</a> · <a href="spel.html">Begrotingsspel</a></p>
-    <p id="privacyline" hidden><a href="privacy.html">Privacy</a> · <button type="button" id="cookiebtn">Cookie-instellingen</button></p>
+    <p><a href="/uitleg.html">Uitleg</a> · <a href="/spel.html">Begrotingsspel</a></p>
+    <p id="privacyline" hidden><a href="/privacy.html">Privacy</a> · <button type="button" id="cookiebtn">Cookie-instellingen</button></p>
   </footer>
 </div>
 
@@ -368,83 +424,66 @@ var CONFIG={
 
 (function(){
   // Last-known snapshot, shown until (or instead of) data.json answers.
-  var SNAP={
-    akkoord:false,
-    weerbericht:"Muurvast, met kans op bilaterale buien",
-    samenvatting:"De koning weigerde het ontslag van de regering en stuurde iedereen terug naar de onderhandelingstafel. Deze week wordt eerst apart gepraat; de grote vergadering is voor later.",
-    lourdes:80,
-    lourdesReden:"Ontslag aangeboden en geweigerd, noodbegroting bevestigd. Lichtpuntje: er wordt weer gepraat.",
-    eersteDeadline:"2026-07-21",
-    gemisteDeadlines:[
-      {datum:"2026-07-21",label:"De eerste deadline. Kort daarna losgelaten."},
-      {datum:"2026-10-13",label:"Beleidsverklaring in de Kamer. Geschrapt."},
-      {datum:"2026-10-15",label:"Begroting indienen bij Europa. Niet ingediend."},
-      {datum:"2026-11-03",label:"‘Uiterlijk dinsdag’ een akkoord. Het werd een ontslag."}
-    ],
-    paleisbezoeken:2,
-    bedrag:"10 miljard",
-    noodbegroting:"Noodbegroting voor begin 2027: bevestigd, tweede jaar op rij",
-    volgende:{datum:"2026-11-16",label:"De premier brengt opnieuw verslag uit bij de koning."},
-    tijdlijn:[
-      {datum:"2026-11-09",tekst:"Het overleg zou vandaag herbeginnen, eerst in aparte gesprekken per partij.",bron:"VRT NWS",url:"https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"},
-      {datum:"2026-11-06",tekst:"De koning weigert het ontslag en vraagt om meteen verder te onderhandelen.",bron:"VRT NWS",url:"https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"},
-      {datum:"2026-11-05",tekst:"De premier bevestigt in de Kamer dat er een noodbegroting komt. Voor het tweede jaar op rij.",bron:"VRT NWS",url:"https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"},
-      {datum:"2026-11-02",tekst:"De premier biedt het ontslag van de regering aan. De koning houdt het in beraad.",bron:"VRT NWS",url:"https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"},
-      {datum:"2026-11-01",tekst:"Nachtelijk overleg tot 1 uur. Geen akkoord.",bron:"VRT NWS",url:"https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"},
-      {datum:"2026-10-21",tekst:"Nog een vergadering. Nog geen akkoord.",bron:"VRT NWS",url:"https://www.vrt.be/vrtnws/nl/2026/10/22/maanden-onderhandelen-zonder-resultaat-federaal-begrotingsoverl/"},
-      {datum:"2026-10-15",tekst:"De deadline om de begroting bij Europa in te dienen verstrijkt.",bron:"VRT NWS",url:"https://www.vrt.be/vrtnws/nl/2026/10/22/maanden-onderhandelen-zonder-resultaat-federaal-begrotingsoverl/"},
-      {datum:"2026-10-13",tekst:"Geen beleidsverklaring in de Kamer: er valt nog niets voor te lezen.",bron:"VRT NWS",url:"https://www.vrt.be/vrtnws/nl/2026/10/12/begroting-deja-vu-herhaling-vorig-jaar-analyse/"},
-      {datum:"2026-07-21",tekst:"De oorspronkelijke deadline. Ze werd kort daarna geschrapt.",bron:"VRT NWS",url:"https://www.vrt.be/vrtnws/nl/2026/10/22/maanden-onderhandelen-zonder-resultaat-federaal-begrotingsoverl/"}
-    ],
-    bijgewerkt:"2026-11-09"
-  };
-
+  var SNAP={"akkoord": false, "bedrag": "10 miljard", "bijgewerkt": "2026-11-09", "eersteDeadline": "2026-07-21", "gemisteDeadlines": [{"datum": "2026-07-21", "label": "De eerste deadline. Kort daarna losgelaten."}, {"datum": "2026-10-13", "label": "Beleidsverklaring in de Kamer. Geschrapt."}, {"datum": "2026-10-15", "label": "Begroting indienen bij Europa. Niet ingediend."}, {"datum": "2026-11-03", "label": "‘Uiterlijk dinsdag’ een akkoord. Het werd een ontslag."}], "lourdes": 80, "lourdesReden": "Ontslag aangeboden en geweigerd, noodbegroting bevestigd. Lichtpuntje: er wordt weer gepraat.", "noodbegroting": "Noodbegroting voor begin 2027: bevestigd, tweede jaar op rij", "paleisbezoeken": 2, "samenvatting": "De koning weigerde het ontslag van de regering en stuurde iedereen terug naar de onderhandelingstafel. Deze week wordt eerst apart gepraat; de grote vergadering is voor later.", "tijdlijn": [{"bron": "VRT NWS", "datum": "2026-11-09", "tekst": "Het overleg zou vandaag herbeginnen, eerst in aparte gesprekken per partij.", "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"}, {"bron": "VRT NWS", "datum": "2026-11-06", "tekst": "De koning weigert het ontslag en vraagt om meteen verder te onderhandelen.", "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"}, {"bron": "VRT NWS", "datum": "2026-11-05", "tekst": "De premier bevestigt in de Kamer dat er een noodbegroting komt. Voor het tweede jaar op rij.", "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"}, {"bron": "VRT NWS", "datum": "2026-11-02", "tekst": "De premier biedt het ontslag van de regering aan. De koning houdt het in beraad.", "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"}, {"bron": "VRT NWS", "datum": "2026-11-01", "tekst": "Nachtelijk overleg tot 1 uur. Geen akkoord.", "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"}, {"bron": "VRT NWS", "datum": "2026-10-21", "tekst": "Nog een vergadering. Nog geen akkoord.", "url": "https://www.vrt.be/vrtnws/nl/2026/10/22/maanden-onderhandelen-zonder-resultaat-federaal-begrotingsoverl/"}, {"bron": "VRT NWS", "datum": "2026-10-15", "tekst": "De deadline om de begroting bij Europa in te dienen verstrijkt.", "url": "https://www.vrt.be/vrtnws/nl/2026/10/22/maanden-onderhandelen-zonder-resultaat-federaal-begrotingsoverl/"}, {"bron": "VRT NWS", "datum": "2026-10-13", "tekst": "Geen beleidsverklaring in de Kamer: er valt nog niets voor te lezen.", "url": "https://www.vrt.be/vrtnws/nl/2026/10/12/begroting-deja-vu-herhaling-vorig-jaar-analyse/"}, {"bron": "VRT NWS", "datum": "2026-07-21", "tekst": "De oorspronkelijke deadline. Ze werd kort daarna geschrapt.", "url": "https://www.vrt.be/vrtnws/nl/2026/10/22/maanden-onderhandelen-zonder-resultaat-federaal-begrotingsoverl/"}], "volgende": {"datum": "2026-11-16", "label": "De premier brengt opnieuw verslag uit bij de koning."}, "weerbericht": "Muurvast, met kans op bilaterale buien", "fr": {"weerbericht": "Bloqué, avec risque d'averses bilatérales", "samenvatting": "Le Roi a refusé la démission du gouvernement et renvoyé tout le monde à la table des négociations. Cette semaine, on se parle d'abord séparément ; la grande réunion, ce sera pour plus tard.", "lourdesReden": "Démission présentée et refusée, budget d'urgence confirmé. Lueur d'espoir : on se reparle.", "noodbegroting": "Budget d'urgence pour début 2027 : confirmé, deuxième année de suite", "volgende": {"label": "Le Premier ministre fait à nouveau rapport au Roi."}, "gemisteDeadlines": [{"label": "La première échéance. Abandonnée peu après."}, {"label": "Déclaration de politique à la Chambre. Annulée."}, {"label": "Remettre le budget à l'Europe. Pas remis."}, {"label": "Un accord « au plus tard mardi ». Ce fut une démission."}], "tijdlijn": [{"tekst": "La concertation devait reprendre aujourd'hui, d'abord par des entretiens séparés avec chaque parti."}, {"tekst": "Le Roi refuse la démission et demande de reprendre les négociations sans attendre."}, {"tekst": "Le Premier ministre confirme à la Chambre qu'il y aura un budget d'urgence. Pour la deuxième année de suite."}, {"tekst": "Le Premier ministre présente la démission du gouvernement. Le Roi la tient en suspens."}, {"tekst": "Concertation nocturne jusqu'à 1 heure. Pas d'accord."}, {"tekst": "Encore une réunion. Toujours pas d'accord."}, {"tekst": "L'échéance pour remettre le budget à l'Europe expire."}, {"tekst": "Pas de déclaration de politique à la Chambre : il n'y a encore rien à lire."}, {"tekst": "L'échéance initiale. Elle a été abandonnée peu après."}]}, "de": {"weerbericht": "Festgefahren, mit Aussicht auf bilaterale Schauer", "samenvatting": "Der König lehnte den Rücktritt der Regierung ab und schickte alle zurück an den Verhandlungstisch. Diese Woche wird zuerst einzeln geredet; die große Sitzung kommt später.", "lourdesReden": "Rücktritt angeboten und abgelehnt, Nothaushalt bestätigt. Lichtblick: Es wird wieder geredet.", "noodbegroting": "Nothaushalt für Anfang 2027: bestätigt, zum zweiten Mal in Folge", "volgende": {"label": "Der Premierminister erstattet dem König erneut Bericht."}, "gemisteDeadlines": [{"label": "Die erste Frist. Kurz darauf aufgegeben."}, {"label": "Regierungserklärung in der Kammer. Abgesagt."}, {"label": "Haushalt bei Europa einreichen. Nicht eingereicht."}, {"label": "Eine Einigung „spätestens Dienstag“. Es wurde ein Rücktritt."}], "tijdlijn": [{"tekst": "Die Gespräche sollten heute wieder beginnen, zunächst einzeln mit jeder Partei."}, {"tekst": "Der König lehnt den Rücktritt ab und bittet, sofort weiterzuverhandeln."}, {"tekst": "Der Premier bestätigt in der Kammer, dass ein Nothaushalt kommt. Zum zweiten Mal in Folge."}, {"tekst": "Der Premier bietet den Rücktritt der Regierung an. Der König hält die Entscheidung in der Schwebe."}, {"tekst": "Nächtliche Beratungen bis 1 Uhr. Keine Einigung."}, {"tekst": "Noch eine Sitzung. Noch keine Einigung."}, {"tekst": "Die Frist zur Einreichung des Haushalts in Europa verstreicht."}, {"tekst": "Keine Regierungserklärung in der Kammer: Es gibt noch nichts vorzulesen."}, {"tekst": "Die ursprüngliche Frist. Sie wurde kurz darauf aufgegeben."}]}};
+  var L="nl", LOC="nl-BE";
   var $=function(id){return document.getElementById(id)};
   var esc=function(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})};
   var parse=function(s){var m=/^(\d{4})-(\d{2})-(\d{2})/.exec(String(s||''));return m?Date.UTC(+m[1],+m[2]-1,+m[3]):null};
   var today=function(){var d=new Date();return Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())};
   var days=function(a,b){return Math.round((b-a)/864e5)};
-  var fmt=function(s,long){var t=parse(s);if(t==null)return esc(s);return new Date(t).toLocaleDateString('nl-BE',{day:'numeric',month:long?'long':'short',year:long?'numeric':undefined,timeZone:'UTC'})};
+  var fmt=function(s,long){var t=parse(s);if(t==null)return esc(s);return new Date(t).toLocaleDateString(LOC,{day:'numeric',month:long?'long':'short',year:long?'numeric':undefined,timeZone:'UTC'})};
   var arr=function(x){return Array.isArray(x)?x:[]};
   var live=false;
+  // Use the French/German texts from data.json when present; fall back to Dutch per field.
+  function loc(d){
+    var t=d&&d[L];if(L==='nl'||!t||typeof t!=='object')return d;
+    var o={},k;for(k in d)o[k]=d[k];
+    ['weerbericht','samenvatting','lourdesReden','noodbegroting'].forEach(function(f){if(typeof t[f]==='string'&&t[f])o[f]=t[f]});
+    if(o.volgende&&t.volgende&&t.volgende.label){o.volgende={datum:o.volgende.datum,label:t.volgende.label}}
+    function merge(a,b,f){if(!Array.isArray(a)||!Array.isArray(b)||a.length!==b.length)return a;
+      return a.map(function(x,i){var y={},k;for(k in x)y[k]=x[k];if(b[i]&&typeof b[i][f]==='string'&&b[i][f])y[f]=b[i][f];return y})}
+    o.gemisteDeadlines=merge(d.gemisteDeadlines,t.gemisteDeadlines,'label');
+    o.tijdlijn=merge(d.tijdlijn,t.tijdlijn,'tekst');
+    return o;
+  }
 
   function render(d){
-    d=d&&typeof d==='object'?d:SNAP;
-    var ja=d.akkoord===true, word=ja?'JA!':'NEEN.';
+    d=loc(d&&typeof d==='object'?d:SNAP);
+    var ja=d.akkoord===true, word=ja?"JA!":"NEEN.";
     $('verdict').innerHTML=word.split('').map(function(c){return '<span>'+esc(c)+'</span>'}).join('');
     $('verdict').setAttribute('aria-label',word);
     $('weer').textContent=d.weerbericht||'';
     $('sam').textContent=d.samenvatting||'';
     var first=parse(d.eersteDeadline),n=first==null?null:Math.max(0,days(first,today()));
     var tiles=[];
-    if(n!=null)tiles.push([n,'dagen sinds de eerste deadline']);
+    if(n!=null)tiles.push([n,"dagen sinds de eerste deadline"]);
     if($('counter'))$('counter').textContent=n==null?'??????':('000000'+n).slice(-6);
-    tiles.push([arr(d.gemisteDeadlines).length,'gemiste deadlines']);
-    if(typeof d.paleisbezoeken==='number')tiles.push([d.paleisbezoeken,'ritjes naar het Paleis']);
-    if(d.bedrag)tiles.push(['€'+String(d.bedrag).replace(/\s*miljard/i,' mld'),ja?'gevonden (naar verluidt)':'nog altijd zoek']);
+    tiles.push([arr(d.gemisteDeadlines).length,"gemiste deadlines"]);
+    if(typeof d.paleisbezoeken==='number')tiles.push([d.paleisbezoeken,"ritjes naar het Paleis"]);
+    if(d.bedrag)tiles.push(["€"+String(d.bedrag).replace(/\s*miljard/i," mld"),ja?"gevonden (naar verluidt)":"nog altijd zoek"]);
     $('stats').innerHTML=tiles.map(function(t){return '<div class="stat"><b'+(String(t[0]).length>4?' class="sm"':'')+'>'+esc(t[0])+'</b><span>'+esc(t[1])+'</span></div>'}).join('');
     var p=Math.max(0,Math.min(100,Number(d.lourdes)||0));
     $('fill').style.width=p+'%';
     $('fill').style.setProperty('--full',(p?100/p*100:100)+'%');
-    $('meter').setAttribute('aria-label','Mirakel-uit-Lourdes-meter: '+p+' op 100');
-    $('reden').innerHTML='<b>'+p+' op 100.</b> '+esc(d.lourdesReden||'');
+    $('meter').setAttribute('aria-label',"Mirakel-uit-Lourdes-meter"+': '+p+" op 100");
+    $('reden').innerHTML='<b>'+p+" op 100"+'.</b> '+esc(d.lourdesReden||'');
     var fp=ja?0:p;
     var small=window.matchMedia&&window.matchMedia('(max-width:640px)').matches;
     $('flag').style.top=Math.round(small?(6+fp*.6):(8+fp*1.25))+'px';
-    $('flagcap').textContent=ja?'Vlag in top!':fp>=85?'Vlag bijna gestreken':fp>=55?'Vlag halfstok':fp>=25?'Vlag op driekwart':'Vlag in top';
+    $('flagcap').textContent=ja?"Vlag in top!":fp>=85?"Vlag bijna gestreken":fp>=55?"Vlag halfstok":fp>=25?"Vlag op driekwart":"Vlag in top";
     var v=d.volgende&&typeof d.volgende==='object'?d.volgende:null,nx='';
     if(v&&parse(v.datum)!=null){
       var left=days(today(),parse(v.datum));
-      nx='<b>'+esc(fmt(v.datum,true))+'</b><span>'+esc(v.label||'')+' '+(left>1?'Nog '+left+' dagen.':left===1?'Morgen al.':left===0?'Vandaag.':'Die dag is intussen voorbij; we wachten op een nieuwe datum.')+'</span>';
-    }else nx='<span>Geen datum bekend. Dat zegt misschien al genoeg.</span>';
+      nx='<b>'+esc(fmt(v.datum,true))+'</b><span>'+esc(v.label||'')+' '+(left>1?"Nog {n} dagen.".replace('{n}',left):left===1?"Morgen al.":left===0?"Vandaag.":"Die dag is intussen voorbij; we wachten op een nieuwe datum.")+'</span>';
+    }else nx='<span>'+"Geen datum bekend. Dat zegt misschien al genoeg."+'</span>';
     if(d.noodbegroting)nx+='<span class="badge">'+esc(d.noodbegroting)+'</span>';
     $('next').innerHTML=nx;
     $('dead').innerHTML=arr(d.gemisteDeadlines).map(function(x){return '<li><time>'+esc(fmt(x&&x.datum,true))+'</time><span>'+esc(x&&x.label)+'</span></li>'}).join('');
     $('tl').innerHTML=arr(d.tijdlijn).slice(0,14).map(function(x){
       x=x||{};var ok=/^https:\/\//.test(String(x.url||''));
-      return '<li><time>'+esc(fmt(x.datum))+'</time><span>'+esc(x.tekst)+' '+(ok?'<a href="'+esc(x.url)+'" rel="noopener">'+esc(x.bron||'bron')+' ↗</a>':esc(x.bron||''))+'</span></li>';
+      return '<li><time>'+esc(fmt(x.datum))+'</time><span>'+esc(x.tekst)+' '+(ok?'<a href="'+esc(x.url)+'" rel="noopener">'+esc(x.bron||"bron")+' ↗</a>':esc(x.bron||''))+'</span></li>';
     }).join('');
-    $('stamp').textContent=(live?'Bijgewerkt ':'Momentopname van ')+fmt(d.bijgewerkt,true);
+    $('stamp').textContent=(live?"Bijgewerkt ":"Momentopname van ")+fmt(d.bijgewerkt,true);
     window.__last=d;
   }
 
@@ -467,7 +506,7 @@ var CONFIG={
   if(mq&&mq.addEventListener)mq.addEventListener('change',function(){render(window.__last)});
   // Fresh data lives in data.json next to this page; the cache-buster beats GitHub Pages' 10-minute cache.
   if(window.fetch){
-    fetch('data.json?t='+Date.now(),{cache:'no-store'})
+    fetch('/data.json?t='+Date.now(),{cache:'no-store'})
       .then(function(r){if(!r.ok)throw new Error(r.status);return r.json()})
       .then(function(d){if(d&&typeof d==='object'&&!Array.isArray(d)){live=true;render(d)}})
       .catch(function(){});
