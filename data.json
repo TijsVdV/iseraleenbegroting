@@ -25,8 +25,14 @@
   "lourdesReden": "Ontslag aangeboden en geweigerd, noodbegroting bevestigd. Lichtpuntje: er wordt weer gepraat.",
   "noodbegroting": "Noodbegroting voor begin 2027: bevestigd, tweede jaar op rij",
   "paleisbezoeken": 2,
-  "samenvatting": "De premier rondt vandaag de aparte gesprekken af, zonder gemelde doorbraak; wanneer het voltallige kernkabinet weer samenzit, is nog niet bekend. Op 16 november brengt hij opnieuw verslag uit bij de koning.",
+  "samenvatting": "De premier heeft alle vicepremiers apart gesproken, zonder gemelde doorbraak; wanneer het voltallige kernkabinet weer samenzit, is nog niet bekend. Op 16 november brengt hij opnieuw verslag uit bij de koning.",
   "tijdlijn": [
+    {
+      "datum": "2026-11-11",
+      "tekst": "Alle vicepremiers zijn langs geweest. Nu maakt de premier de balans op; pas daarna volgt misschien een voltallige kern.",
+      "bron": "VRT NWS",
+      "url": "https://www.vrt.be/vrtnws/nl/liveblog/premier-de-wever-hervat-gesprekken-wapenstilstand-in-de-regeri~1793247532380/"
+    },
     {
       "datum": "2026-11-11",
       "tekst": "Na de plechtigheid van 11 november volgt het laatste aparte gesprek. De tabellen zouden amper veranderd zijn.",
@@ -92,12 +98,6 @@
       "datum": "2026-10-15",
       "tekst": "De deadline om de begroting bij Europa in te dienen verstrijkt.",
       "url": "https://www.vrt.be/vrtnws/nl/2026/10/22/maanden-onderhandelen-zonder-resultaat-federaal-begrotingsoverl/"
-    },
-    {
-      "bron": "VRT NWS",
-      "datum": "2026-10-13",
-      "tekst": "Geen beleidsverklaring in de Kamer: er valt nog niets voor te lezen.",
-      "url": "https://www.vrt.be/vrtnws/nl/2026/10/12/begroting-deja-vu-herhaling-vorig-jaar-analyse/"
     }
   ],
   "volgende": {
@@ -107,7 +107,7 @@
   "weerbericht": "Muurvast, met kans op bilaterale buien",
   "fr": {
     "weerbericht": "Bloqué, avec risque d'averses bilatérales",
-    "samenvatting": "Le Premier ministre termine aujourd'hui les entretiens séparés, sans percée annoncée ; on ne sait pas encore quand le kern au complet se réunira. Le 16 novembre, il fait à nouveau rapport au Roi.",
+    "samenvatting": "Le Premier ministre a vu chaque vice-Premier séparément, sans percée annoncée ; on ne sait pas encore quand le kern au complet se réunira. Le 16 novembre, il fait à nouveau rapport au Roi.",
     "lourdesReden": "Démission présentée et refusée, budget d'urgence confirmé. Lueur d'espoir : on se reparle.",
     "noodbegroting": "Budget d'urgence pour début 2027 : confirmé, deuxième année de suite",
     "volgende": {
@@ -128,6 +128,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Tous les vice-Premiers sont passés. Le Premier ministre fait le bilan ; un kern au complet viendra peut-être ensuite."
+      },
       {
         "tekst": "Après la cérémonie du 11 novembre, dernier entretien séparé. Les tableaux auraient à peine changé."
       },
@@ -160,15 +163,12 @@
       },
       {
         "tekst": "L'échéance pour remettre le budget à l'Europe expire."
-      },
-      {
-        "tekst": "Pas de déclaration de politique à la Chambre : il n'y a encore rien à lire."
       }
     ]
   },
   "de": {
     "weerbericht": "Festgefahren, mit Aussicht auf bilaterale Schauer",
-    "samenvatting": "Der Premier schließt heute die Einzelgespräche ab, ohne gemeldeten Durchbruch; wann das Kernkabinett wieder vollzählig tagt, ist noch offen. Am 16. November erstattet er dem König erneut Bericht.",
+    "samenvatting": "Der Premier hat mit jedem Vizepremier einzeln gesprochen, ohne gemeldeten Durchbruch; wann das Kernkabinett wieder vollzählig tagt, ist noch offen. Am 16. November erstattet er dem König erneut Bericht.",
     "lourdesReden": "Rücktritt angeboten und abgelehnt, Nothaushalt bestätigt. Lichtblick: Es wird wieder geredet.",
     "noodbegroting": "Nothaushalt für Anfang 2027: bestätigt, zum zweiten Mal in Folge",
     "volgende": {
@@ -189,6 +189,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Alle Vizepremiers waren da. Jetzt zieht der Premier Bilanz; erst danach tagt vielleicht das vollzählige Kernkabinett."
+      },
       {
         "tekst": "Nach der Feier zum 11. November folgt das letzte Einzelgespräch. Die Tabellen sollen sich kaum verändert haben."
       },
@@ -221,9 +224,6 @@
       },
       {
         "tekst": "Die Frist zur Einreichung des Haushalts in Europa verstreicht."
-      },
-      {
-        "tekst": "Keine Regierungserklärung in der Kammer: Es gibt noch nichts vorzulesen."
       }
     ]
   }
