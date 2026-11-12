@@ -1,7 +1,7 @@
 {
   "akkoord": false,
   "bedrag": "10 miljard",
-  "bijgewerkt": "2026-11-11",
+  "bijgewerkt": "2026-11-12",
   "eersteDeadline": "2026-07-21",
   "gemisteDeadlines": [
     {
@@ -27,6 +27,12 @@
   "paleisbezoeken": 2,
   "samenvatting": "De premier heeft alle vicepremiers apart gesproken, zonder gemelde doorbraak; wanneer het voltallige kernkabinet weer samenzit, is nog niet bekend. Op 16 november brengt hij opnieuw verslag uit bij de koning.",
   "tijdlijn": [
+    {
+      "datum": "2026-11-11",
+      "tekst": "Het overleg kan vrijdag weer beginnen, al is nog niemand uitgenodigd. Volgens bronnen groeit het pessimisme.",
+      "bron": "RTBF",
+      "url": "https://www.rtbf.be/article/budget-federal-pas-d-armistice-au-sein-du-gouvernement-l-agenda-sera-charge-avant-le-16-novembre-11814258"
+    },
     {
       "datum": "2026-11-11",
       "tekst": "Alle vicepremiers zijn langs geweest. Nu maakt de premier de balans op; pas daarna volgt misschien een voltallige kern.",
@@ -92,12 +98,6 @@
       "datum": "2026-10-21",
       "tekst": "Nog een vergadering. Nog geen akkoord.",
       "url": "https://www.vrt.be/vrtnws/nl/2026/10/22/maanden-onderhandelen-zonder-resultaat-federaal-begrotingsoverl/"
-    },
-    {
-      "bron": "VRT NWS",
-      "datum": "2026-10-15",
-      "tekst": "De deadline om de begroting bij Europa in te dienen verstrijkt.",
-      "url": "https://www.vrt.be/vrtnws/nl/2026/10/22/maanden-onderhandelen-zonder-resultaat-federaal-begrotingsoverl/"
     }
   ],
   "volgende": {
@@ -128,6 +128,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Les négociations pourraient reprendre vendredi, même si personne n'est encore convoqué. Selon des sources, le pessimisme gagne du terrain."
+      },
       {
         "tekst": "Tous les vice-Premiers sont passés. Le Premier ministre fait le bilan ; un kern au complet viendra peut-être ensuite."
       },
@@ -160,9 +163,6 @@
       },
       {
         "tekst": "Encore une réunion. Toujours pas d'accord."
-      },
-      {
-        "tekst": "L'échéance pour remettre le budget à l'Europe expire."
       }
     ]
   },
@@ -189,6 +189,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Ab Freitag könnte wieder verhandelt werden, auch wenn noch niemand eingeladen ist. Laut Quellen wächst der Pessimismus."
+      },
       {
         "tekst": "Alle Vizepremiers waren da. Jetzt zieht der Premier Bilanz; erst danach tagt vielleicht das vollzählige Kernkabinett."
       },
@@ -221,9 +224,6 @@
       },
       {
         "tekst": "Noch eine Sitzung. Noch keine Einigung."
-      },
-      {
-        "tekst": "Die Frist zur Einreichung des Haushalts in Europa verstreicht."
       }
     ]
   }
