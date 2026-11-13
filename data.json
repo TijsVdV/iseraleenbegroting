@@ -25,8 +25,14 @@
   "lourdesReden": "Ontslag aangeboden en geweigerd, noodbegroting bevestigd. Lichtpuntje: er wordt weer gepraat.",
   "noodbegroting": "Noodbegroting voor begin 2027: bevestigd, tweede jaar op rij",
   "paleisbezoeken": 2,
-  "samenvatting": "Vrijdag volgen nieuwe aparte gesprekken en 's avonds normaal een voltallig kernkabinet; een doorbraak is nog niet gemeld. Maandag 16 november brengt de premier opnieuw verslag uit bij de koning.",
+  "samenvatting": "Na nieuwe aparte gesprekken zit het voltallige kernkabinet vanavond om 19 uur weer samen; een doorbraak is nog niet gemeld. Maandag 16 november brengt de premier opnieuw verslag uit bij de koning.",
   "tijdlijn": [
+    {
+      "datum": "2026-11-13",
+      "tekst": "Het is officieel: vanavond om 19 uur zit het kernkabinet weer samen. Eerst nog een rondje aparte gesprekken, uiteraard.",
+      "bron": "La Libre",
+      "url": "https://www.lalibre.be/dernieres-depeches/2026/11/13/crise-gouvernementale-le-kern-se-reunira-ce-vendredi-soir-a-19h00-HQUM52FX5VAKDNULBGZSOWMLOI/"
+    },
     {
       "datum": "2026-11-12",
       "tekst": "Vrijdag nog een ronde aparte gesprekken, en 's avonds normaal eindelijk weer iedereen rond één tafel.",
@@ -92,26 +98,20 @@
       "datum": "2026-11-02",
       "tekst": "De premier biedt het ontslag van de regering aan. De koning houdt het in beraad.",
       "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"
-    },
-    {
-      "bron": "VRT NWS",
-      "datum": "2026-11-01",
-      "tekst": "Nachtelijk overleg tot 1 uur. Geen akkoord.",
-      "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"
     }
   ],
   "volgende": {
     "datum": "2026-11-13",
-    "label": "Nieuwe aparte gesprekken, 's avonds normaal een voltallig kernkabinet."
+    "label": "Kernkabinet over de begroting om 19 uur, na nieuwe aparte gesprekken."
   },
   "weerbericht": "Muurvast, met kans op bilaterale buien",
   "fr": {
     "weerbericht": "Bloqué, avec risque d'averses bilatérales",
-    "samenvatting": "Vendredi, nouveaux entretiens séparés puis, normalement, un kern au complet en soirée ; aucune percée n'est encore annoncée. Lundi 16 novembre, le Premier ministre fait à nouveau rapport au Roi.",
+    "samenvatting": "Après de nouveaux entretiens séparés, le kern au complet se réunit ce soir à 19 heures ; aucune percée n'est encore annoncée. Lundi 16 novembre, le Premier ministre fait à nouveau rapport au Roi.",
     "lourdesReden": "Démission présentée et refusée, budget d'urgence confirmé. Lueur d'espoir : on se reparle.",
     "noodbegroting": "Budget d'urgence pour début 2027 : confirmé, deuxième année de suite",
     "volgende": {
-      "label": "Nouveaux entretiens séparés, puis normalement un kern au complet en soirée."
+      "label": "Kern sur le budget à 19 heures, après de nouveaux entretiens séparés."
     },
     "gemisteDeadlines": [
       {
@@ -128,6 +128,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "C'est officiel : le kern se réunit ce soir à 19 heures. Non sans une petite tournée d'entretiens séparés avant, bien sûr."
+      },
       {
         "tekst": "Vendredi, encore une série d'entretiens séparés, puis en soirée, normalement, enfin tout le monde autour de la même table."
       },
@@ -160,19 +163,16 @@
       },
       {
         "tekst": "Le Premier ministre présente la démission du gouvernement. Le Roi la tient en suspens."
-      },
-      {
-        "tekst": "Concertation nocturne jusqu'à 1 heure. Pas d'accord."
       }
     ]
   },
   "de": {
     "weerbericht": "Festgefahren, mit Aussicht auf bilaterale Schauer",
-    "samenvatting": "Am Freitag folgen neue Einzelgespräche und abends voraussichtlich ein vollzähliges Kernkabinett; ein Durchbruch ist noch nicht gemeldet. Am Montag, 16. November, erstattet der Premier dem König erneut Bericht.",
+    "samenvatting": "Nach neuen Einzelgesprächen tagt das vollzählige Kernkabinett heute um 19 Uhr; ein Durchbruch ist noch nicht gemeldet. Am Montag, 16. November, erstattet der Premier dem König erneut Bericht.",
     "lourdesReden": "Rücktritt angeboten und abgelehnt, Nothaushalt bestätigt. Lichtblick: Es wird wieder geredet.",
     "noodbegroting": "Nothaushalt für Anfang 2027: bestätigt, zum zweiten Mal in Folge",
     "volgende": {
-      "label": "Neue Einzelgespräche, abends voraussichtlich ein vollzähliges Kernkabinett."
+      "label": "Kernkabinett zum Haushalt um 19 Uhr, nach neuen Einzelgesprächen."
     },
     "gemisteDeadlines": [
       {
@@ -189,6 +189,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Jetzt offiziell: Heute um 19 Uhr tagt das Kernkabinett wieder. Vorher natürlich noch eine Runde Einzelgespräche."
+      },
       {
         "tekst": "Am Freitag noch eine Runde Einzelgespräche, abends sitzen voraussichtlich endlich wieder alle an einem Tisch."
       },
@@ -221,9 +224,6 @@
       },
       {
         "tekst": "Der Premier bietet den Rücktritt der Regierung an. Der König hält die Entscheidung in der Schwebe."
-      },
-      {
-        "tekst": "Nächtliche Beratungen bis 1 Uhr. Keine Einigung."
       }
     ]
   }
