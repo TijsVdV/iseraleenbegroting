@@ -1,7 +1,7 @@
 {
   "akkoord": false,
   "bedrag": "10 miljard",
-  "bijgewerkt": "2026-11-13",
+  "bijgewerkt": "2026-11-14",
   "eersteDeadline": "2026-07-21",
   "gemisteDeadlines": [
     {
@@ -25,8 +25,14 @@
   "lourdesReden": "Ontslag aangeboden en geweigerd, noodbegroting bevestigd. Lichtpuntje: er wordt weer gepraat.",
   "noodbegroting": "Noodbegroting voor begin 2027: bevestigd, tweede jaar op rij",
   "paleisbezoeken": 2,
-  "samenvatting": "Het voltallige kernkabinet zit sinds vrijdagavond weer samen en zou het hele weekend onderhandelen; een doorbraak is nog niet gemeld. Maandag 16 november brengt de premier opnieuw verslag uit bij de koning.",
+  "samenvatting": "Het kernkabinet vergaderde vrijdagavond zonder doorbraak; zaterdag werken de werkgroepen verder en zondag komt de kern opnieuw samen. Maandag 16 november brengt de premier opnieuw verslag uit bij de koning.",
   "tijdlijn": [
+    {
+      "datum": "2026-11-13",
+      "tekst": "Kernkabinet vergaderd, geen doorbraak, geen nachtsessie. Zaterdag mogen de werkgroepen, zondag de kern weer.",
+      "bron": "VRT NWS",
+      "url": "https://www.vrt.be/vrtnws/nl/liveblog/kernkabinet-zat-samen-maar-geen-doorbraak~1793247532380/"
+    },
     {
       "datum": "2026-11-13",
       "tekst": "Het kernkabinet begint met een etentje en zou het hele weekend doorgaan. Hopelijk is er genoeg dessert.",
@@ -92,26 +98,20 @@
       "datum": "2026-11-06",
       "tekst": "De koning weigert het ontslag en vraagt om meteen verder te onderhandelen.",
       "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"
-    },
-    {
-      "bron": "VRT NWS",
-      "datum": "2026-11-05",
-      "tekst": "De premier bevestigt in de Kamer dat er een noodbegroting komt. Voor het tweede jaar op rij.",
-      "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"
     }
   ],
   "volgende": {
-    "datum": "2026-11-16",
-    "label": "De premier brengt opnieuw verslag uit bij de koning."
+    "datum": "2026-11-15",
+    "label": "Het kernkabinet komt opnieuw samen over de begroting."
   },
   "weerbericht": "Muurvast, met kans op bilaterale buien",
   "fr": {
     "weerbericht": "Bloqué, avec risque d'averses bilatérales",
-    "samenvatting": "Le kern au complet est de nouveau réuni depuis vendredi soir et devrait négocier tout le week-end ; aucune percée n'est encore annoncée. Lundi 16 novembre, le Premier ministre fait à nouveau rapport au Roi.",
+    "samenvatting": "Le kern s'est réuni vendredi soir sans percée ; samedi, les groupes de travail poursuivent et le kern se retrouve dimanche. Lundi 16 novembre, le Premier ministre fait à nouveau rapport au Roi.",
     "lourdesReden": "Démission présentée et refusée, budget d'urgence confirmé. Lueur d'espoir : on se reparle.",
     "noodbegroting": "Budget d'urgence pour début 2027 : confirmé, deuxième année de suite",
     "volgende": {
-      "label": "Le Premier ministre fait à nouveau rapport au Roi."
+      "label": "Le kern se réunit à nouveau sur le budget."
     },
     "gemisteDeadlines": [
       {
@@ -128,6 +128,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Kern réuni, pas de percée, pas de séance de nuit. Samedi place aux groupes de travail, dimanche retour du kern."
+      },
       {
         "tekst": "Le kern commence par un dîner et devrait négocier tout le week-end. Espérons qu'il y ait assez de dessert."
       },
@@ -160,19 +163,16 @@
       },
       {
         "tekst": "Le Roi refuse la démission et demande de reprendre les négociations sans attendre."
-      },
-      {
-        "tekst": "Le Premier ministre confirme à la Chambre qu'il y aura un budget d'urgence. Pour la deuxième année de suite."
       }
     ]
   },
   "de": {
     "weerbericht": "Festgefahren, mit Aussicht auf bilaterale Schauer",
-    "samenvatting": "Das vollzählige Kernkabinett tagt seit Freitagabend wieder und soll das ganze Wochenende verhandeln; ein Durchbruch ist noch nicht gemeldet. Am Montag, 16. November, erstattet der Premier dem König erneut Bericht.",
+    "samenvatting": "Das Kernkabinett tagte am Freitagabend ohne Durchbruch; am Samstag arbeiten die Arbeitsgruppen weiter, am Sonntag tagt der Kern erneut. Am Montag, 16. November, erstattet der Premier dem König erneut Bericht.",
     "lourdesReden": "Rücktritt angeboten und abgelehnt, Nothaushalt bestätigt. Lichtblick: Es wird wieder geredet.",
     "noodbegroting": "Nothaushalt für Anfang 2027: bestätigt, zum zweiten Mal in Folge",
     "volgende": {
-      "label": "Der Premier erstattet dem König erneut Bericht."
+      "label": "Das Kernkabinett tagt erneut zum Haushalt."
     },
     "gemisteDeadlines": [
       {
@@ -189,6 +189,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Kernkabinett getagt, kein Durchbruch, keine Nachtsitzung. Samstag sind die Arbeitsgruppen dran, Sonntag wieder der Kern."
+      },
       {
         "tekst": "Das Kernkabinett beginnt mit einem Abendessen und soll das ganze Wochenende verhandeln. Hoffentlich reicht der Nachtisch."
       },
@@ -221,9 +224,6 @@
       },
       {
         "tekst": "Der König lehnt den Rücktritt ab und bittet, sofort weiterzuverhandeln."
-      },
-      {
-        "tekst": "Der Premier bestätigt in der Kammer, dass ein Nothaushalt kommt. Zum zweiten Mal in Folge."
       }
     ]
   }
