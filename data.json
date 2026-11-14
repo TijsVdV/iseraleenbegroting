@@ -28,6 +28,12 @@
   "samenvatting": "Het kernkabinet vergaderde vrijdagavond zonder doorbraak; zaterdag werken de werkgroepen verder en zondag komt de kern opnieuw samen. Maandag 16 november brengt de premier opnieuw verslag uit bij de koning.",
   "tijdlijn": [
     {
+      "datum": "2026-11-14",
+      "tekst": "Er ligt een nieuwe tabel. Vier van de vijf partijen willen daarop verder praten, op het vijfde antwoord wordt nog gewacht.",
+      "bron": "La Libre",
+      "url": "https://www.lalibre.be/belgique/politique-belge/2026/11/14/budget-federal-bart-de-wever-face-a-un-nouveau-blocage-les-discussions-reprendront-dimanche-EBWMW7NJPND2PBNL5UDQIZA6KQ/"
+    },
+    {
       "datum": "2026-11-13",
       "tekst": "Kernkabinet vergaderd, geen doorbraak, geen nachtsessie. Zaterdag mogen de werkgroepen, zondag de kern weer.",
       "bron": "VRT NWS",
@@ -92,12 +98,6 @@
       "datum": "2026-11-09",
       "tekst": "Het overleg zou vandaag herbeginnen, eerst in aparte gesprekken per partij.",
       "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"
-    },
-    {
-      "bron": "VRT NWS",
-      "datum": "2026-11-06",
-      "tekst": "De koning weigert het ontslag en vraagt om meteen verder te onderhandelen.",
-      "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"
     }
   ],
   "volgende": {
@@ -128,6 +128,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Un nouveau tableau est sur la table. Quatre partis sur cinq veulent poursuivre sur cette base, la cinquième réponse se fait attendre."
+      },
       {
         "tekst": "Kern réuni, pas de percée, pas de séance de nuit. Samedi place aux groupes de travail, dimanche retour du kern."
       },
@@ -160,9 +163,6 @@
       },
       {
         "tekst": "La concertation devait reprendre aujourd'hui, d'abord par des entretiens séparés avec chaque parti."
-      },
-      {
-        "tekst": "Le Roi refuse la démission et demande de reprendre les négociations sans attendre."
       }
     ]
   },
@@ -189,6 +189,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Eine neue Tabelle liegt vor. Vier von fünf Parteien wollen darauf weiterverhandeln, die fünfte Antwort steht noch aus."
+      },
       {
         "tekst": "Kernkabinett getagt, kein Durchbruch, keine Nachtsitzung. Samstag sind die Arbeitsgruppen dran, Sonntag wieder der Kern."
       },
@@ -221,9 +224,6 @@
       },
       {
         "tekst": "Die Gespräche sollten heute wieder beginnen, zunächst einzeln mit jeder Partei."
-      },
-      {
-        "tekst": "Der König lehnt den Rücktritt ab und bittet, sofort weiterzuverhandeln."
       }
     ]
   }
