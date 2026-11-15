@@ -1,7 +1,7 @@
 {
   "akkoord": false,
   "bedrag": "10 miljard",
-  "bijgewerkt": "2026-11-14",
+  "bijgewerkt": "2026-11-15",
   "eersteDeadline": "2026-07-21",
   "gemisteDeadlines": [
     {
@@ -25,8 +25,14 @@
   "lourdesReden": "Ontslag aangeboden en geweigerd, noodbegroting bevestigd. Lichtpuntje: er wordt weer gepraat.",
   "noodbegroting": "Noodbegroting voor begin 2027: bevestigd, tweede jaar op rij",
   "paleisbezoeken": 2,
-  "samenvatting": "Het kernkabinet vergaderde vrijdagavond zonder doorbraak; zaterdag werken de werkgroepen verder en zondag komt de kern opnieuw samen. Maandag 16 november brengt de premier opnieuw verslag uit bij de koning.",
+  "samenvatting": "Na een kern zonder doorbraak en een dag werkgroepen zit het kernkabinet zondag vanaf 14 uur weer samen. Maandag 16 november brengt de premier opnieuw verslag uit bij de koning.",
   "tijdlijn": [
+    {
+      "datum": "2026-11-15",
+      "tekst": "Zondag, 14 uur: het kernkabinet schuift weer aan. Morgen wacht de koning, dus de klok tikt luider dan anders.",
+      "bron": "VRT NWS",
+      "url": "https://www.vrt.be/vrtnws/nl/liveblog/top-van-regering-komt-vandaag-opnieuw-bijeen-vanaf-14-uur~1793247532380/"
+    },
     {
       "datum": "2026-11-14",
       "tekst": "Er ligt een nieuwe tabel. Vier van de vijf partijen willen daarop verder praten, op het vijfde antwoord wordt nog gewacht.",
@@ -92,26 +98,20 @@
       "tekst": "Eerste aparte gesprekken in de Wetstraat 16. Elke vicepremier mag één iemand meebrengen; dinsdag volgen er meer.",
       "bron": "VRT NWS",
       "url": "https://vrt.be/vrtnws/nl/liveblog/de-wever-trekt-begrotingsonderhandelingen-straks-opnieuw-op-gang~1793247532380"
-    },
-    {
-      "bron": "VRT NWS",
-      "datum": "2026-11-09",
-      "tekst": "Het overleg zou vandaag herbeginnen, eerst in aparte gesprekken per partij.",
-      "url": "https://www.vrt.be/vrtnws/nl/liveblog/koning-vraagt-de-wever-om-overleg-te-hervatten-verwachting-is-~1793247532380/"
     }
   ],
   "volgende": {
     "datum": "2026-11-15",
-    "label": "Het kernkabinet komt opnieuw samen over de begroting."
+    "label": "Het kernkabinet komt vanaf 14 uur opnieuw samen over de begroting."
   },
   "weerbericht": "Muurvast, met kans op bilaterale buien",
   "fr": {
     "weerbericht": "Bloqué, avec risque d'averses bilatérales",
-    "samenvatting": "Le kern s'est réuni vendredi soir sans percée ; samedi, les groupes de travail poursuivent et le kern se retrouve dimanche. Lundi 16 novembre, le Premier ministre fait à nouveau rapport au Roi.",
+    "samenvatting": "Après un kern sans percée et une journée de groupes de travail, le kern se réunit à nouveau dimanche dès 14 heures. Lundi 16 novembre, le Premier ministre fait à nouveau rapport au Roi.",
     "lourdesReden": "Démission présentée et refusée, budget d'urgence confirmé. Lueur d'espoir : on se reparle.",
     "noodbegroting": "Budget d'urgence pour début 2027 : confirmé, deuxième année de suite",
     "volgende": {
-      "label": "Le kern se réunit à nouveau sur le budget."
+      "label": "Le kern se réunit à nouveau sur le budget dès 14 heures."
     },
     "gemisteDeadlines": [
       {
@@ -128,6 +128,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Dimanche, 14 heures : le kern se remet à table. Demain, le Roi attend, alors l'horloge fait plus de bruit que d'habitude."
+      },
       {
         "tekst": "Un nouveau tableau est sur la table. Quatre partis sur cinq veulent poursuivre sur cette base, la cinquième réponse se fait attendre."
       },
@@ -160,19 +163,16 @@
       },
       {
         "tekst": "Premiers entretiens séparés au 16 rue de la Loi. Chaque vice-Premier peut venir accompagné ; d'autres suivent mardi."
-      },
-      {
-        "tekst": "La concertation devait reprendre aujourd'hui, d'abord par des entretiens séparés avec chaque parti."
       }
     ]
   },
   "de": {
     "weerbericht": "Festgefahren, mit Aussicht auf bilaterale Schauer",
-    "samenvatting": "Das Kernkabinett tagte am Freitagabend ohne Durchbruch; am Samstag arbeiten die Arbeitsgruppen weiter, am Sonntag tagt der Kern erneut. Am Montag, 16. November, erstattet der Premier dem König erneut Bericht.",
+    "samenvatting": "Nach einem Kern ohne Durchbruch und einem Tag Arbeitsgruppen tagt das Kernkabinett am Sonntag ab 14 Uhr erneut. Am Montag, 16. November, erstattet der Premier dem König erneut Bericht.",
     "lourdesReden": "Rücktritt angeboten und abgelehnt, Nothaushalt bestätigt. Lichtblick: Es wird wieder geredet.",
     "noodbegroting": "Nothaushalt für Anfang 2027: bestätigt, zum zweiten Mal in Folge",
     "volgende": {
-      "label": "Das Kernkabinett tagt erneut zum Haushalt."
+      "label": "Das Kernkabinett tagt ab 14 Uhr erneut zum Haushalt."
     },
     "gemisteDeadlines": [
       {
@@ -189,6 +189,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Sonntag, 14 Uhr: Das Kernkabinett setzt sich wieder an den Tisch. Morgen wartet der König, die Uhr tickt lauter als sonst."
+      },
       {
         "tekst": "Eine neue Tabelle liegt vor. Vier von fünf Parteien wollen darauf weiterverhandeln, die fünfte Antwort steht noch aus."
       },
@@ -221,9 +224,6 @@
       },
       {
         "tekst": "Erste Einzelgespräche in der Rue de la Loi 16. Jeder Vizepremier darf eine Person mitbringen; am Dienstag geht es weiter."
-      },
-      {
-        "tekst": "Die Gespräche sollten heute wieder beginnen, zunächst einzeln mit jeder Partei."
       }
     ]
   }
