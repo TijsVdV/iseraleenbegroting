@@ -29,6 +29,12 @@
   "tijdlijn": [
     {
       "datum": "2026-11-15",
+      "tekst": "Laatste kern voor het paleisbezoek. Een volledig akkoord maandag lijkt onwaarschijnlijk, de grote lijnen misschien wel.",
+      "bron": "RTBF",
+      "url": "https://www.rtbf.be/article/crise-gouvernementale-bart-de-wever-convoque-un-ultime-kern-consacre-au-budget-ce-dimanche-a-14h00-11815700"
+    },
+    {
+      "datum": "2026-11-15",
       "tekst": "Zondag, 14 uur: het kernkabinet schuift weer aan. Morgen wacht de koning, dus de klok tikt luider dan anders.",
       "bron": "VRT NWS",
       "url": "https://www.vrt.be/vrtnws/nl/liveblog/top-van-regering-komt-vandaag-opnieuw-bijeen-vanaf-14-uur~1793247532380/"
@@ -92,12 +98,6 @@
       "tekst": "De premier zegt de Europese top in Dublin af. De begroting gaat voor, ook al gaat ze traag.",
       "bron": "VRT NWS",
       "url": "https://vrt.be/vrtnws/nl/liveblog/de-wever-trekt-begrotingsonderhandelingen-straks-opnieuw-op-gang~1793247532380"
-    },
-    {
-      "datum": "2026-11-09",
-      "tekst": "Eerste aparte gesprekken in de Wetstraat 16. Elke vicepremier mag één iemand meebrengen; dinsdag volgen er meer.",
-      "bron": "VRT NWS",
-      "url": "https://vrt.be/vrtnws/nl/liveblog/de-wever-trekt-begrotingsonderhandelingen-straks-opnieuw-op-gang~1793247532380"
     }
   ],
   "volgende": {
@@ -128,6 +128,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Ultime kern avant le Palais. Un accord complet lundi semble peu probable, les grandes lignes peut-être."
+      },
       {
         "tekst": "Dimanche, 14 heures : le kern se remet à table. Demain, le Roi attend, alors l'horloge fait plus de bruit que d'habitude."
       },
@@ -160,9 +163,6 @@
       },
       {
         "tekst": "Le Premier ministre renonce au sommet européen de Dublin. Le budget passe d'abord, même s'il avance lentement."
-      },
-      {
-        "tekst": "Premiers entretiens séparés au 16 rue de la Loi. Chaque vice-Premier peut venir accompagné ; d'autres suivent mardi."
       }
     ]
   },
@@ -189,6 +189,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Letzter Kern vor dem Palastbesuch. Eine vollständige Einigung am Montag gilt als unwahrscheinlich, die Grundzüge vielleicht."
+      },
       {
         "tekst": "Sonntag, 14 Uhr: Das Kernkabinett setzt sich wieder an den Tisch. Morgen wartet der König, die Uhr tickt lauter als sonst."
       },
@@ -221,9 +224,6 @@
       },
       {
         "tekst": "Der Premier sagt den EU-Gipfel in Dublin ab. Der Haushalt geht vor, auch wenn er nur langsam vorankommt."
-      },
-      {
-        "tekst": "Erste Einzelgespräche in der Rue de la Loi 16. Jeder Vizepremier darf eine Person mitbringen; am Dienstag geht es weiter."
       }
     ]
   }
