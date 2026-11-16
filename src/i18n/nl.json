@@ -80,7 +80,12 @@
   "updated": "Bijgewerkt ",
   "snapshot": "Momentopname van ",
   "smoke_black": "Zwarte rook: nog geen begroting",
-  "smoke_white": "Witte rook: Habemus begroting!"
+  "smoke_white": "Witte rook: Habemus begroting!",
+  "stats_aria": "Kerncijfers",
+  "tl_note": "Elke regel met bron",
+  "nood_title": "Noodbegroting",
+  "show_all": "Toon alle {n} berichten",
+  "show_less": "Toon minder"
  },
  "spel": {
   "meta_title": "Het Begrotingsspel: vind jij de 10 miljard? · Is er al een begroting?",

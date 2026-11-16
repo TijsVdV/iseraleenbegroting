@@ -80,7 +80,12 @@
   "updated": "Mis à jour le ",
   "snapshot": "Instantané du ",
   "smoke_black": "Fumée noire : toujours pas de budget",
-  "smoke_white": "Fumée blanche : Habemus budget !"
+  "smoke_white": "Fumée blanche : Habemus budget !",
+  "stats_aria": "Chiffres clés",
+  "tl_note": "Chaque ligne avec sa source",
+  "nood_title": "Budget d’urgence",
+  "show_all": "Afficher les {n} messages",
+  "show_less": "Afficher moins"
  },
  "spel": {
   "meta_title": "Le Jeu du budget : trouverez-vous les 10 milliards ? · Y a-t-il déjà un budget ?",

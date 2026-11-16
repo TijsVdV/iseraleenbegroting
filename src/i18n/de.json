@@ -80,7 +80,12 @@
   "updated": "Aktualisiert am ",
   "snapshot": "Momentaufnahme vom ",
   "smoke_black": "Schwarzer Rauch: noch kein Haushalt",
-  "smoke_white": "Weißer Rauch: Habemus Haushalt!"
+  "smoke_white": "Weißer Rauch: Habemus Haushalt!",
+  "stats_aria": "Kennzahlen",
+  "tl_note": "Jede Zeile mit Quelle",
+  "nood_title": "Nothaushalt",
+  "show_all": "Alle {n} Meldungen anzeigen",
+  "show_less": "Weniger anzeigen"
  },
  "spel": {
   "meta_title": "Das Haushaltsspiel: Finden Sie die 10 Milliarden? · Gibt es schon einen Haushalt?",
