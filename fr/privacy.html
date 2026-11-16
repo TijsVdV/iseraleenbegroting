@@ -5,13 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vie privée · Y a-t-il déjà un budget ?</title>
 <meta name="robots" content="noindex">
+<meta name="theme-color" content="#0d1016">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{color-scheme:dark;--bg:#141821;--ink:#eef1f6;--muted:#a7b0bf;--card:#1f2533;--line:#323a4b;
+:root{color-scheme:dark;--bg:#0d1016;--ink:#eef1f6;--muted:#b4bcc9;--card:#161b24;--line:#262d3a;
   --stripe:linear-gradient(90deg,#ffd400 0 11.11%,#e2001a 0 22.22%,#0057b8 0 33.33%,#ff7a00 0 44.44%,#3fae49 0 55.55%,#00b5a5 0 66.66%,#0b3a6e 0 77.77%,#a3001b 0 88.88%,#d4007a 0)}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
-body::before{content:"";display:block;height:10px;background:var(--stripe)}
-main{max-width:680px;margin:0 auto;padding:20px 16px 56px}
-h1{font-size:28px;line-height:1.2;margin:8px 0 16px}h2{font-size:20px;margin:24px 0 6px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Inter",system-ui,-apple-system,"Segoe UI",sans-serif}
+body::before{content:"";display:block;height:6px;background:var(--stripe)}
+main{max-width:720px;margin:28px auto 56px;padding:28px clamp(18px,4vw,40px) 32px;background:var(--card);border:1px solid var(--line);border-radius:20px}
+@media (max-width:760px){main{margin:16px 12px 40px}}
+h1,h2{font-family:"Space Grotesk",system-ui,sans-serif;font-weight:600;letter-spacing:-.01em}
+h1{font-size:clamp(30px,5vw,42px);line-height:1.1;margin:8px 0 16px}h2{font-size:21px;margin:26px 0 6px;padding-top:18px;border-top:1px solid var(--line)}
 p,li{max-width:62ch}a{color:inherit}.muted{color:var(--muted);font-size:15px}
 button{font:inherit;font-weight:700;border:2px solid var(--ink);background:none;color:var(--ink);border-radius:999px;padding:8px 16px;cursor:pointer;min-height:44px}
 </style>

@@ -27,6 +27,28 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/site.css">
 <style>
+.wrap{max-width:1320px}
+/* phone: one column, status sticky under the header; from 1000px: game board left, status + log in a sticky side rail */
+.game{display:flex;flex-direction:column;gap:18px;min-width:0}
+.main,.side{display:contents}
+.hero{order:1}.status{order:2}#intro{order:3}.teampanel{order:4}#board{order:5}#end{order:6}.side>.panel{order:7}
+.hero h1{font-size:clamp(32px,4.6vw,56px);letter-spacing:-.02em;max-width:18ch}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;list-style:none;padding:0 !important;counter-reset:how}
+.how li{counter-increment:how;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:15px;line-height:1.45;margin:0 !important}
+.how li::before{content:counter(how);display:block;font:700 22px var(--display);color:var(--p-turkoois);margin-bottom:4px}
+.teampanel h2{margin-bottom:14px}
+@media (max-width:600px){.how{grid-template-columns:1fr;gap:8px}.how li{display:flex;gap:12px;align-items:baseline;padding:10px 12px}.how li::before{flex:0 0 auto;font-size:18px;margin:0}}
+@media (min-width:1000px){
+  .game{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:22px;align-items:start}
+  .main{display:flex;flex-direction:column;gap:18px;min-width:0}
+  .side{display:flex;flex-direction:column;gap:18px;position:sticky;top:16px;min-width:0}
+  .side .status{position:static;grid-template-columns:1fr;padding:20px;margin:0}
+  .side .status .day{text-align:left;order:-1}
+  .side .status .day b{display:inline;margin-left:6px}
+  .side .status .money{font-size:40px}
+  .side .status .money small{display:block;margin-top:4px}
+  .side .log{max-height:calc(100vh - 330px);min-height:160px}
+}
 .status{position:sticky;top:0;z-index:5;background:var(--card);border:2px solid var(--line);border-radius:var(--radius);padding:12px 16px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 16px;align-items:center;box-shadow:0 6px 18px rgba(0,0,0,.06)}
 .status .money{font-family:var(--display);font-weight:700;font-size:clamp(22px,4vw,30px);line-height:1.1}
 .status .money small{font-family:var(--body);font-size:14px;font-weight:800;color:var(--muted)}
@@ -83,10 +105,11 @@
 :root[data-skin="retro"] .m[aria-pressed="true"]{border-style:inset;background:#ffff99;box-shadow:none}
 :root[data-skin="retro"] .bar,:root[data-skin="retro"] .mood{border-radius:0;border:2px inset #c0c0c0;background:#fff}
 :root[data-skin="retro"] .bar i,:root[data-skin="retro"] .mood i{border-radius:0;background:repeating-linear-gradient(90deg,#000080 0 10px,transparent 10px 13px) !important;background-size:auto !important}
-:root[data-skin="retro"] .log,:root[data-skin="retro"] .how{background:#fff;border:2px inset #c0c0c0;padding:6px 10px}
-:root[data-skin="retro"] .how{padding-left:2em}
+:root[data-skin="retro"] .log{background:#fff;border:2px inset #c0c0c0;padding:6px 10px}
+:root[data-skin="retro"] .how li{background:#fff;border:2px inset #c0c0c0;border-radius:0}
+:root[data-skin="retro"] .how li::before{color:#000080}
 @media (max-width:640px){
-  .status{padding:10px 12px;top:0;border-radius:0 0 14px 14px;margin:-12px -16px 0}
+  .status{padding:10px 12px;top:0;border-radius:0 0 14px 14px;margin:0 -16px}
   :root[data-skin="retro"] .status{margin:0}
 }
 </style>
@@ -94,69 +117,70 @@
 <body>
 <div class="wrap">
   <header class="top">
-    <nav aria-label="Site"><a href="/">← Is er al een begroting?</a><a href="/uitleg.html">Uitleg</a><a href="/spel.html" aria-current="page">Speel zelf</a></nav>
-    <span class="skins" role="group" aria-label="Thema"><span>Thema:</span><button type="button" data-skin="partijen">Partijen</button><button type="button" data-skin="belgie">België</button><button type="button" data-skin="retro">2000</button></span>
-    <nav class="langs" aria-label="Taal"><a href="/spel.html" hreflang="nl" lang="nl" title="Nederlands" aria-current="true">NL</a><a href="/fr/spel.html" hreflang="fr" lang="fr" title="Français">FR</a><a href="/de/spel.html" hreflang="de" lang="de" title="Deutsch">DE</a></nav>
+    <a class="brand" href="/"><span class="flag" aria-hidden="true"><i></i><i></i><i></i></span>Is er al een begroting?</a>
+    <div class="tools">
+      <nav aria-label="Site"><a href="/">← Is er al een begroting?</a><a href="/uitleg.html">Uitleg</a><a href="/spel.html" aria-current="page">Speel zelf</a></nav>
+      <span class="skins" role="group" aria-label="Thema"><span>Thema:</span><button type="button" data-skin="partijen">Partijen</button><button type="button" data-skin="belgie">België</button><button type="button" data-skin="retro">2000</button></span>
+      <nav class="langs" aria-label="Taal"><a href="/spel.html" hreflang="nl" lang="nl" title="Nederlands" aria-current="true">NL</a><a href="/fr/spel.html" hreflang="fr" lang="fr" title="Français">FR</a><a href="/de/spel.html" hreflang="de" lang="de" title="Deutsch">DE</a></nav>
+    </div>
   </header>
-
-  <div>
-    <h1>Het Begrotingsspel</h1>
-    <p class="lead">Vind <b>10 miljard euro</b> voor de deadline. Hou alle vijf de onderhandelaars aan tafel. Hoe moeilijk kan het zijn?</p>
-  </div>
-
-  <div class="status" id="status" aria-live="polite">
-    <div class="money"><span id="found"></span> <small>van de <span id="target"></span></small></div>
-    <div class="day">Dag <b id="day">1 / 10</b><span id="missed"></span></div>
-    <div class="bar" role="img" id="bar" aria-label="Voortgang"><i id="fill"></i></div>
-  </div>
-
-  <section class="panel c6" id="intro" aria-labelledby="h-intro">
-    <h2 id="h-intro">Zo speel je</h2>
-    <ol class="how">
-      <li>Kies elke dag <b>maximaal twee maatregelen</b> en leg ze voor aan de kern. Elke dag telt, en elke vergadering maakt iedereen een beetje humeuriger.</li>
-      <li>Elke maatregel brengt geld op, maar maakt sommige onderhandelaars blij en andere woedend. Bij elke maatregel zie je wie 👍 en wie 👎 is.</li>
-      <li>Zakt iemand onder 15, dan zegt die <b>veto</b> op de maatregel die hij of zij het ergst vindt. Zakt iemand naar 0, dan stapt die op en moet je naar de koning.</li>
-      <li>Wisselgeld helpt: een toegeving maakt één onderhandelaar blij, maar kost geld.</li>
-      <li>Haal je de deadline niet? Je mag hem verschuiven. Net als in het echt. Maar niet eindeloos.</li>
-    </ol>
-    <p class="disclaimer" style="margin-top:10px">Alle bedragen en reacties in dit spel zijn verzonnen of sterk vereenvoudigd. De vijf onderhandelaars zijn fictief. Herken je er toch iemand in? Dan ligt dat aan het proces, niet aan ons. Voor de echte uitleg: <a href="uitleg.html">lees hier</a>.</p>
-  </section>
-
-  <section aria-labelledby="h-team">
-    <h2 id="h-team" style="margin-bottom:10px">Aan tafel</h2>
-    <div class="team" id="team"></div>
-  </section>
-
-  <section class="panel c2" id="board" aria-labelledby="h-maat">
-    <h2 id="h-maat">Maatregelen</h2>
-    <div class="measures" id="measures"></div>
-    <h3>Wisselgeld <span class="muted small">(maakt één onderhandelaar blij, kost geld)</span></h3>
-    <div class="extra" id="sweets"></div>
-    <div class="actions" style="margin-top:16px">
-      <button type="button" class="btn" id="go"></button>
-      <button type="button" class="btn ghost" id="fries">Frietjespauze 🍟</button>
-      <span class="hint" id="hint"></span>
+  <div class="game">
+  <div class="main">
+    <div class="hero">
+      <h1>Het Begrotingsspel</h1>
+      <p class="lead">Vind <b>10 miljard euro</b> voor de deadline. Hou alle vijf de onderhandelaars aan tafel. Hoe moeilijk kan het zijn?</p>
     </div>
-  </section>
-
-  <section class="panel c9 end" id="end" hidden aria-live="assertive">
-    <h2 id="end-title"></h2>
-    <div class="big" id="end-big"></div>
-    <p id="end-text"></p>
-    <p id="end-real" class="muted"></p>
-    <div class="actions">
-      <button type="button" class="btn" id="again">Opnieuw spelen</button>
-      <button type="button" class="btn ghost" id="share">Deel je resultaat</button>
-      <a class="btn ghost" href="/">Naar de echte stand</a>
+    <section class="panel c6" id="intro" aria-labelledby="h-intro">
+      <h2 id="h-intro">Zo speel je</h2>
+      <ol class="how">
+        <li>Kies elke dag <b>maximaal twee maatregelen</b> en leg ze voor aan de kern. Elke dag telt, en elke vergadering maakt iedereen een beetje humeuriger.</li>
+        <li>Elke maatregel brengt geld op, maar maakt sommige onderhandelaars blij en andere woedend. Bij elke maatregel zie je wie 👍 en wie 👎 is.</li>
+        <li>Zakt iemand onder 15, dan zegt die <b>veto</b> op de maatregel die hij of zij het ergst vindt. Zakt iemand naar 0, dan stapt die op en moet je naar de koning.</li>
+        <li>Wisselgeld helpt: een toegeving maakt één onderhandelaar blij, maar kost geld.</li>
+        <li>Haal je de deadline niet? Je mag hem verschuiven. Net als in het echt. Maar niet eindeloos.</li>
+      </ol>
+      <p class="disclaimer" style="margin-top:10px">Alle bedragen en reacties in dit spel zijn verzonnen of sterk vereenvoudigd. De vijf onderhandelaars zijn fictief. Herken je er toch iemand in? Dan ligt dat aan het proces, niet aan ons. Voor de echte uitleg: <a href="uitleg.html">lees hier</a>.</p>
+    </section>
+    <section class="panel c5 teampanel" aria-labelledby="h-team">
+      <h2 id="h-team">Aan tafel</h2>
+      <div class="team" id="team"></div>
+    </section>
+    <section class="panel c2" id="board" aria-labelledby="h-maat">
+      <h2 id="h-maat">Maatregelen</h2>
+      <div class="measures" id="measures"></div>
+      <h3>Wisselgeld <span class="muted small">(maakt één onderhandelaar blij, kost geld)</span></h3>
+      <div class="extra" id="sweets"></div>
+      <div class="actions" style="margin-top:16px">
+        <button type="button" class="btn" id="go"></button>
+        <button type="button" class="btn ghost" id="fries">Frietjespauze 🍟</button>
+        <span class="hint" id="hint"></span>
+      </div>
+    </section>
+    <section class="panel c9 end" id="end" hidden aria-live="assertive">
+      <h2 id="end-title"></h2>
+      <div class="big" id="end-big"></div>
+      <p id="end-text"></p>
+      <p id="end-real" class="muted"></p>
+      <div class="actions">
+        <button type="button" class="btn" id="again">Opnieuw spelen</button>
+        <button type="button" class="btn ghost" id="share">Deel je resultaat</button>
+        <a class="btn ghost" href="/">Naar de echte stand</a>
+      </div>
+      <p class="muted small" id="shared" hidden>Gekopieerd! Plak het waar je wil.</p>
+    </section>
+  </div>
+  <aside class="side">
+    <div class="status" id="status" aria-live="polite">
+      <div class="money"><span id="found"></span> <small>van de <span id="target"></span></small></div>
+      <div class="day">Dag <b id="day">1 / 10</b><span id="missed"></span></div>
+      <div class="bar" role="img" id="bar" aria-label="Voortgang"><i id="fill"></i></div>
     </div>
-    <p class="muted small" id="shared" hidden>Gekopieerd! Plak het waar je wil.</p>
-  </section>
-
-  <section class="panel c3" aria-labelledby="h-log">
-    <h2 id="h-log">Wat er gebeurde</h2>
-    <ul class="log" id="log"></ul>
-  </section>
-
+    <section class="panel c3" aria-labelledby="h-log">
+      <h2 id="h-log">Wat er gebeurde</h2>
+      <ul class="log" id="log"></ul>
+    </section>
+  </aside>
+  </div>
   <footer class="foot">
     <div class="band" aria-hidden="true"></div>
     <p><b>Dit is satire.</b> Het spel lacht met het proces, niet met een partij of persoon. De onderhandelaars zijn verzonnen archetypes en de bedragen zijn speelgeld.</p>

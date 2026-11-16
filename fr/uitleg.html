@@ -27,12 +27,54 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/site.css">
 <style>
-.tldr{font-size:clamp(17px,2.2vw,19px)}
-.tldr ul{margin:0;padding-left:1.2em}
-.tldr li{margin:4px 0}
-.toc ol{margin:0;padding-left:1.3em;columns:2;column-gap:28px}
-.toc li{break-inside:avoid;margin:3px 0}
-@media (max-width:560px){.toc ol{columns:1}}
+.wrap{max-width:1320px}
+/* layout: one column on phone, a bento of cards from 760px, sticky contents rail from 1120px */
+.doc{display:flex;flex-direction:column;gap:18px;min-width:0}
+.doc>div:first-child{padding:8px 0 4px}
+.doc>div:first-child h1{font-size:clamp(32px,4.6vw,56px);letter-spacing:-.02em;max-width:20ch}
+.doc>div:first-child .lead{max-width:62ch}
+.doc .panel{font-size:16px}
+.tldr ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.tldr li{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 14px;line-height:1.5;font-size:15px}
+.tldr li b{color:var(--ink);font-family:var(--display);font-size:1.12em}
+.toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:4px 16px}
+.toc li{counter-increment:toc}
+.toc a{display:flex;gap:10px;align-items:baseline;text-decoration:none;color:var(--muted);padding:6px 8px;border-radius:8px;font-size:15px;line-height:1.35}
+.toc a::before{content:counter(toc,decimal-leading-zero);font:600 12px var(--display);color:var(--muted);opacity:.7}
+.toc a:hover,.toc a.on{background:var(--bg);color:var(--ink)}
+.toc a.on::before{color:var(--p-geel);opacity:1}
+@media (min-width:760px){
+  .doc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:stretch;
+    grid-template-areas:"hero hero" "kort kort" "toc toc" "wat gat" "nu moeilijk" "knel knel" "tl zonder" "tl jij" "cta cta" "woorden woorden" "bronnen bronnen"}
+  .doc>div:first-child{grid-area:hero}
+  .doc>.tldr{grid-area:kort}
+  .doc>.toc{grid-area:toc}
+  #wat{grid-area:wat} #gat{grid-area:gat} #waarom-nu{grid-area:nu} #moeilijk{grid-area:moeilijk}
+  #knelpunten{grid-area:knel} #tijdlijn{grid-area:tl} #zonder{grid-area:zonder} #jij{grid-area:jij}
+  #woorden{grid-area:woorden} #bronnen{grid-area:bronnen}
+  .doc>section:not([id]):not(.tldr){grid-area:cta}
+  .figs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .doc>section:not([id]):not(.tldr){display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:4px 24px}
+  .doc>section:not([id]):not(.tldr)::before,.doc>section:not([id]):not(.tldr)>h2{grid-column:1/-1}
+  .doc>section:not([id]):not(.tldr) .cta{margin:0}
+  #knelpunten table{min-width:0}
+  #woorden dl{columns:2;column-gap:32px}
+  #woorden dt{break-after:avoid}
+  #woorden dd{break-inside:avoid;margin-bottom:6px}
+  #bronnen .src{columns:2;column-gap:32px}
+  #bronnen .src li{break-inside:avoid}
+}
+@media (min-width:1120px){
+  .doc{grid-template-columns:250px repeat(2,minmax(0,1fr));
+    grid-template-areas:"toc hero hero" "toc kort kort" "toc wat gat" "toc nu moeilijk" "toc knel knel" "toc tl zonder" "toc tl jij" "toc cta cta" "toc woorden woorden" "toc bronnen bronnen"}
+  .doc>.toc{align-self:start;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow:auto;padding:18px 14px}
+  .doc>.toc h2{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:0 8px}
+  .doc>.toc::before{margin-left:8px}
+  .toc ol{grid-template-columns:1fr;gap:2px}
+  #tijdlijn .tl li{grid-template-columns:7.5em minmax(0,1fr)}
+  .tldr ul{grid-template-columns:repeat(5,minmax(0,1fr))}
+  #woorden dl{columns:3}
+}
 .figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:12px 0}
 .fig{background:var(--bg2);border:2px solid var(--line);border-top:8px solid var(--c);border-radius:calc(var(--radius) - 4px);padding:12px 14px;min-width:0}
 .fig b{display:block;font-family:var(--display);font-weight:700;font-size:clamp(26px,5vw,34px);line-height:1.1;white-space:nowrap}
@@ -58,16 +100,26 @@ dd{margin:2px 0 0}
 :root[data-skin="retro"] .fig,:root[data-skin="retro"] .analogy{border-radius:0;background:#fff;border:2px inset #c0c0c0}
 :root[data-skin="retro"] .panel>p,:root[data-skin="retro"] .panel>ul,:root[data-skin="retro"] .panel>ol,:root[data-skin="retro"] .panel>dl,:root[data-skin="retro"] .panel>.tbl,:root[data-skin="retro"] .panel>.tl{background:#fff;border:2px inset #c0c0c0;padding:8px 10px}
 :root[data-skin="retro"] .panel>ul,:root[data-skin="retro"] .panel>ol{padding-left:2em}
+:root[data-skin="retro"] .tldr>ul{background:transparent;border:0;padding:0}
+:root[data-skin="retro"] .tldr li{background:#fff;border:2px inset #c0c0c0;border-radius:0}
+:root[data-skin="retro"] .toc>ol{padding:6px}
+:root[data-skin="retro"] .toc a{color:#0000ee;text-decoration:underline;border-radius:0}
+:root[data-skin="retro"] .toc a:hover,:root[data-skin="retro"] .toc a.on{background:#000080;color:#fff}
+:root[data-skin="retro"] .doc>.toc h2{text-transform:none;letter-spacing:0;color:#fff;padding:4px 8px}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header class="top">
-    <nav aria-label="Site"><a href="/fr/">← Y a-t-il déjà un budget ?</a><a href="/fr/uitleg.html" aria-current="page">Explication</a><a href="/fr/spel.html">Jouer</a></nav>
-    <span class="skins" role="group" aria-label="Thème"><span>Thème :</span><button type="button" data-skin="partijen">Partis</button><button type="button" data-skin="belgie">Belgique</button><button type="button" data-skin="retro">2000</button></span>
-    <nav class="langs" aria-label="Langue"><a href="/uitleg.html" hreflang="nl" lang="nl" title="Nederlands">NL</a><a href="/fr/uitleg.html" hreflang="fr" lang="fr" title="Français" aria-current="true">FR</a><a href="/de/uitleg.html" hreflang="de" lang="de" title="Deutsch">DE</a></nav>
+    <a class="brand" href="/fr/"><span class="flag" aria-hidden="true"><i></i><i></i><i></i></span>Y a-t-il déjà un budget ?</a>
+    <div class="tools">
+      <nav aria-label="Site"><a href="/fr/">← Y a-t-il déjà un budget ?</a><a href="/fr/uitleg.html" aria-current="page">Explication</a><a href="/fr/spel.html">Jouer</a></nav>
+      <span class="skins" role="group" aria-label="Thème"><span>Thème :</span><button type="button" data-skin="partijen">Partis</button><button type="button" data-skin="belgie">Belgique</button><button type="button" data-skin="retro">2000</button></span>
+      <nav class="langs" aria-label="Langue"><a href="/uitleg.html" hreflang="nl" lang="nl" title="Nederlands">NL</a><a href="/fr/uitleg.html" hreflang="fr" lang="fr" title="Français" aria-current="true">FR</a><a href="/de/uitleg.html" hreflang="de" lang="de" title="Deutsch">DE</a></nav>
+    </div>
   </header>
 
+<main class="doc">
   <div>
     <h1>Pourquoi n'y a-t-il toujours pas de budget fédéral ?</h1>
     <p class="lead">La crise budgétaire belge, depuis le début. Sans jargon, avec des chiffres et des sources. Mis à jour au 10 novembre 2026.</p>
@@ -252,6 +304,7 @@ dd{margin:2px 0 0}
     <p class="note" style="margin-top:12px">Vous voyez une erreur ou quelque chose de dépassé ? Signalez-le via <a href="https://github.com/TijsVdV/iseraleenbegroting/issues" rel="noopener">GitHub</a>. En cas de doute, la source a raison.</p>
   </section>
 
+</main>
   <footer class="foot">
     <div class="band" aria-hidden="true"></div>
     <p>Cette explication vise à comprendre le processus, pas à prendre parti. Le reste du site est satirique ; cette page se veut aussi factuelle que possible.</p>
@@ -259,5 +312,14 @@ dd{margin:2px 0 0}
   </footer>
 </div>
 <script src="/site.js"></script>
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.toc a[href^="#"]'));
+  if(!links.length||!('IntersectionObserver' in window))return;
+  var map={};links.forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s)map[s.id]=a});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.remove('on')});map[e.target.id].classList.add('on')}})},{rootMargin:'-20% 0px -70% 0px'});
+  Object.keys(map).forEach(function(id){io.observe(document.getElementById(id))});
+})();
+</script>
 </body>
 </html>

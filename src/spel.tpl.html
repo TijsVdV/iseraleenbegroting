@@ -24,6 +24,28 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/site.css">
 <style>
+.wrap{max-width:1320px}
+/* phone: one column, status sticky under the header; from 1000px: game board left, status + log in a sticky side rail */
+.game{display:flex;flex-direction:column;gap:18px;min-width:0}
+.main,.side{display:contents}
+.hero{order:1}.status{order:2}#intro{order:3}.teampanel{order:4}#board{order:5}#end{order:6}.side>.panel{order:7}
+.hero h1{font-size:clamp(32px,4.6vw,56px);letter-spacing:-.02em;max-width:18ch}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;list-style:none;padding:0 !important;counter-reset:how}
+.how li{counter-increment:how;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:15px;line-height:1.45;margin:0 !important}
+.how li::before{content:counter(how);display:block;font:700 22px var(--display);color:var(--p-turkoois);margin-bottom:4px}
+.teampanel h2{margin-bottom:14px}
+@media (max-width:600px){.how{grid-template-columns:1fr;gap:8px}.how li{display:flex;gap:12px;align-items:baseline;padding:10px 12px}.how li::before{flex:0 0 auto;font-size:18px;margin:0}}
+@media (min-width:1000px){
+  .game{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:22px;align-items:start}
+  .main{display:flex;flex-direction:column;gap:18px;min-width:0}
+  .side{display:flex;flex-direction:column;gap:18px;position:sticky;top:16px;min-width:0}
+  .side .status{position:static;grid-template-columns:1fr;padding:20px;margin:0}
+  .side .status .day{text-align:left;order:-1}
+  .side .status .day b{display:inline;margin-left:6px}
+  .side .status .money{font-size:40px}
+  .side .status .money small{display:block;margin-top:4px}
+  .side .log{max-height:calc(100vh - 330px);min-height:160px}
+}
 .status{position:sticky;top:0;z-index:5;background:var(--card);border:2px solid var(--line);border-radius:var(--radius);padding:12px 16px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 16px;align-items:center;box-shadow:0 6px 18px rgba(0,0,0,.06)}
 .status .money{font-family:var(--display);font-weight:700;font-size:clamp(22px,4vw,30px);line-height:1.1}
 .status .money small{font-family:var(--body);font-size:14px;font-weight:800;color:var(--muted)}
@@ -80,10 +102,11 @@
 :root[data-skin="retro"] .m[aria-pressed="true"]{border-style:inset;background:#ffff99;box-shadow:none}
 :root[data-skin="retro"] .bar,:root[data-skin="retro"] .mood{border-radius:0;border:2px inset #c0c0c0;background:#fff}
 :root[data-skin="retro"] .bar i,:root[data-skin="retro"] .mood i{border-radius:0;background:repeating-linear-gradient(90deg,#000080 0 10px,transparent 10px 13px) !important;background-size:auto !important}
-:root[data-skin="retro"] .log,:root[data-skin="retro"] .how{background:#fff;border:2px inset #c0c0c0;padding:6px 10px}
-:root[data-skin="retro"] .how{padding-left:2em}
+:root[data-skin="retro"] .log{background:#fff;border:2px inset #c0c0c0;padding:6px 10px}
+:root[data-skin="retro"] .how li{background:#fff;border:2px inset #c0c0c0;border-radius:0}
+:root[data-skin="retro"] .how li::before{color:#000080}
 @media (max-width:640px){
-  .status{padding:10px 12px;top:0;border-radius:0 0 14px 14px;margin:-12px -16px 0}
+  .status{padding:10px 12px;top:0;border-radius:0 0 14px 14px;margin:0 -16px}
   :root[data-skin="retro"] .status{margin:0}
 }
 </style>
@@ -91,69 +114,70 @@
 <body>
 <div class="wrap">
   <header class="top">
-    <nav aria-label="{{a.nav_aria}}"><a href="{{BASE}}">{{t.nav_home}}</a><a href="{{BASE}}uitleg.html">{{t.nav_uitleg}}</a><a href="{{BASE}}spel.html" aria-current="page">{{t.nav_spel}}</a></nav>
-    {{SKINS}}
-    {{LANGSWITCH}}
+    <a class="brand" href="{{BASE}}"><span class="flag" aria-hidden="true"><i></i><i></i><i></i></span>{{t.site_name}}</a>
+    <div class="tools">
+      <nav aria-label="{{a.nav_aria}}"><a href="{{BASE}}">{{t.nav_home}}</a><a href="{{BASE}}uitleg.html">{{t.nav_uitleg}}</a><a href="{{BASE}}spel.html" aria-current="page">{{t.nav_spel}}</a></nav>
+      {{SKINS}}
+      {{LANGSWITCH}}
+    </div>
   </header>
-
-  <div>
-    <h1>{{t.h1}}</h1>
-    <p class="lead">{{t.lead}}</p>
-  </div>
-
-  <div class="status" id="status" aria-live="polite">
-    <div class="money"><span id="found"></span> <small>{{t.of_the}} <span id="target"></span></small></div>
-    <div class="day">{{t.day_word}} <b id="day">1 / 10</b><span id="missed"></span></div>
-    <div class="bar" role="img" id="bar" aria-label="{{a.progress}}"><i id="fill"></i></div>
-  </div>
-
-  <section class="panel c6" id="intro" aria-labelledby="h-intro">
-    <h2 id="h-intro">{{t.how_title}}</h2>
-    <ol class="how">
-      <li>{{t.how1}}</li>
-      <li>{{t.how2}}</li>
-      <li>{{t.how3}}</li>
-      <li>{{t.how4}}</li>
-      <li>{{t.how5}}</li>
-    </ol>
-    <p class="disclaimer" style="margin-top:10px">{{t.disclaimer}}</p>
-  </section>
-
-  <section aria-labelledby="h-team">
-    <h2 id="h-team" style="margin-bottom:10px">{{t.team_title}}</h2>
-    <div class="team" id="team"></div>
-  </section>
-
-  <section class="panel c2" id="board" aria-labelledby="h-maat">
-    <h2 id="h-maat">{{t.measures_title}}</h2>
-    <div class="measures" id="measures"></div>
-    <h3>{{t.sweets_title}} <span class="muted small">{{t.sweets_sub}}</span></h3>
-    <div class="extra" id="sweets"></div>
-    <div class="actions" style="margin-top:16px">
-      <button type="button" class="btn" id="go"></button>
-      <button type="button" class="btn ghost" id="fries">{{t.fries_btn}}</button>
-      <span class="hint" id="hint"></span>
+  <div class="game">
+  <div class="main">
+    <div class="hero">
+      <h1>{{t.h1}}</h1>
+      <p class="lead">{{t.lead}}</p>
     </div>
-  </section>
-
-  <section class="panel c9 end" id="end" hidden aria-live="assertive">
-    <h2 id="end-title"></h2>
-    <div class="big" id="end-big"></div>
-    <p id="end-text"></p>
-    <p id="end-real" class="muted"></p>
-    <div class="actions">
-      <button type="button" class="btn" id="again">{{t.again}}</button>
-      <button type="button" class="btn ghost" id="share">{{t.share}}</button>
-      <a class="btn ghost" href="{{BASE}}">{{t.to_real}}</a>
+    <section class="panel c6" id="intro" aria-labelledby="h-intro">
+      <h2 id="h-intro">{{t.how_title}}</h2>
+      <ol class="how">
+        <li>{{t.how1}}</li>
+        <li>{{t.how2}}</li>
+        <li>{{t.how3}}</li>
+        <li>{{t.how4}}</li>
+        <li>{{t.how5}}</li>
+      </ol>
+      <p class="disclaimer" style="margin-top:10px">{{t.disclaimer}}</p>
+    </section>
+    <section class="panel c5 teampanel" aria-labelledby="h-team">
+      <h2 id="h-team">{{t.team_title}}</h2>
+      <div class="team" id="team"></div>
+    </section>
+    <section class="panel c2" id="board" aria-labelledby="h-maat">
+      <h2 id="h-maat">{{t.measures_title}}</h2>
+      <div class="measures" id="measures"></div>
+      <h3>{{t.sweets_title}} <span class="muted small">{{t.sweets_sub}}</span></h3>
+      <div class="extra" id="sweets"></div>
+      <div class="actions" style="margin-top:16px">
+        <button type="button" class="btn" id="go"></button>
+        <button type="button" class="btn ghost" id="fries">{{t.fries_btn}}</button>
+        <span class="hint" id="hint"></span>
+      </div>
+    </section>
+    <section class="panel c9 end" id="end" hidden aria-live="assertive">
+      <h2 id="end-title"></h2>
+      <div class="big" id="end-big"></div>
+      <p id="end-text"></p>
+      <p id="end-real" class="muted"></p>
+      <div class="actions">
+        <button type="button" class="btn" id="again">{{t.again}}</button>
+        <button type="button" class="btn ghost" id="share">{{t.share}}</button>
+        <a class="btn ghost" href="{{BASE}}">{{t.to_real}}</a>
+      </div>
+      <p class="muted small" id="shared" hidden>{{t.copied}}</p>
+    </section>
+  </div>
+  <aside class="side">
+    <div class="status" id="status" aria-live="polite">
+      <div class="money"><span id="found"></span> <small>{{t.of_the}} <span id="target"></span></small></div>
+      <div class="day">{{t.day_word}} <b id="day">1 / 10</b><span id="missed"></span></div>
+      <div class="bar" role="img" id="bar" aria-label="{{a.progress}}"><i id="fill"></i></div>
     </div>
-    <p class="muted small" id="shared" hidden>{{t.copied}}</p>
-  </section>
-
-  <section class="panel c3" aria-labelledby="h-log">
-    <h2 id="h-log">{{t.log_title}}</h2>
-    <ul class="log" id="log"></ul>
-  </section>
-
+    <section class="panel c3" aria-labelledby="h-log">
+      <h2 id="h-log">{{t.log_title}}</h2>
+      <ul class="log" id="log"></ul>
+    </section>
+  </aside>
+  </div>
   <footer class="foot">
     <div class="band" aria-hidden="true"></div>
     <p>{{t.foot}}</p>
