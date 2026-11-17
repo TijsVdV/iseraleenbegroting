@@ -28,6 +28,18 @@
   "samenvatting": "De koning vraagt de premier om verder te onderhandelen en een akkoord zo snel mogelijk rond te krijgen. Op 23 november brengt de premier opnieuw verslag uit.",
   "tijdlijn": [
     {
+      "datum": "2026-11-17",
+      "tekst": "De vakbonden komen in de Kamer hun eigen rekensom voorstellen: 21 miljard via de brede schouders. Het knelpunt krijgt er een publiek bij.",
+      "bron": "L'Avenir",
+      "url": "https://www.lavenir.net/actu/belgique/politique/2026/11/17/budget-federal-face-aux-deputes-les-syndicats-devoilent-leur-recette-budgetaire-et-fracturent-un-peu-plus-la-majorite-arizona-AF3LZ72PDZE3BELYVHQCXGB73I/"
+    },
+    {
+      "datum": "2026-11-17",
+      "tekst": "De Europese Commissie ziet het Belgische tekort verder oplopen. Alleen Frankrijk houdt ons in 2028 nog gezelschap.",
+      "bron": "VRT NWS",
+      "url": "https://www.vrt.be/vrtnws/nl/liveblog/europese-commissie-ziet-begroting-van-belgie-wegzakken-alleen-f~1793247532380/"
+    },
+    {
       "datum": "2026-11-16",
       "tekst": "De koning stuurt de premier terug naar de onderhandelingstafel. Volgende afspraak op het paleis: 23 november.",
       "bron": "L'Avenir",
@@ -86,18 +98,6 @@
       "tekst": "Het is officieel: vanavond om 19 uur zit het kernkabinet weer samen. Eerst nog een rondje aparte gesprekken, uiteraard.",
       "bron": "La Libre",
       "url": "https://www.lalibre.be/dernieres-depeches/2026/11/13/crise-gouvernementale-le-kern-se-reunira-ce-vendredi-soir-a-19h00-HQUM52FX5VAKDNULBGZSOWMLOI/"
-    },
-    {
-      "datum": "2026-11-12",
-      "tekst": "Vrijdag nog een ronde aparte gesprekken, en 's avonds normaal eindelijk weer iedereen rond één tafel.",
-      "bron": "BX1",
-      "url": "https://bx1.be/categories/politique/budget-federal-bart-de-wever-reunit-ses-vice-premiers-ministres-vendredi/"
-    },
-    {
-      "datum": "2026-11-11",
-      "tekst": "Het overleg kan vrijdag weer beginnen, al is nog niemand uitgenodigd. Volgens bronnen groeit het pessimisme.",
-      "bron": "RTBF",
-      "url": "https://www.rtbf.be/article/budget-federal-pas-d-armistice-au-sein-du-gouvernement-l-agenda-sera-charge-avant-le-16-novembre-11814258"
     }
   ],
   "volgende": {
@@ -129,6 +129,12 @@
     ],
     "tijdlijn": [
       {
+        "tekst": "Les syndicats présentent leur propre calcul à la Chambre : 21 milliards via les épaules les plus larges. Le point de blocage a désormais un public."
+      },
+      {
+        "tekst": "La Commission européenne voit le déficit belge continuer à se creuser. En 2028, seule la France nous tiendra encore compagnie."
+      },
+      {
         "tekst": "Le Roi renvoie le Premier ministre à la table des négociations. Prochain rendez-vous au Palais : le 23 novembre."
       },
       {
@@ -157,12 +163,6 @@
       },
       {
         "tekst": "C'est officiel : le kern se réunit ce soir à 19 heures. Non sans une petite tournée d'entretiens séparés avant, bien sûr."
-      },
-      {
-        "tekst": "Vendredi, encore une série d'entretiens séparés, puis en soirée, normalement, enfin tout le monde autour de la même table."
-      },
-      {
-        "tekst": "Les négociations pourraient reprendre vendredi, même si personne n'est encore convoqué. Selon des sources, le pessimisme gagne du terrain."
       }
     ]
   },
@@ -189,6 +189,12 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Die Gewerkschaften stellen in der Kammer ihre eigene Rechnung vor: 21 Milliarden über die breiten Schultern. Der Knackpunkt hat jetzt Publikum."
+      },
+      {
+        "tekst": "Die Europäische Kommission sieht das belgische Defizit weiter wachsen. 2028 leistet uns nur noch Frankreich Gesellschaft."
+      },
       {
         "tekst": "Der König schickt den Premier zurück an den Verhandlungstisch. Nächster Termin im Palast: der 23. November."
       },
@@ -218,12 +224,6 @@
       },
       {
         "tekst": "Jetzt offiziell: Heute um 19 Uhr tagt das Kernkabinett wieder. Vorher natürlich noch eine Runde Einzelgespräche."
-      },
-      {
-        "tekst": "Am Freitag noch eine Runde Einzelgespräche, abends sitzen voraussichtlich endlich wieder alle an einem Tisch."
-      },
-      {
-        "tekst": "Ab Freitag könnte wieder verhandelt werden, auch wenn noch niemand eingeladen ist. Laut Quellen wächst der Pessimismus."
       }
     ]
   }
