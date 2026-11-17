@@ -233,6 +233,9 @@
   var eur=function(x){var n=(Math.round(x*10)/10).toFixed(1);if(T.decimal_comma)n=n.replace('.',',');return f(T.money,{n:n})};
   var negBy=function(id){for(var i=0;i<NEG.length;i++)if(NEG[i].id===id)return NEG[i]};
   var plural=function(n,one,many){return n===1?one:many};
+  // Analytics: only fires when the visitor consented (site.js then defines gtag).
+  function track(n,p){try{if(typeof window.gtag==='function'){p=p||{};p.lang=LANG;window.gtag('event',n,p)}}catch(e){}}
+  function started(){if(!S.started){S.started=true;track('game_start')}}
   function fresh(){S={day:1,deadline:START_DEADLINE,found:0,target:10,mood:{},done:{},sel:[],shifts:0,crisis:0,creative:false,fries:0,over:false,won:false};
     NEG.forEach(function(n){S.mood[n.id]=START_MOOD});}
   function face(v){return v>=75?'😄':v>=50?'🙂':v>=30?'😐':v>=12?'😠':'🤬'}
@@ -281,7 +284,7 @@
     $('end-text').textContent=text;
     $('end-real').textContent=REAL_DEAL?T.real_deal:f(won?T.real_win:T.real_lose,{n:realDays()});
     render();$('end').scrollIntoView({behavior:'smooth',block:'center'});
-    if(typeof window.gtag==='function')window.gtag('event','game_end',{result:won?'win':'lose',days:S.day,shifts:S.shifts,lang:LANG});
+    track('game_end',{result:won?'win':'lose',days:S.day,shifts:S.shifts,found:S.found});
   }
   function checkWalkout(){
     var out=NEG.filter(function(n){return S.mood[n.id]<=0});
@@ -319,6 +322,8 @@
   }
   function propose(){
     if(S.over||!S.sel.length)return;
+    started();
+    S.sel.forEach(function(id){track('measure_propose',{measure:id,day:S.day})});
     var acc=[],shake=[];
     S.sel.forEach(function(id){var m=M.filter(function(x){return x.id===id})[0];
       var val=m.v;if(m.fuzzy){val=Math.round((0.1+Math.random()*0.9)*10)/10}
@@ -331,6 +336,7 @@
       var fans={};NEG.forEach(function(o){if((worst.m.fx[o.id]||0)>0)fans[o.id]=-3});applyFx(fans);
       shake.push(n.id);
       log(f(T.veto,{who:n.nm,what:worst.m.t}));
+      track('measure_veto',{measure:worst.m.id,party:n.id});
     });
     var got=0;
     acc.forEach(function(a){var m=a.m;
@@ -356,6 +362,7 @@
     var b=e.target.closest&&e.target.closest('button.m');if(!b||S.over)return;
     var sid=b.getAttribute('data-sweet');
     if(sid){var s=SWEET.filter(function(x){return x.id===sid})[0];if(S.done[sid])return;
+      started();track('sweetener_use',{sweetener:sid,day:S.day});
       S.done[sid]=true;S.found=Math.round((S.found-s.cost)*10)/10;var fx={};fx[s.who]=s.gain;applyFx(fx);
       log(f(T.sweet_log,{what:s.t,who:negBy(s.who).nm,n:eur(s.cost)}),true);render();return}
     var id=b.getAttribute('data-id'),i=S.sel.indexOf(id);
@@ -363,16 +370,18 @@
     renderBoard();
   });
   $('go').addEventListener('click',propose);
-  $('fries').addEventListener('click',function(){if(S.over)return;S.fries++;
+  $('fries').addEventListener('click',function(){if(S.over)return;started();S.fries++;track('fries_break',{day:S.day,count:S.fries});
     applyFx({all:S.fries>2?2:6});
     log(S.fries>2?T.fries_again:T.fries,true);
     nextDay();});
   function resetLog(first){$('log').innerHTML='<li>'+esc(f(T.day_n,{n:1}))+' '+esc(first?T.log_start:T.log_restart)+'</li>'}
-  $('again').addEventListener('click',function(){fresh();$('end').hidden=true;$('shared').hidden=true;resetLog(false);render();window.scrollTo({top:0,behavior:'smooth'})});
+  $('again').addEventListener('click',function(){track('game_restart',{previous:S.won?'win':'lose'});fresh();$('end').hidden=true;$('shared').hidden=true;resetLog(false);render();window.scrollTo({top:0,behavior:'smooth'})});
   $('share').addEventListener('click',function(){
     var txt=S.won?f(T.share_win,{found:eur(S.found),n:S.day})+(REAL_DEAL?'':' '+T.share_win_real)+' '+T.share_cta:T.share_lose+' '+T.share_cta;
     txt+=' https://iseraleenbegroting.be'+"/fr/"+'spel.html';
     function done(){$('shared').hidden=false}
+    var how=navigator.share?'native':(navigator.clipboard&&navigator.clipboard.writeText?'clipboard':'prompt');
+    track('share',{content_type:'game_result',result:S.won?'win':'lose',method:how});
     if(navigator.share){navigator.share({text:txt}).catch(function(){})}
     else if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done,function(){prompt(T.copy_prompt,txt)})}
     else prompt(T.copy_prompt,txt);

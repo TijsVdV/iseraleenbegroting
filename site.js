@@ -23,4 +23,17 @@
     gtag('js',new Date());gtag('config',GA_ID);
     var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);
   }
+
+  // Extra analytics events (they only fire after consent, when gtag exists).
+  function track(n,p){try{if(typeof window.gtag==='function'){p=p||{};p.lang=(document.documentElement.lang||'').slice(0,2);window.gtag('event',n,p)}}catch(e){}}
+  var page=(location.pathname.match(/([a-z]+)\.html$/)||[])[1]||'home';
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a');if(!a)return;
+    if(a.closest('.langs')){if(a.getAttribute('aria-current')!=='true')track('language_switch',{to:a.getAttribute('hreflang')||a.textContent.trim().toLowerCase(),page:page});return}
+    if(page==='uitleg'&&a.closest('.toc'))track('explainer_toc_click',{section:(a.getAttribute('href')||'').replace('#','')});
+    else if(page==='uitleg'&&a.closest('.cta')&&/spel\.html/.test(a.getAttribute('href')||''))track('explainer_to_game');
+  });
+  // Explainer: one event when the reader reaches the sources at the bottom.
+  var end=page==='uitleg'&&document.getElementById('bronnen');
+  if(end&&'IntersectionObserver' in window){var seen=false;new IntersectionObserver(function(es,o){if(!seen&&es[0].isIntersecting){seen=true;track('explainer_finished');o.disconnect()}}).observe(end)}
 })();

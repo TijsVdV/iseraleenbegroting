@@ -447,7 +447,9 @@ var CONFIG={
     $('stamp').textContent=(live?{{j.updated}}:{{j.snapshot}})+fmt(d.bijgewerkt,true);
     window.__last=d;
   }
-  $('tl-more').addEventListener('click',function(){tlAll=!tlAll;render(window.__last)});
+  function track(n,p){try{if(typeof window.gtag==='function'){p=p||{};p.lang=(document.documentElement.lang||'').slice(0,2);window.gtag('event',n,p)}}catch(e){}}
+  $('tl-more').addEventListener('click',function(){tlAll=!tlAll;render(window.__last);track('timeline_expand',{expanded:tlAll})});
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.langs a');if(a&&a.getAttribute('aria-current')!=='true')track('language_switch',{to:a.getAttribute('hreflang')||a.textContent.trim().toLowerCase(),page:'home'})});
 
   render(SNAP);
 
