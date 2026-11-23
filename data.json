@@ -24,9 +24,21 @@
   "lourdes": 80,
   "lourdesReden": "Ontslag aangeboden en geweigerd, noodbegroting bevestigd. Lichtpuntje: er wordt weer gepraat.",
   "noodbegroting": "Noodbegroting voor begin 2027: bevestigd, tweede jaar op rij",
-  "paleisbezoeken": 3,
-  "samenvatting": "De koning vraagt de premier om verder te onderhandelen en een akkoord zo snel mogelijk rond te krijgen. Op 23 november brengt de premier opnieuw verslag uit.",
+  "paleisbezoeken": 4,
+  "samenvatting": "Het kernkabinet ging maandagochtend uiteen zonder begrotingsakkoord; MR wijst naar Vooruit. De premier brengt nu voor de vierde keer deze maand verslag uit bij de koning.",
   "tijdlijn": [
+    {
+      "datum": "2026-11-23",
+      "tekst": "De premier is opnieuw bij de koning, het vierde paleisbezoek deze maand. Opnieuw zonder begrotingsakkoord op zak.",
+      "bron": "VRT NWS",
+      "url": "https://www.vrt.be/vrtnws/nl/liveblog/premier-de-wever-bij-de-koning-na-woelig-einde-van-kern-clarinv~1793247532380/"
+    },
+    {
+      "datum": "2026-11-23",
+      "tekst": "Het kernkabinet gaat uiteen zonder akkoord. Vicepremier Clarinval (MR) zegt dat Vooruit de evenwichten niet aanvaardt.",
+      "bron": "21News",
+      "url": "https://www.21news.be/budget-federal-le-kern-se-quitte-sans-accord-bart-de-wever-attendu-chez-le-roi/"
+    },
     {
       "datum": "2026-11-22",
       "tekst": "Het kernkabinet wordt maandag om 9.30 uur bijeengeroepen, twee uur voor het paleisbezoek. Een ontbijt met een deadline.",
@@ -86,32 +98,20 @@
       "tekst": "Het kernkabinet vergadert sinds 14 uur en is nog niet klaar. Hoop voor maandag: geen akkoord, wel een raamwerk.",
       "bron": "VRT NWS",
       "url": "https://www.vrt.be/vrtnws/nl/liveblog/top-van-regering-bijeen-over-begroting-jambon-verantwoordelij~1793247532380/"
-    },
-    {
-      "datum": "2026-11-15",
-      "tekst": "Laatste kern voor het paleisbezoek. Een volledig akkoord maandag lijkt onwaarschijnlijk, de grote lijnen misschien wel.",
-      "bron": "RTBF",
-      "url": "https://www.rtbf.be/article/crise-gouvernementale-bart-de-wever-convoque-un-ultime-kern-consacre-au-budget-ce-dimanche-a-14h00-11815700"
-    },
-    {
-      "datum": "2026-11-15",
-      "tekst": "Zondag, 14 uur: het kernkabinet schuift weer aan. Morgen wacht de koning, dus de klok tikt luider dan anders.",
-      "bron": "VRT NWS",
-      "url": "https://www.vrt.be/vrtnws/nl/liveblog/top-van-regering-komt-vandaag-opnieuw-bijeen-vanaf-14-uur~1793247532380/"
     }
   ],
   "volgende": {
     "datum": "2026-11-23",
-    "label": "Om 9.30 uur komt het kernkabinet samen, om 11.30 uur brengt de premier verslag uit bij de koning."
+    "label": "De uitkomst van het gesprek met de koning wordt vandaag verwacht."
   },
-  "weerbericht": "Een week uitstel, met grote kans op déjà vu",
+  "weerbericht": "Kern zonder akkoord, de premier weer naar de koning",
   "fr": {
-    "weerbericht": "Une semaine de sursis, fort risque de déjà-vu",
-    "samenvatting": "Le Roi demande au Premier ministre de poursuivre les négociations et d'aboutir à un accord au plus vite. Le Premier ministre lui fera à nouveau rapport le 23 novembre.",
+    "weerbericht": "Kern sans accord, le Premier retourne chez le Roi",
+    "samenvatting": "Le kern s'est séparé lundi matin sans accord budgétaire ; le MR pointe Vooruit. Le Premier ministre fait rapport au Roi pour la quatrième fois ce mois-ci.",
     "lourdesReden": "Démission présentée et refusée, budget d'urgence confirmé. Lueur d'espoir : on se reparle.",
     "noodbegroting": "Budget d'urgence pour début 2027 : confirmé, deuxième année de suite",
     "volgende": {
-      "label": "Le kern se réunit à 9h30, puis le Premier ministre fait rapport au Roi à 11h30."
+      "label": "L'issue de l'entretien avec le Roi est attendue aujourd'hui."
     },
     "gemisteDeadlines": [
       {
@@ -128,6 +128,12 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Le Premier ministre est à nouveau chez le Roi, quatrième visite au Palais ce mois-ci. Toujours sans accord budgétaire."
+      },
+      {
+        "tekst": "Le kern se sépare sans accord. Le vice-Premier Clarinval (MR) affirme que Vooruit n'accepte pas les équilibres."
+      },
       {
         "tekst": "Le kern est convoqué lundi à 9h30, deux heures avant la visite au Palais. Un petit-déjeuner avec une échéance."
       },
@@ -157,22 +163,16 @@
       },
       {
         "tekst": "Le kern siège depuis 14 heures et n'a pas fini. L'espoir pour lundi : pas d'accord, mais un cadre."
-      },
-      {
-        "tekst": "Ultime kern avant le Palais. Un accord complet lundi semble peu probable, les grandes lignes peut-être."
-      },
-      {
-        "tekst": "Dimanche, 14 heures : le kern se remet à table. Demain, le Roi attend, alors l'horloge fait plus de bruit que d'habitude."
       }
     ]
   },
   "de": {
-    "weerbericht": "Eine Woche Aufschub, hohes Déjà-vu-Risiko",
-    "samenvatting": "Der König bittet den Premierminister, weiterzuverhandeln und so schnell wie möglich eine Einigung zu erzielen. Am 23. November erstattet der Premier erneut Bericht.",
+    "weerbericht": "Kern ohne Einigung, der Premier wieder beim König",
+    "samenvatting": "Das Kernkabinett ging am Montagmorgen ohne Haushaltseinigung auseinander; die MR zeigt auf Vooruit. Der Premier erstattet dem König zum vierten Mal in diesem Monat Bericht.",
     "lourdesReden": "Rücktritt angeboten und abgelehnt, Nothaushalt bestätigt. Lichtblick: Es wird wieder geredet.",
     "noodbegroting": "Nothaushalt für Anfang 2027: bestätigt, zum zweiten Mal in Folge",
     "volgende": {
-      "label": "Um 9.30 Uhr tagt das Kernkabinett, um 11.30 Uhr erstattet der Premierminister dem König Bericht."
+      "label": "Das Ergebnis des Gesprächs mit dem König wird heute erwartet."
     },
     "gemisteDeadlines": [
       {
@@ -189,6 +189,12 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Der Premier ist erneut beim König, der vierte Palastbesuch in diesem Monat. Wieder ohne Haushaltseinigung."
+      },
+      {
+        "tekst": "Das Kernkabinett geht ohne Einigung auseinander. Vizepremier Clarinval (MR) sagt, Vooruit akzeptiere die Eckpunkte nicht."
+      },
       {
         "tekst": "Das Kernkabinett wird für Montag 9.30 Uhr einberufen, zwei Stunden vor dem Palastbesuch. Ein Frühstück mit Frist."
       },
@@ -218,12 +224,6 @@
       },
       {
         "tekst": "Das Kernkabinett tagt seit 14 Uhr und ist noch nicht fertig. Die Hoffnung für Montag: keine Einigung, aber ein Rahmen."
-      },
-      {
-        "tekst": "Letzter Kern vor dem Palastbesuch. Eine vollständige Einigung am Montag gilt als unwahrscheinlich, die Grundzüge vielleicht."
-      },
-      {
-        "tekst": "Sonntag, 14 Uhr: Das Kernkabinett setzt sich wieder an den Tisch. Morgen wartet der König, die Uhr tickt lauter als sonst."
       }
     ]
   }
