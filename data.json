@@ -22,11 +22,23 @@
     }
   ],
   "lourdes": 80,
-  "lourdesReden": "Ontslag aangeboden en geweigerd, noodbegroting bevestigd. Lichtpuntje: er wordt weer gepraat.",
+  "lourdesReden": "Vier partijen zijn het eens, één niet. De premier zet nu zelf een deadline: eind dit jaar.",
   "noodbegroting": "Noodbegroting voor begin 2027: bevestigd, tweede jaar op rij",
   "paleisbezoeken": 4,
-  "samenvatting": "Het kernkabinet ging maandagochtend uiteen zonder begrotingsakkoord; MR wijst naar Vooruit. De premier brengt nu voor de vierde keer deze maand verslag uit bij de koning.",
+  "samenvatting": "Na een kern zonder akkoord meldde de premier de koning dat er geen beslissende vooruitgang is. Er komt geen nieuwe datum, wel wekelijkse audiënties. De premier wil een akkoord tegen eind dit jaar.",
   "tijdlijn": [
+    {
+      "datum": "2026-11-23",
+      "tekst": "De premier zet zelf een deadline: geen akkoord tegen eind dit jaar, dan is het voorbij. Dinsdag om 16 uur komen de partijvoorzitters.",
+      "bron": "La DH",
+      "url": "https://www.dhnet.be/actu/belgique/2026/11/23/direct-de-wever-va-rencontrer-le-roi-un-ministre-met-un-petit-coup-de-pression-jattends-de-mes-collegues-quils-se-comportent-en-hommes-detat-M4A7OM5PUVFPFATXHZ3IXAYPIY/"
+    },
+    {
+      "datum": "2026-11-23",
+      "tekst": "Het Paleis: geen beslissende vooruitgang, de koning betreurt dat. Geen nieuwe datum, wel voortaan wekelijkse audiënties.",
+      "bron": "L'Avenir",
+      "url": "https://www.lavenir.net/actu/monde/2026/11/23/crise-du-budget-federal-le-kern-sest-reuni-a-9h30-nous-voudrions-bien-avoir-un-oui-de-vooruit-DWX7ACFELVGU5GTJDA2V2LPAMA/"
+    },
     {
       "datum": "2026-11-23",
       "tekst": "De premier is opnieuw bij de koning, het vierde paleisbezoek deze maand. Opnieuw zonder begrotingsakkoord op zak.",
@@ -86,32 +98,20 @@
       "tekst": "Paleisbezoek nummer drie: de premier meldt zich opnieuw bij de koning. Het akkoord bleef ook deze keer thuis.",
       "bron": "VRT NWS",
       "url": "https://www.vrt.be/vrtnws/nl/liveblog/premier-de-wever-opnieuw-aangekomen-bij-de-koning-zonder-begrot~1793247532380/"
-    },
-    {
-      "datum": "2026-11-15",
-      "tekst": "De laatste kern voor het paleis eindigt rond half negen zonder akkoord. De premier gaat met lege handen naar de koning.",
-      "bron": "RTBF",
-      "url": "https://www.rtbf.be/article/crise-au-federal-l-ultime-kern-avant-la-rencontre-de-de-wever-avec-le-roi-aboutit-sur-un-echec-11815947"
-    },
-    {
-      "datum": "2026-11-15",
-      "tekst": "Het kernkabinet vergadert sinds 14 uur en is nog niet klaar. Hoop voor maandag: geen akkoord, wel een raamwerk.",
-      "bron": "VRT NWS",
-      "url": "https://www.vrt.be/vrtnws/nl/liveblog/top-van-regering-bijeen-over-begroting-jambon-verantwoordelij~1793247532380/"
     }
   ],
   "volgende": {
-    "datum": "2026-11-23",
-    "label": "De uitkomst van het gesprek met de koning wordt vandaag verwacht."
+    "datum": "2026-11-24",
+    "label": "Om 16 uur zit de premier samen met de voorzitters van de vijf meerderheidspartijen."
   },
-  "weerbericht": "Kern zonder akkoord, de premier weer naar de koning",
+  "weerbericht": "Wekelijks naar de koning, deadline nu 31 december",
   "fr": {
-    "weerbericht": "Kern sans accord, le Premier retourne chez le Roi",
-    "samenvatting": "Le kern s'est séparé lundi matin sans accord budgétaire ; le MR pointe Vooruit. Le Premier ministre fait rapport au Roi pour la quatrième fois ce mois-ci.",
-    "lourdesReden": "Démission présentée et refusée, budget d'urgence confirmé. Lueur d'espoir : on se reparle.",
+    "weerbericht": "Chez le Roi chaque semaine, échéance au 31 décembre",
+    "samenvatting": "Après un kern sans accord, le Premier ministre a dit au Roi qu'il n'y avait aucune avancée décisive. Pas de nouvelle date, mais des audiences hebdomadaires. Le Premier veut un accord d'ici la fin de l'année.",
+    "lourdesReden": "Quatre partis sont d'accord, un non. Le Premier fixe désormais lui-même une échéance : la fin de l'année.",
     "noodbegroting": "Budget d'urgence pour début 2027 : confirmé, deuxième année de suite",
     "volgende": {
-      "label": "L'issue de l'entretien avec le Roi est attendue aujourd'hui."
+      "label": "À 16h, le Premier ministre réunit les présidents des cinq partis de la majorité."
     },
     "gemisteDeadlines": [
       {
@@ -128,6 +128,12 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Le Premier fixe lui-même une échéance : sans accord d'ici la fin de l'année, c'est fini. Les présidents de parti sont attendus mardi à 16h."
+      },
+      {
+        "tekst": "Le Palais : aucune avancée décisive, ce que le Roi regrette. Pas de nouvelle date, mais des audiences hebdomadaires."
+      },
       {
         "tekst": "Le Premier ministre est à nouveau chez le Roi, quatrième visite au Palais ce mois-ci. Toujours sans accord budgétaire."
       },
@@ -157,22 +163,16 @@
       },
       {
         "tekst": "Troisième visite au Palais : le Premier ministre retourne chez le Roi. L'accord, lui, est encore resté à la maison."
-      },
-      {
-        "tekst": "L'ultime kern avant le Palais se termine vers 20h30 sans accord. Le Premier ministre ira chez le Roi les mains vides."
-      },
-      {
-        "tekst": "Le kern siège depuis 14 heures et n'a pas fini. L'espoir pour lundi : pas d'accord, mais un cadre."
       }
     ]
   },
   "de": {
-    "weerbericht": "Kern ohne Einigung, der Premier wieder beim König",
-    "samenvatting": "Das Kernkabinett ging am Montagmorgen ohne Haushaltseinigung auseinander; die MR zeigt auf Vooruit. Der Premier erstattet dem König zum vierten Mal in diesem Monat Bericht.",
-    "lourdesReden": "Rücktritt angeboten und abgelehnt, Nothaushalt bestätigt. Lichtblick: Es wird wieder geredet.",
+    "weerbericht": "Wöchentlich zum König, Frist jetzt 31. Dezember",
+    "samenvatting": "Nach einem Kernkabinett ohne Einigung meldete der Premier dem König keinen entscheidenden Fortschritt. Kein neues Datum, aber wöchentliche Audienzen. Der Premier will eine Einigung bis Jahresende.",
+    "lourdesReden": "Vier Parteien sind sich einig, eine nicht. Der Premier setzt nun selbst eine Frist: Jahresende.",
     "noodbegroting": "Nothaushalt für Anfang 2027: bestätigt, zum zweiten Mal in Folge",
     "volgende": {
-      "label": "Das Ergebnis des Gesprächs mit dem König wird heute erwartet."
+      "label": "Um 16 Uhr trifft der Premier die Vorsitzenden der fünf Mehrheitsparteien."
     },
     "gemisteDeadlines": [
       {
@@ -189,6 +189,12 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Der Premier setzt selbst eine Frist: ohne Einigung bis Jahresende ist Schluss. Dienstag um 16 Uhr kommen die Parteivorsitzenden."
+      },
+      {
+        "tekst": "Der Palast: kein entscheidender Fortschritt, was der König bedauert. Kein neues Datum, aber künftig wöchentliche Audienzen."
+      },
       {
         "tekst": "Der Premier ist erneut beim König, der vierte Palastbesuch in diesem Monat. Wieder ohne Haushaltseinigung."
       },
@@ -218,12 +224,6 @@
       },
       {
         "tekst": "Palastbesuch Nummer drei: Der Premier meldet sich erneut beim König. Die Einigung blieb auch diesmal zu Hause."
-      },
-      {
-        "tekst": "Der letzte Kern vor dem Palast endet gegen 20.30 Uhr ohne Einigung. Der Premier geht mit leeren Händen zum König."
-      },
-      {
-        "tekst": "Das Kernkabinett tagt seit 14 Uhr und ist noch nicht fertig. Die Hoffnung für Montag: keine Einigung, aber ein Rahmen."
       }
     ]
   }
