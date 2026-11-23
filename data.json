@@ -1,7 +1,7 @@
 {
   "akkoord": false,
   "bedrag": "10 miljard",
-  "bijgewerkt": "2026-11-22",
+  "bijgewerkt": "2026-11-23",
   "eersteDeadline": "2026-07-21",
   "gemisteDeadlines": [
     {
@@ -102,7 +102,7 @@
   ],
   "volgende": {
     "datum": "2026-11-23",
-    "label": "Om 9.30 uur komt het kernkabinet samen, daarna brengt de premier verslag uit bij de koning."
+    "label": "Om 9.30 uur komt het kernkabinet samen, om 11.30 uur brengt de premier verslag uit bij de koning."
   },
   "weerbericht": "Een week uitstel, met grote kans op déjà vu",
   "fr": {
@@ -111,7 +111,7 @@
     "lourdesReden": "Démission présentée et refusée, budget d'urgence confirmé. Lueur d'espoir : on se reparle.",
     "noodbegroting": "Budget d'urgence pour début 2027 : confirmé, deuxième année de suite",
     "volgende": {
-      "label": "Le kern se réunit à 9h30, puis le Premier ministre fait rapport au Roi."
+      "label": "Le kern se réunit à 9h30, puis le Premier ministre fait rapport au Roi à 11h30."
     },
     "gemisteDeadlines": [
       {
@@ -172,7 +172,7 @@
     "lourdesReden": "Rücktritt angeboten und abgelehnt, Nothaushalt bestätigt. Lichtblick: Es wird wieder geredet.",
     "noodbegroting": "Nothaushalt für Anfang 2027: bestätigt, zum zweiten Mal in Folge",
     "volgende": {
-      "label": "Um 9.30 Uhr tagt das Kernkabinett, danach erstattet der Premierminister dem König Bericht."
+      "label": "Um 9.30 Uhr tagt das Kernkabinett, um 11.30 Uhr erstattet der Premierminister dem König Bericht."
     },
     "gemisteDeadlines": [
       {
