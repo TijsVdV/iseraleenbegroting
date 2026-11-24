@@ -28,6 +28,12 @@
   "samenvatting": "Na een kern zonder akkoord meldde de premier de koning dat er geen beslissende vooruitgang is. Er komt geen nieuwe datum, wel wekelijkse audiënties. De premier wil een akkoord tegen eind dit jaar.",
   "tijdlijn": [
     {
+      "datum": "2026-11-24",
+      "tekst": "Ex-vicepremier Vande Lanotte verdedigt Vooruit: beweren dat de partij verkiezingen wil, noemt hij belachelijk.",
+      "bron": "VRT NWS",
+      "url": "https://www.vrt.be/vrtnws/nl/liveblog/partijvoorzitters-morgen-om-16-uur-bij-premier-de-wever-verwacht~1793247532380/"
+    },
+    {
       "datum": "2026-11-23",
       "tekst": "CD&V-voorzitter Mahdi noemt het de langstlopende precampagne in de Belgische geschiedenis, en wijst naar Vooruit.",
       "bron": "VRT NWS",
@@ -92,12 +98,6 @@
       "tekst": "De vakbonden komen in de Kamer hun eigen rekensom voorstellen: 21 miljard via de brede schouders. Het knelpunt krijgt er een publiek bij.",
       "bron": "L'Avenir",
       "url": "https://www.lavenir.net/actu/belgique/politique/2026/11/17/budget-federal-face-aux-deputes-les-syndicats-devoilent-leur-recette-budgetaire-et-fracturent-un-peu-plus-la-majorite-arizona-AF3LZ72PDZE3BELYVHQCXGB73I/"
-    },
-    {
-      "datum": "2026-11-17",
-      "tekst": "De Europese Commissie ziet het Belgische tekort verder oplopen. Alleen Frankrijk houdt ons in 2028 nog gezelschap.",
-      "bron": "VRT NWS",
-      "url": "https://www.vrt.be/vrtnws/nl/liveblog/europese-commissie-ziet-begroting-van-belgie-wegzakken-alleen-f~1793247532380/"
     }
   ],
   "volgende": {
@@ -128,6 +128,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "L'ex-vice-Premier Vande Lanotte défend Vooruit : affirmer que le parti veut des élections est ridicule, dit-il."
+      },
       {
         "tekst": "Le président du CD&V Mahdi parle de la plus longue précampagne de l'histoire politique belge, et pointe Vooruit."
       },
@@ -160,9 +163,6 @@
       },
       {
         "tekst": "Les syndicats présentent leur propre calcul à la Chambre : 21 milliards via les épaules les plus larges. Le blocage a son public."
-      },
-      {
-        "tekst": "La Commission européenne voit le déficit belge continuer à se creuser. En 2028, seule la France nous tiendra encore compagnie."
       }
     ]
   },
@@ -189,6 +189,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Ex-Vizepremier Vande Lanotte verteidigt Vooruit: Die Behauptung, die Partei wolle Wahlen, nennt er lächerlich."
+      },
       {
         "tekst": "CD&V-Chef Mahdi spricht vom längsten Vorwahlkampf der belgischen Geschichte und zeigt auf Vooruit."
       },
@@ -221,9 +224,6 @@
       },
       {
         "tekst": "Die Gewerkschaften legen der Kammer ihre eigene Rechnung vor: 21 Milliarden über breite Schultern. Der Knackpunkt hat Publikum."
-      },
-      {
-        "tekst": "Die Europäische Kommission sieht das belgische Defizit weiter wachsen. 2028 leistet uns nur noch Frankreich Gesellschaft."
       }
     ]
   }
