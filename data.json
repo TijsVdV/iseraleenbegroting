@@ -1,7 +1,7 @@
 {
   "akkoord": false,
   "bedrag": "10 miljard",
-  "bijgewerkt": "2026-11-23",
+  "bijgewerkt": "2026-11-24",
   "eersteDeadline": "2026-07-21",
   "gemisteDeadlines": [
     {
@@ -27,6 +27,12 @@
   "paleisbezoeken": 4,
   "samenvatting": "Na een kern zonder akkoord meldde de premier de koning dat er geen beslissende vooruitgang is. Er komt geen nieuwe datum, wel wekelijkse audiënties. De premier wil een akkoord tegen eind dit jaar.",
   "tijdlijn": [
+    {
+      "datum": "2026-11-23",
+      "tekst": "CD&V-voorzitter Mahdi noemt het de langstlopende precampagne in de Belgische geschiedenis, en wijst naar Vooruit.",
+      "bron": "VRT NWS",
+      "url": "https://vrt.be/vrtnws/nl/liveblog/partijvoorzitters-morgen-om-16-uur-bij-premier-de-wever-verwacht~1793247532380"
+    },
     {
       "datum": "2026-11-23",
       "tekst": "Vooruit wil volgens La Libre bijna een miljard euro aan besparingen vervangen door belastinginkomsten. Daar wringt het schoentje.",
@@ -92,17 +98,11 @@
       "tekst": "De Europese Commissie ziet het Belgische tekort verder oplopen. Alleen Frankrijk houdt ons in 2028 nog gezelschap.",
       "bron": "VRT NWS",
       "url": "https://www.vrt.be/vrtnws/nl/liveblog/europese-commissie-ziet-begroting-van-belgie-wegzakken-alleen-f~1793247532380/"
-    },
-    {
-      "datum": "2026-11-16",
-      "tekst": "De koning stuurt de premier terug naar de onderhandelingstafel. Volgende afspraak op het paleis: 23 november.",
-      "bron": "L'Avenir",
-      "url": "https://www.lavenir.net/actu/belgique/politique/2026/11/16/budget-federal-le-roi-philippe-invite-bart-de-wever-a-poursuivre-les-negociations-JG36SAX7ANA6BOKM5VLK5TCI4U/"
     }
   ],
   "volgende": {
     "datum": "2026-11-24",
-    "label": "In de namiddag (rond 16 uur) zit de premier samen met de voorzitters van de vijf meerderheidspartijen."
+    "label": "Om 16 uur zit de premier samen met de voorzitters van de vijf meerderheidspartijen."
   },
   "weerbericht": "Wekelijks naar de koning, deadline nu 31 december",
   "fr": {
@@ -111,7 +111,7 @@
     "lourdesReden": "Quatre partis sont d'accord, un non. Le Premier fixe désormais lui-même une échéance : la fin de l'année.",
     "noodbegroting": "Budget d'urgence pour début 2027 : confirmé, deuxième année de suite",
     "volgende": {
-      "label": "Dans l'après-midi (vers 16h), le Premier ministre réunit les présidents des cinq partis de la majorité."
+      "label": "À 16h, le Premier ministre réunit les présidents des cinq partis de la majorité."
     },
     "gemisteDeadlines": [
       {
@@ -128,6 +128,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Le président du CD&V Mahdi parle de la plus longue précampagne de l'histoire politique belge, et pointe Vooruit."
+      },
       {
         "tekst": "Selon La Libre, Vooruit veut remplacer près d'un milliard d'économies par des recettes fiscales. C'est là que le bât blesse."
       },
@@ -160,9 +163,6 @@
       },
       {
         "tekst": "La Commission européenne voit le déficit belge continuer à se creuser. En 2028, seule la France nous tiendra encore compagnie."
-      },
-      {
-        "tekst": "Le Roi renvoie le Premier ministre à la table des négociations. Prochain rendez-vous au Palais : le 23 novembre."
       }
     ]
   },
@@ -172,7 +172,7 @@
     "lourdesReden": "Vier Parteien sind sich einig, eine nicht. Der Premier setzt nun selbst eine Frist: Jahresende.",
     "noodbegroting": "Nothaushalt für Anfang 2027: bestätigt, zum zweiten Mal in Folge",
     "volgende": {
-      "label": "Am Nachmittag (gegen 16 Uhr) trifft der Premier die Vorsitzenden der fünf Mehrheitsparteien."
+      "label": "Um 16 Uhr trifft der Premier die Vorsitzenden der fünf Mehrheitsparteien."
     },
     "gemisteDeadlines": [
       {
@@ -189,6 +189,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "CD&V-Chef Mahdi spricht vom längsten Vorwahlkampf der belgischen Geschichte und zeigt auf Vooruit."
+      },
       {
         "tekst": "Laut La Libre will Vooruit fast eine Milliarde Euro an Einsparungen durch Steuereinnahmen ersetzen. Da drückt der Schuh."
       },
@@ -221,9 +224,6 @@
       },
       {
         "tekst": "Die Europäische Kommission sieht das belgische Defizit weiter wachsen. 2028 leistet uns nur noch Frankreich Gesellschaft."
-      },
-      {
-        "tekst": "Der König schickt den Premier zurück an den Verhandlungstisch. Nächster Termin im Palast: der 23. November."
       }
     ]
   }
