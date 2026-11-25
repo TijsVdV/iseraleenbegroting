@@ -1,7 +1,7 @@
 {
   "akkoord": false,
-  "bedrag": "10 miljard",
-  "bijgewerkt": "2026-11-24",
+  "bedrag": "13 miljard",
+  "bijgewerkt": "2026-11-25",
   "eersteDeadline": "2026-07-21",
   "gemisteDeadlines": [
     {
@@ -27,6 +27,12 @@
   "paleisbezoeken": 4,
   "samenvatting": "De vijf partijvoorzitters spraken drie uur met de premier en willen de besparingsinspanning optrekken tot 13 miljard euro tegen 2029. Vooruit wacht nog op antwoorden en raadpleegt eerst de partij. Dit weekend volgt een nieuw overleg.",
   "tijdlijn": [
+    {
+      "datum": "2026-11-24",
+      "tekst": "Rousseau bevestigt dat het om zo'n 13 miljard gaat: \"u bent goed geïnformeerd\". Het doel van 10 miljard is daarmee verleden tijd.",
+      "bron": "VRT NWS",
+      "url": "https://www.vrt.be/vrtnws/nl/liveblog/rousseau-na-overleg-mijn-vragen-zijn-niet-beantwoord-regerin~1793247532380/"
+    },
     {
       "datum": "2026-11-24",
       "tekst": "Rousseau (Vooruit) tempert: nog geen antwoord op zijn vragen, eerst overleg met de partij. Dit weekend praten de voorzitters verder.",
@@ -92,12 +98,6 @@
       "tekst": "De premier en de Vooruit-voorzitter praten vrijdagavond drie uur lang. Wat er gezegd is, blijft binnenskamers.",
       "bron": "BX1 (Belga)",
       "url": "https://bx1.be/categories/news/budget-federal-conner-rousseau-et-bart-de-wever-se-sont-entretenus-trois-heures-ce-vendredi-soir/"
-    },
-    {
-      "datum": "2026-11-20",
-      "tekst": "De voorzitters van N-VA en Vooruit hebben weer contact. Nog geen agenda, wel een telefoonlijn die terug werkt.",
-      "bron": "VRT NWS",
-      "url": "https://www.vrt.be/vrtnws/nl/liveblog/voorzitters-vooruit-en-nva-hebben-weer-contact-over-begroting~1793247532380/"
     }
   ],
   "volgende": {
@@ -128,6 +128,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Rousseau confirme qu'il s'agit d'environ 13 milliards : « vous êtes bien informés ». L'objectif de 10 milliards appartient au passé."
+      },
       {
         "tekst": "Rousseau (Vooruit) tempère : pas encore de réponses à ses questions, il consulte son parti. Les présidents se revoient ce week-end."
       },
@@ -160,9 +163,6 @@
       },
       {
         "tekst": "Le Premier ministre et le président de Vooruit se parlent trois heures vendredi soir. Le contenu reste entre quatre murs."
-      },
-      {
-        "tekst": "Les présidents de la N-VA et de Vooruit se reparlent. Toujours pas d'agenda, mais la ligne téléphonique fonctionne à nouveau."
       }
     ]
   },
@@ -189,6 +189,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Rousseau bestätigt, dass es um rund 13 Milliarden geht: „Sie sind gut informiert\". Das 10-Milliarden-Ziel ist damit Geschichte."
+      },
       {
         "tekst": "Rousseau (Vooruit) bremst: noch keine Antworten auf seine Fragen, erst Beratung mit der Partei. Am Wochenende geht es weiter."
       },
@@ -221,9 +224,6 @@
       },
       {
         "tekst": "Der Premier und der Vooruit-Vorsitzende sprechen am Freitagabend drei Stunden lang. Was gesagt wurde, bleibt unter Verschluss."
-      },
-      {
-        "tekst": "Die Vorsitzenden von N-VA und Vooruit haben wieder Kontakt. Noch kein Zeitplan, aber die Telefonleitung funktioniert wieder."
       }
     ]
   }
