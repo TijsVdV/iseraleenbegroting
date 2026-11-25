@@ -21,12 +21,24 @@
       "label": "‘Uiterlijk dinsdag’ een akkoord. Het werd een ontslag."
     }
   ],
-  "lourdes": 75,
-  "lourdesReden": "Eindelijk een gezamenlijk cijfer, al is Vooruit nog niet overtuigd. Deadline blijft eind dit jaar.",
+  "lourdes": 85,
+  "lourdesReden": "Vooruit overweegt de regering te verlaten. Het nieuwe cijfer van 13 miljard is nog niet rond.",
   "noodbegroting": "Noodbegroting voor begin 2027: bevestigd, tweede jaar op rij",
   "paleisbezoeken": 4,
-  "samenvatting": "De vijf partijvoorzitters spraken drie uur met de premier en willen de besparingsinspanning optrekken tot 13 miljard euro tegen 2029. Vooruit wacht nog op antwoorden en raadpleegt eerst de partij. Dit weekend volgt een nieuw overleg.",
+  "samenvatting": "De partijvoorzitters mikken nu op 13 miljard euro, maar Vooruit beraadt zich over zijn deelname aan de regering. De premier vraagt niet weg te lopen. Het overleg van dit weekend is onzeker.",
   "tijdlijn": [
+    {
+      "datum": "2026-11-25",
+      "tekst": "Vooruit beraadt zich over zijn deelname aan de regering en kondigt een persconferentie aan om 14.30 uur.",
+      "bron": "L'Avenir",
+      "url": "https://www.lavenir.net/actu/belgique/politique/2026/11/25/crise-gouvernementale-de-wever-estime-que-sechapper-du-gouvernement-nest-pas-une-option-vooruit-annonce-une-conference-de-presse-a-14h30-CZDOAQDO5ZFOXLP2CUA3MZJDDA/"
+    },
+    {
+      "datum": "2026-11-25",
+      "tekst": "De Wever in de Kamer, zonder Vooruit te noemen: nu weglopen uit de regering zou geen optie mogen zijn.",
+      "bron": "BRUZZ",
+      "url": "https://www.bruzz.be/actua/politiek/vooruit-beraadt-zich-over-deelname-federale-regering-de-wever-vraagt-om-niet-weg-te-lopen-2026-11-25"
+    },
     {
       "datum": "2026-11-24",
       "tekst": "Rousseau bevestigt dat het om zo'n 13 miljard gaat: \"u bent goed geïnformeerd\". Het doel van 10 miljard is daarmee verleden tijd.",
@@ -86,32 +98,20 @@
       "tekst": "Het kernkabinet gaat uiteen zonder akkoord. Vicepremier Clarinval (MR) zegt dat Vooruit de evenwichten niet aanvaardt.",
       "bron": "21News",
       "url": "https://www.21news.be/budget-federal-le-kern-se-quitte-sans-accord-bart-de-wever-attendu-chez-le-roi/"
-    },
-    {
-      "datum": "2026-11-22",
-      "tekst": "Het kernkabinet wordt maandag om 9.30 uur bijeengeroepen, twee uur voor het paleisbezoek. Een ontbijt met een deadline.",
-      "bron": "L'Avenir",
-      "url": "https://www.lavenir.net/actu/belgique/politique/2026/11/22/budget-federal-bart-de-wever-convoque-un-kern-lundi-avant-son-audience-chez-le-roi-philippe-les-negociations-toujours-dans-limpasse-FLIJYFU7V5COVJKKXJ5NGLP7QM/"
-    },
-    {
-      "datum": "2026-11-20",
-      "tekst": "De premier en de Vooruit-voorzitter praten vrijdagavond drie uur lang. Wat er gezegd is, blijft binnenskamers.",
-      "bron": "BX1 (Belga)",
-      "url": "https://bx1.be/categories/news/budget-federal-conner-rousseau-et-bart-de-wever-se-sont-entretenus-trois-heures-ce-vendredi-soir/"
     }
   ],
   "volgende": {
-    "datum": "2026-11-28",
-    "label": "Dit weekend zitten de partijvoorzitters opnieuw samen. De precieze dag is nog niet bekend."
+    "datum": "2026-11-25",
+    "label": "Om 14.30 uur geeft Vooruit een persconferentie over zijn deelname aan de regering."
   },
-  "weerbericht": "Opklaringen tot 13 miljard, Vooruit houdt de paraplu open",
+  "weerbericht": "Zwaar weer: Vooruit twijfelt of het blijft",
   "fr": {
-    "weerbericht": "Éclaircies jusqu'à 13 milliards, Vooruit garde le parapluie",
-    "samenvatting": "Les cinq présidents de parti ont discuté trois heures avec le Premier ministre et veulent porter l'effort à 13 milliards d'euros d'ici 2029. Vooruit attend encore des réponses et consulte d'abord son parti. Nouvelle réunion ce week-end.",
-    "lourdesReden": "Enfin un chiffre commun, même si Vooruit n'est pas encore convaincu. L'échéance reste la fin de l'année.",
+    "weerbericht": "Avis de tempête : Vooruit hésite à rester",
+    "samenvatting": "Les présidents de parti visent désormais 13 milliards d'euros, mais Vooruit réfléchit à sa participation au gouvernement. Le Premier ministre demande de ne pas fuir. La réunion du week-end est incertaine.",
+    "lourdesReden": "Vooruit envisage de quitter le gouvernement. Le nouveau chiffre de 13 milliards n'est pas encore acquis.",
     "noodbegroting": "Budget d'urgence pour début 2027 : confirmé, deuxième année de suite",
     "volgende": {
-      "label": "Les présidents de parti se revoient ce week-end. Le jour exact n'est pas encore connu."
+      "label": "À 14h30, Vooruit tient une conférence de presse sur sa participation au gouvernement."
     },
     "gemisteDeadlines": [
       {
@@ -128,6 +128,12 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Vooruit réfléchit à sa participation au gouvernement et annonce une conférence de presse à 14h30."
+      },
+      {
+        "tekst": "De Wever à la Chambre, sans nommer Vooruit : quitter le gouvernement maintenant ne devrait pas être une option."
+      },
       {
         "tekst": "Rousseau confirme qu'il s'agit d'environ 13 milliards : « vous êtes bien informés ». L'objectif de 10 milliards appartient au passé."
       },
@@ -157,22 +163,16 @@
       },
       {
         "tekst": "Le kern se sépare sans accord. Le vice-Premier Clarinval (MR) affirme que Vooruit n'accepte pas les équilibres."
-      },
-      {
-        "tekst": "Le kern est convoqué lundi à 9h30, deux heures avant la visite au Palais. Un petit-déjeuner avec une échéance."
-      },
-      {
-        "tekst": "Le Premier ministre et le président de Vooruit se parlent trois heures vendredi soir. Le contenu reste entre quatre murs."
       }
     ]
   },
   "de": {
-    "weerbericht": "Aufheiterung bis 13 Milliarden, Vooruit hält den Schirm",
-    "samenvatting": "Die fünf Parteivorsitzenden sprachen drei Stunden mit dem Premier und wollen die Anstrengung bis 2029 auf 13 Milliarden Euro anheben. Vooruit wartet noch auf Antworten und berät sich erst mit der Partei. Am Wochenende folgt ein neues Treffen.",
-    "lourdesReden": "Endlich eine gemeinsame Zahl, auch wenn Vooruit noch nicht überzeugt ist. Die Frist bleibt Jahresende.",
+    "weerbericht": "Unwetter: Vooruit zweifelt, ob es bleibt",
+    "samenvatting": "Die Parteivorsitzenden peilen nun 13 Milliarden Euro an, doch Vooruit berät über seine Regierungsbeteiligung. Der Premier bittet, nicht wegzulaufen. Das Treffen am Wochenende ist unsicher.",
+    "lourdesReden": "Vooruit erwägt, die Regierung zu verlassen. Die neue Zahl von 13 Milliarden steht noch nicht.",
     "noodbegroting": "Nothaushalt für Anfang 2027: bestätigt, zum zweiten Mal in Folge",
     "volgende": {
-      "label": "Am Wochenende treffen sich die Parteivorsitzenden erneut. Der genaue Tag ist noch nicht bekannt."
+      "label": "Um 14.30 Uhr gibt Vooruit eine Pressekonferenz zu seiner Regierungsbeteiligung."
     },
     "gemisteDeadlines": [
       {
@@ -189,6 +189,12 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Vooruit berät über seine Regierungsbeteiligung und kündigt eine Pressekonferenz um 14.30 Uhr an."
+      },
+      {
+        "tekst": "De Wever in der Kammer, ohne Vooruit zu nennen: Jetzt aus der Regierung wegzulaufen, dürfe keine Option sein."
+      },
       {
         "tekst": "Rousseau bestätigt, dass es um rund 13 Milliarden geht: „Sie sind gut informiert\". Das 10-Milliarden-Ziel ist damit Geschichte."
       },
@@ -218,12 +224,6 @@
       },
       {
         "tekst": "Das Kernkabinett geht ohne Einigung auseinander. Vizepremier Clarinval (MR) sagt, Vooruit akzeptiere die Eckpunkte nicht."
-      },
-      {
-        "tekst": "Das Kernkabinett wird für Montag 9.30 Uhr einberufen, zwei Stunden vor dem Palastbesuch. Ein Frühstück mit Frist."
-      },
-      {
-        "tekst": "Der Premier und der Vooruit-Vorsitzende sprechen am Freitagabend drei Stunden lang. Was gesagt wurde, bleibt unter Verschluss."
       }
     ]
   }
