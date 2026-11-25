@@ -21,12 +21,24 @@
       "label": "‘Uiterlijk dinsdag’ een akkoord. Het werd een ontslag."
     }
   ],
-  "lourdes": 85,
-  "lourdesReden": "Vooruit overweegt de regering te verlaten. Het nieuwe cijfer van 13 miljard is nog niet rond.",
+  "lourdes": 82,
+  "lourdesReden": "Vooruit blijft aan boord, maar met twee breekpunten die de anderen niet zomaar slikken.",
   "noodbegroting": "Noodbegroting voor begin 2027: bevestigd, tweede jaar op rij",
   "paleisbezoeken": 4,
-  "samenvatting": "De partijvoorzitters mikken nu op 13 miljard euro, maar Vooruit beraadt zich over zijn deelname aan de regering. De premier vraagt niet weg te lopen. Het overleg van dit weekend is onzeker.",
+  "samenvatting": "Vooruit trekt de stekker er voorlopig niet uit, maar wil pas verder onderhandelen met garanties over de index en een miljonairstaks. De vier andere partijen staan achter een voorstel. Het monitoringcomité volgt begin volgende week.",
   "tijdlijn": [
+    {
+      "datum": "2026-11-25",
+      "tekst": "De andere Arizona-partijen reageren verbaasd op de eisen van Vooruit: \"Waarom nodeloos angst zaaien?\"",
+      "bron": "La DH",
+      "url": "https://www.dhnet.be/actu/belgique/2026/11/25/direct-bart-de-wever-repond-aux-interpellations-des-deputes-sur-le-budget-en-commission-de-linterieur-SFANVKPFZJG2XE5XG432257MC4/"
+    },
+    {
+      "datum": "2026-11-25",
+      "tekst": "Vooruit blijft voorlopig in de regering, maar eist garanties: bescherming van de index en een miljonairstaks.",
+      "bron": "BRUZZ",
+      "url": "https://www.bruzz.be/actua/politiek/vooruit-houdt-vast-aan-miljonairstaks-en-bescherming-index-regering-blijft-voorlopig-aan-2026-11-25"
+    },
     {
       "datum": "2026-11-25",
       "tekst": "Vooruit beraadt zich over zijn deelname aan de regering en kondigt een persconferentie aan om 14.30 uur.",
@@ -86,32 +98,20 @@
       "tekst": "Het Paleis: geen beslissende vooruitgang, de koning betreurt dat. Geen nieuwe datum, wel voortaan wekelijkse audiënties.",
       "bron": "L'Avenir",
       "url": "https://www.lavenir.net/actu/monde/2026/11/23/crise-du-budget-federal-le-kern-sest-reuni-a-9h30-nous-voudrions-bien-avoir-un-oui-de-vooruit-DWX7ACFELVGU5GTJDA2V2LPAMA/"
-    },
-    {
-      "datum": "2026-11-23",
-      "tekst": "De premier is opnieuw bij de koning, het vierde paleisbezoek deze maand. Opnieuw zonder begrotingsakkoord op zak.",
-      "bron": "VRT NWS",
-      "url": "https://www.vrt.be/vrtnws/nl/liveblog/premier-de-wever-bij-de-koning-na-woelig-einde-van-kern-clarinv~1793247532380/"
-    },
-    {
-      "datum": "2026-11-23",
-      "tekst": "Het kernkabinet gaat uiteen zonder akkoord. Vicepremier Clarinval (MR) zegt dat Vooruit de evenwichten niet aanvaardt.",
-      "bron": "21News",
-      "url": "https://www.21news.be/budget-federal-le-kern-se-quitte-sans-accord-bart-de-wever-attendu-chez-le-roi/"
     }
   ],
   "volgende": {
-    "datum": "2026-11-25",
-    "label": "Om 14.30 uur geeft Vooruit een persconferentie over zijn deelname aan de regering."
+    "datum": "2026-11-28",
+    "label": "Mogelijk overleg van de partijvoorzitters dit weekend. Begin volgende week volgen de cijfers van het monitoringcomité."
   },
-  "weerbericht": "Zwaar weer: Vooruit twijfelt of het blijft",
+  "weerbericht": "Vooruit blijft, maar met twee onweerswolken",
   "fr": {
-    "weerbericht": "Avis de tempête : Vooruit hésite à rester",
-    "samenvatting": "Les présidents de parti visent désormais 13 milliards d'euros, mais Vooruit réfléchit à sa participation au gouvernement. Le Premier ministre demande de ne pas fuir. La réunion du week-end est incertaine.",
-    "lourdesReden": "Vooruit envisage de quitter le gouvernement. Le nouveau chiffre de 13 milliards n'est pas encore acquis.",
+    "weerbericht": "Vooruit reste, mais avec deux nuages d'orage",
+    "samenvatting": "Vooruit ne débranche pas la prise pour l'instant, mais ne poursuivra qu'avec des garanties sur l'index et une taxe sur les millionnaires. Les quatre autres partis soutiennent une proposition. Le comité de monitoring suit début de semaine prochaine.",
+    "lourdesReden": "Vooruit reste à bord, mais avec deux points de rupture que les autres n'avaleront pas facilement.",
     "noodbegroting": "Budget d'urgence pour début 2027 : confirmé, deuxième année de suite",
     "volgende": {
-      "label": "À 14h30, Vooruit tient une conférence de presse sur sa participation au gouvernement."
+      "label": "Réunion possible des présidents de parti ce week-end. Les chiffres du comité de monitoring suivent début de semaine prochaine."
     },
     "gemisteDeadlines": [
       {
@@ -128,6 +128,12 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Les autres partis de l'Arizona réagissent avec étonnement aux exigences de Vooruit : « Pourquoi faire peur inutilement ? »"
+      },
+      {
+        "tekst": "Vooruit reste au gouvernement pour l'instant, mais exige des garanties : protection de l'index et taxe sur les millionnaires."
+      },
       {
         "tekst": "Vooruit réfléchit à sa participation au gouvernement et annonce une conférence de presse à 14h30."
       },
@@ -157,22 +163,16 @@
       },
       {
         "tekst": "Le Palais : aucune avancée décisive, ce que le Roi regrette. Pas de nouvelle date, mais des audiences hebdomadaires."
-      },
-      {
-        "tekst": "Le Premier ministre est à nouveau chez le Roi, quatrième visite au Palais ce mois-ci. Toujours sans accord budgétaire."
-      },
-      {
-        "tekst": "Le kern se sépare sans accord. Le vice-Premier Clarinval (MR) affirme que Vooruit n'accepte pas les équilibres."
       }
     ]
   },
   "de": {
-    "weerbericht": "Unwetter: Vooruit zweifelt, ob es bleibt",
-    "samenvatting": "Die Parteivorsitzenden peilen nun 13 Milliarden Euro an, doch Vooruit berät über seine Regierungsbeteiligung. Der Premier bittet, nicht wegzulaufen. Das Treffen am Wochenende ist unsicher.",
-    "lourdesReden": "Vooruit erwägt, die Regierung zu verlassen. Die neue Zahl von 13 Milliarden steht noch nicht.",
+    "weerbericht": "Vooruit bleibt, aber mit zwei Gewitterwolken",
+    "samenvatting": "Vooruit zieht vorerst nicht den Stecker, verhandelt aber nur mit Garantien zur Indexierung und einer Millionärssteuer weiter. Die vier anderen Parteien stehen hinter einem Vorschlag. Das Monitoringkomitee folgt Anfang nächster Woche.",
+    "lourdesReden": "Vooruit bleibt an Bord, aber mit zwei Knackpunkten, die die anderen nicht einfach schlucken.",
     "noodbegroting": "Nothaushalt für Anfang 2027: bestätigt, zum zweiten Mal in Folge",
     "volgende": {
-      "label": "Um 14.30 Uhr gibt Vooruit eine Pressekonferenz zu seiner Regierungsbeteiligung."
+      "label": "Mögliches Treffen der Parteivorsitzenden am Wochenende. Anfang nächster Woche folgen die Zahlen des Monitoringkomitees."
     },
     "gemisteDeadlines": [
       {
@@ -189,6 +189,12 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Die anderen Arizona-Parteien reagieren verwundert auf Vooruits Forderungen: „Warum unnötig Angst machen?\""
+      },
+      {
+        "tekst": "Vooruit bleibt vorerst in der Regierung, fordert aber Garantien: Schutz der Indexierung und eine Millionärssteuer."
+      },
       {
         "tekst": "Vooruit berät über seine Regierungsbeteiligung und kündigt eine Pressekonferenz um 14.30 Uhr an."
       },
@@ -218,12 +224,6 @@
       },
       {
         "tekst": "Der Palast: kein entscheidender Fortschritt, was der König bedauert. Kein neues Datum, aber künftig wöchentliche Audienzen."
-      },
-      {
-        "tekst": "Der Premier ist erneut beim König, der vierte Palastbesuch in diesem Monat. Wieder ohne Haushaltseinigung."
-      },
-      {
-        "tekst": "Das Kernkabinett geht ohne Einigung auseinander. Vizepremier Clarinval (MR) sagt, Vooruit akzeptiere die Eckpunkte nicht."
       }
     ]
   }
