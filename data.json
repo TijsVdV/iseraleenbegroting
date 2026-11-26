@@ -1,7 +1,7 @@
 {
   "akkoord": false,
   "bedrag": "13 miljard",
-  "bijgewerkt": "2026-11-25",
+  "bijgewerkt": "2026-11-26",
   "eersteDeadline": "2026-07-21",
   "gemisteDeadlines": [
     {
@@ -27,6 +27,12 @@
   "paleisbezoeken": 4,
   "samenvatting": "Vooruit trekt de stekker er voorlopig niet uit, maar wil pas verder onderhandelen met garanties over de index en een miljonairstaks. De vier andere partijen staan achter een voorstel. Het monitoringcomité volgt begin volgende week.",
   "tijdlijn": [
+    {
+      "datum": "2026-11-25",
+      "tekst": "Rousseau aan de partners: willen ze geen miljonairsbijdrage en wel aan de index raken, dan zoeken ze maar een andere meerderheid.",
+      "bron": "VRT NWS",
+      "url": "https://www.vrt.be/vrtnws/nl/2026/11/25/vooruit-stelt-ultimatum-bij-begroting-eerst-garanties-over-inde/"
+    },
     {
       "datum": "2026-11-25",
       "tekst": "De andere Arizona-partijen reageren verbaasd op de eisen van Vooruit: \"Waarom nodeloos angst zaaien?\"",
@@ -92,12 +98,6 @@
       "tekst": "De premier zet zelf een deadline: geen akkoord tegen eind dit jaar, dan is het voorbij. Dinsdag om 16 uur komen de partijvoorzitters.",
       "bron": "La DH",
       "url": "https://www.dhnet.be/actu/belgique/2026/11/23/direct-de-wever-va-rencontrer-le-roi-un-ministre-met-un-petit-coup-de-pression-jattends-de-mes-collegues-quils-se-comportent-en-hommes-detat-M4A7OM5PUVFPFATXHZ3IXAYPIY/"
-    },
-    {
-      "datum": "2026-11-23",
-      "tekst": "Het Paleis: geen beslissende vooruitgang, de koning betreurt dat. Geen nieuwe datum, wel voortaan wekelijkse audiënties.",
-      "bron": "L'Avenir",
-      "url": "https://www.lavenir.net/actu/monde/2026/11/23/crise-du-budget-federal-le-kern-sest-reuni-a-9h30-nous-voudrions-bien-avoir-un-oui-de-vooruit-DWX7ACFELVGU5GTJDA2V2LPAMA/"
     }
   ],
   "volgende": {
@@ -128,6 +128,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Rousseau aux partenaires : s'ils refusent une contribution des millionnaires et touchent à l'index, qu'ils cherchent une autre majorité."
+      },
       {
         "tekst": "Les autres partis de l'Arizona réagissent avec étonnement aux exigences de Vooruit : « Pourquoi faire peur inutilement ? »"
       },
@@ -160,9 +163,6 @@
       },
       {
         "tekst": "Le Premier fixe lui-même une échéance : sans accord d'ici la fin de l'année, c'est fini. Les présidents de parti sont attendus mardi à 16h."
-      },
-      {
-        "tekst": "Le Palais : aucune avancée décisive, ce que le Roi regrette. Pas de nouvelle date, mais des audiences hebdomadaires."
       }
     ]
   },
@@ -189,6 +189,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Rousseau an die Partner: Wollen sie keinen Millionärsbeitrag, aber an den Index ran, sollen sie sich eine andere Mehrheit suchen."
+      },
       {
         "tekst": "Die anderen Arizona-Parteien reagieren verwundert auf Vooruits Forderungen: „Warum unnötig Angst machen?\""
       },
@@ -221,9 +224,6 @@
       },
       {
         "tekst": "Der Premier setzt selbst eine Frist: ohne Einigung bis Jahresende ist Schluss. Dienstag um 16 Uhr kommen die Parteivorsitzenden."
-      },
-      {
-        "tekst": "Der Palast: kein entscheidender Fortschritt, was der König bedauert. Kein neues Datum, aber künftig wöchentliche Audienzen."
       }
     ]
   }
