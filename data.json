@@ -25,8 +25,14 @@
   "lourdesReden": "Vooruit blijft aan boord, maar met twee breekpunten die de anderen niet zomaar slikken.",
   "noodbegroting": "Noodbegroting voor begin 2027: bevestigd, tweede jaar op rij",
   "paleisbezoeken": 4,
-  "samenvatting": "Vooruit trekt de stekker er voorlopig niet uit, maar wil pas verder onderhandelen met garanties over de index en een miljonairstaks. De vier andere partijen staan achter een voorstel. Het monitoringcomité volgt begin volgende week.",
+  "samenvatting": "De premier roept de vijf partijvoorzitters maandag opnieuw samen. Vooruit schuift alleen aan als de anderen vooraf een miljonairstaks en de bescherming van de index toezeggen. Het monitoringcomité volgt begin volgende week.",
   "tijdlijn": [
+    {
+      "datum": "2026-11-26",
+      "tekst": "De premier roept de partijvoorzitters maandag om 14 uur opnieuw samen. Vooruit komt alleen als zijn twee eisen vooraf bevestigd zijn.",
+      "bron": "VRT NWS",
+      "url": "https://vrt.be/vrtnws/nl/liveblog/premier-roept-maandag-partijvoorzitters-bijeen-vooruit-komt-enk~1793247532380"
+    },
     {
       "datum": "2026-11-25",
       "tekst": "Rousseau aan de partners: willen ze geen miljonairsbijdrage en wel aan de index raken, dan zoeken ze maar een andere meerderheid.",
@@ -92,26 +98,20 @@
       "tekst": "Vooruit wil volgens La Libre bijna een miljard euro aan besparingen vervangen door belastinginkomsten. Daar wringt het schoentje.",
       "bron": "21News",
       "url": "https://www.21news.be/apres-lechec-du-kern-de-wever-joue-sa-derniere-carte-avec-les-presidents-de-larizona/"
-    },
-    {
-      "datum": "2026-11-23",
-      "tekst": "De premier zet zelf een deadline: geen akkoord tegen eind dit jaar, dan is het voorbij. Dinsdag om 16 uur komen de partijvoorzitters.",
-      "bron": "La DH",
-      "url": "https://www.dhnet.be/actu/belgique/2026/11/23/direct-de-wever-va-rencontrer-le-roi-un-ministre-met-un-petit-coup-de-pression-jattends-de-mes-collegues-quils-se-comportent-en-hommes-detat-M4A7OM5PUVFPFATXHZ3IXAYPIY/"
     }
   ],
   "volgende": {
-    "datum": "2026-11-28",
-    "label": "Mogelijk overleg van de partijvoorzitters dit weekend. Begin volgende week volgen de cijfers van het monitoringcomité."
+    "datum": "2026-11-30",
+    "label": "Om 14 uur zitten de partijvoorzitters opnieuw samen bij de premier. Of Vooruit aanschuift, is onzeker."
   },
-  "weerbericht": "Vooruit blijft, maar met twee onweerswolken",
+  "weerbericht": "Maandag nieuwe bui, Vooruit wacht onder de luifel",
   "fr": {
-    "weerbericht": "Vooruit reste, mais avec deux nuages d'orage",
-    "samenvatting": "Vooruit ne débranche pas la prise pour l'instant, mais ne poursuivra qu'avec des garanties sur l'index et une taxe sur les millionnaires. Les quatre autres partis soutiennent une proposition. Le comité de monitoring suit début de semaine prochaine.",
+    "weerbericht": "Nouvelle averse lundi, Vooruit attend sous l'auvent",
+    "samenvatting": "Le Premier ministre réunit à nouveau les cinq présidents de parti lundi. Vooruit ne viendra que si les autres promettent d'avance une taxe sur les millionnaires et la protection de l'index. Le comité de monitoring suit début de semaine prochaine.",
     "lourdesReden": "Vooruit reste à bord, mais avec deux points de rupture que les autres n'avaleront pas facilement.",
     "noodbegroting": "Budget d'urgence pour début 2027 : confirmé, deuxième année de suite",
     "volgende": {
-      "label": "Réunion possible des présidents de parti ce week-end. Les chiffres du comité de monitoring suivent début de semaine prochaine."
+      "label": "À 14h, les présidents de parti se retrouvent chez le Premier ministre. La présence de Vooruit est incertaine."
     },
     "gemisteDeadlines": [
       {
@@ -128,6 +128,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Le Premier réunit à nouveau les présidents de parti lundi à 14h. Vooruit ne viendra que si ses deux exigences sont confirmées d'avance."
+      },
       {
         "tekst": "Rousseau aux partenaires : s'ils refusent une contribution des millionnaires et touchent à l'index, qu'ils cherchent une autre majorité."
       },
@@ -160,19 +163,16 @@
       },
       {
         "tekst": "Selon La Libre, Vooruit veut remplacer près d'un milliard d'économies par des recettes fiscales. C'est là que le bât blesse."
-      },
-      {
-        "tekst": "Le Premier fixe lui-même une échéance : sans accord d'ici la fin de l'année, c'est fini. Les présidents de parti sont attendus mardi à 16h."
       }
     ]
   },
   "de": {
-    "weerbericht": "Vooruit bleibt, aber mit zwei Gewitterwolken",
-    "samenvatting": "Vooruit zieht vorerst nicht den Stecker, verhandelt aber nur mit Garantien zur Indexierung und einer Millionärssteuer weiter. Die vier anderen Parteien stehen hinter einem Vorschlag. Das Monitoringkomitee folgt Anfang nächster Woche.",
+    "weerbericht": "Montag neuer Schauer, Vooruit wartet unterm Vordach",
+    "samenvatting": "Der Premier ruft die fünf Parteivorsitzenden am Montag erneut zusammen. Vooruit kommt nur, wenn die anderen vorab eine Millionärssteuer und den Schutz des Index zusagen. Das Monitoringkomitee folgt Anfang nächster Woche.",
     "lourdesReden": "Vooruit bleibt an Bord, aber mit zwei Knackpunkten, die die anderen nicht einfach schlucken.",
     "noodbegroting": "Nothaushalt für Anfang 2027: bestätigt, zum zweiten Mal in Folge",
     "volgende": {
-      "label": "Mögliches Treffen der Parteivorsitzenden am Wochenende. Anfang nächster Woche folgen die Zahlen des Monitoringkomitees."
+      "label": "Um 14 Uhr treffen sich die Parteivorsitzenden erneut beim Premier. Ob Vooruit kommt, ist unsicher."
     },
     "gemisteDeadlines": [
       {
@@ -189,6 +189,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Der Premier ruft die Parteivorsitzenden am Montag um 14 Uhr erneut zusammen. Vooruit kommt nur, wenn seine Forderungen vorab bestätigt sind."
+      },
       {
         "tekst": "Rousseau an die Partner: Wollen sie keinen Millionärsbeitrag, aber an den Index ran, sollen sie sich eine andere Mehrheit suchen."
       },
@@ -221,9 +224,6 @@
       },
       {
         "tekst": "Laut La Libre will Vooruit fast eine Milliarde Euro an Einsparungen durch Steuereinnahmen ersetzen. Da drückt der Schuh."
-      },
-      {
-        "tekst": "Der Premier setzt selbst eine Frist: ohne Einigung bis Jahresende ist Schluss. Dienstag um 16 Uhr kommen die Parteivorsitzenden."
       }
     ]
   }
