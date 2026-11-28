@@ -1,7 +1,7 @@
 {
   "akkoord": false,
   "bedrag": "13 miljard",
-  "bijgewerkt": "2026-11-27",
+  "bijgewerkt": "2026-11-28",
   "eersteDeadline": "2026-07-21",
   "gemisteDeadlines": [
     {
@@ -27,6 +27,12 @@
   "paleisbezoeken": 4,
   "samenvatting": "De premier roept de vijf partijvoorzitters maandag opnieuw samen. Vooruit schuift alleen aan als de anderen vooraf een miljonairstaks en de bescherming van de index toezeggen. Het monitoringcomité volgt begin volgende week.",
   "tijdlijn": [
+    {
+      "datum": "2026-11-28",
+      "tekst": "Prévot noemt de eisen van Vooruit legitiem. Volgens hem zat er al bijna 1,2 miljard van de meest vermogenden in de tabel van De Wever.",
+      "bron": "La Libre",
+      "url": "https://www.lalibre.be/belgique/politique-belge/2026/11/28/maxime-prevot-les-deux-debats-reclames-par-vooruit-sont-legitimes-les-engages-sont-prets-a-etre-des-allies-SS4E566XC5A7VK6YAPJOG5YE3U/"
+    },
     {
       "datum": "2026-11-26",
       "tekst": "Prévot (Les Engagés): niemand weigert over de eisen van Vooruit te praten, maar een getekend papier om maandag te komen, kan niet.",
@@ -92,12 +98,6 @@
       "tekst": "Ex-vicepremier Vande Lanotte verdedigt Vooruit: beweren dat de partij verkiezingen wil, noemt hij belachelijk.",
       "bron": "VRT NWS",
       "url": "https://www.vrt.be/vrtnws/nl/liveblog/partijvoorzitters-morgen-om-16-uur-bij-premier-de-wever-verwacht~1793247532380/"
-    },
-    {
-      "datum": "2026-11-23",
-      "tekst": "CD&V-voorzitter Mahdi noemt het de langstlopende precampagne in de Belgische geschiedenis, en wijst naar Vooruit.",
-      "bron": "VRT NWS",
-      "url": "https://vrt.be/vrtnws/nl/liveblog/partijvoorzitters-morgen-om-16-uur-bij-premier-de-wever-verwacht~1793247532380"
     }
   ],
   "volgende": {
@@ -128,6 +128,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Prévot juge légitimes les demandes de Vooruit. Selon lui, le tableau de De Wever contenait déjà près de 1,2 milliard des plus aisés."
+      },
       {
         "tekst": "Prévot (Les Engagés) : personne ne refuse de discuter des demandes de Vooruit, mais exiger un papier signé pour lundi, non."
       },
@@ -160,9 +163,6 @@
       },
       {
         "tekst": "L'ex-vice-Premier Vande Lanotte défend Vooruit : affirmer que le parti veut des élections est ridicule, dit-il."
-      },
-      {
-        "tekst": "Le président du CD&V Mahdi parle de la plus longue précampagne de l'histoire politique belge, et pointe Vooruit."
       }
     ]
   },
@@ -189,6 +189,9 @@
       }
     ],
     "tijdlijn": [
+      {
+        "tekst": "Prévot nennt Vooruits Forderungen legitim. Laut ihm enthielt De Wevers Tabelle schon fast 1,2 Milliarden von den Wohlhabendsten."
+      },
       {
         "tekst": "Prévot (Les Engagés): Niemand weigert, über Vooruits Forderungen zu reden, aber ein unterschriebenes Papier für Montag geht nicht."
       },
@@ -221,9 +224,6 @@
       },
       {
         "tekst": "Ex-Vizepremier Vande Lanotte verteidigt Vooruit: Die Behauptung, die Partei wolle Wahlen, nennt er lächerlich."
-      },
-      {
-        "tekst": "CD&V-Chef Mahdi spricht vom längsten Vorwahlkampf der belgischen Geschichte und zeigt auf Vooruit."
       }
     ]
   }
